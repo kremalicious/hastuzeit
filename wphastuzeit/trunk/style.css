@@ -1,0 +1,13 @@
+/*
+Theme Name: hastuzeit
+Theme URI: http://hastuzeit.uni-halle.de
+Description: 
+Version: 1.0
+Author: Matthias Kretschmann
+Author URI: http://matthiaskretschmann.com
+Tags: 
+*/
+
+@import "style/css/reset.css";
+@import "style/css/typography.css";
+@import "style/css/layout.css";
