@@ -1,0 +1,343 @@
+/* main CSS Document */
+
+/* DOCUMENT INFORMATION
+===========================================
+	- Document		: Theme name
+	- Version		: 1.0.0
+	- Client		: Client
+	- Author		: Matthias Kretschmann
+	- Author Contact: krema@jpberlin.de
+	- Author WebSite: www.kremalicious.com
+*/
+
+/* GLOBAL SETTINGS 
+===========================================*/
+
+/* CSS RESET (the Eric Meyer one) */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	border-left: 0;
+}
+
+body {
+	line-height: 1;
+	color: black;/*adjust to your colors*/
+	background: white;/*adjust to your colors*/
+}
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+/* end CSS RESET */
+
+/* PRIMARY LAYOUT
+============================================ */
+
+html {
+	
+}
+
+body {
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-align: center;/* for ie5.+*/
+}
+
+#wrapper {
+	
+}
+
+/* SECONDARY LAYOUT
+============================================ */
+
+/*HEADER*/
+#header {
+	
+}
+
+/*CONTENT*/
+#content {
+	
+}
+
+/*SIDEBAR*/
+#sidebar {
+	
+}
+
+/*FOOTER*/
+#footer {
+	
+}
+
+/* TEXT, IMAGE, LINKS RELATED
+============================================ */
+
+p,h1,h2,h3,h4,h5,h6,ul,ol {
+	margin-bottom: .5em
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 197%; /* 26px */
+}
+
+
+h2 {
+	font-size: 182%; /* 24px */
+}
+
+h3 {
+	font-size: 167%; /* 22px */
+}
+
+h4 {
+	font-size: 152%; /* 20px */
+}
+
+h5 {
+	font-size: 136%; /* 18px */
+}
+
+h6 {
+	font-size: 122%; /* 16px */
+}
+
+/* Paragraph styles */
+p {
+	
+}
+
+/* Links */
+a {
+	text-decoration: none;
+	color: #252e1c;
+}
+
+a:hover {
+	
+}
+
+a:active {
+	
+}
+
+a img,img {
+	border: none;
+	display: block;
+}
+
+/* List styles */
+ul {
+	
+}
+
+ul li {
+	
+}
+
+pre {
+	
+}
+
+code {
+	
+}
+
+/* GENERAL STYLES
+============================================ */
+
+form {
+	
+}
+
+table {
+	
+}
+
+button {
+	
+}
+
+/*List Based Horizontal Navigation
+===========================================*/
+
+ul#nav {
+	font-size: 92%;
+	padding: 18px 115px 5px 0;
+	text-align: right;
+}
+
+ul#nav li {
+	display: inline;
+	padding: 0 13px 0 0;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+ul#nav li a {
+	color: #000;
+}
+
+ul#nav li a:hover,
+ul#nav li.current a {
+	color: #8bbd25
+}
+
+/*end List Based Horizontal Navigation*/
+
+/* GENERAL REUSABLE CLASSES, thanks to Matt Varone 
+http://www.mattvarone.com/2008/07/css-reusable-classes/ 
+========================================================*/
+
+.float-left {
+	float: left
+}
+
+.float-right {
+	float: right
+}
+
+.align-left {
+	float: left;
+	margin: 0 15px 0 0
+}
+
+.align-right {
+	float: right;
+	margin: 0 0 0 15px
+}
+
+.clear {
+	clear: both
+}
+
+.center {
+	margin: 0 auto
+}
+
+.margins {
+	margin: 15px
+}
+
+.push-top {
+	margin-top: 15px
+}
+
+.push-right {
+	margin-right: 15px
+}
+
+.push-bottom {
+	margin-bottom: 15px
+}
+
+.push-left {
+	margin-left: 15px
+}
+
+.border {
+	border: 10px solid #eee
+}
+
+.text-left {
+	text-align: left
+}
+
+.text-right {
+	text-align: right
+}
+
+.text-center {
+	text-align: center
+}
+
+.text-justify {
+	text-align: justify
+}
+
+.underline {
+	text-decoration: underline
+}
+
+.highlight {
+	background-color: #ffc
+}
+
+.indent {
+	text-indent: 15px
+}
+
+.no-indent {
+	text-indent: 0
+}
+
+/* CLEARING TECHNIQUE
+.clearfix:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+.clearfix {display:inline-block;}
+*/
+
+/* mac hide */
+html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+/* End hide */
+/* End CLEARING TECHNIQUE */
+
+
+/* ALL THE REST
+============================================ */
+
+
