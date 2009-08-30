@@ -70,44 +70,39 @@ caption, th, td {
 ============================================ */
 
 html {
-	
+	background: url(images/back.png) repeat left top;
 }
 
 body {
-	font-family: Verdana,Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	text-align: center;/* for ie5.+*/
+	text-align: center;
+	font: 82.5%/1.7em Georgia, "Times New Roman", Times, serif;
+	max-width: 640px;
+	padding: 10px 10px 0;
+	margin: 10px auto 0;
+	background-color: #f8f7f7;
+	height: 100%;
+	text-shadow: #fff 0 1px 0;
+	border: 1px solid #fff;
 }
-
-#wrapper {
-	
-}
-
-/* SECONDARY LAYOUT
-============================================ */
-
-/*HEADER*/
 #header {
-	
+	background-color: #738499;
+	height: 120px;
+	margin-bottom: 15px;
 }
-
-/*CONTENT*/
 #content {
-	
+	overflow: auto;
 }
-
-/*SIDEBAR*/
-#sidebar {
-	
-}
-
-/*FOOTER*/
 #footer {
-	
+	clear: both;
+	margin-top: 15px;
 }
 
 /* TEXT, IMAGE, LINKS RELATED
 ============================================ */
+
+p {
+	
+}
 
 p,h1,h2,h3,h4,h5,h6,ul,ol {
 	margin-bottom: .5em
@@ -137,10 +132,6 @@ h4 {
 
 h5 {
 	font-size: 136%; /* 18px */
-}
-
-h6 {
-	font-size: 122%; /* 16px */
 }
 
 /* Paragraph styles */
@@ -199,145 +190,40 @@ button {
 	
 }
 
-/*List Based Horizontal Navigation
-===========================================*/
-
-ul#nav {
-	font-size: 92%;
-	padding: 18px 115px 5px 0;
-	text-align: right;
-}
-
-ul#nav li {
-	display: inline;
-	padding: 0 13px 0 0;
-	text-transform: uppercase;
-	font-style: italic;
-	font-weight: bold;
-	font-family: Arial, Verdana, Helvetica, sans-serif;
-}
-
-ul#nav li a {
-	color: #000;
-}
-
-ul#nav li a:hover,
-ul#nav li.current a {
-	color: #8bbd25
-}
-
-/*end List Based Horizontal Navigation*/
-
-/* GENERAL REUSABLE CLASSES, thanks to Matt Varone 
-http://www.mattvarone.com/2008/07/css-reusable-classes/ 
-========================================================*/
-
-.float-left {
-	float: left
-}
-
-.float-right {
-	float: right
-}
-
-.align-left {
-	float: left;
-	margin: 0 15px 0 0
-}
-
-.align-right {
-	float: right;
-	margin: 0 0 0 15px
-}
-
-.clear {
-	clear: both
-}
-
-.center {
-	margin: 0 auto
-}
-
-.margins {
-	margin: 15px
-}
-
-.push-top {
-	margin-top: 15px
-}
-
-.push-right {
-	margin-right: 15px
-}
-
-.push-bottom {
-	margin-bottom: 15px
-}
-
-.push-left {
-	margin-left: 15px
-}
-
-.border {
-	border: 10px solid #eee
-}
-
-.text-left {
-	text-align: left
-}
-
-.text-right {
-	text-align: right
-}
-
-.text-center {
-	text-align: center
-}
-
-.text-justify {
-	text-align: justify
-}
-
-.underline {
-	text-decoration: underline
-}
-
-.highlight {
-	background-color: #ffc
-}
-
-.indent {
-	text-indent: 15px
-}
-
-.no-indent {
-	text-indent: 0
-}
-
-/* CLEARING TECHNIQUE
-.clearfix:after {
-content:".";
-display:block;
-height:0;
-clear:both;
-visibility:hidden;
-}
-.clearfix {display:inline-block;}
-*/
-
-/* mac hide */
-html .clearfix {
-	height: 1%;
-}
-
-.clearfix {
-	display: block;
-}
-/* End hide */
-/* End CLEARING TECHNIQUE */
-
 
 /* ALL THE REST
 ============================================ */
+
+/* jQuery Countdown styles 1.5.3. */
+.hasCountdown {
+	width: 40%;
+	margin: 0 auto;
+	overflow: auto;
+}
+.countdown_rtl {
+	direction: rtl;
+}
+.countdown_row {
+	clear: both;
+	padding: 0px 2px;
+	text-align: center;
+}
+.countdown_section {
+	display: block;
+	float: left;
+	font-size: 75%;
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right: 1px solid #e4e4e4;
+	border-left: 1px solid #fff;
+}
+.countdown_amount {
+	font-size: 200%;
+}
+.countdown_descr {
+	display: block;
+	width: 100%;
+}
 
 

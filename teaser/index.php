@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="en,de"/>
 
-<title>My cool Template</title>
+<title>hastuzeit</title>
 
 <meta name="author" content="Matthias Kretschmann" />
 <meta name="copyright" content="&copy; 2008 Matthias Kretschmann" />
@@ -31,22 +31,12 @@
 
 <body>
 
-<div id="wrapper"><!-- optionally, you can also use just the body tag -->
 <div id="header">
-
-<!-- List Based Horizontal Navigation -->
-<ul id="nav">
-<li><a href="#">Home</a></li>
-<li class="current"><a href="#">About</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">News</a></li>
-</ul><!-- end List Based Horizontal Navigation -->
-
+	<h1>hastuzeit</h1>
 </div><!-- end header -->
 
 <div id="content">
-	
+	<div id="defaultCountdown"></div>
 </div><!-- end content -->
 
 <div id="footer">
@@ -55,6 +45,9 @@
 	</p>
 </div><!-- end footer -->
 
-</div><!-- end wrapper -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="style/js/plugins.js"></script>
+<script type="text/javascript" src="style/js/effects.js"></script>
+
 </body>
 </html>
