@@ -26,12 +26,6 @@ html, body {
 	border-left: 0;
 }
 
-body {
-	line-height: 1;
-	color: black;/*adjust to your colors*/
-	background: white;/*adjust to your colors*/
-}
-
 div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -75,26 +69,39 @@ html {
 
 body {
 	text-align: center;
-	font: 82.5%/1.7em Georgia, "Times New Roman", Times, serif;
-	max-width: 640px;
-	padding: 10px 10px 0;
-	margin: 10px auto 0;
-	background-color: #f8f7f7;
+	font: 82.5%/1.5em Georgia, "Times New Roman", Times, serif;
+	width: 586px;
+	padding: 10px;
+	margin: 75px auto 10px;
 	height: 100%;
 	text-shadow: #fff 0 1px 0;
+	background-color: #f7f7f7;
+	position: relative;
+	color: #122D45;
 	border: 1px solid #fff;
 }
+
 #header {
-	background-color: #738499;
-	height: 120px;
-	margin-bottom: 15px;
+	height: 81px;
+	background: url(images/logo.png) no-repeat left bottom;
+	margin-top: -78px;
+	margin-left: -10px;
+	text-indent: -9999999px;
 }
 #content {
+	border-top: 3px double #ff6600;
 	overflow: auto;
+	text-align: left;
+	font-size: 1em;
 }
 #footer {
 	clear: both;
 	margin-top: 15px;
+	border-top: 3px double #ff6600;
+	padding-top: 15px;
+	font-size: 0.85em;
+	line-height: 1.3em;
+	color: #b1b1b1;
 }
 
 /* TEXT, IMAGE, LINKS RELATED
@@ -111,19 +118,25 @@ p,h1,h2,h3,h4,h5,h6,ul,ol {
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 h1 {
-	font-size: 197%; /* 26px */
+	font-size: 197%;
 }
 
 
 h2 {
-	font-size: 182%; /* 24px */
+	font-size: 2em;
+	border-bottom: 3px solid #ff6600;
+	width: 279px;
+	margin: 30px auto 20px;
+	text-align: center;
 }
 
 h3 {
-	font-size: 167%; /* 22px */
+	font-size: 1.3em;
+	margin-bottom: 20px;
 }
 
 h4 {
@@ -142,11 +155,23 @@ p {
 /* Links */
 a {
 	text-decoration: none;
-	color: #252e1c;
+	color: #000;
+	border-bottom: 1px solid #ff6600;
+	-webkit-transition: color linear 0.2s;
 }
 
 a:hover {
-	
+	color: #ff6600;
+}
+
+#footer a {
+	color: #b1b1b1;
+	border: none;
+}
+
+#footer a:hover {
+	color: #000;
+	border-bottom: 1px solid #ff6600;
 }
 
 a:active {
@@ -154,8 +179,13 @@ a:active {
 }
 
 a img,img {
-	border: none;
 	display: block;
+	border: 3px solid #dadada;
+	-webkit-transition: border-color linear 0.2s;
+}
+
+a img:hover {
+	border: 3px solid #ff6600;
 }
 
 /* List styles */
@@ -194,11 +224,32 @@ button {
 /* ALL THE REST
 ============================================ */
 
+#main {
+	margin-top: 140px;
+	border-top: 1px solid #ff6600;
+	padding-top: 25px;
+}
+
+.column {
+	width: 30%;
+	float: left;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+
 /* jQuery Countdown styles 1.5.3. */
 .hasCountdown {
-	width: 40%;
-	margin: 0 auto;
+	width: 479px;
+	height: 77px;
+	margin: 0 auto 40px;
 	overflow: auto;
+	background: url(images/featured.png) no-repeat left top;
+	color: #a5a5a5;
+	position: absolute;
+	left: -21px;
+	padding-left: 170px;
+	padding-top: 15px;
+	top: 100px;
 }
 .countdown_rtl {
 	direction: rtl;
@@ -213,13 +264,13 @@ button {
 	float: left;
 	font-size: 75%;
 	text-align: center;
-	padding-right: 10px;
-	padding-left: 10px;
-	border-right: 1px solid #e4e4e4;
-	border-left: 1px solid #fff;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 .countdown_amount {
-	font-size: 200%;
+	font-size: 300%;
+	color: #000;
+	
 }
 .countdown_descr {
 	display: block;

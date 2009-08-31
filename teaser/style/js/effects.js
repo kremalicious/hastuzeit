@@ -7,8 +7,7 @@ $(function () {
 		timeSeparator: ':', isRTL: false};
 	$.countdown.setDefaults($.countdown.regional['de']);
 	
-	var austDay = new Date();
-	austDay = new Date(austDay.getFullYear(), 9 - 10, 01);
-	$('#defaultCountdown').countdown({until: austDay});
-	$('#year').text(austDay.getFullYear());
+	var launch = new Date(); 
+		launch = new Date(launch.getFullYear(), 9, 1);
+	$('#defaultCountdown').countdown({until: launch}); 
 });
