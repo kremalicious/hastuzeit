@@ -65,28 +65,28 @@
 				<li>Und vieles mehr!</li>
 			</ul>
 			
-			<div id="asq" class="clear">
-				<h3>hastuzeit als ASQ</h3>
-				<p class="left">Du hast Lust, als Teil der Redaktion die n&auml;chsten vier Ausgaben der hastuzeit zu konzipieren, mit Inhalten zu f&uuml;llen und journalistische Erfahrung in der Magazin-Arbeit zu sammeln? Oder bist du begeisterter Fotograf, gestaltest gern oder wolltest schon immer einmal Online-Journalismus betreiben?</p>
-				<p class="right">Dann bewirb dich bis zum 11. Oktober 2009 mit kurzem Motivationsschreiben bei <a href="mailto:redaktion@hastuzeit.de" title="">redaktion@hastuzeit.de</a> und lerne die Arbeit des hastuzeit-Redaktionsteams im Rahmen eines ASQ-Moduls kennen.</p>
-				<p class="right">PS.: Journalistische Erfahrungen sind w&uuml;nschenswert, aber kein Muss.</p>
-			</div>
-			
-			<div id="impressum">
-				<ul class="left">
-					<li><em>hastuzeit</em>, die hallische Studierendenschafts­zeitschrift, wird herausgegeben von der Studierendenschaft der Martin­-Luther­-Universität Halle-Wittenberg.</li>
-				</ul>
-				<ul class="right">
-					<li><a href="http://www.hastuzeit.uni-halle.de" title="">hastuzeit.uni-halle.de</a></li>
-					<li><a href="mailto:hastuzeit@yahoo.de" title="">hastuzeit@yahoo.de</a></li>
-					<li></li>
-					<li>c/o Studierendenrat der MLU</li>
-					<li>Universitätsplatz 7, 06108 Halle (Saale)</li>
-				</ul>
-			</div>
-			
 		</div><!-- end #main -->
+			
+		<div id="asq" class="clear">
+			<h3>hastuzeit als ASQ</h3>
+			<p class="left">Du hast Lust, als Teil der Redaktion die n&auml;chsten vier Ausgaben der hastuzeit zu konzipieren, mit Inhalten zu f&uuml;llen und journalistische Erfahrung in der Magazin-Arbeit zu sammeln? Oder bist du begeisterter Fotograf, gestaltest gern oder wolltest schon immer einmal Online-Journalismus betreiben?</p>
+			<p class="right">Dann bewirb dich bis zum 11. Oktober 2009 mit kurzem Motivationsschreiben bei <a href="mailto:redaktion@hastuzeit.de" title="">redaktion@hastuzeit.de</a> und lerne die Arbeit des hastuzeit-Redaktionsteams im Rahmen eines ASQ-Moduls kennen.</p>
+			<p class="right">PS.: Journalistische Erfahrungen sind w&uuml;nschenswert, aber kein Muss.</p>
+		</div>
 		
+		<div id="impressum">
+			<p class="left">
+				<em>hastuzeit</em>, die hallische Studierendenschafts­zeitschrift, wird herausgegeben von der Studierendenschaft der Martin­-Luther­-Universität Halle-Wittenberg.
+			</p>
+			<ul class="right">
+				<li class="url"><a href="http://www.hastuzeit.uni-halle.de" title="">hastuzeit.uni-halle.de</a></li>
+				<li class="email"><a href="mailto:hastuzeit@yahoo.de" title="">hastuzeit@yahoo.de</a></li>
+				<li></li>
+				<li class="address">c/o Studierendenrat der MLU</li>
+				<li>Universitätsplatz 7, 06108 Halle (Saale)</li>
+			</ul>
+		</div>
+
 		<div id="footer">
 			<p>&copy; 2009 hastuzeit - Alle Rechte vorbehalten</p>
 			<p>Design- and Code-Voodoo by <a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">Matthias Kretschmann</a></p>

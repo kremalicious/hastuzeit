@@ -5,57 +5,11 @@ Version			: 1.0.0
 Client			: hastuzeit
 Author			: Matthias Kretschmann
 Author Contact	: krema@jpberlin.de
-Author WebSite	: www.kremalicious.com
+Author WebSite	: matthiaskretschmann.com
 */
 
-/* GLOBAL SETTINGS 
-===========================================*/
-
 /* CSS RESET (the Eric Meyer one) */
-
-html, body {
-	margin: 0;
-	padding: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
-	border-left: 0;
-}
-
-div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-}
-
-caption, th, td {
-	text-align: left;
-	font-weight: normal;
-}
-
+html,body{font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;border-left:0;margin:0;padding:0}div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:400}
 /* end CSS RESET */
 
 /* PRIMARY LAYOUT
@@ -81,7 +35,7 @@ body {
 
 #header {
 	text-indent: -9999999px;
-	height: 104px;
+	height: 103px;
 	width: 620px;
 	margin: 0 auto;
 }
@@ -110,13 +64,15 @@ body {
 #counter {
 	border-top: 3px double #ff6600;
 	margin-top: 10px;
+	border-bottom: 1px solid #ff6600;
 }
 
 #main {
-	margin-top: 130px;
-	border-top: 1px solid #ff6600;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ff6600;
 	padding-top: 25px;
 	float: left;
+	padding-bottom: 25px;
 }
 #footer {
 	clear: both;
@@ -124,7 +80,7 @@ body {
 	border-top: 3px double #ff6600;
 	padding-top: 15px;
 	font-size: 0.85em;
-	line-height: 1.3em;
+	line-height: 1em;
 	color: #63717d;
 	text-align: center;
 }
@@ -132,12 +88,8 @@ body {
 /* TEXT, IMAGE, LINKS RELATED
 ============================================ */
 
-p {
-	
-}
-
 p,h1,h2,h3,h4,h5,h6,ul,ol {
-	margin-bottom: .5em
+	margin-bottom: .8em
 }
 
 /* Headings */
@@ -155,7 +107,7 @@ h2 {
 	font-size: 2em;
 	border-bottom: 3px solid #ff6600;
 	width: 300px;
-	margin: 30px auto 20px;
+	margin: 30px auto 140px;
 	text-align: center;
 }
 
@@ -173,9 +125,6 @@ h5 {
 }
 
 /* Paragraph styles */
-p {
-	
-}
 
 em {
 	font-style: italic;
@@ -217,38 +166,6 @@ a img:hover {
 	border: 3px solid #ff6600;
 }
 
-/* List styles */
-ul {
-	
-}
-
-ul li {
-	
-}
-
-pre {
-	
-}
-
-code {
-	
-}
-
-/* GENERAL STYLES
-============================================ */
-
-form {
-	
-}
-
-table {
-	
-}
-
-button {
-	
-}
-
 
 /* ALL THE REST
 ============================================ */
@@ -288,27 +205,48 @@ button {
 }
 
 #asq {
-	border-top: 1px solid #ff6600;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ff6600;
 	padding-top: 25px;
-	margin-top: 25px;
 	padding-bottom: 25px;
 	float: left;
 }
 
-#asq .left, #asq .right, #impressum ul {
+#asq .left, #asq .right, #impressum ul, #impressum p {
 	width: 46%;
 }
 
 #impressum {
 	clear: both;
-	border-top: 1px solid #ff6600;
+	border-top: 1px solid #fff;
 	padding-top: 25px;
-	margin-top: 25px;
 	font-size: 0.9em;
 	color: #63717d;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	float: left;
 	margin-bottom: 25px;
+}
+
+#impressum li {
+	padding-left: 25px;
+	
+}
+
+.url, .email, .address {
+	background-image: url(images/SpriteMaster.png);
+	background-repeat: no-repeat;
+}
+
+.url {
+	background-position: -632px -86px;
+}
+
+.email {
+	background-position: -632px -110px;
+}
+
+.address {
+	background-position: -632px -137px;
 }
 
 .clear {
@@ -361,5 +299,3 @@ button {
 	display: block;
 	width: 100%;
 }
-
-

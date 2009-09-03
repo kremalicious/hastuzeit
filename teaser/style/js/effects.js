@@ -5,11 +5,12 @@ Version			: 1.0.0
 Client			: hastuzeit
 Author			: Matthias Kretschmann
 Author Contact	: krema@jpberlin.de
-Author WebSite	: www.kremalicious.com
+Author WebSite	: matthiaskretschmann.com
 */
 
 $(function () {
 	
+	//the counter
 	$.countdown.regional['de'] = {
 		labels: ['Jahren', 'Monate', 'Wochen', 'Tage', 'Stunden', 'Minuten', 'Sekunden'],
 		labels1: ['Jahre', 'Monat', 'Woche', 'Tag', 'Stunde', 'Minute', 'Sekunde'],
@@ -20,5 +21,11 @@ $(function () {
 	var launch = new Date(); 
 		launch = new Date(launch.getFullYear(), 9, 1);
 	$('#defaultCountdown').countdown({until: launch});
+	
+	//Open pdf links and external links in new window
+    $('a[href*=.pdf], a.external').click(function(){
+		window.open(this.href);
+	return false;
+	});
 	
 });
