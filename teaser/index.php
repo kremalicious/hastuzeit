@@ -99,4 +99,7 @@
 <script type="text/javascript" src="style/js/effects.js"></script>
 
 </body>
+<!--
+   Design and Front-End Development by Matthias Kretschmann | http://matthiaskretschmann.com
+-->
 </html>

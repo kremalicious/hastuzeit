@@ -1,3 +1,13 @@
+/* DOCUMENT INFORMATION
+===========================================
+Document		: main js Document hastuzeit Teaser
+Version			: 1.0.0
+Client			: hastuzeit
+Author			: Matthias Kretschmann
+Author Contact	: krema@jpberlin.de
+Author WebSite	: www.kremalicious.com
+*/
+
 $(function () {
 	
 	$.countdown.regional['de'] = {
@@ -9,5 +19,6 @@ $(function () {
 	
 	var launch = new Date(); 
 		launch = new Date(launch.getFullYear(), 9, 1);
-	$('#defaultCountdown').countdown({until: launch}); 
+	$('#defaultCountdown').countdown({until: launch});
+	
 });
