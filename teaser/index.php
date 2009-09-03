@@ -4,12 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="en,de"/>
 
-<title>hastuzeit</title>
+<title>hastuzeit - die hallische Studierendenschaftszeitschrift</title>
 
-<meta name="author" content="Matthias Kretschmann" />
-<meta name="copyright" content="&copy; 2008 Matthias Kretschmann" />
-<meta name="description" content="xxx" />
-<meta name="keywords" content="xxx" />
+<meta name="author" content="hastuzeit - die hallische Studierendenschafts­zeitschrift" />
+<meta name="copyright" content="&copy; 2009 hastuzeit - die hallische Studierendenschafts­zeitschrift" />
+<meta name="description" content="Das Campus-Magazin f&uuml;r Studierende der Universit&auml;ten in Halle (Saale)" />
+<meta name="keywords" content="hastuzeit, campus, uni, uni-halle, halle saale, mlu, martin-luther-universit&auml;t, burg halle, journalismus" />
 
 <meta name="siteinfo" content="robots.txt" />
 <meta name="robots" content="follow,noimageindex"/>
@@ -28,40 +28,71 @@
 
 <body>
 
-<div id="header">
-	<h1>hastuzeit</h1>
-</div><!-- end header -->
-
-<div id="content">
+	<div id="header">
+		<h1>hastuzeit - die hallische Studierendenschafts­zeitschrift</h1>
+	</div><!-- end header -->
 	
-	<h2>Bald geht's wieder los!</h2>
-	
-	<div id="defaultCountdown"></div>
-	
-	<div id="main">
-		<div class="column">
-			<h3>Wir bauen um</h3>
-			<p>Am 1.10.2009 startet unsere neue Web Site. Bis dahin ist die alte Seite nicht zu erreichen.</p>
-			<p>Wir bitten um Verständnis und hoffen, euch hier auf unserer neuen Seite begrüßen zu können.</p>
+	<div id="content">
+		
+		<div id="counter">
+			<h2>Bald geht's wieder los!</h2>
+			
+			<div id="defaultCountdown"></div>
 		</div>
 		
-		<div class="column">
-			<h3>hastuzeit als ASQ</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div id="main">
+			<div id="umbau">
+				<h3>Wir bauen um</h3>
+				<p>Am 1.10.2009 startet unsere neue Web Site. Bis dahin ist die alte Seite nicht zu erreichen.</p>
+				<p>Wir bitten um Verständnis und hoffen, euch hier auf unserer neuen Seite begrüßen zu können.</p>
+			</div>
+			
+			<div id="ausgabe">
+				<h3>Aktuelle Ausgabe</h3>
+				<p><a href="hastuzeit27_web.pdf" title="hastuzeit No. 27 als pdf"><img src="style/images/hastuzeit27.png" alt="hastuzeit27" width="134" height="189"/></a></p>
+				
+			</div>
+			
+			<ul id="inhalt">
+				<li><a href="hastuzeit27_web.pdf" title="hastuzeit No. 27 als pdf">hastuzeit No. 27 (pdf | 22MB)</a></li>
+				<li>Selbsttest Bildungsstreik</li>
+				<li>»Die Kritik der Studierenden ist angekommen«</li>
+				<li>Und wo bleibt die Bildung?</li>
+				<li>Diese Bank ist besetzt!</li>
+				<li>Superstreikjahr 2009</li>
+				<li>»Die Uni ist nicht familienfreundlich«</li>
+				<li>Bloß nicht schwanger werden!</li>				
+				<li>Und vieles mehr!</li>
+			</ul>
+			
+			<div id="asq" class="clear">
+				<h3>hastuzeit als ASQ</h3>
+				<p class="left">Du hast Lust, als Teil der Redaktion die n&auml;chsten vier Ausgaben der hastuzeit zu konzipieren, mit Inhalten zu f&uuml;llen und journalistische Erfahrung in der Magazin-Arbeit zu sammeln? Oder bist du begeisterter Fotograf, gestaltest gern oder wolltest schon immer einmal Online-Journalismus betreiben?</p>
+				<p class="right">Dann bewirb dich bis zum 11. Oktober 2009 mit kurzem Motivationsschreiben bei <a href="mailto:redaktion@hastuzeit.de" title="">redaktion@hastuzeit.de</a> und lerne die Arbeit des hastuzeit-Redaktionsteams im Rahmen eines ASQ-Moduls kennen.</p>
+				<p class="right">PS.: Journalistische Erfahrungen sind w&uuml;nschenswert, aber kein Muss.</p>
+			</div>
+			
+			<div id="impressum">
+				<ul class="left">
+					<li><em>hastuzeit</em>, die hallische Studierendenschafts­zeitschrift, wird herausgegeben von der Studierendenschaft der Martin­-Luther­-Universität Halle-Wittenberg.</li>
+				</ul>
+				<ul class="right">
+					<li><a href="http://www.hastuzeit.uni-halle.de" title="">hastuzeit.uni-halle.de</a></li>
+					<li><a href="mailto:hastuzeit@yahoo.de" title="">hastuzeit@yahoo.de</a></li>
+					<li></li>
+					<li>c/o Studierendenrat der MLU</li>
+					<li>Universitätsplatz 7, 06108 Halle (Saale)</li>
+				</ul>
+			</div>
+			
+		</div><!-- end #main -->
+		
+		<div id="footer">
+			<p>&copy; 2009 hastuzeit - Alle Rechte vorbehalten</p>
+			<p>Design- and Code-Voodoo by <a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">Matthias Kretschmann</a></p>
 		</div>
 		
-		<div class="column">
-			<h3>Aktuelle Ausgabe</h3>
-			<p><a href="hastuzeit27_web.pdf" title="hastuzeit No. 27 als pdf"><img src="style/images/hastuzeit27.png" alt="hastuzeit27" width="134" height="189"/>hastuzeit No. 27 (pdf | 22MB)</a></p>
-		</div>
-	</div>
-	
-</div><!-- end content -->
-
-<div id="footer">
-	<p>&copy; 2009 Alle Rechte vorbehalten</p>
-	<p>Design- and Code-Voodoo by <a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">Matthias Kretschmann</a></p>
-</div><!-- end footer -->
+	</div><!-- end content -->
 
 <script type="text/javascript" src="style/js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="style/js/plugins.js"></script>

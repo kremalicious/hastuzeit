@@ -63,45 +63,72 @@ caption, th, td {
 /* PRIMARY LAYOUT
 ============================================ */
 
+div {
+	position: relative;
+}
+
 html {
 	background: url(images/back.png) repeat left top;
+	width: 100%;
 }
 
 body {
 	text-align: center;
-	font: 82.5%/1.5em Georgia, "Times New Roman", Times, serif;
-	width: 586px;
-	padding: 10px;
-	margin: 75px auto 10px;
+	font: 82.5%/1.6em Georgia, "Times New Roman", Times, serif;
 	height: 100%;
 	text-shadow: #fff 0 1px 0;
-	background-color: #f7f7f7;
 	position: relative;
 	color: #122D45;
-	border: 1px solid #fff;
 }
 
 #header {
-	height: 81px;
-	background: url(images/logo.png) no-repeat left bottom;
-	margin-top: -78px;
-	margin-left: -10px;
 	text-indent: -9999999px;
+	height: 104px;
+	width: 620px;
+	margin: 0 auto;
 }
+
+#header h1 {
+	background: url(images/SpriteMaster.png) no-repeat left -92px;
+	width: 612px;
+	height: 82px;
+	position: absolute;
+	top: -4px;
+	left: 13px;
+	z-index: 1;
+}
+
 #content {
-	border-top: 3px double #ff6600;
-	overflow: auto;
 	text-align: left;
-	font-size: 1em;
+	font-size: 1.05em;
+	background-color: #f7f7f7;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	width: 566px;
+	z-index: 2;
+	margin: -40px auto 10px;
+}
+
+#counter {
+	border-top: 3px double #ff6600;
+	margin-top: 10px;
+}
+
+#main {
+	margin-top: 130px;
+	border-top: 1px solid #ff6600;
+	padding-top: 25px;
+	float: left;
 }
 #footer {
 	clear: both;
-	margin-top: 15px;
+	margin-top: 25px;
 	border-top: 3px double #ff6600;
 	padding-top: 15px;
 	font-size: 0.85em;
 	line-height: 1.3em;
-	color: #b1b1b1;
+	color: #63717d;
+	text-align: center;
 }
 
 /* TEXT, IMAGE, LINKS RELATED
@@ -129,7 +156,7 @@ h1 {
 h2 {
 	font-size: 2em;
 	border-bottom: 3px solid #ff6600;
-	width: 279px;
+	width: 300px;
 	margin: 30px auto 20px;
 	text-align: center;
 }
@@ -152,6 +179,10 @@ p {
 	
 }
 
+em {
+	font-style: italic;
+}
+
 /* Links */
 a {
 	text-decoration: none;
@@ -160,12 +191,12 @@ a {
 	-webkit-transition: color linear 0.2s;
 }
 
-a:hover {
+a:hover, #inhalt a:hover {
 	color: #ff6600;
 }
 
 #footer a {
-	color: #b1b1b1;
+	color: #63717d;
 	border: none;
 }
 
@@ -224,32 +255,88 @@ button {
 /* ALL THE REST
 ============================================ */
 
-#main {
-	margin-top: 140px;
-	border-top: 1px solid #ff6600;
-	padding-top: 25px;
+#umbau, #ausgabe, #inhalt {
+	width: 32%;
+	float: left;
 }
 
-.column {
-	width: 30%;
+#umbau {
+	margin-right: 30px;
+}
+
+#ausgabe {
+	width: 26%;
+	margin-right: 20px;
+}
+
+#ausgabe img {
+	margin-bottom: 10px;
+}
+
+#inhalt {
+	margin-top: 40px;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	color: #63717d;
+}
+
+#inhalt li {
+	list-style-type: circle;
+	list-style-position: outside;
+}
+
+#inhalt a {
+	color: #63717d;
+}
+
+#asq {
+	border-top: 1px solid #ff6600;
+	padding-top: 25px;
+	margin-top: 25px;
+	padding-bottom: 25px;
 	float: left;
-	margin-left: 10px;
-	padding-right: 10px;
+}
+
+#asq .left, #asq .right, #impressum ul {
+	width: 46%;
+}
+
+#impressum {
+	clear: both;
+	border-top: 1px solid #ff6600;
+	padding-top: 25px;
+	margin-top: 25px;
+	font-size: 0.9em;
+	color: #63717d;
+	line-height: 1.5em;
+	float: left;
+	margin-bottom: 25px;
+}
+
+.clear {
+	clear: both;
+	float: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
 
 /* jQuery Countdown styles 1.5.3. */
 .hasCountdown {
 	width: 479px;
 	height: 77px;
-	margin: 0 auto 40px;
-	overflow: auto;
-	background: url(images/featured.png) no-repeat left top;
+	background: url(images/SpriteMaster.png) no-repeat left top;
 	color: #a5a5a5;
 	position: absolute;
-	left: -21px;
+	left: -41px;
 	padding-left: 170px;
 	padding-top: 15px;
-	top: 100px;
+	top: 85px;
 }
 .countdown_rtl {
 	direction: rtl;
