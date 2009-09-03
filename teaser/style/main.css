@@ -227,14 +227,17 @@ a img:hover {
 	margin-bottom: 25px;
 }
 
-#impressum li {
+#impressum li, #impressum p {
 	padding-left: 25px;
-	
 }
 
-.url, .email, .address {
+.url, .email, .address, #impressum p {
 	background-image: url(images/SpriteMaster.png);
 	background-repeat: no-repeat;
+}
+
+#impressum p {
+	background-position: -613px -159px;
 }
 
 .url {
