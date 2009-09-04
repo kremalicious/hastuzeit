@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" content="en,de"/>
+<meta http-equiv="Content-Language" content="de"/>
 
 <title>hastuzeit - die hallische Studierendenschaftszeitschrift</title>
 
@@ -21,8 +21,8 @@
 <![endif]–>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 </head>
 
@@ -44,7 +44,7 @@
 			<div id="umbau">
 				<h3>Wir bauen um</h3>
 				<p>Am 1.10.2009 startet unsere neue Web Site. Bis dahin ist die alte Seite nicht zu erreichen.</p>
-				<p>Wir bitten um Verständnis und hoffen, euch hier auf unserer neuen Seite begrüßen zu können.</p>
+				<p>Wir bitten um Verst&auml;ndnis und hoffen, euch hier auf unserer neuen Seite begr&uuml;&szlig;en zu k&ouml;nnen.</p>
 			</div>
 			
 			<div id="ausgabe">
@@ -56,12 +56,12 @@
 			<ul id="inhalt">
 				<li><a href="hastuzeit27_web.pdf" title="hastuzeit No. 27 als pdf">hastuzeit No. 27 (pdf | 22MB)</a></li>
 				<li>Selbsttest Bildungsstreik</li>
-				<li>»Die Kritik der Studierenden ist angekommen«</li>
+				<li>&raquo;Die Kritik der Studierenden ist angekommen&laquo;</li>
 				<li>Und wo bleibt die Bildung?</li>
 				<li>Diese Bank ist besetzt!</li>
 				<li>Superstreikjahr 2009</li>
-				<li>»Die Uni ist nicht familienfreundlich«</li>
-				<li>Bloß nicht schwanger werden!</li>				
+				<li>&raquo;Die Uni ist nicht familienfreundlich&laquo;</li>
+				<li>Blo&szlig; nicht schwanger werden!</li>				
 				<li>Und vieles mehr!</li>
 			</ul>
 			
