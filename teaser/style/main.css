@@ -91,7 +91,6 @@ body {
 	margin-top: 25px;
 	border-top: 3px double #ff6600;
 	padding-top: 15px;
-	font-size: 0.85em;
 	color: #8f9ba5;
 	text-align: center;
 }
@@ -265,6 +264,7 @@ a img:hover {
 
 #footer p {
 	margin-bottom: 0;
+	font-size: 0.85em;
 	line-height: 1.5em;
 }
 
