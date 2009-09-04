@@ -25,7 +25,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
 <!-- iPhone stuff -->
-<meta name="viewport" content="width=520" />
+<meta name="viewport" content="width=650" />
 <meta name="apple-touch-fullscreen" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
@@ -100,11 +100,10 @@
 	</div><!-- end content -->
 
 <script type="text/javascript" src="style/js/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="style/js/plugins.js"></script>
 <script type="text/javascript" src="style/js/effects.js"></script>
 
 </body>
 <!--
-   Design and Front-End Development by Matthias Kretschmann | http://matthiaskretschmann.com
+   Design, Icons and Front-End Development by Matthias Kretschmann | http://matthiaskretschmann.com
 -->
 </html>
