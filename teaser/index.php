@@ -15,9 +15,9 @@
 
 <!-- All the style sheets -->
 <link href="style/main.css" rel="stylesheet" media="screen, projection" type="text/css" />
-<!–[if IE ]>
+<!-- [if IE ]-->
 <link href="ie.css" rel="stylesheet" media="screen,projection" type="text/css" />
-<![endif]–>
+<!-- [endif]-->
 
 <!-- Favicon and apple-touch icon-->
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
