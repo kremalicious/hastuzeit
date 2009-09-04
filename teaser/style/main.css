@@ -67,6 +67,18 @@ body {
 	border-bottom: 1px solid #ff6600;
 }
 
+#defaultCountdown {
+	width: 479px;
+	height: 77px;
+	background: url(images/SpriteMaster.png) no-repeat left top;
+	color: #a5a5a5;
+	position: absolute;
+	left: -41px;
+	padding-left: 170px;
+	padding-top: 15px;
+	top: 85px;
+}
+
 #main {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #ff6600;
@@ -266,17 +278,6 @@ a img:hover {
 }
 
 /* jQuery Countdown styles 1.5.3. */
-.hasCountdown {
-	width: 479px;
-	height: 77px;
-	background: url(images/SpriteMaster.png) no-repeat left top;
-	color: #a5a5a5;
-	position: absolute;
-	left: -41px;
-	padding-left: 170px;
-	padding-top: 15px;
-	top: 85px;
-}
 .countdown_rtl {
 	direction: rtl;
 }

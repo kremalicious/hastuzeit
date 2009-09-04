@@ -49,12 +49,12 @@
 			
 			<div id="ausgabe">
 				<h3>Aktuelle Ausgabe</h3>
-				<p><a href="hastuzeit27_web.pdf" title="hastuzeit No. 27 als pdf"><img src="style/images/hastuzeit27.png" alt="hastuzeit27" width="134" height="189"/></a></p>
+				<p><a href="media/pdf/hastuzeit27_web.pdf" title="hastuzeit No. 27 als pdf"><img src="style/images/hastuzeit27.png" alt="hastuzeit27" width="134" height="189"/></a></p>
 				
 			</div>
 			
 			<ul id="inhalt">
-				<li><a href="hastuzeit27_web.pdf" title="hastuzeit No. 27 als pdf">hastuzeit No. 27 (pdf | 22MB)</a></li>
+				<li><a href="media/pdf/hastuzeit27_web.pdf" title="hastuzeit No. 27 als pdf">hastuzeit No. 27 (pdf | 22MB)</a></li>
 				<li>Selbsttest Bildungsstreik</li>
 				<li>&raquo;Die Kritik der Studierenden ist angekommen&laquo;</li>
 				<li>Und wo bleibt die Bildung?</li>
