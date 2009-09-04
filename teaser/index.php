@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
 <head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" content="de"/>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 
 <title>hastuzeit - die hallische Studierendenschaftszeitschrift</title>
 
@@ -20,9 +19,15 @@
 <link href="ie.css" rel="stylesheet" media="screen,projection" type="text/css" />
 <![endif]–>
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="hastuzeit.ico" type="image/x-icon" />
-<link rel="icon" href="hastuzeit.ico" type="image/x-icon" />
+<!-- Favicon and apple-touch icon-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<!-- iPhone stuff -->
+<meta name="viewport" content="width=520" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
 
 </head>
 
