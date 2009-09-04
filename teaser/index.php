@@ -79,17 +79,17 @@
 				<em>hastuzeit</em>, die hallische Studierendenschaftszeitschrift, wird herausgegeben von der Studierendenschaft der Martin&shy;-Luther&shy;-Universit&auml;t Halle-Wittenberg.
 			</p>
 			<ul class="right">
-				<li class="url"><a href="http://www.hastuzeit.uni-halle.de" title="">hastuzeit.uni-halle.de</a></li>
-				<li class="email"><a href="mailto:hastuzeit@yahoo.de" title="">hastuzeit@yahoo.de</a></li>
+				<li class="url"><a href="http://www.hastuzeit.uni-halle.de" rel="me" title="hastuzeit - die hallische Studierendenschaftszeitschrift">hastuzeit.uni-halle.de</a></li>
+				<li class="email"><a href="mailto:hastuzeit@yahoo.de" title="Mail an hastuzeit senden">hastuzeit@yahoo.de</a></li>
 				<li></li>
 				<li class="address">c/o Studierendenrat der MLU</li>
-				<li>Universitätsplatz 7, 06108 Halle (Saale)</li>
+				<li>Universit&auml;tsplatz 7, 06108 Halle (Saale)</li>
 			</ul>
 		</div>
 
 		<div id="footer">
 			<p>&copy; 2009 hastuzeit - Alle Rechte vorbehalten</p>
-			<p>Design- Icon- and Code-Voodoo by <a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">Matthias Kretschmann</a></p>
+			<p>design.icon.code.vooodo.<a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">matthias.kretschmann</a></p>
 		</div>
 		
 	</div><!-- end content -->
