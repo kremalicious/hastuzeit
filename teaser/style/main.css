@@ -92,8 +92,7 @@ body {
 	border-top: 3px double #ff6600;
 	padding-top: 15px;
 	font-size: 0.85em;
-	line-height: 1em;
-	color: #63717d;
+	color: #8f9ba5;
 	text-align: center;
 }
 
@@ -155,7 +154,7 @@ a:hover, #inhalt a:hover {
 }
 
 #footer a {
-	color: #63717d;
+	color: #8f9ba5;
 	border: none;
 }
 
@@ -243,7 +242,7 @@ a img:hover {
 	padding-left: 25px;
 }
 
-.url, .email, .address, #impressum p {
+.url, .email, .address, #impressum p, a.valid {
 	background-image: url(images/SpriteMaster.png);
 	background-repeat: no-repeat;
 }
@@ -262,6 +261,16 @@ a img:hover {
 
 .address {
 	background-position: -632px -137px;
+}
+
+#footer p {
+	margin-bottom: 0;
+	line-height: 1.5em;
+}
+
+a.valid {
+	padding-left: 15px;
+	background-position: 0 -177px;
 }
 
 .clear {

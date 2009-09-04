@@ -95,6 +95,7 @@
 		<div id="footer">
 			<p>&copy; 2009 hastuzeit - Alle Rechte vorbehalten</p>
 			<p>design.icon.code.vooodo.<a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">matthias.kretschmann</a></p>
+			<p><a class="valid" href="http://validator.w3.org/check?uri=referer" title="Valid XHTML 1.1">xhtml 1.1</a></p>
 		</div>
 		
 	</div><!-- end content -->
