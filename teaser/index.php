@@ -76,7 +76,7 @@
 		
 		<div id="impressum">
 			<p class="left">
-				<em>hastuzeit</em>, die hallische Studierendenschafts­zeitschrift, wird herausgegeben von der Studierendenschaft der Martin­-Luther­-Universität Halle-Wittenberg.
+				<em>hastuzeit</em>, die hallische Studierendenschaftszeitschrift, wird herausgegeben von der Studierendenschaft der Martin&shy;-Luther&shy;-Universit&auml;t Halle-Wittenberg.
 			</p>
 			<ul class="right">
 				<li class="url"><a href="http://www.hastuzeit.uni-halle.de" title="">hastuzeit.uni-halle.de</a></li>
@@ -89,7 +89,7 @@
 
 		<div id="footer">
 			<p>&copy; 2009 hastuzeit - Alle Rechte vorbehalten</p>
-			<p>Design- and Code-Voodoo by <a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">Matthias Kretschmann</a></p>
+			<p>Design- Icon- and Code-Voodoo by <a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">Matthias Kretschmann</a></p>
 		</div>
 		
 	</div><!-- end content -->
