@@ -80,15 +80,16 @@
 		</div>
 		
 		<div id="impressum">
-			<p class="left">
-				<em>hastuzeit</em>, die hallische Studierendenschaftszeitschrift, wird herausgegeben von der Studierendenschaft der Martin&shy;-Luther&shy;-Universit&auml;t Halle-Wittenberg.
-			</p>
+			<ul class="left">
+				<li class="info"><em>hastuzeit</em>, die hallische Studierendenschaftszeitschrift, wird herausgegeben von der Studierendenschaft der <acronym title="Martin-Luther-Universit&auml;t Halle-Wittenberg">MLU</acronym> Halle-Wittenberg.</li>
+				<li class="mediadata"><a href="media/Mediadaten_Nr3.pdf" title="hastuzeit Mediadaten als pdf">Mediadaten (pdf)</a> | <a href="media/Anzeigenauftrag.pdf" title="hastuzeit Anzeigenauftrag als pdf">Anzeigenauftrag (pdf)</a></li>
+			</ul>
 			<ul class="right">
 				<li class="url"><a href="http://www.hastuzeit.uni-halle.de" rel="me" title="hastuzeit - die hallische Studierendenschaftszeitschrift">hastuzeit.uni-halle.de</a></li>
 				<li class="email"><a href="mailto:hastuzeit@yahoo.de" title="Mail an hastuzeit senden">hastuzeit@yahoo.de</a></li>
-				<li></li>
 				<li class="address">c/o Studierendenrat der MLU</li>
-				<li>Universit&auml;tsplatz 7, 06108 Halle (Saale)</li>
+				<li>Universit&auml;tsplatz 7</li>
+				<li>06108 Halle (Saale)</li>
 			</ul>
 		</div>
 

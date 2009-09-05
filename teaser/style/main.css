@@ -140,6 +140,11 @@ em {
 	font-style: italic;
 }
 
+acronym {
+	border-bottom: 1px dotted #a6b3be;
+	cursor: help;
+}
+
 /* Links */
 a {
 	text-decoration: none;
@@ -232,34 +237,40 @@ a img:hover {
 	padding-top: 25px;
 	font-size: 0.9em;
 	color: #63717d;
-	line-height: 1.6em;
+	line-height: 1.4em;
 	float: left;
 	margin-bottom: 25px;
 }
 
-#impressum li, #impressum p {
+#impressum li {
 	padding-left: 25px;
 }
 
-.url, .email, .address, #impressum p, a.valid {
+.url, .email, .address, .info, a.valid, .mediadata {
 	background-image: url(images/SpriteMaster.png);
 	background-repeat: no-repeat;
 }
 
-#impressum p {
-	background-position: -613px -159px;
+.info {
+	background-position: -613px -160px;
+}
+
+.mediadata {
+	background-position: -568px -176px;
+	margin-top: 10px;
 }
 
 .url {
-	background-position: -632px -86px;
+	background-position: -632px -88px;
 }
 
 .email {
-	background-position: -632px -110px;
+	background-position: -632px -112px;
 }
 
 .address {
-	background-position: -632px -137px;
+	background-position: -632px -139px;
+	margin-top: 10px;
 }
 
 #footer p {
