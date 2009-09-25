@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Starkers
+ * @subpackage hastuzeit
  */
 
 get_header(); ?>

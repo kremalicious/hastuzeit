@@ -1,15 +1,21 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Starkers
+ * @subpackage hastuzeit
  */
 ?>
 
-		<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
-		<p><?php bloginfo('name'); ?> is proudly powered by <a href="http://wordpress.org/">WordPress <?php bloginfo('version'); ?></a> <a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a> <a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a>. <!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. --></p>
 		
+		<!-- All the funky scripts -->
+		<!--
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/scripts/plugins.js"></script>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/scripts/effects.js"></script>
+		-->
 		<?php wp_footer(); ?>
 
 	</body>
 
+<!--
+   Design, Icons and Front-End Development by Matthias Kretschmann | http://matthiaskretschmann.com
+-->
 </html>
