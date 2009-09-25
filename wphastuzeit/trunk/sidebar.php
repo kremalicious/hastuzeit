@@ -10,14 +10,15 @@
 		<ul>
 			<?php 	/* Widgetized sidebar, if you have the plugin installed. */
 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
-			<li>
+			<li class="widget">
 				<?php get_search_form(); ?>
 			</li>
 		</ul>
 		
 		<ul>
 			<?php wp_list_pages('title_li=<h4>Pages</h4>' ); ?>
-			<li><h4>Archives</h4>
+			<li class="widget">
+				<h4>Archives</h4>
 				<ul>
 				<?php wp_get_archives('type=monthly'); ?>
 				</ul>
@@ -28,7 +29,7 @@
 		<ul>
 			<?php /* If this is the frontpage */ if ( is_home() || is_page() ) { ?>
 
-				<li>
+				<li class="widget">
 					<h4>Meta</h4>
 					<ul>
 						<?php wp_register(); ?>

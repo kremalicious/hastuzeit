@@ -83,9 +83,13 @@
 				<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 				<p><?php bloginfo('description'); ?></p>
 				
-				<div id="navigation">
-				
-				</div>
+				<ul id="navigation">
+					<li>Artikel</li>
+					<li>Podcast</li>
+					<li>Heftarchiv</li>
+					<li>Redaktion</li>
+					<li>Mediadaten</li>
+				</ul>
 				
 			</div><!-- end #header -->
 			

@@ -27,11 +27,14 @@ html, body {
 
 #navigation {
 	border-top: 4px double #ff6600;
+	width: 100%;
+	float: left;
 }
 
 #content {
 	width: 590px;
 	float: left;
+	clear: both;
 }
 
 #sidebar {
@@ -45,6 +48,15 @@ html, body {
 
 div {
 	position: relative;
+}
+
+#navigation li {
+	float: left;
+	margin-right: 10px;
+}
+
+.widget {
+	margin: 20px 0;
 }
 
 /* @group WordPress Styles */
