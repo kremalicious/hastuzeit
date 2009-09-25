@@ -5,6 +5,12 @@
  */
 ?>
 
+			<div id="footer">
+
+			</div><!-- end #footer -->
+		
+		</div><!-- end #wrapper -->
+
 		
 		<!-- All the funky scripts -->
 		<!--

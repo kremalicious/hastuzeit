@@ -1,73 +1,93 @@
-
 /* TYPOGRAPHY */
 /* 
 ---------------------------------------- */
 
-h1, h2, h3, h5, h5, h6 { font-weight:bold } /* This helps to identify headings at the initial build stage, so I thought it'd be useful to have it */
-.alert { background:red; color:white } /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.
+body {
+	text-align: center;
+	font: 82.5%/1.7em Georgia, "Times New Roman", Times, serif;
+	color: #122D45;
+}
+
+#wrapper {
+	text-align: left;
+	font-size: 1em;
+}
+
+#content {
+	font-size: 1.1em;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 197%;
+}
 
 
+h2 {
+	font-size: 2em;
+	border-bottom: 2px solid #ff6600;
+	margin: 30px auto 10px;
+}
 
-/* Font stack options
+h3 {
+	font-size: 1.3em;
+	margin-bottom: 20px;
+}
 
-	The following represents a list of font stacks, as recommended by Nathan Ford in
-	http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
+h4 {
+	font-size: 152%; /* 20px */
+}
 
-	I've added inverted commas around the relevant family names to ensure compatibility.
-	p = balanced for paragraphs or body copy
-	t = balanced for headlines or titles
+h5 {
+	font-size: 136%; /* 18px */
+}
 
-	- - - -
+#sidebar h4 {
+	border-bottom: 2px solid #ff6600;
+}
 
-Arial, "Helvetica Neue", Helvetica, sans-serif - p, t
+/* Paragraph styles */
 
-Baskerville, "Times New Roman", Times, serif - p
-Baskerville, "Times, Times New Roman", serif - t
+p {
+	margin-bottom: 1em;
+}
 
-Cambria, Georgia, Times, "Times New Roman", serif - p, t
-"Century Gothic", "Apple Gothic", sans-serif - p, t
+em {
+	font-style: italic;
+}
 
-Consolas, "Lucida Console", Monaco, monospace - p, t
+acronym {
+	border-bottom: 1px dotted #a6b3be;
+	cursor: help;
+}
 
-"Copperplate Light", "Copperplate Gothic Light", serif - p, t
+/* Links */
 
-"Courier New", Courier, monospace - p, t
+a {
+	color: #ff6600;
+}
 
-"Franklin Gothic Medium", "Arial Narrow Bold", Arial, sans-serif - p, t
+a:hover {
+	color: #000;
+}
 
-Futura, "Century Gothic", "Apple Gothic", sans-serif - p, t
+a:active {
+	
+}
 
-Garamond, "Hoefler Text", "Times New Roman", Times, serif - p
-Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif - t
+a img,img {
+	display: block;
+	border: 3px solid #dadada;
+	-webkit-transition: border-color linear 0.2s;
+}
 
-Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif - p
-Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - t
+a img:hover {
+	border: 3px solid #ff6600;
+}
 
-Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif - p
-Georgia, Times, "Times New Roman", serif - t
-
-GillSans, Calibri, Trebuchet, sans-serif - p
-GillSans, Trebuchet, Calibri, sans-serif - t
-
-"Helvetica Neue", Arial, Helvetica, sans-serif - p
-Helvetica, "Helvetica Neue", Arial, sans-serif - t
-
-Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif - p, t
-
-"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - p, t
-
-Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif - p
-Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif - t
-
-Tahoma, Geneva, Verdana - p
-Tahoma, Verdana, Geneva - t
-
-Times, "Times New Roman", Georgia, serif - p, t
-
-Trebuchet, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif - p
-Trebuchet, Tahoma, Arial, sans-serif - t
-
-Verdana, Geneva, Tahoma, sans-serif - p
-Verdana, Tahoma, Geneva, sans-serif - t
-
-*/
+.alert { background:red; color:white }
