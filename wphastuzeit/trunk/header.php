@@ -83,15 +83,17 @@
 				<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 				<p><?php bloginfo('description'); ?></p>
 				
-				<ul id="navigation">
-					<li>Artikel</li>
-					<li>Podcast</li>
-					<li>Heftarchiv</li>
-					<li>Redaktion</li>
-					<li>Mediadaten</li>
-				</ul>
+				<?php get_search_form(); ?>
 				
 			</div><!-- end #header -->
+			
+			<ul id="navigation">
+				<li>Artikel</li>
+				<li>Podcast</li>
+				<li>Heftarchiv</li>
+				<li>Redaktion</li>
+				<li>Mediadaten</li>
+			</ul>
 			
 			<?php if ( is_home() ) { ?>
 				<div id="featured">

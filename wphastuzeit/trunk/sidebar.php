@@ -12,7 +12,7 @@
 			<?php 	/* Widgetized sidebar, if you have the plugin installed. */
 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 			<li class="widget">
-				<?php get_search_form(); ?>
+				
 			</li>
 		</ul>
 		

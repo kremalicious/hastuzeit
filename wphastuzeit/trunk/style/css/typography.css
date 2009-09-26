@@ -19,12 +19,13 @@ body {
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
-	font-weight: bold;
+	font-weight: normal;
 	font-family: "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-style: normal;
 }
 
 h1, h2 {
-	font-size: 2em;
+	font-size: 2.3em;
 	border-bottom: 2px solid #ff6600;
 	margin: 30px auto 10px;
 }
@@ -49,31 +50,6 @@ h5 {
 
 #sidebar h4 {
 	
-}
-
-/* Paragraph styles */
-
-p {
-	margin-bottom: 1em;
-}
-
-em {
-	font-style: italic;
-}
-
-acronym {
-	border-bottom: 1px dotted #a6b3be;
-	cursor: help;
-}
-
-.post ul {
-	margin-left: 30px;
-	margin-bottom: 1em;
-}
-
-.post ul li {
-	list-style-position: outside;
-	list-style-type: disc;
 }
 
 /* Links */
@@ -101,20 +77,29 @@ a img:hover {
 	border: 3px solid #ff6600;
 }
 
-#footer p {
-	color: #8f9ba5;
-	margin-bottom: 0;
-	font-size: 0.9em;
-	line-height: 1.4em;
+/* Paragraph styles */
+
+p {
+	margin-bottom: 1em;
 }
 
-#footer a {
-	color: #8f9ba5;
-	border: none;
+em {
+	font-style: italic;
 }
 
-#footer a:hover {
-	color: #ff6600;
+acronym {
+	border-bottom: 1px dotted #a6b3be;
+	cursor: help;
+}
+
+.post ul {
+	margin-left: 30px;
+	margin-bottom: 1em;
+}
+
+.post ul li {
+	list-style-position: outside;
+	list-style-type: disc;
 }
 
 /* Article Styling */
@@ -149,6 +134,42 @@ a img:hover {
 .author-info {
 	font-size: 0.95em;
 	color: #788490;
+}
+
+/* Form Styles */
+
+input, textarea {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+input.inactive {
+	color: #bebebe;
+}
+
+/* Footer */
+
+#footer, #copyright {
+	color: #f7f7f7;
+}
+
+#footer {
+	text-align: left;
+}
+
+#footer p, #copyright p {
+	margin-bottom: 0;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+
+#copyright, #copyright a {
+	color: #8f9ba5;
+	border: none;
+}
+
+#footer a:hover, #copyright a:hover {
+	color: #ff6600;
 }
 
 .alert { background:red; color:white }

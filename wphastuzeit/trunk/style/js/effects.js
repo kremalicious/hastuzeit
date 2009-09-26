@@ -8,6 +8,7 @@
 //On with the real fun
 $(function () { //DOMdiDOM
 
+	label2value();
 
 });//don't delete me or the DOM will collaps
 

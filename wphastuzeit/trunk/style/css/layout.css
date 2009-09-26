@@ -14,6 +14,10 @@ html, body {
 	height: 100%;
 }
 
+div {
+	position: relative;
+}
+
 #wrapper, #footer {
 	width: 920px;
 	margin: 20px auto 0;
@@ -23,7 +27,8 @@ html, body {
 }
 
 #header {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	background-color: #76aed1;
 }
 
 #navigation {
@@ -52,14 +57,43 @@ html, body {
 	float: right;
 }
 
-#footer {
+#footer, #copyright {
 	clear: both;
 	background: none;
 	border: none;
+	margin-bottom: 20px;
 }
 
-div {
-	position: relative;
+#header h1 {
+	border: none;
+}
+
+#header h1 a {
+	display: block;
+	background: url(../images/hastuzeit-logo.png) no-repeat 20px center;
+	min-height: 55px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#header h1, #header p {
+	text-indent: -99999999px;
+	margin: 0;
+}
+
+#header p {
+	position: absolute;
+}
+
+#header form {
+	position: absolute;
+	right: 20px;
+	top: 40px;
+	width: 270px;
+}
+
+#header input[type=text] {
+	width: 190px;
 }
 
 /* Navigation */
@@ -104,8 +138,59 @@ div {
 	margin: 20px 0;
 }
 
-* {
+/* Form Styles */
+
+label {
 	
+}
+
+input, textarea {
+	border: none;
+	padding: 5px;
+}
+
+textarea {
+	max-width: 900px;
+}
+
+input[type=submit] {
+	background-color: #ff6600;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+}
+
+/* Search */
+
+#s {
+	
+}
+
+/* Footer */
+
+#footer .column {
+	position: absolute;
+	top: 0;
+	height: 100%;
+    width: 233px;
+    background: #5e5e5e;
+    float: left;
+}
+
+#footer #column1 {
+    left: 0;
+}
+
+#footer #column2 {
+    left: 243px;
+}
+
+#footer #column3 {
+    left: 486px;
+}
+
+#footer #column4 {
+    left: 729px;
 }
 
 /* @group WordPress Styles */
