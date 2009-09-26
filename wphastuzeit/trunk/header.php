@@ -93,4 +93,14 @@
 				
 			</div><!-- end #header -->
 			
+			<?php if ( is_home() ) { ?>
+				<div id="featured">
+				
+				</div>
+				<div id="ausgabe">
+				
+				</div>
+			<?php } ?>
+			
 			<div id="content">
+			
