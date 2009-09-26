@@ -12,9 +12,16 @@ get_header(); ?>
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			
+			<!-- wenn custom field unterueberschrift dann anzeigen -->
+			
 			<p class="date"><?php the_time('F') ?><span class="year"><?php the_time('Y') ?></span></p>
 			<p class="meta"> <span class="category-link"><?php the_category(' ') ?></span> <?php the_author_posts_link(); ?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+			
+			<!-- wenn auszug angegeben diesen benutzen, ansonsten content und more tag -->
+						
 			<?php the_content('Read the rest of this entry &raquo;'); ?>
+			
 			<p><?php edit_post_link('Edit', '', ' | '); ?>  </p>
 		</div>
 
