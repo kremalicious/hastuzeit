@@ -32,22 +32,23 @@ get_header();
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 			
-			<!-- wenn custom field unterueberschrift dann anzeigen -->
+			<!-- wenn custom field unterueberschrift vorhanden, dann anzeigen -->
+			<?php 
+				$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
+      			if ($unterueber != "")
+          			echo "<h2 class=\"unterueber\">$unterueber</h2>";
+			?>
 			
 			<p class="date"><?php the_time('F') ?><span class="year"><?php the_time('Y') ?></span></p>
-			<p class="meta"> <span class="category-link"><?php the_category(' ') ?></span> <?php the_author_posts_link(); ?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+			<p class="meta"> <span class="category-link"><?php the_category(' ') ?></span> <?php the_author_posts_link(); ?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '', ''); ?></p>
 			
+			<!-- Nutze exzerpt, wenn angegeben, ansonsten the_content -->
 			<?php if (!empty($post->post_excerpt)) : ?>
 				<?php the_excerpt(); ?>
-				<a class="more-link" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read the rest of this entry &raquo;</a>
+				<a class="more-link" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read the rest of this entry &raquo;</a>	
 			<?php else : ?>
 				<?php the_content('Read the rest of this entry &raquo;'); ?>
 			<?php endif; ?>
-
-			<p><?php edit_post_link('Edit', '', ' | '); ?>  </p>
-		</div>
-
-		<?php endwhile; ?>
 
 		<?php next_posts_link('&laquo; Older Entries') ?> | <?php previous_posts_link('Newer Entries &raquo;') ?>
 
