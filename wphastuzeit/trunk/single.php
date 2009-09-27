@@ -16,6 +16,10 @@ get_header();
 			<p class="date"><?php the_time('F') ?><span class="year"><?php the_time('Y') ?></span></p>
 			<p class="meta"> <span class="category-link"><?php the_category(' ') ?></span> <?php the_author_posts_link(); ?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
 			
+			<?php if (!empty($post->post_excerpt)) : ?>
+				<?php the_excerpt(); ?>
+			<?php endif; ?>
+			
 			<?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 			

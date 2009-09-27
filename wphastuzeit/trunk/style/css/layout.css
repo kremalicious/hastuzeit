@@ -112,7 +112,7 @@ div {
 .date {
 	position: absolute;
 	left: -65px;
-	top: 15px;
+	top: 0;
 	background-color: #f7f7f7;
 	padding: 5px;
 	width: 40px;
