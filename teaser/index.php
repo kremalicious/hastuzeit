@@ -101,6 +101,16 @@
 <script type="text/javascript" src="style/js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="style/js/effects.js"></script>
 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10899823-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
 </body>
 <!--
    Design, Icons and Front-End Development by Matthias Kretschmann | http://matthiaskretschmann.com
