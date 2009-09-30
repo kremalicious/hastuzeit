@@ -29,7 +29,7 @@ $(function () {
 	$.countdown.setDefaults($.countdown.regional['de']);
 	
 	var launch = new Date(); 
-		launch = new Date(launch.getFullYear(), 9, 1);
+		launch = new Date(launch.getFullYear(), 9, 5);
 	$('#defaultCountdown').countdown({until: launch});
 	
 	//Open pdf links and external links in new window

@@ -45,7 +45,7 @@
 		<div id="main">
 			<div id="umbau">
 				<h3>Wir bauen um</h3>
-				<p>Am 1.10.2009 startet unsere neue Web Site. Bis dahin ist die alte Seite nicht zu erreichen.</p>
+				<p>Am 5.10.2009 startet unsere neue Web Site. Bis dahin ist die alte Seite nicht zu erreichen.</p>
 				<p>Wir bitten um Verst&auml;ndnis und hoffen, euch hier auf unserer neuen Seite begr&uuml;&szlig;en zu k&ouml;nnen.</p>
 			</div>
 			
