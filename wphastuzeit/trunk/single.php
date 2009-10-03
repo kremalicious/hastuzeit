@@ -13,8 +13,17 @@ get_header();
 			
 			<h1><?php the_title(); ?></h1>
 			
+			<!-- wenn custom field unterueberschrift vorhanden, dann anzeigen -->
+			<?php 
+				$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
+      			if ($unterueber != "")
+          			echo "<h2 class=\"unterueber\">$unterueber</h2>";
+			?>
+			
+			<p class="meta"> <span class="category-link"><?php the_category(' ') ?></span> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '', ''); ?></p>
+			
+			<p class="author">von <?php the_author_posts_link(); ?></p>
 			<p class="date"><?php the_time('F') ?><span class="year"><?php the_time('Y') ?></span></p>
-			<p class="meta"> <span class="category-link"><?php the_category(' ') ?></span> <?php the_author_posts_link(); ?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '', ''); ?></p>
 			
 			<?php if (!empty($post->post_excerpt)) : ?>
 				<?php the_excerpt(); ?>

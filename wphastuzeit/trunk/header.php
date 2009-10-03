@@ -72,6 +72,7 @@
 		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 		
 		<?php wp_head(); ?>
+
 	</head>
 	
 	<body <?php body_class(); ?>>
@@ -83,21 +84,22 @@
 				<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 				<p><?php bloginfo('description'); ?></p>
 				
-				<?php get_search_form(); ?>
-				
 			</div><!-- end #header -->
 			
 			<ul id="navigation">
-				<li>Artikel</li>
-				<li>Podcast</li>
+				<li><a href="<?php echo get_option('home'); ?>/" title="">Artikel</a>
+					<ul>
+						<?php wp_list_categories('child_of=6&title_li=&hide_empty=0'); ?>
+					</ul>
+				</li>
+				<!-- <li>Podcast</li> -->
 				<li>Heftarchiv</li>
-				<li>Redaktion</li>
-				<li>Mediadaten</li>
+				<?php wp_list_pages('title_li='); ?>
 			</ul>
 			
 			<?php if ( is_home() ) { ?>
 				<div id="featured">
-				
+					<div id="zipfel"></div>
 				</div>
 				<div id="ausgabe">
 				

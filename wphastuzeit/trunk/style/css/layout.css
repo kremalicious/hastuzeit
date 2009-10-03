@@ -31,21 +31,6 @@ div {
 	background-color: #76aed1;
 }
 
-#navigation {
-	border-top: 4px double #ff6600;
-	width: 100%;
-	float: left;
-	margin-bottom: 30px;
-}
-
-#featured {
-	
-}
-
-#ausgabe {
-	
-}
-
 #content {
 	width: 590px;
 	float: left;
@@ -55,6 +40,7 @@ div {
 #sidebar {
 	width: 290px;
 	float: right;
+	margin-top: 30px;
 }
 
 #footer, #copyright {
@@ -85,28 +71,66 @@ div {
 	position: absolute;
 }
 
-#header form {
-	position: absolute;
-	right: 20px;
-	top: 40px;
-	width: 270px;
-}
-
-#header input[type=text] {
-	width: 190px;
-}
-
 /* Navigation */
+
+#navigation {
+	border-top: 4px double #ff6600;
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+	padding: 10px 0;
+}
 
 #navigation li {
 	float: left;
-	margin-right: 10px;
+	margin-right: 30px;
+}
+
+#navigation li ul {
+	position: absolute;
+	padding-top: 5px;
+	margin-top: 10px;
+	border-top: 1px solid #ff6600;
+	display: block;
+	width: 920px;
+	float: left;
+}
+
+/* Featured */
+
+#featured {
+	min-height: 260px;
+	width: 670px;
+	border: 3px solid #dadada;
+	clear: both;
+	float: left;
+	box-shadow: 0px 5px 5px #7f7f7f;
+	-webkit-box-shadow: 0px 5px 5px #7f7f7f;
+	-moz-box-shadow: 0px 5px 5px #7f7f7f;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=5, offY=5, positive=true);
+	margin: 30px 0 30px -52px;
+	z-index: 3;
+	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom;
+}
+
+#zipfel {
+	background: url(../images/zipfel.png) no-repeat left top;
+	width: 31px;
+	height: 22px;
+	position: absolute;
+	left: -3px;
+	bottom: -25px;
+	z-index: 2;
+}
+
+#ausgabe {
+	
 }
 
 /* Article Styling */
 
 .post {
-	margin-bottom: 50px;
+	margin: 30px 0 40px;
 }
 
 .date {
@@ -125,8 +149,11 @@ div {
 .meta {
 	border-bottom: 1px solid #ff6600;
 	border-top: 1px solid #ff6600;
-	padding-bottom: 5px;
-	padding-top: 5px;
+	padding: 2px 0;
+}
+
+.author {
+	margin-top: 20px;
 }
 
 .author-info {
@@ -136,8 +163,34 @@ div {
 
 /* Sidebar */
 
-.widget {
-	margin: 20px 0;
+#sidebar .column {
+	width: 46%;
+}
+
+#sidebar-left {
+	float: left;
+}
+
+#sidebar-right {
+	float: right;
+}
+
+#sidebar li.widget {
+	margin: 30px 0;
+}
+
+#sidebar form {
+	
+}
+
+#sidebar input[type=text] {
+	width: 200px;
+	margin-right: 5px;
+	border: 1px solid #dadada;
+}
+
+#sidebar label {
+	display: none;
 }
 
 /* Form Styles */

@@ -10,9 +10,9 @@ $(function () { //DOMdiDOM
 
 	label2value();
 
-});//don't delete me or the DOM will collaps
+}); //don't delete me or the DOM will collaps
 
 //Finally load all this after the content has loaded
-$(window).load(function() {
+// $(window).load(function() {
 	
-});
+// });

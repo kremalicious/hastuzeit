@@ -14,11 +14,31 @@ get_header(); ?>
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<div <?php post_class() ?>>
-				<h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-				<p><?php the_time('l, F jS, Y') ?></p>
-				<p><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-			</div>
+			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+
+			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			
+			<!-- wenn custom field unterueberschrift vorhanden, dann anzeigen -->
+			<?php 
+				$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
+      			if ($unterueber != "")
+          			echo "<h2 class=\"unterueber\">$unterueber</h2>";
+			?>
+			
+			<p class="meta"> <span class="category-link"><?php the_category(' ') ?></span> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '', ''); ?></p>
+			
+			<p class="author">von <?php the_author_posts_link(); ?></p>
+			<p class="date"><?php the_time('F') ?><span class="year"><?php the_time('Y') ?></span></p>
+						
+			<!-- Nutze exzerpt, wenn angegeben, ansonsten the_content -->
+			<?php if (!empty($post->post_excerpt)) : ?>
+				<?php the_excerpt(); ?>
+				<p><a class="more-link" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read the rest of this entry &raquo;</a></p>
+			<?php else : ?>
+				<?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
+			<?php endif; ?>
+			
+		</div>
 
 		<?php endwhile; ?>
 
