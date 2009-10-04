@@ -78,6 +78,7 @@
 	<body <?php body_class(); ?>>
 		
 		<div id="wrapper">
+			<div id="beta"></div>
 		
 			<div id="header">
 			
@@ -87,24 +88,15 @@
 			</div><!-- end #header -->
 			
 			<ul id="navigation">
-				<li><a href="<?php echo get_option('home'); ?>/" title="">Artikel</a>
+				<li><a href="<?php echo get_option('home'); ?>/" title="">Texte</a>
 					<ul>
-						<?php wp_list_categories('child_of=6&title_li=&hide_empty=0'); ?>
+						<?php wp_list_categories('child_of=6&title_li=&hide_empty=0'); ?> <?php wp_list_categories('include=38&title_li=&hide_empty=0'); ?>
 					</ul>
 				</li>
 				<!-- <li>Podcast</li> -->
-				<li>Heftarchiv</li>
-				<?php wp_list_pages('title_li='); ?>
+				<li>Hefte</li>
+				<?php wp_list_pages('title_li=&exclude=83,110'); ?>
 			</ul>
-			
-			<?php if ( is_home() ) { ?>
-				<div id="featured">
-					<div id="zipfel"></div>
-				</div>
-				<div id="ausgabe">
-				
-				</div>
-			<?php } ?>
 			
 			<div id="content">
 			

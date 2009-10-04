@@ -11,34 +11,19 @@
 		
 		<div id="footer">
 		
-			<div id="column1" class="column">
-				<ul id="navigation-footer">
-					<li>Artikel</li>
-					<li>Podcast</li>
-					<li>Heftarchiv</li>
-					<li>Redaktion</li>
-					<li>Mediadaten</li>
-				</ul>
-			</div>
+			<ul>
+				<li><a href="<?php echo get_option('home'); ?>/" title="">Texte</a></li>
+				<li>Hefte</li>
+				<?php wp_list_pages('title_li='); ?>
 			
-			<div id="column2" class="column">
-			
-			</div>
-			
-			<div id="column3" class="column">
-			
-			</div>
-			
-			<div id="column4" class="column">
-			
-			</div>
+			</ul>
 
 		</div><!-- end #footer -->
 		
 		<div id="copyright">
 			<p>&copy; <?php 
 						$year=date("Y");
-						echo "2009 - $year";							
+						echo "2005 - $year";							
 						?> hastuzeit - Alle Rechte vorbehalten</p>
 			<p>design.icon.code.vooodo.<a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">matthias.kretschmann</a></p>
 			<p><a class="valid" href="http://validator.w3.org/check?uri=referer" title="Valid XHTML 1.0">xhtml 1.0</a></p>
