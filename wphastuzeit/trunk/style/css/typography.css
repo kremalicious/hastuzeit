@@ -130,6 +130,10 @@ acronym {
 	font-size: 0.8em;
 }
 
+#navigation a {
+	
+}
+
 /* Article Styling */
 
 .unterueber {
@@ -166,9 +170,10 @@ acronym {
 	background-color: #eaeaea;
 	padding: 2px 5px;
 	text-shadow: none;
+	border-bottom: 1px solid #fff;
 }
 
-.category-link a:hover {
+.category-link a:hover, input[type=submit]:hover {
 	color: #fff;
 	background-color: #ff6600;
 }

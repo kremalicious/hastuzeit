@@ -98,7 +98,6 @@ div {
 	width: 100%;
 	float: left;
 	margin-bottom: 30px;
-	padding: 10px 0;
 }
 
 #navigation li {
@@ -108,12 +107,15 @@ div {
 
 #navigation li ul {
 	position: absolute;
-	padding-top: 5px;
-	margin-top: 10px;
 	border-top: 1px solid #ff6600;
 	display: block;
 	width: 920px;
 	float: left;
+}
+
+#navigation a {
+	padding: 10px;
+	display: block;
 }
 
 /* Featured */
@@ -251,10 +253,11 @@ textarea {
 }
 
 input[type=submit] {
-	background-color: #ff6600;
-	border: none;
+	background-color: #eaeaea;
+	border-color: #ccc;
 	padding: 5px;
 	cursor: pointer;
+	color: #122D45;
 }
 
 /* Search */
