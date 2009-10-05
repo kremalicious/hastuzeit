@@ -45,10 +45,16 @@ div {
 	background-color: #CC3399;
 }
 
+#content {
+	float: left;
+	width: 100%;
+}
+
 #main {
 	width: 590px;
 	float: left;
 	clear: both;
+	margin-top: 10px;
 }
 
 #sidebar {
@@ -114,7 +120,7 @@ div {
 
 #featured {
 	min-height: 260px;
-	width: 670px;
+	width: 635px;
 	border: 3px solid #dadada;
 	clear: both;
 	float: left;
@@ -144,7 +150,31 @@ div {
 }
 
 #ausgabe {
-	
+	float: left;
+	width: 290px;
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+#ausgabe .post {
+	margin: 0;
+	width: 100%;
+}
+
+#ausgabe img {
+	margin: 0;
+}
+
+#ausgabe h3 {
+	margin-top: 0;
+	display: block;
+	margin-bottom: 28px;
+}
+
+#ausgabe h4 {
+	float: right;
+	width: 60%;
+	margin-top: 0;
 }
 
 /* Article Styling */
@@ -155,7 +185,8 @@ div {
 	float: left;
 }
 
-main .post {
+#main .post {
+	width: 100%;
 }
 
 .meta {
@@ -230,6 +261,12 @@ input[type=submit] {
 
 #s {
 	
+}
+
+/* Comments */
+
+#respond {
+	clear: both;
 }
 
 /* Footer */

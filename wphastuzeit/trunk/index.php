@@ -46,6 +46,22 @@ get_header(); ?>
 				
 				<div id="ausgabe">
 				
+					<!-- The Paper Loop -->
+					
+					<?php $my_query = new WP_Query('category_name=Heftarchiv&showposts=1');
+					  while ($my_query->have_posts()) : $my_query->the_post();
+					  $do_not_duplicate[] = $post->ID ?>
+					  
+					  	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					  	
+					  		<h3>Frische Ausgabe</h3>
+					  									
+							<?php the_content('Mehr, mehr, mehr'); ?>
+							
+						</div>
+					  
+					  <?php endwhile; ?>
+				
 				</div>
 			<?php } ?>
 			

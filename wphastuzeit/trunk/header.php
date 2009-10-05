@@ -94,7 +94,7 @@
 					</ul>
 				</li>
 				<!-- <li>Podcast</li> -->
-				<li>Hefte</li>
+				<li><a href="/rubrik/heftarchiv/" title="hastuzeit als pdf">Hefte</a></li>
 				<?php wp_list_pages('title_li=&exclude=83,110'); ?>
 			</ul>
 			
