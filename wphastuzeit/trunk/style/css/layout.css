@@ -166,9 +166,6 @@ main .post {
 	clear: both;
 }
 
-.author {
-}
-
 .author-info {
 	padding: 10px;
 	border: 1px dotted #788490;
@@ -214,12 +211,12 @@ label {
 }
 
 input, textarea {
-	border: none;
 	padding: 5px;
+	border: 1px solid #eaeaea;
 }
 
 textarea {
-	max-width: 900px;
+	max-width: 590px;
 }
 
 input[type=submit] {

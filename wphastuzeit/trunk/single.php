@@ -24,7 +24,10 @@ get_header();
           			echo "<h2 class=\"unterueber\">$unterueber</h2>";
 			?>
 			
-			<p class="author">von <?php the_author_posts_link(); ?></p>
+			<p class="author">von <?php if(function_exists('coauthors_posts_links'))
+							    coauthors_posts_links();
+							else
+							    the_author_posts_link(); ?></p>
 						
 			<!-- Nutze exzerpt, wenn angegeben, ansonsten the_content -->
 			<?php if (!empty($post->post_excerpt)) : ?>
@@ -35,10 +38,6 @@ get_header();
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 			
 			<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
-			
-			<p class="author-info">
-				<?php the_author(); ?>
-			</p>
 			
 		</div>
 		

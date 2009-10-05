@@ -45,7 +45,7 @@
 
 <div id="respond">
 
-	<h3><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+	<h3><?php comment_form_title( 'Sag Deine Meinung', 'Sag Deine Meinung zu %s' ); ?></h3>
 
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 
@@ -62,21 +62,19 @@
 		<?php else : ?>
 
 		<p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
-		<label for="author"><small>Name <?php if ($req) echo "(required)"; ?></small></label></p>
+		<label for="author"><small>Name <?php if ($req) echo "(ben&ouml;tigt)"; ?></small></label></p>
 
 		<p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-		<label for="email"><small>Mail (will not be published) <?php if ($req) echo "(required)"; ?></small></label></p>
+		<label for="email"><small>Mail (bleibt geheim) <?php if ($req) echo "(ben&ouml;tigt)"; ?></small></label></p>
 
 		<p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
 		<label for="url"><small>Website</small></label></p>
 
 		<?php endif; ?>
 
-		<!--<p><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->
-
 		<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
 
-		<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+		<input name="submit" type="submit" id="submit" tabindex="5" value="Kommentar absenden" />
 		<?php comment_id_fields(); ?>
 		<?php do_action('comment_form', $post->ID); ?>
 
