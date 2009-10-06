@@ -48,6 +48,7 @@ div {
 #content {
 	float: left;
 	width: 100%;
+	margin-top: 30px;
 }
 
 #main {
@@ -95,27 +96,49 @@ div {
 
 #navigation {
 	border-top: 4px double #ff6600;
+	border-bottom: 1px solid #ff6600;
 	width: 100%;
 	float: left;
-	margin-bottom: 30px;
 }
 
 #navigation li {
 	float: left;
-	margin-right: 50px;
+}
+
+#navigation li#texte {
+	
 }
 
 #navigation li ul {
 	position: absolute;
-	border-top: 1px solid #ff6600;
-	display: block;
+	display: none;
 	width: 920px;
 	float: left;
 }
 
-#navigation a {
-	padding: 10px;
+#navigation li#texte:hover > ul,
+#navigation .current_page_item > ul  {
 	display: block;
+}
+
+#navigation a {
+	min-width: 80px;
+	padding: 0 10px;
+	height: 40px;
+	margin-right: 10px;
+	display: block;
+	line-height: 2.4em;
+	text-align: center;
+}
+
+#navigation a:hover, .current_page_item a {
+	color: #000;
+	background: #e0e2e5 url(../images/menu-zipfel.png) no-repeat center bottom;
+	
+}
+
+#navigation ul a {
+	
 }
 
 /* Featured */
@@ -261,10 +284,6 @@ input[type=submit] {
 }
 
 /* Search */
-
-#s {
-	
-}
 
 /* Comments */
 

@@ -88,7 +88,7 @@
 			</div><!-- end #header -->
 			
 			<ul id="navigation">
-				<li><a href="<?php echo get_option('home'); ?>/" title="">Texte</a>
+				<li id="texte" <?php if ( is_home() || is_single() || is_archive() ) echo 'class="current_page_item"' ?>><a href="<?php echo get_option('home'); ?>/" title="">Texte</a>
 					<ul>
 						<?php wp_list_categories('child_of=6&title_li=&hide_empty=0'); ?> <?php wp_list_categories('include=38&title_li=&hide_empty=0'); ?>
 					</ul>
