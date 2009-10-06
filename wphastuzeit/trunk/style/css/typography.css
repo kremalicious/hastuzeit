@@ -130,8 +130,8 @@ acronym {
 	font-size: 0.8em;
 }
 
-#navigation a {
-	
+#navigation .cat-item a {
+	color: #ff6600;
 }
 
 /* Article Styling */

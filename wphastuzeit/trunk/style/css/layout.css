@@ -114,6 +114,7 @@ div {
 	display: none;
 	width: 920px;
 	float: left;
+	margin-top: 2px;
 }
 
 #navigation li#texte:hover > ul,
@@ -138,7 +139,13 @@ div {
 }
 
 #navigation ul a {
-	
+	background: none;
+	height: 25px;
+	line-height: 2.2em;
+}
+
+#navigation ul a:hover {
+	background-image: none;
 }
 
 /* Featured */
