@@ -1,6 +1,12 @@
-/* TYPOGRAPHY */
-/* 
----------------------------------------- */
+/* TYPOGRAPHY
+=================================================
+Document		: Typography CSS Document hastuzeit.de
+Version			: 1.0.0
+Client			: hastuzeit
+Author			: Matthias Kretschmann
+Author Contact	: krema@jpberlin.de
+Author WebSite	: matthiaskretschmann.com
+*/
 
 body {
 	text-align: center;
@@ -22,16 +28,23 @@ body {
 }
 
 /* Headings */
+
+@font-face {
+	font-family: "Aller Bold";
+	src: url("../fonts/Aller_Bd.ttf") format("truetype");
+	font-weight: bold;
+}
+
 h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
-	font-family: "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	font-style: normal;
 }
 
 h1, h2 {
 	font-size: 2em;
 	margin: 10px auto;
-	line-height: 1em;
+	line-height: 1.1em;
 	clear: both;
 }
 
@@ -76,13 +89,14 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
 	color: #000;
-	background-color: rgba(255,102,0,0.05);
+	background-color: #e0e2e5;
 }
 
 a:active {
-	
+	background-color: #122D45;
+	color: #fff;
 }
 
 a img,img {
@@ -136,7 +150,7 @@ acronym {
 
 #navigation .current-cat a {
 	color: #000;
-	background: #e0e2e5 url(../images/menu-zipfel.png) no-repeat center bottom;
+	background: #e0e2e5;
 }
 
 /* Article Styling */
@@ -162,7 +176,7 @@ acronym {
 	font-size: 0.8em;
 }
 
-.meta span, .category-link a {
+.meta span {
 	margin-right: 20px;
 }
 
@@ -172,15 +186,22 @@ acronym {
 
 .category-link a, .post-edit-link {
 	color: #122D45;
-	background-color: #eaeaea;
-	padding: 2px 5px;
+	background-color: #e0e2e5;
+	padding: 1px 5px;
 	text-shadow: none;
-	border-bottom: 1px solid #fff;
+	border: 1px solid #ccc;
+	margin-right: 20px;
 }
 
-.category-link a:hover, input[type=submit]:hover {
+.category-link a:hover, input[type=submit]:hover, .comment-link a:hover, .next-links a:hover {
 	color: #fff;
 	background-color: #ff6600;
+	text-shadow: #666 0 1px 0;
+}
+
+.category-link a:active, input[type=submit]:active, .comment-link a:active, .next-links a:active {
+	background-color: #122D45;
+	color: #fff;
 }
 
 .author-info {
@@ -194,9 +215,19 @@ acronym {
 	padding-right: 15px;
 }
 
-.comment-link {
+.meta span.comment-link {
+	margin-right: 0;
+}
+
+.comment-link a {
 	background: url(../images/icon-comment.png) no-repeat left center;
 	padding-left: 18px;
+	display: block;
+	padding-right: 10px;
+}
+
+.next-links {
+	line-height: 1.3em;
 }
 
 /* Sidebar */
@@ -222,6 +253,12 @@ input.inactive {
 	margin: 5px 0;
 }
 
+/* Comments */
+
+#respond input, #respond textarea {
+	font-size: 0.9em;
+}
+
 /* Footer */
 
 #footer, #copyright {
@@ -243,7 +280,7 @@ input.inactive {
 	border: none;
 }
 
-#footer a:hover, #copyright a:hover {
+#copyright a:hover {
 	color: #ff6600;
 }
 

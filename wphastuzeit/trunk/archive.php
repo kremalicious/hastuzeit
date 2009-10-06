@@ -61,7 +61,10 @@ get_header();
 	
 	<?php endwhile; ?>
 
-		<?php next_posts_link('&laquo; &Auml;ltere Artikel') ?> | <?php previous_posts_link('Neuere Artikel &raquo;') ?>
+		<div class="next-links">
+			<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
+			<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
+		</div>
 
 	<?php else :
 

@@ -41,7 +41,10 @@ get_header();
 			
 		</div>
 		
-		<?php previous_post_link('&laquo; %link') ?> | <?php next_post_link('%link &raquo;') ?>
+		<div class="next-links">
+			<div class="alignleft"><?php previous_post_link('%link') ?></div>
+			<div class="alignright"><?php next_post_link('%link') ?></div>
+		</div>
 
 	<?php comments_template(); ?>
 

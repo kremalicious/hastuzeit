@@ -1,4 +1,4 @@
-/* DOCUMENT INFORMATION
+/* LAYOUT
 =================================================
 Document		: Layout CSS Document hastuzeit.de
 Version			: 1.0.0
@@ -28,16 +28,17 @@ div {
 	z-index: 99;
 }
 
-#wrapper {
-	-webkit-box-shadow: 0 5px 20px #000
-}
-
 #wrapper, #footer {
 	width: 920px;
 	margin: 20px auto 0;
 	background-color: #f7f7f7;
 	padding: 20px;
 	border: 1px solid #fff;
+}
+
+#wrapper {
+	-webkit-box-shadow: 0 5px 20px #000;
+	padding-bottom: 50px;
 }
 
 #header {
@@ -233,6 +234,41 @@ div {
 	border: 1px dotted #788490;
 }
 
+.next-links {
+	clear: both;
+	margin: 10px 0;
+	overflow: auto;
+	border-top: 4px double #ff6600;
+	padding-top: 10px;
+}
+
+.next-links .alignleft, .next-links .alignright {
+	max-width: 49%;
+}
+
+.next-links a {
+	display: block;
+	color: #122D45;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+.next-links .alignleft a {
+	background: #e0e2e5 url(../images/more-link-left.png) no-repeat 5px center;
+	padding-left: 25px;
+}
+
+.next-links .alignright a {
+	background: #e0e2e5 url(../images/more-link.png) no-repeat right center;
+	padding-right: 20px;
+}
+
+.next-links a:hover {
+	color: #fff;
+	background-color: #ff6600;
+	text-shadow: #666 0 1px 0;
+}
+
 /* Sidebar */
 
 #sidebar .column {
@@ -278,7 +314,7 @@ input, textarea {
 }
 
 textarea {
-	max-width: 590px;
+	max-width: 580px;
 }
 
 input[type=submit] {
@@ -295,12 +331,39 @@ input[type=submit] {
 
 #respond {
 	clear: both;
+	margin-top: 15px;
+}
+
+#respond, #respond form {
+	overflow: auto;
+}
+
+#respond form p {
+	float: right;
+	clear: right;
+}
+
+#respond form textarea {
+	float: left;
+	width: 360px;
+	margin-top: -85px;
+}
+
+#respond input[type=submit] {
+	margin-top: 1em;
+	clear: both;
+	float: left;
 }
 
 /* Footer */
 
+#footer {
+	padding: 5px;
+}
+
 #footer ul {
 	margin-left: 240px;
+	overflow: auto;
 }
 
 #footer li {
@@ -318,7 +381,7 @@ img.alignleft {
 	margin: 5px 20px 20px 0;
 }
 .alignright { float:right }
-.wp-caption { border:1px solid #666; text-align:center; background:#ccc; padding:10px; margin:10px }
+.wp-caption { border:1px solid #666; text-align:center; background:#e0e2e5; padding:10px; margin:10px }
 
 /* @end */
 br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
