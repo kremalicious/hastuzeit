@@ -93,8 +93,6 @@
 						<?php wp_list_categories('child_of=6&title_li=&hide_empty=0'); ?> <?php wp_list_categories('include=38&title_li=&hide_empty=0'); ?>
 					</ul>
 				</li>
-				<!-- <li>Podcast</li> -->
-				<li><a href="/heftarchiv/" title="hastuzeit als pdf">Hefte</a></li>
 				<?php wp_list_pages('title_li=&exclude=83,110'); ?>
 			</ul>
 			

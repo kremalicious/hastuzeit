@@ -62,7 +62,7 @@ div {
 #sidebar {
 	width: 290px;
 	float: right;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 #footer, #copyright {
@@ -213,7 +213,7 @@ div {
 /* Article Styling */
 
 .post {
-	margin: 20px 0;
+	margin: 0 0 40px;
 	clear: both;
 	float: left;
 }
@@ -264,10 +264,46 @@ div {
 	padding-right: 20px;
 }
 
-.next-links a:hover {
+.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover {
 	color: #fff;
 	background-color: #ff6600;
 	text-shadow: #666 0 1px 0;
+}
+
+/* Heftarchiv */
+
+.page-template-page-heftarchiv-php #main {
+	overflow: auto;
+	
+}
+
+.page-template-page-heftarchiv-php #main .post {
+	width: 43%;
+	margin: 10px;
+	float: left;
+	clear: none;
+	color: #122D45;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.page-template-page-heftarchiv-php #main .post:hover {
+	background-color: #e0e2e5;
+}
+
+.page-template-page-heftarchiv-php #main .post img {
+	margin-bottom: 0;
+	margin-right: 5px;
+}
+
+.page-template-page-heftarchiv-php #main .post h2 {
+	margin-top: 0;
+}
+
+.page-template-page-heftarchiv-php .post h4 a {
+	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 2px center;
+	border: 1px solid #ccc;
+	padding: 7px 5px 7px 20px;
 }
 
 /* Sidebar */
@@ -289,7 +325,7 @@ div {
 }
 
 #sidebar form {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	border-bottom: 1px solid #ff6600;
 }
 

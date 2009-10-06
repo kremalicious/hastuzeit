@@ -12,20 +12,35 @@ get_header();
 	<?php if (have_posts()) : ?>
 
 	<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+	
 	<?php /* If this is a category archive */ if (is_category()) { ?>
-	<h2 class="rubriktitel"><?php single_cat_title(); ?></h2>
+	<h1 class="pagetitle"><?php single_cat_title(); ?></h1>
+	
 	<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-	<h2>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
+	<h1 class="pagetitle">Texte mit Tags &#8216;<?php single_tag_title(); ?>&#8217;</h1>
+	
 	<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-	<h2>Archive for <?php the_time('F jS, Y'); ?></h2>
+	<h1 class="pagetitle">Texte vom <?php the_time('F jS, Y'); ?></h1>
+	
 	<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-	<h2>Archive for <?php the_time('F, Y'); ?></h2>
+	<h1 class="pagetitle">Texte vom <?php the_time('F, Y'); ?></h1>
+	
 	<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-	<h2>Archive for <?php the_time('Y'); ?></h2>
+	<h1 class="pagetitle">Texte aus <?php the_time('Y'); ?></h1>
+	
 	<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-	<h2>Author Archive</h2>
+	
+		<?php
+			if(isset($_GET['author_name'])) :
+			$curauth = get_userdatabylogin($author_name);
+			else :
+			$curauth = get_userdata(intval($author));
+			endif;
+		?>
+	<h1 class="pagetitle">Texte von <?php echo $curauth->display_name; ?></h1>
+	
 	<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-	<h2>Blog Archives</h2>
+	<h1 class="pagetitle">Blog Archives</h1>
 	<?php } ?>
 
 

@@ -48,6 +48,12 @@ h1, h2 {
 	clear: both;
 }
 
+.pagetitle {
+	font-size: 1.8em;
+	border-bottom: 2px solid #ff6600;
+	padding-bottom: 0;
+	margin-bottom: 30px;
+}
 
 h2 a {
 	color: #122D45;
@@ -73,13 +79,6 @@ h5 {
 
 #sidebar h4 {
 	margin-bottom: 15px;
-}
-
-h2.rubriktitel {
-	font-size: 1.5em;
-	margin-top: 20px;
-	border-bottom: 2px solid #ff6600;
-	padding-bottom: 10px;
 }
 
 /* Links */
@@ -228,6 +227,16 @@ acronym {
 
 .next-links {
 	line-height: 1.3em;
+}
+
+/* Heftarchiv */
+
+.page-template-page-heftarchiv-php #main .post {
+	font-size: 0.7em;
+}
+
+.page-template-page-heftarchiv-php #main h2 {
+	color: #ccc;
 }
 
 /* Sidebar */

@@ -13,7 +13,6 @@
 		
 			<ul>
 				<li><a href="<?php echo get_option('home'); ?>/" title="">Texte</a></li>
-				<li><a href="/heftarchiv/" title="hastuzeit als pdf">Hefte</a></li>
 				<?php wp_list_pages('title_li='); ?>
 			
 			</ul>
