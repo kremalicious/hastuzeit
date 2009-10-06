@@ -10,7 +10,7 @@ Template Name: Heftarchiv
 				
 				<h1 class="pagetitle"><?php the_title(); ?></h1>
 				
-				<?php query_posts('category_name=Heftarchiv'); ?>
+				<?php query_posts('category_name=Heftarchiv&showposts=100'); ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					  
 					  	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">

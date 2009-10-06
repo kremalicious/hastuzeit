@@ -139,6 +139,14 @@ div {
 	background: #e0e2e5 url(../images/menu-zipfel.png) no-repeat center bottom;
 }
 
+.category-heftarchiv #texte.current_page_item a {
+	background: none;
+}
+
+.category-heftarchiv #texte ul {
+	display: none;
+}
+
 #navigation ul a {
 	background: none;
 	height: 25px;
