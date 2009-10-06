@@ -134,7 +134,7 @@ acronym {
 	color: #ff6600;
 }
 
-#navigation .current_cat a {
+#navigation .current-cat a {
 	color: #000;
 	background: #e0e2e5 url(../images/menu-zipfel.png) no-repeat center bottom;
 }
