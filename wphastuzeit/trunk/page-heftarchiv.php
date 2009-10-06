@@ -10,9 +10,8 @@ Template Name: Heftarchiv
 				
 				<h1 class="pagetitle"><?php the_title(); ?></h1>
 				
-				<?php $my_query = new WP_Query('category_name=Heftarchiv&showpost=100');
-					  while ($my_query->have_posts()) : $my_query->the_post();
-					  $do_not_duplicate[] = $post->ID ?>
+				<?php query_posts('category_name=Heftarchiv'); ?>
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					  
 					  	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				
@@ -22,7 +21,10 @@ Template Name: Heftarchiv
 							
 						</div>
 					  
-					  <?php endwhile; ?>
+					  <?php endwhile; else: ?>
+
+						<?php endif; 
+						wp_reset_query(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
