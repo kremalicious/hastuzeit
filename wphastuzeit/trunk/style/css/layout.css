@@ -132,7 +132,7 @@ div {
 	text-align: center;
 }
 
-#navigation a:hover, .current_page_item a {
+#navigation a:hover, .current_page_item a, .current_cat a {
 	color: #000;
 	background: #e0e2e5 url(../images/menu-zipfel.png) no-repeat center bottom;
 	
@@ -258,7 +258,7 @@ div {
 }
 
 #sidebar input[type=text] {
-	width: 200px;
+	width: 198px;
 	margin-right: 5px;
 	border: 1px solid #dadada;
 }
