@@ -286,12 +286,26 @@ input.inactive {
 
 .alert { background:red; color:white }
 
+/* @group WordPress Styles */
+.wp-caption {
+	font-size: 0.8em;
+	line-height: 1.3em;
+}
+
+.wp-caption-text {
+	margin-top: 5px;
+	margin-left: 2px;
+}
+
+/* @end */
+
 /* Admin Front-End Links */
 
 a.post-edit-link {
-	background-color: #a20000;
+	background-color: #00cf00;
 	padding-right: 10px;
 	padding-left: 10px;
 	color: #fff;
 	text-shadow: none;
+	border-color: #009705;
 }
