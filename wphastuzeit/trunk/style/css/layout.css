@@ -115,10 +115,11 @@ div {
 	display: none;
 	width: 920px;
 	float: left;
-	margin-top: 2px;
+	margin-top: 1px;
 }
 
 #navigation li#texte:hover > ul,
+#navigation li#texte > ul:hover,
 #navigation .current_page_item > ul  {
 	display: block;
 }
