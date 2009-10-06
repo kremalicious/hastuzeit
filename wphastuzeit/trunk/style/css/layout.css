@@ -207,7 +207,7 @@ div {
 #ausgabe h4 {
 	float: right;
 	width: 60%;
-	margin-top: 0;
+	margin-top: 5px;
 }
 
 /* Article Styling */
@@ -264,7 +264,7 @@ div {
 	padding-right: 20px;
 }
 
-.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover {
+.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover, #ausgabe h4 a:hover {
 	color: #fff;
 	background-color: #ff6600;
 	text-shadow: #666 0 1px 0;
@@ -301,6 +301,12 @@ div {
 }
 
 .page-template-page-heftarchiv-php .post h4 a {
+	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 2px center;
+	border: 1px solid #ccc;
+	padding: 7px 5px 7px 20px;
+}
+
+#ausgabe h4 a {
 	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 2px center;
 	border: 1px solid #ccc;
 	padding: 7px 5px 7px 20px;

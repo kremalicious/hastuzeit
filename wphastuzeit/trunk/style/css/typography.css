@@ -239,6 +239,10 @@ acronym {
 	color: #ccc;
 }
 
+#ausgabe h4  {
+	font-size: 0.9em;
+}
+
 /* Sidebar */
 #sidebar {
 	font-size: 0.9em;
