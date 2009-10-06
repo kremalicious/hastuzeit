@@ -132,10 +132,9 @@ div {
 	text-align: center;
 }
 
-#navigation a:hover, .current_page_item a, .current_cat a {
+#navigation a:hover, .current_page_item a {
 	color: #000;
 	background: #e0e2e5 url(../images/menu-zipfel.png) no-repeat center bottom;
-	
 }
 
 #navigation ul a {
