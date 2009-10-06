@@ -10,7 +10,7 @@ Template Name: Heftarchiv
 				
 				<h1 class="pagetitle"><?php the_title(); ?></h1>
 				
-				<?php $my_query = new WP_Query('category_name=Heftarchiv');
+				<?php $my_query = new WP_Query('category_name=Heftarchiv&showpost=100');
 					  while ($my_query->have_posts()) : $my_query->the_post();
 					  $do_not_duplicate[] = $post->ID ?>
 					  
