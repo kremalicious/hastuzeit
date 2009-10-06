@@ -382,8 +382,15 @@ input[type=submit] {
 .alignleft { float:left }
 
 img.alignleft, .wp-caption.alignleft { 
-	float:left;
 	margin: 5px 20px 20px 0;
+}
+
+img.alignright, .wp-caption.alignright { 
+	margin: 5px 0 20px 20px;
+}
+
+img.aligncenter, .wp-caption.aligncenter {
+	margin: 20px auto;
 }
 .alignright { float:right }
 

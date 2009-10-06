@@ -253,6 +253,10 @@ input.inactive {
 	margin: 5px 0;
 }
 
+#sidebar a {
+	display: block;
+}
+
 /* Comments */
 
 #respond input, #respond textarea {
