@@ -11,8 +11,8 @@ get_header(); ?>
 				
 					<!-- The Featured Loop -->
 					
-					 <?php $my_query = new WP_Query('category_name=Featured&showposts=1');
-					  while ($my_query->have_posts()) : $my_query->the_post();
+					 <?php $featured_query = new WP_Query('category_name=Featured&showposts=1');
+					  while ($featured_query->have_posts()) : $featured_query->the_post();
 					  $do_not_duplicate[] = $post->ID ?>
 					  
 					  <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -51,8 +51,8 @@ get_header(); ?>
 				
 					<!-- The Paper Loop -->
 					
-					<?php $my_query = new WP_Query('category_name=Heftarchiv&showposts=1');
-					  while ($my_query->have_posts()) : $my_query->the_post();
+					<?php $paper_query = new WP_Query('category_name=Heftarchiv&showposts=1');
+					  while ($paper_query->have_posts()) : $paper_query->the_post();
 					  $do_not_duplicate[] = $post->ID ?>
 					  
 					  	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
