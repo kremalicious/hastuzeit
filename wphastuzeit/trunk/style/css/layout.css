@@ -404,6 +404,11 @@ input[type=submit] {
 	width: 78%;
 }
 
+.search-results #main #s, .error404 #main #s {
+	width: 500px;
+	margin-bottom: 30px;
+}
+
 #live-search {
 	width: 100%;
 	background: #f9f9f9 url(../images/featured-grad.png) repeat-x left bottom;
@@ -492,3 +497,7 @@ img.aligncenter, .wp-caption.aligncenter {
 
 /* @end */
 br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
+
+.clear {
+	clear: both;
+}

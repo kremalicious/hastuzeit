@@ -37,7 +37,9 @@
 
 	<?php if (have_posts()) : ?>
 
-		<h1 class="pagetitle">Suchergebnisse</h1>
+		<h1 class="pagetitle">Suchergebnisse f&uuml;r '<?php the_search_query(); ?>'</h1>
+		
+		<?php get_search_form(); ?>
 
 
 		<?php while (have_posts()) : the_post(); ?>
