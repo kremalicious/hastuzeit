@@ -23,7 +23,7 @@
 	  		
 	    <?php else : ?>  
 	  		<div class="live-results">  
-	        	<h4>No posts found. Try a different search?</h4>
+	        	<h4>Nix gefunden. Andere Suche probieren?</h4>
 	  		</div>
 	    <?php endif; ?>  
   	
@@ -64,21 +64,22 @@
 						<p class="author">von <?php if(function_exists('coauthors_posts_links'))
 								    coauthors_posts_links(", ", " und ");
 								else
-								    the_author_posts_link(); ?></p>
+								    the_author_posts_link(); ?>
+						</p>
 					</div>
 							
 				</div>
 
 		<?php endwhile; ?>
 
-					<div class="next-links">
-						<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
-						<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
-					</div>
+				<div class="next-links">
+					<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
+					<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
+				</div>
 
 	<?php else : ?>
 
-		<h2>No posts found. Try a different search?</h2>
+		<h2>Nix gefunden. Andere Suche probieren?</h2>
 		<?php get_search_form(); ?>
 
 	<?php endif; ?>
