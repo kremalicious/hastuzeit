@@ -27,7 +27,7 @@ body {
 	font-size: 1.1em;
 }
 
-/* Headings */
+/* @group Headings */
 
 @font-face {
 	font-family: "Aller Bold";
@@ -82,7 +82,9 @@ h5 {
 	margin-bottom: 15px;
 }
 
-/* Links */
+/* @end */
+
+/* @group Links */
 
 a {
 	color: #ff6600;
@@ -109,7 +111,9 @@ a img:hover {
 	border: 3px solid #ff6600;
 }
 
-/* Paragraph styles */
+/* @end */
+
+/* @group Paragraph Styles */
 
 p {
 	margin-bottom: 1em;
@@ -134,7 +138,9 @@ acronym {
 	list-style-type: disc;
 }
 
-/* Navigation */
+/* @end */
+
+/* @group Navigation */
 
 #navigation {
 	font-size: 1.2em;
@@ -153,7 +159,9 @@ acronym {
 	background: #e0e2e5;
 }
 
-/* Article Styling */
+/* @end */
+
+/* @group Article Styling */
 
 .unterueber {
 	font-size: 1.2em;
@@ -230,6 +238,8 @@ acronym {
 	line-height: 1.3em;
 }
 
+/* @end */
+
 /* Heftarchiv */
 
 .page-template-page-heftarchiv-php #main .post {
@@ -260,7 +270,31 @@ input.inactive {
 	color: #bebebe;
 }
 
-/* Sidebar */
+/* @group Search */
+
+#live-search {
+	text-align: left;
+}
+
+.live-results h4 {
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #5e5e5e;
+	margin: 0;
+}
+
+.live-results a {
+	display: block;
+	padding: 5px 10px;
+	color: #5e5e5e;
+}
+
+.live-results a:hover {
+}
+
+/* @end */
+
+/* @group Sidebar */
 
 #sidebar li {
 	line-height: 1.3em;
@@ -271,13 +305,15 @@ input.inactive {
 	display: block;
 }
 
+/* @end */
+
 /* Comments */
 
 #respond input, #respond textarea {
 	font-size: 0.9em;
 }
 
-/* Footer */
+/* @group Footer */
 
 #footer, #copyright {
 	color: #f7f7f7;
@@ -301,6 +337,8 @@ input.inactive {
 #copyright a:hover {
 	color: #ff6600;
 }
+
+/* @end */
 
 .alert { background:red; color:white }
 

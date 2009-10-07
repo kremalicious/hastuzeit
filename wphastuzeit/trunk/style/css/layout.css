@@ -72,6 +72,8 @@ div {
 	margin-bottom: 20px;
 }
 
+/* @group Header */
+
 #header h1 {
 	border: none;
 }
@@ -93,7 +95,9 @@ div {
 	position: absolute;
 }
 
-/* Navigation */
+/* @end */
+
+/* @group Navigation */
 
 #navigation {
 	border-top: 4px double #ff6600;
@@ -157,7 +161,9 @@ div {
 	background-image: none;
 }
 
-/* Featured */
+/* @end */
+
+/* @group Featured */
 
 #featured {
 	min-height: 260px;
@@ -218,7 +224,15 @@ div {
 	margin-top: 5px;
 }
 
-/* Article Styling */
+#ausgabe h4 a {
+	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 2px center;
+	border: 1px solid #ccc;
+	padding: 7px 5px 7px 20px;
+}
+
+/* @end */
+
+/* @group Article Styling */
 
 .post {
 	margin: 0 0 40px;
@@ -278,7 +292,9 @@ div {
 	text-shadow: #666 0 1px 0;
 }
 
-/* Heftarchiv */
+/* @end */
+
+/* @group Heaftarchiv */
 
 .page-template-page-heftarchiv-php #main {
 	overflow: auto;
@@ -314,13 +330,9 @@ div {
 	padding: 7px 5px 7px 20px;
 }
 
-#ausgabe h4 a {
-	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 2px center;
-	border: 1px solid #ccc;
-	padding: 7px 5px 7px 20px;
-}
+/* @end */
 
-/* Sidebar */
+/* @group Sidebar */
 
 #sidebar .column {
 	width: 46%;
@@ -353,7 +365,9 @@ div {
 	display: none;
 }
 
-/* Form Styles */
+/* @end */
+
+/* @group Form Styles */
 
 label {
 	
@@ -376,9 +390,21 @@ input[type=submit] {
 	color: #122D45;
 }
 
+/* @end */
+
 /* Search */
 
-/* Comments */
+#live-search {
+	width: 100%;
+	background: #f9f9f9 url(../images/featured-grad.png) repeat-x left bottom;
+	box-shadow: 0px 5px 5px #7f7f7f;
+	-webkit-box-shadow: 0px 5px 5px #7f7f7f;
+	-moz-box-shadow: 0px 5px 5px #7f7f7f;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=5, offY=5, positive=true);
+	overflow: auto;
+}
+
+/* @group Comments */
 
 #respond {
 	clear: both;
@@ -406,7 +432,9 @@ input[type=submit] {
 	float: left;
 }
 
-/* Footer */
+/* @end */
+
+/* @group Footer */
 
 #footer {
 	padding: 5px;
@@ -421,6 +449,8 @@ input[type=submit] {
 	float: left;
 	margin: 0 10px;
 }
+
+/* @end */
 
 /* @group WordPress Styles */
 

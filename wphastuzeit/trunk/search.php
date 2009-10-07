@@ -1,10 +1,37 @@
 <?php
+
 /**
  * @package WordPress
  * @subpackage hastuzeit
  */
+ 
+ ?>
 
-get_header(); ?>
+<?php if($_GET['ajax'] == '1'){ ?>  
+  	
+  	<div id="live-search">
+  	
+	    <?php if (have_posts()) : ?>  
+	  
+	        <?php while (have_posts()) : the_post(); ?>  
+	  
+	            <div class="live-results">  
+	                <h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>  
+	            </div>  
+	  
+	        <?php endwhile; ?>  
+	  		
+	    <?php else : ?>  
+	  		<div class="live-results">  
+	        	<h4>No posts found. Try a different search?</h4>
+	  		</div>
+	    <?php endif; ?>  
+  	
+  	</div>
+  	
+<?php } else { ?>
+
+<?php get_header(); ?>
 
 	<?php if (have_posts()) : ?>
 
@@ -58,3 +85,5 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+<?php } ?> 

@@ -9,6 +9,15 @@
 $(function () { //DOMdiDOM
 
 	label2value();
+	
+	//AJAX Live Search
+    $('#s').liveSearch({url: '/index.php?ajax=1&s='});
+    
+    //Open pdf links and external links in new window
+    $('a[href*=.pdf], a.external').click(function(){
+		window.open(this.href);
+	return false;
+	});
 
 }); //don't delete me or the DOM will collaps
 
