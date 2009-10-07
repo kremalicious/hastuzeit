@@ -519,7 +519,3 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 	background: #fff url(../images/tip.png) repeat-x left bottom;
 	
 }
-
-.qtip-contentWrapper {
-	padding-bottom: 0;
-}
