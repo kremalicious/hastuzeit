@@ -298,6 +298,14 @@ input.inactive {
 }
 
 .live-results a:hover {
+	color: #ff6600;
+	background-color: #fff;
+}
+
+.live-results a:active {
+	background-color: #122D45;
+	color: #fff;
+	text-shadow: none;
 }
 
 /* @end */
