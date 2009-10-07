@@ -10,21 +10,20 @@ Author WebSite	: matthiaskretschmann.com
 
 body {
 	text-align: center;
-	font: 82.5%/1.7em Georgia, "Times New Roman", Times, serif;
+	font: normal 82.5%/1.7em Georgia, "Times New Roman", Times, serif;
 	color: #122D45;
 }
 
 #wrapper {
 	text-align: left;
 	font-size: 1em;
-}
-
-#featured {
-	
+	font-weight: normal;
+	font-style: normal;
 }
 
 #content  {
 	font-size: 1.1em;
+	text-align: left;
 }
 
 /* @group Headings */
@@ -171,7 +170,7 @@ acronym {
 	line-height: 1.2em;
 }
 
-#main .author {
+.author-link {
 	font-style: italic;
 }
 
@@ -210,11 +209,6 @@ acronym {
 .category-link a:active, input[type=submit]:active, .comment-link a:active, .next-links a:active {
 	background-color: #122D45;
 	color: #fff;
-}
-
-.author-info {
-	font-size: 0.95em;
-	color: #788490;
 }
 
 .more-link {
@@ -264,6 +258,7 @@ acronym {
 input, textarea {
 	font-weight: bold;
 	font-size: 1.1em;
+	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 input.inactive {

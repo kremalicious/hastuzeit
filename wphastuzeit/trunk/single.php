@@ -24,7 +24,7 @@ get_header();
           			echo "<h2 class=\"unterueber\">$unterueber</h2>";
 			?>
 			
-			<p class="author">von <?php if(function_exists('coauthors_posts_links'))
+			<p class="author-link">von <?php if(function_exists('coauthors_posts_links'))
 							    coauthors_posts_links(", ", " und ");
 							else
 							    the_author_posts_link(); ?></p>

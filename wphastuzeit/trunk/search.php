@@ -16,7 +16,7 @@
 	        <?php while (have_posts()) : the_post(); ?>  
 	  
 	            <div class="live-results">  
-	                <h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>  
+	                <h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>  
 	            </div>  
 	  
 	        <?php endwhile; ?>  
@@ -49,12 +49,12 @@
 					<p class="meta"><span class="date"><?php the_time('M Y') ?></span> <span class="category-link"><?php the_category(' ') ?></span> <?php edit_post_link('Bearbeiten', '', ''); ?> <span class="alignright comment-link"><?php comments_popup_link('0', '1', '%'); ?></span></p>
 					
 					<div class="alignleft image">
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php if (function_exists('images')) images('1', '100', '100', '', false); ?></a>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php if (function_exists('images')) images('1', '100', '100', '', false); ?></a>
 					</div>
 					
 					<div class="alignleft text">
 		
-						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 						
 						<!-- Wenn custom field unterueberschrift vorhanden, dann anzeigen -->
 						<?php 
@@ -63,7 +63,7 @@
 			          			echo "<h2 class=\"unterueber\">$unterueber</h2>";
 						?>
 						
-						<p class="author">von <?php if(function_exists('coauthors_posts_links'))
+						<p class="author-link">von <?php if(function_exists('coauthors_posts_links'))
 								    coauthors_posts_links(", ", " und ");
 								else
 								    the_author_posts_link(); ?>

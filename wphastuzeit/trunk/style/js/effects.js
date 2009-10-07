@@ -10,8 +10,6 @@ $(function () { //DOMdiDOM
 
 	label2value();
 	
-	scrolltotop.init();
-	
 	//AJAX Live Search
     $('#s').liveSearch({url: '/index.php?ajax=1&s='});
     
@@ -25,10 +23,45 @@ $(function () { //DOMdiDOM
 		window.open(this.href);
 	return false;
 	});
+	
 
 }); //don't delete me or the DOM will collaps
 
 //Finally load all this after the content has loaded
-// $(window).load(function() {
+$(window).load(function() {
 	
-// });
+	//qTip
+	$('#content .hentry a[title]').qtip({
+		show: {
+      		delay: 20,
+      		effect: {
+      			type: 'slide', 
+      			length: 100 } 
+      	},
+		position: {
+      		corner: { 
+      			target: 'bottomMiddle', 
+      			tooltip: 'topLeft'
+      		}
+      	},
+      	style: {
+      		color: '#666',
+      		lineHeight: '1.2em',
+      		fontFamily: '"Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif',
+      		maxWidth: 200,
+      		background: 'transparent',
+		    tip: { // Now an object instead of a string
+	        	corner: 'topLeft', // We declare our corner within the object using the corner sub-option
+	        	color: '#ccc'
+	        },
+		    border: {
+	        	width: 1,
+	        	color: '#ccc'
+	      	},
+	      
+		}
+	});
+
+	scrolltotop.init();
+	
+});

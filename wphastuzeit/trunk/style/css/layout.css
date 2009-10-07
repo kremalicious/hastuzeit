@@ -255,11 +255,6 @@ div {
 	clear: both;
 }
 
-.author-info {
-	padding: 10px;
-	border: 1px dotted #788490;
-}
-
 .next-links {
 	clear: both;
 	margin: 10px 0;
@@ -514,4 +509,17 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 	height: 40px;
 	display: block;
 	background: url(../images/top.png) no-repeat left top;
+}
+
+.qtip-wrapper {
+	box-shadow: 0px 3px 5px #7f7f7f;
+	-webkit-box-shadow: 0px 3px 5px #7f7f7f;
+	-moz-box-shadow: 0px 3px 5px #7f7f7f;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=3, offY=5, positive=true);
+	background: #fff url(../images/tip.png) repeat-x left bottom;
+	
+}
+
+.qtip-contentWrapper {
+	padding-bottom: 0;
 }
