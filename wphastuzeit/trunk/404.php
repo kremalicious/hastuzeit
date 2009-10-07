@@ -18,7 +18,6 @@ get_header();
 		<p>Aber im Ernst: Hast du die Adresse korrekt eingegeben?</p>
 		
 		<h3 class="clear">Suche probieren?</h3>
-		
 		<?php get_search_form(); ?>
 		
 		<h3>Letzte Beitr&auml;ge</h3>
