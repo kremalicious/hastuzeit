@@ -309,6 +309,7 @@ div {
 	color: #122D45;
 	padding: 10px;
 	border: 1px solid #ccc;
+	background: url(../images/featured-grad.png) repeat-x left bottom;
 }
 
 .page-template-page-heftarchiv-php #main .post:hover {
