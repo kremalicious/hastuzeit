@@ -272,6 +272,14 @@ input.inactive {
 
 /* @group Search */
 
+.search-results .hentry {
+	font-size: 0.9em;
+}
+
+.search-results .hentry h2 {
+	margin-top: 2px;
+}
+
 #live-search {
 	text-align: left;
 }

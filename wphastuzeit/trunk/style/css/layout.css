@@ -234,13 +234,13 @@ div {
 
 /* @group Article Styling */
 
-.post {
+.post, .hentry {
 	margin: 0 0 40px;
 	clear: both;
 	float: left;
 }
 
-#main .post {
+#main .post, #main .hentry {
 	width: 100%;
 }
 
@@ -393,6 +393,15 @@ input[type=submit] {
 /* @end */
 
 /* Search */
+
+.search-results .hentry .image {
+	width: 20%;
+	margin-right: 10px;
+}
+
+.search-results .hentry .text {
+	width: 78%;
+}
 
 #live-search {
 	width: 100%;
