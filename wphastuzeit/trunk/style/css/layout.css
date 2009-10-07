@@ -393,7 +393,7 @@ input[type=submit] {
 
 /* @end */
 
-/* Search */
+/* @group Search */
 
 .search-results .hentry .image {
 	width: 20%;
@@ -418,6 +418,8 @@ input[type=submit] {
 	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=5, offY=5, positive=true);
 	overflow: auto;
 }
+
+/* @end */
 
 /* @group Comments */
 
@@ -500,4 +502,13 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
 .clear {
 	clear: both;
+}
+
+#topcontrol {
+	right: 0 !important;
+	bottom: 0 !important;
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url(../images/top.png) no-repeat left top;
 }

@@ -10,6 +10,8 @@ $(function () { //DOMdiDOM
 
 	label2value();
 	
+	scrolltotop.init();
+	
 	//AJAX Live Search
     $('#s').liveSearch({url: '/index.php?ajax=1&s='});
     
