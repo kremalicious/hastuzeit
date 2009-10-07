@@ -93,4 +93,20 @@ function images($num = 1, $width = null, $height = null, $class = '', $displayLi
 	$more = 0;
 }
 
+//Highlight search terms
+function hls_set_query() { 
+	$query = attribute_escape(get_search_query());
+	
+	if(strlen($query) > 0){ 
+		echo ' <script type="text/javascript"> var hls_query = "'.$query.'"; </script> ';
+	} 
+} 
+add_action('wp_print_scripts', 'hls_set_query');
+
+//custom login screen with js too
+function custom_login() { 
+	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/style/css/login.css" />';
+}
+add_action('login_head', 'custom_login');
+
 ?>

@@ -13,6 +13,11 @@ $(function () { //DOMdiDOM
 	//AJAX Live Search
     $('#s').liveSearch({url: '/index.php?ajax=1&s='});
     
+    //Search term highlighting init
+	if(typeof(hls_query) != 'undefined'){
+      $('#content').highlight(hls_query, 1, 'hls');
+    }
+    
     //Open pdf links and external links in new window
     $('a[href*=.pdf], a.external').click(function(){
 		window.open(this.href);

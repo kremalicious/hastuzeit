@@ -308,6 +308,11 @@ input.inactive {
 	text-shadow: none;
 }
 
+strong.hls {
+	background-color: #f8ffa9;
+	padding: 2px;
+}
+
 /* @end */
 
 /* @group Sidebar */
