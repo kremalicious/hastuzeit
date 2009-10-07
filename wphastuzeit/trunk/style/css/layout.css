@@ -39,6 +39,9 @@ div {
 #wrapper {
 	-webkit-box-shadow: 0 5px 20px #000;
 	padding-bottom: 50px;
+	background-image: url(../images/featured-grad.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
 }
 
 #header {
