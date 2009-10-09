@@ -198,9 +198,9 @@ acronym {
 
 .category-link a, .post-edit-link {
 	color: #122D45;
-	background-color: #e0e2e5;
+	background: #e0e2e5 url(../images/button-overlay.png) repeat-x;
 	padding: 1px 5px;
-	text-shadow: none;
+	text-shadow: #fff 0 1px 0;
 	border: 1px solid #ccc;
 	margin-right: 20px;
 }
@@ -212,7 +212,7 @@ acronym {
 }
 
 .category-link a:active, input[type=submit]:active, .comment-link a:active, .next-links a:active {
-	background-color: #122D45;
+	background-color: #000;
 	color: #fff;
 }
 

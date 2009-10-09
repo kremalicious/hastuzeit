@@ -95,7 +95,7 @@
 
 	<?php else : ?>
 
-		<h2>Nix gefunden. Andere Suche probieren?</h2>
+		<h2 class="pagetitle">Nix gefunden. Andere Suche probieren?</h2>
 		<?php get_search_form(); ?>
 
 	<?php endif; ?>

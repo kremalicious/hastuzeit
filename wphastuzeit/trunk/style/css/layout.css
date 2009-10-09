@@ -37,7 +37,9 @@ div {
 }
 
 #wrapper {
+	box-shadow: 0 5px 20px #000;
 	-webkit-box-shadow: 0 5px 20px #000;
+	-moz-box-shadow: 0 5px 20px #000;
 	padding-bottom: 50px;
 	background-image: url(../images/featured-grad.png);
 	background-repeat: repeat-x;
@@ -335,8 +337,8 @@ div {
 
 #tabnav .wp-pagenavi {
 	position: absolute;
-	left: -61px;
-	width: 40px;
+	left: -65px;
+	width: 45px;
 	border: none;
 	overflow: hidden;
 }
@@ -348,16 +350,16 @@ div {
 .next-links a, .wp-pagenavi a, .wp-pagenavi .current {
 	display: block;
 	color: #122D45 !important;
-	background-color: #e0e2e5 !important;
+	background: #e0e2e5 url(../images/button-overlay.png) repeat-x  !important;
 	padding: 5px 10px !important;
 	border: 1px solid #ccc !important;
+	text-shadow: #fff 0 1px 0;
 }
 
 .wp-pagenavi a, .wp-pagenavi .current {
 	display: inline-block !important;
 	min-width: 20px !important;
 	height: 20px !important;
-	border-color: #fff !important;
 }
 
 .wp-pagenavi .extend {
@@ -368,11 +370,16 @@ div {
 	border: none !important;
 }
 
+#tabnav .wp-pagenavi .last {
+	padding-left: 2px !important;
+}
+
 #tabnav .wp-pagenavi a {
 	display: block;
 	clear: both;
 	background-color: rgba(224,226,229,0.5) !important;
 	border-color: rgba(255,255,255,0.4) !important;
+	text-shadow: #99afc1 0 1px 0;
 }
 
 .next-links .alignleft a {
@@ -393,7 +400,7 @@ div {
 
 /* @end */
 
-/* @group Heaftarchiv */
+/* @group Heftarchiv */
 
 .page-template-page-heftarchiv-php #main {
 	overflow: auto;
@@ -483,11 +490,21 @@ textarea {
 }
 
 input[type=submit] {
-	background-color: #eaeaea;
-	border-color: #ccc;
-	padding: 5px;
+	background: #122d45 url(../images/button-overlay.png) repeat-x;
+	padding: 5px 10px 6px;
 	cursor: pointer;
-	color: #122D45;
+	color: #fff;
+	-moz-box-shadow: 0 1px 3px #5e5e5e;
+	-webkit-box-shadow: 0 1px 3px #5e5e5e;
+	text-shadow: 0 -1px 1px #222;
+	border-bottom: 1px solid #222;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	top: -1px;
 }
 
 /* @end */
