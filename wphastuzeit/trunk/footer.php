@@ -23,7 +23,7 @@
 			<p>&copy; <?php 
 						$year=date("Y");
 						echo "2005 - $year";							
-						?> hastuzeit - Alle Rechte vorbehalten</p>
+						?> <a href="<?php echo get_option('home'); ?>/">hastuzeit</a> - Alle Rechte vorbehalten</p>
 			<p>design.icon.code.vooodo.<a href="http://matthiaskretschmann.com" title="Matthias Kretschmann" rel="friend">matthias.kretschmann</a></p>
 			<p><a class="valid" href="http://validator.w3.org/check?uri=referer" title="Valid XHTML 1.0">xhtml 1.0</a></p>
 		</div>
