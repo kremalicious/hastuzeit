@@ -122,7 +122,7 @@ get_header(); ?>
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$sticky=get_option('sticky_posts');
 				$args=array(
-				   'cat'=>-5,
+				   'cat'=>-3,
 				   'caller_get_posts'=>1,
 				   'post__not_in' => $sticky,
 				   'paged'=>$paged,
