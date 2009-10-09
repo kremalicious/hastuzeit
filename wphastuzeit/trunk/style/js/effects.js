@@ -112,38 +112,6 @@ $(function () { //DOMdiDOM
 //Finally load all this after the content has loaded
 $(window).load(function() {
 	
-	//qTip
-	$('.hentry a[title]').qtip({
-		show: {
-      		delay: 20,
-      		effect: {
-      			type: 'slide', 
-      			length: 100 } 
-      	},
-		position: {
-      		corner: { 
-      			target: 'bottomMiddle', 
-      			tooltip: 'topLeft'
-      		}
-      	},
-      	style: {
-      		color: '#666',
-      		lineHeight: '1.2em',
-      		fontFamily: '"Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif',
-      		maxWidth: 200,
-      		background: 'transparent',
-		    tip: { // Now an object instead of a string
-	        	corner: 'topLeft', // We declare our corner within the object using the corner sub-option
-	        	color: '#ccc'
-	        },
-		    border: {
-	        	width: 1,
-	        	color: '#ccc'
-	      	},
-	      
-		}
-	});
-	
 	//qTip Featured
 	$('#featured .featured_nav a[title]').qtip({
 		show: {
