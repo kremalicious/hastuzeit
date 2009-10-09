@@ -81,7 +81,7 @@ $(function () { //DOMdiDOM
 		// start to automatically cycle the tabs
 		var cycleTimer = setInterval(function () {
 		   $scroll.trigger('next');
-		}, 5000);
+		}, 7000);
 		
 		var $stopTriggers = $('#slider .navigation').find('a')
 		    .add('.scroll')
@@ -92,6 +92,38 @@ $(function () { //DOMdiDOM
 		   clearInterval(cycleTimer);
 		}
 		$stopTriggers.bind('click.cycle', stopCycle);
+		
+		//qTip Featured
+		$('#featured .featured_nav a[title]').qtip({
+			show: {
+	      		delay: 10,
+	      		effect: {
+	      			type: 'slide', 
+	      			length: 100 } 
+	      	},
+			position: {
+	      		corner: { 
+	      			target: 'rightTop', 
+	      			tooltip: 'topLeft'
+	      		}
+	      	},
+	      	style: {
+	      		color: '#666',
+	      		lineHeight: '1.2em',
+	      		fontFamily: '"Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif',
+	      		maxWidth: 200,
+	      		background: 'transparent',
+			    tip: { 
+		        	corner: 'leftMiddle',
+		        	color: '#ccc'
+		        },
+			    border: {
+		        	width: 1,
+		        	color: '#ccc'
+		      	},
+		      
+			}
+		});
 	}
 
     
@@ -111,38 +143,6 @@ $(function () { //DOMdiDOM
 
 //Finally load all this after the content has loaded
 $(window).load(function() {
-	
-	//qTip Featured
-	$('#featured .featured_nav a[title]').qtip({
-		show: {
-      		delay: 10,
-      		effect: {
-      			type: 'slide', 
-      			length: 100 } 
-      	},
-		position: {
-      		corner: { 
-      			target: 'rightTop', 
-      			tooltip: 'topLeft'
-      		}
-      	},
-      	style: {
-      		color: '#666',
-      		lineHeight: '1.2em',
-      		fontFamily: '"Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif',
-      		maxWidth: 200,
-      		background: 'transparent',
-		    tip: { 
-	        	corner: 'leftMiddle',
-	        	color: '#ccc'
-	        },
-		    border: {
-	        	width: 1,
-	        	color: '#ccc'
-	      	},
-	      
-		}
-	});
 
 	scrolltotop.init();
 	
