@@ -80,6 +80,11 @@ h5 {
 	margin-bottom: 15px;
 }
 
+h4.description {
+	margin-top: -20px;
+	margin-bottom: 30px;
+}
+
 /* @end */
 
 /* @group Links */

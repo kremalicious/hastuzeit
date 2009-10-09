@@ -15,6 +15,7 @@ get_header();
 	
 	<?php /* If this is a category archive */ if (is_category()) { ?>
 	<h1 class="pagetitle"><?php single_cat_title(); ?></h1>
+	<h4 class="description"><?php echo category_description(); ?></h4>
 	
 	<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
 	<h1 class="pagetitle">Texte mit Tags &#8216;<?php single_tag_title(); ?>&#8217;</h1>
