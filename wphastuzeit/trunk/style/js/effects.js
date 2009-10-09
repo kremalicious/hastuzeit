@@ -15,7 +15,6 @@ $(function () { //DOMdiDOM
     
     
     //The Featured Slider, omnomnom
-    
     if ( $("#featured").length > 0 ) {
 	    var $panels = $('#featured .scrollContainer .panel');
 		var $container = $('#featured .scrollContainer');

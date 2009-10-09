@@ -81,15 +81,12 @@ get_header(); ?>
 							
 							<?php endforeach; ?>
 							
-						
 						</ul>
 						
 					</div>
-					
-					
-					
+	
 					<div id="zipfel"></div>
-				</div>
+				</div><!-- end #featured -->
 				
 				<div id="ausgabe">
 					 
