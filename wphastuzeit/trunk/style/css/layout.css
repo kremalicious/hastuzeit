@@ -463,7 +463,7 @@ div {
 }
 
 #sidebar input[type=text] {
-	width: 198px;
+	width: 194px;
 	margin-right: 5px;
 	border: 1px solid #dadada;
 }
@@ -546,6 +546,7 @@ input[type=submit] {
 
 #respond, #respond form {
 	overflow: auto;
+	padding-bottom: 20px;
 }
 
 #respond form p {
@@ -563,6 +564,7 @@ input[type=submit] {
 	margin-top: 1em;
 	clear: both;
 	float: left;
+	margin-left: 2px;
 }
 
 /* @end */
