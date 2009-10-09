@@ -333,6 +333,14 @@ div {
 	width: 100%;
 }
 
+#tabnav .wp-pagenavi {
+	position: absolute;
+	left: -61px;
+	width: 40px;
+	border: none;
+	overflow: hidden;
+}
+
 .next-links .alignleft, .next-links .alignright {
 	max-width: 49%;
 }
@@ -349,6 +357,7 @@ div {
 	display: inline-block !important;
 	min-width: 20px !important;
 	height: 20px !important;
+	border-color: #fff !important;
 }
 
 .wp-pagenavi .extend {
@@ -357,6 +366,13 @@ div {
 	padding: 5px !important;
 	background: none !important;
 	border: none !important;
+}
+
+#tabnav .wp-pagenavi a {
+	display: block;
+	clear: both;
+	background-color: rgba(224,226,229,0.5) !important;
+	border-color: rgba(255,255,255,0.4) !important;
 }
 
 .next-links .alignleft a {
@@ -369,7 +385,7 @@ div {
 	padding-right: 20px !important;
 }
 
-.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover, #ausgabe h4 a:hover, .wp-pagenavi a:hover, .wp-pagenavi .current {
+.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover, #ausgabe h4 a:hover, .wp-pagenavi a:hover, .wp-pagenavi .current, #tabnav .wp-pagenavi a:hover {
 	color: #fff !important;
 	background-color: #ff6600 !important;
 	text-shadow: #666 0 1px 0 !important;

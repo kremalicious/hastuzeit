@@ -116,17 +116,6 @@ get_header(); ?>
 			
 			<div id="main">
 				
-				<!-- Pagination if were on a paged site -->
-				<?php if (is_paged())  {
-				if (function_exists('wp_pagenavi')) {
-					wp_pagenavi();
-				} else { ?>				
-					<div class="next-links">
-						<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
-						<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
-					</div>
-				<?php } }?>
-				
 				<!-- The Main Loop -->
 				<?php
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -149,7 +138,7 @@ get_header(); ?>
 						<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
 						<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
 					</div>
-				<?php }  ?>
+				<?php } ?>
 				
 				<?php
 						 foreach ($postslist as $post) : 
