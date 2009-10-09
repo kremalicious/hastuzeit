@@ -178,7 +178,7 @@ div {
 	-webkit-box-shadow: 0px 5px 5px #7f7f7f;
 	-moz-box-shadow: 0px 5px 5px #7f7f7f;
 	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=5, offY=5, positive=true);
-	margin: 20px 0 30px -52px;
+	margin: 5px 0 30px -52px;
 	z-index: 3;
 	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom;
 }
@@ -263,7 +263,7 @@ div {
 	float: left;
 	width: 290px;
 	margin-left: 40px;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 #ausgabe .post {
