@@ -54,7 +54,7 @@ h1, h2 {
 	margin-bottom: 30px;
 }
 
-h2 a {
+h2 a, #featured h4 a {
 	color: #122D45;
 }
 
@@ -241,6 +241,24 @@ acronym {
 
 .page-template-page-heftarchiv-php #main h2 {
 	color: #ccc;
+}
+
+#featured h3 {
+	margin: 10px 0 0;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+#featured h4 {
+	font-size: 1.7em;
+	clear: none;
+	margin-top: 5px;
+	line-height: 1.1em;
+}
+
+#featured h5 {
+	font-size: 1.1em;
 }
 
 #ausgabe h4  {

@@ -183,10 +183,70 @@ div {
 	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom;
 }
 
+#featured_head {
+	background: url(../images/featured-shadow-top.png) repeat-x left bottom;
+	padding-bottom: 23px;
+}
+
 #featured .post {
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
+	padding: 23px 20px 20px;
+}
+
+.featured_media, .featured_text {
+	float: left;
+	overflow: auto;
+}
+
+.featured_media {
+	width: 170px;
+}
+
+.featured_text {
+	width: 420px;
+	min-height: 180px;
+}
+
+.scroll {
+  	height: 210px;
+  	overflow: hidden;
+  	position: relative;
+  	clear: left;
+  	background: url(../images/featured-shadow.png) repeat-x left bottom;
+	margin-top: -23px;
+}
+
+.scrollContainer div.panel {
+	width: 600px; 
+}
+
+#shade {
+	overflow: hidden;
+	padding: 5px 10px 10px;
+}
+
+.featured_nav .thumb {
+	float: left;
+}
+
+.featured_nav a {
+	width: 60px;
+	height: 61px;
+	display: block;
+	float: left;
+	padding-top: 1px;
+	margin-right: 8px;
+}
+
+.featured_nav a:hover, .featured_nav a:active {
+	background-color: transparent;
+}
+
+.featured_nav a.selected {
+	background: url(../images/menu-zipfel.png) no-repeat 22px top;
+}
+
+.featured_nav a.selected img {
+	border-color: #ff6600;
 }
 
 #zipfel {
@@ -216,7 +276,7 @@ div {
 }
 
 #ausgabe h3 {
-	margin-top: 0;
+	margin-top: 18px;
 	display: block;
 	margin-bottom: 28px;
 }
