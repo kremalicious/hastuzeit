@@ -24,7 +24,7 @@ get_header(); ?>
 							'post__in'  => get_option('sticky_posts'),
 							'caller_get_posts' => 1
 						);
-						 $postslist = get_posts($args);
+						 $postslist = query_posts($args);
 						 foreach ($postslist as $post) : 
 						    setup_postdata($post);
 						 ?>
@@ -70,7 +70,7 @@ get_header(); ?>
 								'post__in'  => get_option('sticky_posts'),
 								'caller_get_posts' => 1
 							);
-							 $postslist = get_posts($args);
+							 $postslist = query_posts($args);
 							 foreach ($postslist as $post) : 
 							    setup_postdata($post);
 							 ?>
@@ -96,7 +96,7 @@ get_header(); ?>
 					
 					<!-- The Paper Loop -->
 						<?php
-						 $postslist = get_posts('category_name=Heftarchiv&showposts=1');
+						 $postslist = query_posts('category_name=Heftarchiv&showposts=1');
 						 foreach ($postslist as $post) : 
 						    setup_postdata($post);
 						 ?>
@@ -132,12 +132,26 @@ get_header(); ?>
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$sticky=get_option('sticky_posts');
 				$args=array(
-				   'cat'=>-5,
+				   'cat'=>-3,
 				   'caller_get_posts'=>1,
 				   'post__not_in' => $sticky,
 				   'paged'=>$paged,
 				   );
-				$postslist = get_posts($args);
+				
+				$postslist = query_posts($args);
+				
+				if (function_exists('wp_pagenavi')) { ?>
+				<div id="tabnav">
+					<?php wp_pagenavi(); ?>
+				</div>
+				<?php } else { ?>				
+					<div class="next-links">
+						<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
+						<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
+					</div>
+				<?php }  ?>
+				
+				<?php
 						 foreach ($postslist as $post) : 
 						    setup_postdata($post);
 				?>

@@ -341,14 +341,22 @@ div {
 	display: block;
 	color: #122D45 !important;
 	background-color: #e0e2e5 !important;
-	padding: 5px !important;
+	padding: 5px 10px !important;
 	border: 1px solid #ccc !important;
 }
 
 .wp-pagenavi a, .wp-pagenavi .current {
 	display: inline-block !important;
-	width: 20px !important;
+	min-width: 20px !important;
 	height: 20px !important;
+}
+
+.wp-pagenavi .extend {
+	width: 10px !important;
+	height: 20px !important;
+	padding: 5px !important;
+	background: none !important;
+	border: none !important;
 }
 
 .next-links .alignleft a {
