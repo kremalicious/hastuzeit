@@ -40,6 +40,16 @@
 		<h1 class="pagetitle">Suchergebnisse f&uuml;r '<?php the_search_query(); ?>'</h1>
 		
 		<?php get_search_form(); ?>
+		
+		<!-- Pagination if were on a paged site -->
+		<?php if (function_exists('wp_pagenavi')) {
+			wp_pagenavi();
+		} else { ?>				
+			<div class="next-links">
+				<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
+				<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
+			</div>
+		<?php } ?>
 
 
 		<?php while (have_posts()) : the_post(); ?>
@@ -73,11 +83,15 @@
 				</div>
 
 		<?php endwhile; ?>
-
-				<div class="next-links">
-					<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
-					<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
-				</div>
+		
+		<?php if (function_exists('wp_pagenavi')) { ?>
+			<?php wp_pagenavi(); ?>
+		<?php } else { ?>				
+			<div class="next-links">
+				<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
+				<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
+			</div>
+		<?php } ?>
 
 	<?php else : ?>
 

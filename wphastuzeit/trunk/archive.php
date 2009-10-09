@@ -44,7 +44,17 @@ get_header();
 	<h1 class="pagetitle">Blog Archives</h1>
 	<?php } ?>
 
-
+		<!-- Pagination if we are on a paged site -->
+		<?php if (is_paged())  {
+		if (function_exists('wp_pagenavi')) {
+			wp_pagenavi();
+		} else { ?>				
+			<div class="next-links">
+				<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
+				<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
+			</div>
+		<?php } }?>
+	
 		<?php while (have_posts()) : the_post(); ?>
 			
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -77,10 +87,14 @@ get_header();
 	
 	<?php endwhile; ?>
 
-		<div class="next-links">
-			<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
-			<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
-		</div>
+		<?php if (function_exists('wp_pagenavi')) { ?>
+			<?php wp_pagenavi(); ?>
+		<?php } else { ?>				
+			<div class="next-links">
+				<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
+				<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
+			</div>
+		<?php } ?>
 
 	<?php else :
 

@@ -51,12 +51,11 @@
 		<?php  if( ((get_post_meta($post->ID, keywords, true) != "") && (is_single())) || ((get_post_meta($post->ID, keywords, true) != "") && (is_page())) ) { ?>
 		<meta name="keywords" content="<?php echo get_post_meta($post->ID, keywords, true); ?>" />
 		<?php } else { ?>
-		<meta name="keywords" xml:lang="de" content="shortmoves, halle, film, kurzfilm, festival, kurzfilmfestival" />
-		<meta name="keywords" xml:lang="en" content="shortmoves, halle, film, movie, short film, filmlet,  shortmovie, festival" />
+		<meta name="keywords" xml:lang="de" content="hastuzeit, uni-halle, universit&auml;t, mlu, halle, halle (saale), martin-luther-universit&auml;t " />
 		<?php } ?>
 		
 		<!-- Block the hungry search robots on some dynamic pages -->
-		<?php if(is_search() || is_archive() ) { ?>
+		<?php if(is_search() || is_archive() || is_paged() ) { ?>
 		<meta name="robots" content="noindex, nofollow" /> 
 	    <?php }?>
 		

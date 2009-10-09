@@ -116,13 +116,23 @@ get_header(); ?>
 			
 			<div id="main">
 				
-				<!-- The Main Loop -->
+				<!-- Pagination if were on a paged site -->
+				<?php if (is_paged())  {
+				if (function_exists('wp_pagenavi')) {
+					wp_pagenavi();
+				} else { ?>				
+					<div class="next-links">
+						<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
+						<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
+					</div>
+				<?php } }?>
 				
+				<!-- The Main Loop -->
 				<?php
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$sticky=get_option('sticky_posts');
 				$args=array(
-				   'cat'=>-3,
+				   'cat'=>-5,
 				   'caller_get_posts'=>1,
 				   'post__not_in' => $sticky,
 				   'paged'=>$paged,
@@ -162,12 +172,15 @@ get_header(); ?>
 					</div>
 					
 				<?php endforeach; ?>
-									
+				
+				<?php if (function_exists('wp_pagenavi')) { ?>
+					<?php wp_pagenavi(); ?>
+				<?php } else { ?>				
 					<div class="next-links">
 						<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
 						<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
 					</div>
-
+				<?php } ?>
 
 <?php get_sidebar(); ?>
 
