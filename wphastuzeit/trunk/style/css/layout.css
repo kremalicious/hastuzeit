@@ -335,6 +335,14 @@ div {
 	width: 100%;
 }
 
+.home #tabnav {
+	display: none;
+}
+
+.home.paged #tabnav {
+	display: block;
+}
+
 #tabnav .wp-pagenavi {
 	position: absolute;
 	left: -65px;

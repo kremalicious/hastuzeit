@@ -11,7 +11,7 @@ get_header(); ?>
 				<div id="featured">
 					
 					<div id="featured_head">
-						<h3>Featured</h3>
+						<h3>Wichtig</h3>
 					</div>
 					
 					<div class="scroll">
@@ -29,11 +29,11 @@ get_header(); ?>
 						    setup_postdata($post);
 						 ?>
 						
-						<div class="panel post" id="<?php the_title_attribute(); ?>">
+						<div class="panel post" id="post-<?php the_ID(); ?>">
 						
 							<div class="featured_media">
 						
-								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php images('1', '150', '150', 'alignleft', false); ?></a>
+								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php images('1', '150', '150', '', false); ?></a>
 							
 							</div>
 							
@@ -52,7 +52,7 @@ get_header(); ?>
 							
 							</div>
 	
-						</div> <!– End Panel –>
+						</div><!-- end .panel -->
 						
 						<?php endforeach; ?>
 					
@@ -76,7 +76,7 @@ get_header(); ?>
 							 ?>
 							
 							<li class="thumb">
-								<a href="#<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>"><?php images('1', '50', '50', 'alignleft', false); ?></a>
+								<a href="#post-<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>"><?php images('1', '50', '50', '', false); ?></a>
 							</li>
 							
 							<?php endforeach; ?>
@@ -129,6 +129,7 @@ get_header(); ?>
 				
 				$postslist = query_posts($args);
 				
+				if ( is_paged() ) { 
 				if (function_exists('wp_pagenavi')) { ?>
 				<div id="tabnav">
 					<?php wp_pagenavi(); ?>
@@ -138,7 +139,7 @@ get_header(); ?>
 						<div class="alignleft"><?php next_posts_link('&laquo; &Auml;ltere Artikel') ?></div>
 						<div class="alignright"><?php previous_posts_link('Neuere Artikel &raquo;') ?></div>
 					</div>
-				<?php } ?>
+				<?php } }?>
 				
 				<?php
 						 foreach ($postslist as $post) : 
