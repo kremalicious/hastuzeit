@@ -113,7 +113,7 @@ $(function () { //DOMdiDOM
 $(window).load(function() {
 	
 	//qTip
-	$('#main .hentry a[title]').qtip({
+	$('.hentry a[title]').qtip({
 		show: {
       		delay: 20,
       		effect: {

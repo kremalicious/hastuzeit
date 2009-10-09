@@ -29,7 +29,7 @@ get_header(); ?>
 						    setup_postdata($post);
 						 ?>
 						
-						<div class="panel post hentry" id="<?php the_title_attribute(); ?>">
+						<div class="panel post" id="<?php the_title_attribute(); ?>">
 						
 							<div class="featured_media">
 						
