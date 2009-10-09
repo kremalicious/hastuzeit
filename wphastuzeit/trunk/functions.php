@@ -109,4 +109,31 @@ function custom_login() {
 }
 add_action('login_head', 'custom_login');
 
+//header color
+define('HEADER_TEXTCOLOR', 'CC3399');
+function header_style() {
+	?>
+	<style type="text/css">
+	#header{
+		background-color: #<?php header_textcolor();?>;
+	}
+	</style>
+	<?php
+}
+
+function admin_header_style() {
+	?>
+	<style type="text/css">
+	#header {
+		background-color: #<?php header_textcolor();?>;
+	}
+	</style>
+	<?php
+}
+
+if ( function_exists('add_custom_image_header') ) {
+	add_custom_image_header('header_style', 'admin_header_style');
+} 
+
+
 ?>
