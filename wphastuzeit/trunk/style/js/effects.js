@@ -75,14 +75,8 @@ $(function () { //DOMdiDOM
 		  offset: offset,
 		  duration: 500,
 		};
-		
-		// apply serialScroll to the slider - we chose this plugin because it 
-		// supports// the indexed next and previous scroll along with hooking 
-		// in to our navigation.
 		$('#featured').serialScroll(scrollOptions);
-	
 		$.localScroll(scrollOptions);
-	
 		scrollOptions.duration = 1;
 		$.localScroll.hash(scrollOptions);
 		
@@ -91,7 +85,7 @@ $(function () { //DOMdiDOM
 		   $scroll.trigger('next');
 		}, 7000);
 		
-		var $stopTriggers = $('#slider .navigation').find('a')
+		var $stopTriggers = $('#featured .navigation').find('a')
 		    .add('.scroll')
 		    .add("a[href^='#']");
 		
