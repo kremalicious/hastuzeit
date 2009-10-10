@@ -496,15 +496,22 @@ div {
 	margin: 0 0 10px;
 }
 
-.page-template-page-heftarchiv-php .post h4 a {
-	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 2px center;
+.page-template-page-heftarchiv-php .post h4 a,
+#ausgabe h4 a {
+	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 5px center;
 	border: 1px solid #ccc;
-	padding: 4px 5px 4px 22px;
-	width: 100px;
+	padding: 4px 5px 4px 25px;
+	width: 110px;
 	display: inline-block;
+	-webkit-transition: background-color linear 0.2s;
 }
 
-.page-template-page-heftarchiv-php .post h4 a.read {
+#ausgabe h4 a {
+	width: 145px;
+}
+
+.page-template-page-heftarchiv-php .post h4 a.read,
+#ausgabe h4 a.read {
 	background-image: url(../images/read.png);
 	
 }

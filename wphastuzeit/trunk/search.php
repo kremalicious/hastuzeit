@@ -14,7 +14,7 @@
 	    <?php if (have_posts()) : ?>  
 	  
 	        <?php while (have_posts()) : the_post(); ?>  
-	  
+	  			<?php if ( in_category('3') ) continue; ?>
 	            <div class="live-results">  
 	                <h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>  
 	            </div>  
@@ -53,6 +53,8 @@
 
 
 		<?php while (have_posts()) : the_post(); ?>
+		
+			<?php if ( in_category('3') ) continue; ?>
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 						

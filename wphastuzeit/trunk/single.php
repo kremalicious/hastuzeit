@@ -52,14 +52,12 @@ get_header();
 				
 				<ul>
 					<?php
-						$posts = get_posts('numberposts=5&category='. $category->term_id);
+						$posts = get_posts('numberposts=5&category=-3,'. $category->term_id);
 						foreach($posts as $post) :
 					?>
 					<li><h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4></li>
 					
 					<?php endforeach; ?>
-					
-					<li><h4><a href="<?php echo get_category_link($category->term_id);?>" title="Alle Texte aus '<?php echo $category->name; ?>' ansehen">Alle Texte aus '<?php echo $category->name; ?>'</a></h4></li>
 					
 				</ul>
 			</div>

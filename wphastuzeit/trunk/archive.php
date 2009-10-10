@@ -57,7 +57,7 @@ get_header();
 	
 		<?php while (have_posts()) : the_post(); ?>
 		
-		
+		<?php if ( in_category('3') && !is_single() ) continue; ?>
 			
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		

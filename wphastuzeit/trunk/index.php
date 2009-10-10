@@ -101,13 +101,18 @@ get_header(); ?>
 					  
 					  	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 					  	
-					  		<h3>Frische Ausgabe als pdf</h3>
+					  		<h3>Frische Ausgabe <?php the_time('F y') ?></h3>
 					  									
 							<a class="alignleft" href="<?php $values = get_post_custom_values("Cover big"); echo $values[0]; ?>" title="Cover hastuzeit <?php the_title(); ?>">		
 								<img src="<?php $values = get_post_custom_values("Cover small"); echo $values[0]; ?>" alt="Cover <?php the_title(); ?>" class="thumb" width="100" height="139" />
 							</a>
 							
 							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>"><?php the_title(); ?></a></h4>
+							<?php 
+								foreach((get_the_category()) as $childcat) {
+									if (cat_is_ancestor_of(31, $childcat)) { ?>
+										<h4><a class="read" href="<?php echo get_category_link($childcat->term_id);?>">Texte lesen (<?php echo $childcat->category_count;?>)</a></h4>
+								<?php } } ?>
 							
 						</div>
 					  
