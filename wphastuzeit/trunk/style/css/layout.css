@@ -374,6 +374,7 @@ div {
 	overflow: auto;
 	border-top: 4px double #ff6600;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .wp-pagenavi {
