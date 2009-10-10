@@ -32,6 +32,10 @@ $(function () { //DOMdiDOM
 		
 		var $scroll = $('#featured .scroll').css('overflow', 'hidden');
 		
+	    $scroll
+	        .before('<img class="scrollButtons left" src="/wp-content/themes/wphastuzeit/style/images/slider-arrow-l.png" />')
+	        .after('<img class="scrollButtons right" src="/wp-content/themes/wphastuzeit/style/images/slider-arrow-r.png" />');
+		
 		function selectNav() {
 		  $(this)
 		    .parents('ul:first')
@@ -64,6 +68,8 @@ $(function () { //DOMdiDOM
 		  target: $scroll,
 		  items: $panels,
 		  navigation: '.featured_nav a',
+		  prev: 'img.left', 
+          next: 'img.right',
 		  axis: 'xy',
 		  onAfter: trigger,
 		  offset: offset,

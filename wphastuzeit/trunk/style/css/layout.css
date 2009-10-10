@@ -255,6 +255,22 @@ div {
 	box-shadow: 0 1px 4px #5e5e5e;
 }
 
+.scrollButtons {
+  position: absolute;
+  top: 180px;
+  cursor: pointer;
+  border: none;
+  z-index: 99;
+}
+
+.scrollButtons.left {
+  left: -20px;
+}
+
+.scrollButtons.right {
+  right: -20px;
+}
+
 #zipfel {
 	background: url(../images/zipfel.png) no-repeat left top;
 	width: 31px;
