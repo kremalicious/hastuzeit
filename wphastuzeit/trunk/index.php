@@ -103,7 +103,7 @@ get_header(); ?>
 					  	
 					  		<h3>Frische Ausgabe als pdf</h3>
 					  									
-							<a class="alignleft" href="<?php $values = get_post_custom_values("Cover big"); echo $values[0]; ?>" title="Klick f&uuml;r großes Cover">		
+							<a class="alignleft" href="<?php $values = get_post_custom_values("Cover big"); echo $values[0]; ?>" title="Cover hastuzeit <?php the_title(); ?>">		
 								<img src="<?php $values = get_post_custom_values("Cover small"); echo $values[0]; ?>" alt="Cover <?php the_title(); ?>" class="thumb" />
 							</a>
 							
