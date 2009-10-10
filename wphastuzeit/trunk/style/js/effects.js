@@ -7,8 +7,11 @@
 	
 //On with the real fun
 $(function () { //DOMdiDOM
-
+	
+	//initiate the label replacement
 	label2value();
+	
+	//scrolltotop.init();
 	
 	//AJAX Live Search
     $('#s').liveSearch({url: '/index.php?ajax=1&s='});
@@ -141,8 +144,8 @@ $(function () { //DOMdiDOM
 }); //don't delete me or the DOM will collaps
 
 //Finally load all this after the content has loaded
-$(window).load(function() {
+//$(window).load(function() {
 
-	scrolltotop.init();
+	//scrolltotop.init();
 	
-});
+//});

@@ -247,8 +247,12 @@ div {
 	background: url(../images/menu-zipfel.png) no-repeat 22px top;
 }
 
-.featured_nav a.selected img {
+.featured_nav a.selected img,
+.featured_nav a:hover img {
 	border-color: #ff6600;
+	-moz-box-shadow: 0 1px 4px #5e5e5e;
+	-webkit-box-shadow: 0 1px 4px #5e5e5e;
+	box-shadow: 0 1px 4px #5e5e5e;
 }
 
 #zipfel {
@@ -358,7 +362,6 @@ div {
 .next-links a, .wp-pagenavi a, .wp-pagenavi .current {
 	display: block;
 	color: #122D45 !important;
-	background: #e0e2e5 url(../images/button-overlay.png) repeat-x  !important;
 	padding: 5px 10px !important;
 	border: 1px solid #ccc !important;
 	text-shadow: #fff 0 1px 0;
@@ -368,6 +371,7 @@ div {
 	display: inline-block !important;
 	min-width: 20px !important;
 	height: 20px !important;
+	background: #e0e2e5 url(../images/button-overlay.png) repeat-x  !important;
 }
 
 .wp-pagenavi .extend {
@@ -504,6 +508,7 @@ input[type=submit] {
 	color: #fff;
 	-moz-box-shadow: 0 1px 3px #5e5e5e;
 	-webkit-box-shadow: 0 1px 3px #5e5e5e;
+	box-shadow: 0 1px 3px #5e5e5e;
 	text-shadow: 0 -1px 1px #222;
 	border-bottom: 1px solid #222;
 	border-top: none;
@@ -591,6 +596,10 @@ input[type=submit] {
 #footer li {
 	float: left;
 	margin: 0 10px;
+}
+
+#copyright {
+	margin-top: 30px;
 }
 
 /* @end */

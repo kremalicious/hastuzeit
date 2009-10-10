@@ -40,6 +40,7 @@ get_header(); ?>
 							<div class="featured_text">
 								
 								<h4><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+								<?php edit_post_link('Bearbeiten', '', ''); ?>
 								<!-- Wenn custom field unterueberschrift vorhanden, dann anzeigen -->
 								<?php 
 									$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);

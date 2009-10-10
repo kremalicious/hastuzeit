@@ -198,7 +198,7 @@ acronym {
 
 .category-link a, .post-edit-link {
 	color: #122D45;
-	background: #e0e2e5 url(../images/button-overlay.png) repeat-x;
+	background-color: #e0e2e5;
 	padding: 1px 5px;
 	text-shadow: #fff 0 1px 0;
 	border: 1px solid #ccc;
@@ -352,7 +352,7 @@ strong.hls {
 
 /* @group Footer */
 
-#footer, #copyright {
+#footer {
 	color: #f7f7f7;
 }
 
@@ -360,19 +360,31 @@ strong.hls {
 	text-align: left;
 }
 
-#footer p, #copyright p {
+#footer p {
 	margin-bottom: 0;
 	font-size: 0.9em;
 	line-height: 1.4em;
 }
 
+#footer a {
+	padding: 3px 5px;
+	display: inline-block;
+}
+
 #copyright, #copyright a {
 	color: #8f9ba5;
-	border: none;
+	border-bottom: 1px dotted #5f6366;
+	text-align: center;
+}
+
+#copyright a {
+	padding: 0 2px;
 }
 
 #copyright a:hover {
-	color: #ff6600;
+	color: #000;
+	border-bottom-color: #ff6600;
+	border-bottom-style: solid;
 }
 
 /* @end */
