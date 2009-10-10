@@ -101,7 +101,7 @@ get_header(); ?>
 					  
 					  	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 					  	
-					  		<h3>Frische Ausgabe</h3>
+					  		<h3>Frische Ausgabe als pdf</h3>
 					  									
 							<?php the_content('Mehr, mehr, mehr'); ?>
 							

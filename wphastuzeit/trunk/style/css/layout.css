@@ -453,9 +453,10 @@ div {
 .page-template-page-heftarchiv-php #main .post img {
 	margin-bottom: 0;
 	margin-right: 5px;
+	margin-top: 0;
 }
 
-.page-template-page-heftarchiv-php #main .post h2 {
+.page-template-page-heftarchiv-php #main .post h3 {
 	margin-top: 0;
 }
 
@@ -463,6 +464,14 @@ div {
 	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 2px center;
 	border: 1px solid #ccc;
 	padding: 7px 5px 7px 20px;
+}
+
+.accordionContent {
+	overflow: auto;
+}
+
+.accordionButton {
+	padding: 5px;
 }
 
 /* @end */

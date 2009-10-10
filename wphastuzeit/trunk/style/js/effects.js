@@ -140,6 +140,34 @@ $(function () { //DOMdiDOM
 	return false;
 	});
 	
+	//Basic content accordion
+	var $content = $('.accordionContent');
+	var $contentFirst = $('.accordionContent:first');
+	var $trigger = $('.accordionButton')
+	
+	$content.hide();
+	$contentFirst.show();
+	$trigger.css('cursor', 'pointer');
+	
+	$trigger.hover(function() {
+  		$(this).css('backgroundColor','#e0e2e5');
+  	}, function() {
+  		$(this).css('backgroundColor','transparent');
+  	});
+	
+  	$trigger.click(function() {
+  		var $nextDiv = $(this).next();
+    	var $visibleSiblings = $nextDiv.siblings('div:visible');
+ 
+    	if ($visibleSiblings.length ) {
+      		$visibleSiblings.slideUp('fast', function() {
+        	$nextDiv.slideToggle('fast');
+      		});
+    	} else {
+       		$nextDiv.slideToggle('fast');
+    	}
+  	});
+	
 
 }); //don't delete me or the DOM will collaps
 

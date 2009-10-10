@@ -246,7 +246,19 @@ acronym {
 }
 
 .page-template-page-heftarchiv-php #main h2 {
+	border-bottom: 1px solid #ff6600;
+}
+
+.page-template-page-heftarchiv-php #main h3 {
 	color: #ccc;
+	font-size: 2em;
+	padding: 0;
+	line-height: 1.2em;
+	border-color: #ccc;
+}
+
+.page-template-page-heftarchiv-php #main p {
+	margin: 0;
 }
 
 #featured h3 {
@@ -369,6 +381,10 @@ strong.hls {
 #footer a {
 	padding: 3px 5px;
 	display: inline-block;
+}
+
+#footer .current_page_item a {
+	background-image: none;
 }
 
 #copyright, #copyright a {
