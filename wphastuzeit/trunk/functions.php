@@ -42,7 +42,7 @@ if ( !function_exists('noself_ping') ) {
 	add_action( 'pre_ping', 'noself_ping' );
 }
 
-//special the_category so we can exclude the Featured category
+//special the_category so we can exclude some categories
 function the_category_exclude($separator=', ',$exclude='') {
 	$toexclude = explode(",", $exclude);
 	$newlist = array();
@@ -133,7 +133,6 @@ function admin_header_style() {
 
 if ( function_exists('add_custom_image_header') ) {
 	add_custom_image_header('header_style', 'admin_header_style');
-} 
-
+}
 
 ?>

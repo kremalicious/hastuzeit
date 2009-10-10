@@ -337,6 +337,37 @@ div {
 	clear: both;
 }
 
+#more-content {
+	overflow: auto;
+	clear: both;
+	margin-bottom: 30px;
+}
+
+#more-content img {
+	margin: 0 10px 0 0;
+}
+
+#more-content .column {
+	width: 48%;
+	float: left;
+	padding-right: 10px;
+}
+
+#more-content li {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#more-content li a {
+	display: block;
+	height: 33px;
+	background: #e0e2e5 url(../images/button-overlay.png) repeat-x;
+	border: 1px solid #ccc;
+	text-shadow: #fff 0 1px 0;
+	color: #666;
+	-webkit-transition: background-color linear 0.2s;
+}
+
 .next-links, .wp-pagenavi {
 	clear: both;
 	margin: 10px 0;
@@ -381,6 +412,7 @@ div {
 	padding: 5px 10px !important;
 	border: 1px solid #ccc !important;
 	text-shadow: #fff 0 1px 0;
+	-webkit-transition: background-color linear 0.2s;
 }
 
 .wp-pagenavi a, .wp-pagenavi .current {
@@ -460,10 +492,21 @@ div {
 	margin-top: 0;
 }
 
+.page-template-page-heftarchiv-php .post h4 {
+	margin: 0 0 10px;
+}
+
 .page-template-page-heftarchiv-php .post h4 a {
 	background: #e0e2e5 url(../images/more-link-down.png) no-repeat 2px center;
 	border: 1px solid #ccc;
-	padding: 7px 5px 7px 20px;
+	padding: 4px 5px 4px 22px;
+	width: 100px;
+	display: inline-block;
+}
+
+.page-template-page-heftarchiv-php .post h4 a.read {
+	background-image: url(../images/read.png);
+	
 }
 
 .accordionContent {
@@ -519,7 +562,7 @@ label {
 
 input, textarea {
 	padding: 5px;
-	border: 1px solid #eaeaea;
+	border: 1px solid #ccc;
 }
 
 textarea {
@@ -584,7 +627,7 @@ input[type=submit] {
 
 #respond, #respond form {
 	overflow: auto;
-	padding-bottom: 20px;
+	padding: 10px 2px 20px;
 }
 
 #respond form p {

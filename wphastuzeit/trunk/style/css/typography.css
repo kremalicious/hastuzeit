@@ -34,7 +34,7 @@ body {
 	font-weight: bold;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, .next-links {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -196,6 +196,16 @@ acronym {
 	color: #ff6600;
 }
 
+#more-content li a {
+	padding: 3px 5px 3px 10px;
+	line-height: 1.2em;
+}
+
+#more-content li h4 {
+	font-size: 1em;
+	margin: 0;
+}
+
 .category-link a, .post-edit-link {
 	color: #122D45;
 	background-color: #e0e2e5;
@@ -205,7 +215,7 @@ acronym {
 	margin-right: 20px;
 }
 
-.category-link a:hover, input[type=submit]:hover, .comment-link a:hover, .next-links a:hover {
+.category-link a:hover, input[type=submit]:hover, .comment-link a:hover, .next-links a:hover, #more-content a:hover {
 	color: #fff;
 	background-color: #ff6600;
 	text-shadow: #666 0 1px 0;

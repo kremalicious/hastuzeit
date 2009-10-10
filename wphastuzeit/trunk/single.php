@@ -41,6 +41,33 @@ get_header();
 			
 		</div>
 		
+		<div id="more-content">				
+			<?php global $post;
+				$categories = get_the_category();
+				foreach ($categories as $category) :
+			?>
+		
+			<div class="column">
+				<h3>Mehr aus <?php echo $category->cat_name; ?></h3>
+				
+				<ul>
+					<?php
+						$posts = get_posts('numberposts=5&category='. $category->term_id);
+						foreach($posts as $post) :
+					?>
+					<li><h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4></li>
+					
+					<?php endforeach; ?>
+					
+					<li><h4><a href="<?php echo get_category_link($category->term_id);?>" title="Alle Texte aus '<?php echo $category->name; ?>' ansehen">Alle Texte aus '<?php echo $category->name; ?>'</a></h4></li>
+					
+				</ul>
+			</div>
+				
+			<?php endforeach; ?>
+
+		</div>
+		
 		<div class="next-links">
 			<div class="alignleft"><?php previous_post_link('%link') ?></div>
 			<div class="alignright"><?php next_post_link('%link') ?></div>

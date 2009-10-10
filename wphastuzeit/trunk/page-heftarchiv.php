@@ -35,8 +35,12 @@ Template Name: Heftarchiv
 								<img src="<?php $values = get_post_custom_values("Cover small"); echo $values[0]; ?>" alt="Cover <?php the_title(); ?>" class="thumb" width="100" height="139" />
 							</a>
 							
-							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>"><?php the_title(); ?></a></h4>
-								
+							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>">Download (pdf)</a></h4>
+							<?php 
+								foreach((get_the_category()) as $childcat) {
+									if (cat_is_ancestor_of(4, $childcat)) { ?>
+										<h4><a class="read" href="<?php echo get_category_link($childcat->term_id);?>">Texte lesen</a></h4>
+								<?php } } ?>
 						</div>
 						
 					<?php endforeach; ?>
@@ -62,7 +66,12 @@ Template Name: Heftarchiv
 								<img src="<?php $values = get_post_custom_values("Cover small"); echo $values[0]; ?>" alt="Cover <?php the_title(); ?>" class="thumb" width="100" height="139" />
 							</a>
 							
-							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>"><?php the_title(); ?></a></h4>
+							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>">Download (pdf)</a></h4>
+							<?php 
+								foreach((get_the_category()) as $childcat) {
+									if (cat_is_ancestor_of(4, $childcat)) { ?>
+										<h4><a class="read" href="<?php echo get_category_link($childcat->term_id);?>">Texte lesen</a></h4>
+								<?php } } ?>
 								
 						</div>
 						
@@ -89,7 +98,12 @@ Template Name: Heftarchiv
 								<img src="<?php $values = get_post_custom_values("Cover small"); echo $values[0]; ?>" alt="Cover <?php the_title(); ?>" class="thumb" width="100" height="139" />
 							</a>
 							
-							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>"><?php the_title(); ?></a></h4>
+							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>">Download (pdf)</a></h4>
+							<?php 
+								foreach((get_the_category()) as $childcat) {
+									if (cat_is_ancestor_of(4, $childcat)) { ?>
+										<h4><a class="read" href="<?php echo get_category_link($childcat->term_id);?>">Texte lesen</a></h4>
+								<?php } } ?>
 								
 						</div>
 						
@@ -116,7 +130,12 @@ Template Name: Heftarchiv
 								<img src="<?php $values = get_post_custom_values("Cover small"); echo $values[0]; ?>" alt="Cover <?php the_title(); ?>" class="thumb" width="100" height="139" />
 							</a>
 							
-							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>"><?php the_title(); ?></a></h4>
+							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>">Download (pdf)</a></h4>
+							<?php 
+								foreach((get_the_category()) as $childcat) {
+									if (cat_is_ancestor_of(4, $childcat)) { ?>
+										<h4><a class="read" href="<?php echo get_category_link($childcat->term_id);?>">Texte lesen</a></h4>
+								<?php } } ?>
 								
 						</div>
 						
@@ -143,7 +162,12 @@ Template Name: Heftarchiv
 								<img src="<?php $values = get_post_custom_values("Cover small"); echo $values[0]; ?>" alt="Cover <?php the_title(); ?>" class="thumb" width="100" height="139" />
 							</a>
 							
-							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>"><?php the_title(); ?></a></h4>
+							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>">Download (pdf)</a></h4>
+							<?php 
+								foreach((get_the_category()) as $childcat) {
+									if (cat_is_ancestor_of(31, $childcat)) { ?>
+										<h4><a class="read" href="<?php echo get_category_link($childcat->term_id);?>">Texte lesen</a></h4>
+								<?php } } ?>
 								
 						</div>
 						

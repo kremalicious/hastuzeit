@@ -129,7 +129,7 @@ $(function () { //DOMdiDOM
 	}
 	
 	//Thickbox on linked images
-	$('#main a img, #ausgabe a img').parent('a').addClass('thickbox');
+	$('#main .hentry a img, #ausgabe a img').parent('a').addClass('thickbox');
     
     //Search term highlighting init
 	if(typeof(hls_query) != 'undefined'){
