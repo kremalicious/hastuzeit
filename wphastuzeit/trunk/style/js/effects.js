@@ -11,11 +11,8 @@ $(function () { //DOMdiDOM
 	//initiate the label replacement
 	label2value();
 	
-	//scrolltotop.init();
-	
 	//AJAX Live Search
-    $('#s').liveSearch({url: '/index.php?ajax=1&s='});
-    
+    $('#s').liveSearch({url: '/index.php?ajax=1&s='});    
     
     //The Featured Slider, omnomnom
     if ( $("#featured").length > 0 ) {
@@ -100,7 +97,7 @@ $(function () { //DOMdiDOM
 			show: {
 	      		delay: 10,
 	      		effect: {
-	      			type: 'slide', 
+	      			type: 'fade', 
 	      			length: 100 } 
 	      	},
 			position: {
