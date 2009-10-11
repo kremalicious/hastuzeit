@@ -93,6 +93,7 @@
 					</ul>
 				</li>
 				<?php wp_list_pages('title_li=&exclude=83,110'); ?>
+				<li class="feed"><a href="<?php bloginfo('rss2_url'); ?>" title="hastuzeit Texte &uuml;ber RSS abonnieren">RSS</a></li>
 			</ul>
 			
 			<div id="content">

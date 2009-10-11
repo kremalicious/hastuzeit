@@ -163,6 +163,12 @@ acronym {
 	background: #e0e2e5;
 }
 
+#navigation li.feed a {
+	text-align: left;
+	font-size: 0.9em;
+	line-height: 2.8em;
+}
+
 /* @end */
 
 /* @group Article Styling */

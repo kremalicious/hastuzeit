@@ -115,10 +115,6 @@ div {
 	float: left;
 }
 
-#navigation li#texte {
-	
-}
-
 #navigation li ul {
 	position: absolute;
 	display: none;
@@ -164,6 +160,29 @@ div {
 
 #navigation ul a:hover {
 	background-image: none;
+}
+
+.feed a {
+	background: url(../images/rss.png) no-repeat left center;
+	padding-left: 28px;
+}
+
+#navigation li.feed {
+	float: right;
+}
+
+#navigation li.feed a {
+	margin: 0;
+	padding-left: 28px;
+	padding-right: 5px;
+	max-width: 45px;
+	min-width: 25px;
+	background-position: 5px 11px;
+}
+
+#navigation .feed a:hover {
+	background: #e0e2e5 url(../images/rss.png) no-repeat 5px center;
+	max-width: 40px;
 }
 
 /* @end */

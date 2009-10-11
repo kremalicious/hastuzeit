@@ -109,6 +109,17 @@ function custom_login() {
 }
 add_action('login_head', 'custom_login');
 
+//Exclude categories from the main rss feed
+function feed_exclude($query) {
+	if ($query->is_feed) {
+		$query->set('cat','-3');
+	}
+
+return $query;
+}
+
+add_filter('pre_get_posts','feed_exclude');
+
 //header color
 define('HEADER_TEXTCOLOR', 'CC3399');
 function header_style() {
