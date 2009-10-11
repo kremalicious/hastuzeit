@@ -29,7 +29,7 @@
 				
 				<?php endforeach; ?>
 					
-					<li class="more"><h5><a class="more-link" href="/category/notizen" title="">Alle Notizen</a></h5></li>
+					<li class="more"><h5><a class="more-link" href="/notizen" title="Alle Notizen ansehen">Alle Notizen</a></h5></li>
 				
 				</ul>		
 			
