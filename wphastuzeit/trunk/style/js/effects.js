@@ -110,7 +110,7 @@ $(function () { //DOMdiDOM
 	      		}
 	      	},
 	      	style: {
-	      		color: '#666',
+	      		color: '#122d45',
 	      		lineHeight: '1.2em',
 	      		fontFamily: '"Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif',
 	      		maxWidth: 200,
