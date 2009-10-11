@@ -430,7 +430,7 @@ div {
 	max-width: 49%;
 }
 
-.next-links a, .wp-pagenavi a, .wp-pagenavi .current {
+.next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebartop h5 .more-link {
 	display: block;
 	color: #122D45 !important;
 	padding: 5px 10px !important;
@@ -471,12 +471,12 @@ div {
 	padding-left: 25px !important;
 }
 
-.next-links .alignright a {
+.next-links .alignright a, #sidebartop .more-link {
 	background: #e0e2e5 url(../images/more-link.png) no-repeat right center;
 	padding-right: 20px !important;
 }
 
-.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover, #ausgabe h4 a:hover, .wp-pagenavi a:hover, .wp-pagenavi .current, #tabnav .wp-pagenavi a:hover {
+.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover, #ausgabe h4 a:hover, .wp-pagenavi a:hover, .wp-pagenavi .current, #tabnav .wp-pagenavi a:hover, #sidebartop .more-link:hover {
 	color: #fff !important;
 	background-color: #ff6600 !important;
 	text-shadow: #666 0 1px 0 !important;
@@ -568,12 +568,18 @@ div {
 }
 
 #sidebar li.widget {
-	margin: 30px 0;
+	margin: 0 0 15px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+#sidebartop .widgettitle {
+	border-bottom: 1px solid #ff6600;
 }
 
 #sidebar form {
 	padding-bottom: 10px;
-	border-bottom: 1px solid #ff6600;
+	border-bottom: 1px solid #ccc;
 }
 
 #sidebar input[type=text] {
@@ -584,6 +590,25 @@ div {
 
 #sidebar label {
 	display: none;
+}
+
+#sidebartop li ul li {
+	margin-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 1em;
+}
+
+#sidebar #sidebartop .widget {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	overflow: auto;
+}
+
+#sidebartop img {
+	margin-right: 10px;
+	float: left;
 }
 
 /* @end */

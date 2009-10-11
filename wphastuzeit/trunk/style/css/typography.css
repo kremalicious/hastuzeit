@@ -54,7 +54,7 @@ h1, h2 {
 	margin-bottom: 30px;
 }
 
-h2 a, #featured h4 a {
+h2 a, #featured h4 a, #sidebartop h5 a {
 	color: #122D45;
 }
 
@@ -74,10 +74,6 @@ h4 {
 
 h5 {
 	font-size: 1em;
-}
-
-#sidebar h4 {
-	margin-bottom: 15px;
 }
 
 h4.description {
@@ -255,27 +251,7 @@ acronym {
 
 /* @end */
 
-/* Heftarchiv */
-
-.page-template-page-heftarchiv-php #main .post {
-	font-size: 0.7em;
-}
-
-.page-template-page-heftarchiv-php #main h2 {
-	border-bottom: 1px solid #ff6600;
-}
-
-.page-template-page-heftarchiv-php #main h3 {
-	color: #ccc;
-	font-size: 2em;
-	padding: 0;
-	line-height: 1.2em;
-	border-color: #ccc;
-}
-
-.page-template-page-heftarchiv-php #main p {
-	margin: 0;
-}
+/* @group Featured */
 
 #featured h3 {
 	margin: 10px 20px 0;
@@ -297,10 +273,73 @@ acronym {
 	font-size: 0.9em;
 }
 
-/* Sidebar */
+/* @end */
+
+/* @group Heftarchiv */
+
+.page-template-page-heftarchiv-php #main .post {
+	font-size: 0.7em;
+}
+
+.page-template-page-heftarchiv-php #main h2 {
+	border-bottom: 1px solid #ff6600;
+}
+
+.page-template-page-heftarchiv-php #main h3 {
+	color: #ccc;
+	font-size: 2em;
+	padding: 0;
+	line-height: 1.2em;
+	border-color: #ccc;
+}
+
+.page-template-page-heftarchiv-php #main p {
+	margin: 0;
+}
+
+/* @end */
+
+/* @group Sidebar */
+
 #sidebar {
 	font-size: 0.9em;
 }
+
+#sidebar li {
+	line-height: 1.3em;
+	margin: 5px 0;
+}
+
+#sidebar a {
+	display: block;
+}
+
+#sidebar h4 {
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+
+#sidebartop h5 {
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+
+#sidebar #sidebartop .more-link {
+	display: inline-block;
+	margin: 0;
+	background-color: transparent;
+}
+
+#sidebar #sidebartop .more .more-link {
+	display: block;
+	background-color: #e0e2e5;
+}
+
+#sidebar #sidebartop li {
+	line-height: 1.4em;
+}
+
+/* @end */
 
 /* Form Styles */
 
@@ -355,19 +394,6 @@ input.inactive {
 strong.hls {
 	background-color: #f8ffa9;
 	padding: 2px;
-}
-
-/* @end */
-
-/* @group Sidebar */
-
-#sidebar li {
-	line-height: 1.3em;
-	margin: 5px 0;
-}
-
-#sidebar a {
-	display: block;
 }
 
 /* @end */

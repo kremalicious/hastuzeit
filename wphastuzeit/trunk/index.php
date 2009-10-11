@@ -129,6 +129,7 @@ get_header(); ?>
 				$sticky=get_option('sticky_posts');
 				$args=array(
 				   'cat'=>-3,
+				   'cat'=>-60,
 				   'caller_get_posts'=>1,
 				   'post__not_in' => $sticky,
 				   'paged'=>$paged,

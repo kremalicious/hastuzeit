@@ -120,6 +120,15 @@ return $query;
 
 add_filter('pre_get_posts','feed_exclude');
 
+//custom excerpt
+function trim_excerpt($num) {
+	$limit = $num+1;
+	$excerpt = explode(' ', get_the_excerpt(), $limit);
+	array_pop($excerpt);
+	$excerpt = implode(" ",$excerpt)."...";
+	echo $excerpt;
+}
+
 //header color
 define('HEADER_TEXTCOLOR', 'CC3399');
 function header_style() {
