@@ -181,7 +181,7 @@ div {
 }
 
 #navigation .feed a:hover {
-	background: #e0e2e5 url(../images/rss.png) no-repeat 5px center;
+	background: #e0e2e5 url(../images/rss.png) no-repeat 5px 11px;
 	max-width: 40px;
 }
 
