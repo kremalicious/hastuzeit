@@ -350,7 +350,11 @@ div {
 #more-content .column {
 	width: 48%;
 	float: left;
-	padding-right: 10px;
+	margin-left: 20px;
+}
+
+#more-content .column:first-child {
+	margin-left: 0;
 }
 
 #more-content li {
@@ -464,7 +468,7 @@ div {
 /* @group Heftarchiv */
 
 .page-template-page-heftarchiv-php #main {
-	overflow: auto;
+	
 	
 }
 
@@ -519,6 +523,9 @@ div {
 
 .accordionContent {
 	overflow: auto;
+	clear: both;
+	width: 100%;
+	margin: 0 0 20px;
 }
 
 .accordionButton {

@@ -162,11 +162,11 @@ $(function () { //DOMdiDOM
     	var $visibleSiblings = $nextDiv.siblings('div:visible');
  
     	if ($visibleSiblings.length ) {
-      		$visibleSiblings.slideUp('fast', function() {
-        	$nextDiv.slideToggle('fast');
+      		$visibleSiblings.slideUp('normal', function() {
+        	$nextDiv.slideToggle('normal');
       		});
     	} else {
-       		$nextDiv.slideToggle('fast');
+       		$nextDiv.slideToggle('normal');
     	}
   	});
 	
