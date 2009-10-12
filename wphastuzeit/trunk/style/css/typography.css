@@ -135,14 +135,22 @@ acronym {
 	cursor: help;
 }
 
-.post ul {
+.hentry ul {
 	margin-left: 30px;
 	margin-bottom: 1em;
 }
 
-.post ul li {
+.hentry ul li {
 	list-style-position: outside;
 	list-style-type: disc;
+	margin-bottom: 10px;
+}
+
+blockquote {
+	color: #72808d;
+	margin-left: 30px;
+	padding-left: 10px;
+	border-left: 4px double #72808d;
 }
 
 /* @end */
