@@ -403,6 +403,10 @@ div {
 	padding-bottom: 10px;
 }
 
+.next-links {
+	padding-top: 30px;
+}
+
 .wp-pagenavi {
 	clear: both;
 	margin: 10px 0;
@@ -423,10 +427,11 @@ div {
 
 #tabnav .wp-pagenavi {
 	position: absolute;
-	left: -65px;
+	left: -63px;
 	width: 45px;
 	border: none;
 	overflow: hidden;
+	top: -30px;
 }
 
 .next-links .alignleft, .next-links .alignright {
@@ -446,6 +451,8 @@ div {
 	min-width: 20px !important;
 	height: 20px !important;
 	background: #e0e2e5 url(../images/button-overlay.png) repeat-x  !important;
+	margin-bottom: 5px;
+	margin-right: 5px;
 }
 
 .wp-pagenavi .extend {
