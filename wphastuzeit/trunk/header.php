@@ -68,7 +68,10 @@
 		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		
-		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+		<?php
+		if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1))
+		  wp_enqueue_script( 'comment-reply' );
+		?>
 		<?php wp_enqueue_script('thickbox'); ?>
 		<?php wp_head(); ?>
 
