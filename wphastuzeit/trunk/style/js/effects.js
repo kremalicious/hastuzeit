@@ -12,7 +12,14 @@ $(function () { //DOMdiDOM
 	label2value();
 	
 	//AJAX Live Search
-    $('#s').liveSearch({url: '/index.php?ajax=1&s='});    
+    $('#s').liveSearch({url: '/index.php?ajax=1&s='});
+    
+    //Laaacyyyy content images
+    $('#main img').lazyload({ 
+    	placeholder : '/wp-content/themes/wphastuzeit/style/images/lazyload-grey.png',
+    	effect 		: 'fadeIn' 
+	});
+
     
     //The Featured Slider, omnomnom
     if ( $("#featured").length > 0 ) {
