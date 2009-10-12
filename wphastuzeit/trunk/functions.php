@@ -155,4 +155,12 @@ if ( function_exists('add_custom_image_header') ) {
 	add_custom_image_header('header_style', 'admin_header_style');
 }
 
+//disable loading of some plugin styles
+add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
+
+function my_deregister_styles() {
+	wp_deregister_style( 'wp-pagenavi' );
+}
+
+
 ?>

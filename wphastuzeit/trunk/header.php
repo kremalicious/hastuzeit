@@ -69,7 +69,6 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		
 		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-		<?php wp_enqueue_script('thickbox'); ?>
 		<?php wp_head(); ?>
 
 	</head>

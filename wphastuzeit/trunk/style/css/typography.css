@@ -8,6 +8,13 @@ Author Contact	: krema@jpberlin.de
 Author WebSite	: matthiaskretschmann.com
 */
 
+/* @group THE RESET */
+*,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:400}ol,ul,li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}q:before,q:after{content:''}strong{font-weight:700}em{font-style:italic}a img{border:none}
+
+/* @end */
+
+/* START */
+
 body {
 	text-align: center;
 	font: normal 82.5%/1.7em Georgia, "Times New Roman", Times, serif;

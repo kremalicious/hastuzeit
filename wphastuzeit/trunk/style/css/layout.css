@@ -526,12 +526,16 @@ div {
 
 #ausgabe h4 a {
 	width: 145px;
-	padding: 7px 5px 7px 20px;
+	padding: 7px 5px 7px 22px;
 }
 
 .page-template-page-heftarchiv-php .post h4 a.read,
 #ausgabe h4 a.read {
 	background: #e0e2e5 url(../images/hastuzeit-master.png) -433px -128px;
+}
+
+#ausgabe h4 a.read {
+	background-position: -435px -125px;
 }
 
 .accordionContent {
