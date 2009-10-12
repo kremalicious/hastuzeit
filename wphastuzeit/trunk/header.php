@@ -81,7 +81,7 @@
 		
 			<div id="header">
 			
-				<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+				<h1><a title="Zur Startseite" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 				<p><?php bloginfo('description'); ?></p>
 				
 			</div><!-- end #header -->

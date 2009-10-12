@@ -51,6 +51,10 @@ div {
 	background-color: #CC3399;
 }
 
+#header:hover {
+	background-color: #d452a9;
+}
+
 #content {
 	float: left;
 	width: 100%;
@@ -137,11 +141,18 @@ div {
 	display: block;
 	line-height: 2.4em;
 	text-align: center;
+	background-color: #f7f7f7;
 }
 
-#navigation a:hover, .current_page_item a {
+#navigation a:hover, #navigation .current_page_item a,
+#navigation .current_page_item ul li a:hover {
 	color: #000;
 	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat 40px -85px;
+}
+
+#navigation .current_page_item ul li a {
+	color: #ff6600;
+	background-color: #f7f7f7;
 }
 
 .category-heftarchiv #texte.current_page_item a {
@@ -153,7 +164,6 @@ div {
 }
 
 #navigation ul a {
-	background: none;
 	height: 25px;
 	line-height: 2.2em;
 }
@@ -382,7 +392,6 @@ div {
 	border: 1px solid #ccc;
 	text-shadow: #fff 0 1px 0;
 	color: #122d45;
-	-webkit-transition: background-color linear 0.2s;
 }
 
 .next-links, .wp-pagenavi {
@@ -430,7 +439,6 @@ div {
 	padding: 5px 10px !important;
 	border: 1px solid #ccc !important;
 	text-shadow: #fff 0 1px 0;
-	-webkit-transition: background-color linear 0.2s;
 }
 
 .wp-pagenavi a, .wp-pagenavi .current {
@@ -521,7 +529,6 @@ div {
 	padding: 4px 5px 4px 25px;
 	width: 110px;
 	display: inline-block;
-	-webkit-transition: background-color linear 0.2s;
 }
 
 #ausgabe h4 a {
@@ -773,6 +780,11 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 	
 }
 
+#more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebartop h5 .more-link, .page-template-page-heftarchiv-php .post h4 a,
+#ausgabe h4 a, #TB_secondLine a, #navigation a, .category-link a, #header {
+	-webkit-transition: background-color linear 0.2s;
+}
+
 /* @group Thickbox */
 
 * {
@@ -803,7 +815,6 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 	cursor: pointer;
 	background-color: #e6e6e6;
 	color: #444;
-	-webkit-transition: background 0.3s linear;
 	padding: 2px 5px;
 }
 
