@@ -62,13 +62,13 @@ get_header();
 				</ul>
 			</div>
 				
-			<?php endforeach; ?>
+			<?php endforeach; wp_reset_query(); ?>
 
 		</div>
 		
 		<div class="next-links">
-			<div class="alignleft"><?php previous_post_link('%link') ?></div>
-			<div class="alignright"><?php next_post_link('%link') ?></div>
+			<div class="alignleft"><?php previous_post_link('%link', '%title', FALSE, '3') ?></div>
+			<div class="alignright"><?php next_post_link('%link', '%title', FALSE, '3') ?></div>
 		</div>
 
 	<?php comments_template(); ?>
