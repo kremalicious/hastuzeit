@@ -55,9 +55,17 @@
 		<?php } ?>
 		
 		<!-- Block the hungry search robots on some dynamic pages -->
-		<?php if(is_search() || is_archive() || is_paged() ) { ?>
-		<meta name="robots" content="noindex, nofollow" /> 
-	    <?php }?>
+		<?php if(is_single() || is_page() || is_category() || is_home()) { ?>
+			<meta name="robots" content="all,noodp" />
+		<?php } ?>
+		
+		<?php if(is_archive()) { ?>
+		  	<meta name="robots" content="noarchive,noodp" />
+		<?php } ?>
+		
+		<?php if(is_search() || is_date() || is_author() || is_tag() || is_category('Heftarchiv') || is_404()) { ?>
+		  	<meta name="robots" content="noindex,noarchive" />
+		<?php } ?>
 		
 		<!-- This brings in the delicious styles -->
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
