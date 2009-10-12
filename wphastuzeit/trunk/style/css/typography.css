@@ -230,8 +230,8 @@ acronym {
 
 .more-link {
 	margin-top: 1em;
-	background: url(../images/more-link.png) no-repeat right center;
-	padding-right: 15px;
+	background: url(../images/hastuzeit-master.png) no-repeat right -276px;
+	padding-right: 22px;
 }
 
 .meta span.comment-link {
@@ -239,7 +239,7 @@ acronym {
 }
 
 .comment-link a {
-	background: url(../images/icon-comment.png) no-repeat left center;
+	background: url(../images/hastuzeit-master.png) no-repeat -437px -92px;
 	padding-left: 18px;
 	display: block;
 	padding-right: 10px;
