@@ -37,7 +37,8 @@ body {
 
 @font-face {
 	font-family: "Aller Bold";
-	src: url("../fonts/Aller_Bd.ttf") format("truetype");
+	src: url("../fonts/Aller_Bd.eot");
+	src: local("Aller Bold"), url(../fonts/Aller_Bd.ttf);
 	font-weight: bold;
 }
 
