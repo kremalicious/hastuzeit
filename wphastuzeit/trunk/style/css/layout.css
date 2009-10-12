@@ -712,6 +712,26 @@ input[type=submit] {
 	margin-left: 2px;
 }
 
+#respond form p.subscribe-to-comments {
+	clear: none !important;
+	float: left;
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 210px;
+}
+
+#respond form p.subscribe-to-comments input {
+	float: left;
+	width: 25px !important;
+	height: 25px;
+}
+
+#respond form p.subscribe-to-comments label {
+	margin-left: 2px;
+	width: 180px;
+	float: left;
+}
+
 /* @end */
 
 /* @group Footer */

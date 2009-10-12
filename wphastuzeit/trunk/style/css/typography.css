@@ -41,7 +41,7 @@ body {
 	font-weight: bold;
 }
 
-h1,h2,h3,h4,h5,h6, .next-links {
+h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -409,6 +409,11 @@ strong.hls {
 
 #respond input, #respond textarea {
 	font-size: 0.9em;
+}
+
+#respond form p.subscribe-to-comments {
+	font-size: 0.9em;
+	line-height: 1.2em;
 }
 
 /* @group Footer */
