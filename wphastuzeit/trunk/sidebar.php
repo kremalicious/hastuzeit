@@ -11,7 +11,7 @@
 		<?php get_search_form(); ?>
 		
 		<ul id="sidebartop">
-			<li class="widget">
+			<li class="widget" id="notizen">
 				
 				<h4 class="widgettitle">Notizen</h4>
 				
@@ -23,6 +23,7 @@
 					?>
 					<li>
 						<h5><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
+						<span class="date"><?php the_time('d.m. Y') ?></span>
 						<a href="<?php the_permalink(); ?>"><?php images('1', '30', '30', 'alignleft', false); ?></a><?php trim_excerpt('10'); ?>
 						<a class="more-link" href="<?php the_permalink(); ?>">Mehr</a>
 					</li>

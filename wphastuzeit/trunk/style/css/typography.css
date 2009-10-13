@@ -41,7 +41,7 @@ body {
 	font-weight: bold;
 }
 
-h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments {
+h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments, #notizen .date {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -335,7 +335,7 @@ blockquote {
 }
 
 #sidebartop h5 {
-	margin-bottom: 5px;
+	margin-bottom: 0;
 	font-size: 1.1em;
 }
 
@@ -352,6 +352,12 @@ blockquote {
 
 #sidebar #sidebartop li {
 	line-height: 1.4em;
+}
+
+#notizen .date {
+	font-size: 0.8em;
+	color: #a8aeb6;
+	margin: 0;
 }
 
 /* @end */
