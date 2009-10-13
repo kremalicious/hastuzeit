@@ -52,7 +52,7 @@
 				
 				<ul>
 					<?php
-						$postslist = query_posts('showposts=10&cat=-3');
+						$postslist = query_posts('showposts=10&cat=-3&caller_get_posts=1');
 						foreach ($postslist as $post) : 
 						setup_postdata($post);
 					?>
