@@ -286,10 +286,14 @@ div {
 
 .scrollButtons {
   position: absolute;
+  display: block;
   top: 180px;
   cursor: pointer;
   border: none;
   z-index: 99;
+  background: transparent url(../images/hastuzeit-master.png) no-repeat -135px -262px;
+  width: 34px;
+  height: 34px;
 }
 
 .scrollButtons.left {
@@ -298,6 +302,7 @@ div {
 
 .scrollButtons.right {
   right: -20px;
+  background-position: -134px -231px;
 }
 
 #zipfel {
