@@ -156,11 +156,19 @@ if ( function_exists('add_custom_image_header') ) {
 }
 
 //disable loading of some plugin styles
-add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
-
 function my_deregister_styles() {
 	wp_deregister_style( 'wp-pagenavi' );
 }
+add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
 
+//remove the more-anchor-tag
+if ( !function_exists('remove_more_anchor') ) {
+	function remove_more_anchor($content) {
+		global $id;
+		
+		return str_replace('#more-' . $id . '"', '"', $content);
+	}
+	add_filter('the_content', 'remove_more_anchor');
+}
 
 ?>
