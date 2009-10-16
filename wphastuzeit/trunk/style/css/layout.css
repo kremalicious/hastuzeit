@@ -117,6 +117,8 @@ div {
 
 #navigation li {
 	float: left;
+	margin-right: 10px;
+	min-width: 100px;
 }
 
 #navigation li ul {
@@ -134,25 +136,59 @@ div {
 }
 
 #navigation a {
-	min-width: 80px;
+	min-width: 100px;
 	padding: 0 10px;
 	height: 40px;
-	margin-right: 10px;
 	display: block;
 	line-height: 2.4em;
 	text-align: center;
-	background-color: #f7f7f7;
 }
 
 #navigation a:hover, #navigation .current_page_item a,
 #navigation .current_page_item ul li a:hover {
 	color: #000;
-	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat 40px -85px;
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat 50px -85px;
 }
 
 #navigation .current_page_item ul li a {
 	color: #ff6600;
 	background-color: #f7f7f7;
+}
+
+#navigation li#texte.current_page_item {
+	background-image: url(../images/hastuzeit-master.png);
+	background-repeat: no-repeat;
+	background-position: -168px -224px;
+	background-color: #e0e2e5;
+}
+
+#navigation li#texte.current_page_item a {
+	background-color: transparent;
+}
+
+#navigation li#texte.current_page_item ul li a {
+	background-image: none;
+}
+
+#navigation #texte.current_page_item ul li ul li a {
+	background: none;
+}
+
+#navigation .current_page_item .current-cat a,
+#navigation li#texte.current_page_item .current-cat a,
+#navigation li:hover {
+	background-color: #e0e2e5;
+}
+
+#navigation li#texte:hover {
+	background-image: url(../images/hastuzeit-master.png);
+	background-repeat: no-repeat;
+	background-position: -168px -224px;
+	background-color: #e0e2e5;
+}
+
+#navigation li#texte:hover a {
+	background-color: transparent;
 }
 
 .category-heftarchiv #texte.current_page_item a {
@@ -179,6 +215,8 @@ div {
 
 #navigation li.feed {
 	float: right;
+	margin-right: 0;
+	min-width: 70px;
 }
 
 #navigation li.feed a {
@@ -813,7 +851,7 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 }
 
 #more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebartop h5 .more-link, .page-template-page-heftarchiv-php .post h4 a,
-#ausgabe h4 a, #TB_secondLine a, #navigation a, .category-link a, #header {
+#ausgabe h4 a, #TB_secondLine a, .category-link a, #header {
 	-webkit-transition: background-color linear 0.2s;
 }
 
