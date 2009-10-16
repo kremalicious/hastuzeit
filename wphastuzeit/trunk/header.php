@@ -42,9 +42,7 @@
 		echo apply_filters('the_excerpt_rss', $out_excerpt);
 		endwhile;
 		else:
-		bloginfo('name');
-		echo ' - ';
-		bloginfo('description');
+		bloginfo('description'); echo ' f&uuml;r und von den Studierenden der Universit&auml;ten in Halle (Saale)';
 		endif; ?>" />
 		
 		<!-- Dynamic Keywords stuff -->
