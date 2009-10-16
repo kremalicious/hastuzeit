@@ -827,7 +827,7 @@ input[type=submit] {
 
 .alignleft { float:left }
 
-img.alignleft, .wp-caption.alignleft, #featured_nav img { 
+img.alignleft, .wp-caption.alignleft, .featured_nav img { 
 	margin: 5px 20px 20px 0;
 }
 
