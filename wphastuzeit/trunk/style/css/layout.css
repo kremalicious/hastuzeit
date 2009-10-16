@@ -93,6 +93,11 @@ div {
 	min-height: 85px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	width: 477px;
+}
+
+#header:hover h1 a {
+	width: 100%;
 }
 
 #header h1, #header p {
@@ -128,7 +133,7 @@ div {
 	float: left;
 	margin-top: 1px;
 	border-bottom: 1px solid #ff6600;
-	background: url(../images/featured-shadow-top.png) repeat-x left -2px;
+	background: url(../images/featured-shadow-top.png) repeat-x left top;
 }
 
 #navigation li ul a {
