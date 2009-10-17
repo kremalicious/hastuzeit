@@ -54,23 +54,22 @@
             	<strong><?php echo $current_user->user_firstname; ?></strong>
             
             </li>
+            
             <li><a class="dashboard" href="<?php echo get_option('home'); ?>/wp-admin/">Admin Dashboard</a></li>
             <li><a class="profile" href="<?php echo get_option('home'); ?>/wp-admin/profile.php">Dein Profil</a></li>
+            
             <?php if ( current_user_can('level_2') ) : ?>
             	
             	<li><a class="new-post" href="<?php echo get_option('home'); ?>/wp-admin/post-new.php">Neuer Artikel</a></li>
-            	
-            	<?php if ( current_user_can('level_3') ) : ?>
-            		<li><a class="new-page" href="<?php echo get_option('home'); ?>/wp-admin/page-new.php">Neue Seite</a></li>
-            	 <?php endif ?>
+            	<li><a class="articles" href="<?php echo get_option('home'); ?>/wp-admin/edit.php">Artikel &Uuml;bersicht</a></li>
             	 
             	<li><a class="new-file" href="<?php echo get_option('home'); ?>/wp-admin/media-new.php">Dateien hochladen</a></li>
-            	<li><a class="sidebar-widgets" href="<?php echo get_option('home'); ?>/wp-admin/widgets.php">Sidebar Widgets</a></li>
             
             <?php endif ?>
             
             <?php if (current_user_can('level_10')) : ?>
-            	
+            
+            	<li><a class="sidebar-widgets" href="<?php echo get_option('home'); ?>/wp-admin/widgets.php">Sidebar Widgets</a></li>
             	<li><a class="new-user" href="<?php echo get_option('home'); ?>/wp-admin/user-new.php">Neuer Benutzer</a></li>
             
             <?php endif	?>
