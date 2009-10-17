@@ -35,15 +35,14 @@
 				</ul>		
 			
 			</li>
-		</ul>
-		<!--
+			
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebartop') ) : ?>
+							
+			<?php endif; ?>
+			
 
-		<h4 class="widgettitle">Partyyyy &amp; Veranstaltungen</h4>
-		
-		<?php if (function_exists('sidebarEventsCalendar')) { ?>
-			<?php sidebarEventsCalendar();?>
-		<?php } ?>
-		-->
+		</ul>
+
 		<ul id="sidebar-left" class="column">
 			
 			<li class="widget">
