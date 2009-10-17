@@ -838,13 +838,13 @@ img.aligncenter, .wp-caption.aligncenter {
 #front-admin {
 	position: absolute;
 	right: 6px;
-	bottom: -100px;
+	top: 87px;
 	width: 216px;
 	padding: 5px 15px;
 	z-index: 100;
 	font-size: 0.8em;
 	text-shadow: #fff 0 1px 0;
-	height: 130px;
+	min-height: 130px;
 }
 
 a#login-link {
@@ -949,7 +949,7 @@ a#login-link:active, a#login-link:focus {
 
 #admin-box li#hello {
 	font-size: 1.2em;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #ff6600;
 	margin: 0;
 	line-height: 1.2em;
 	padding-bottom: 5px;
@@ -957,14 +957,24 @@ a#login-link:active, a#login-link:focus {
 
 #admin-box li#hello img {
 	top: -3px;
-	left: -3px;
+	left: 0;
 	position: relative;
 	border: 1px solid #787878;
 	float: left;
 	margin-right: 5px;
 }
 
-#admin-box li:nth-child(2) {
+#admin-box #hello-dave {
+	font-size: 1em;
+	color: #b1b7c1;
+	line-height: 1.3em;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
+	padding: 7px 0 5px;
+	margin: 0;
+}
+
+#admin-box li:nth-child(3) {
 	border-top: 1px solid #fff;
 	margin-top: 0;
 	padding-top: 5px;
@@ -986,6 +996,10 @@ a#login-link:active, a#login-link:focus {
 	background-position: -4px -78px;
 }
 
+#admin-box a.articles {
+	background-position: -4px -302px;
+}
+
 #admin-box a.new-file {
 	background-position: -4px -146px;
 }
@@ -1000,6 +1014,15 @@ a#login-link:active, a#login-link:focus {
 
 #admin-box a.logout {
 	background-position: -4px -208px;
+}
+
+a.post-edit-link {
+	padding-right: 10px;
+	padding-left: 25px;
+	color: #fff;
+	text-shadow: none;
+	border-color: #009705;
+	background: #00cf00 url(../images/Admin-Icons.png) no-repeat 0 -238px;
 }
 
 /* @end */

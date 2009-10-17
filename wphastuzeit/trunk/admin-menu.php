@@ -50,10 +50,9 @@
 					$randNumber = rand(0, $number);
 					echo $greetings[$randNumber];
 				?>
-				
             	<strong><?php echo $current_user->user_firstname; ?></strong>
-            
             </li>
+            <li id="hello-dave">Just what do you think you're doing?</li>
             
             <li><a class="dashboard" href="<?php echo get_option('home'); ?>/wp-admin/">Admin Dashboard</a></li>
             <li><a class="profile" href="<?php echo get_option('home'); ?>/wp-admin/profile.php">Dein Profil</a></li>

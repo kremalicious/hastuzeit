@@ -475,8 +475,6 @@ strong.hls {
 
 /* @end */
 
-.alert { background:red; color:white }
-
 /* @group WordPress Styles */
 .wp-caption {
 	font-size: 0.8em;
@@ -489,14 +487,3 @@ strong.hls {
 }
 
 /* @end */
-
-/* Admin Front-End Links */
-
-a.post-edit-link {
-	background-color: #00cf00;
-	padding-right: 10px;
-	padding-left: 10px;
-	color: #fff;
-	text-shadow: none;
-	border-color: #009705;
-}
