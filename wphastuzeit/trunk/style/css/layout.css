@@ -248,7 +248,6 @@ div {
 	box-shadow: 0px 5px 5px #7f7f7f;
 	-webkit-box-shadow: 0px 5px 5px #7f7f7f;
 	-moz-box-shadow: 0px 5px 5px #7f7f7f;
-	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=5, offY=5, positive=true);
 	margin: 10px 0 30px -52px;
 	z-index: 3;
 	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom;
