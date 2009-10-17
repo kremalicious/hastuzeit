@@ -1,6 +1,6 @@
 	<div id="front-admin">
 		<?php 
-			global $user_identity, $user_ID, $user_email, $user_login;
+			global $user_identity, $user_ID, $user_email, $user_login, $current_user;
 			get_currentuserinfo();
 			
 			if ( !is_user_logged_in() ) { ?>
@@ -51,7 +51,7 @@
 					echo $greetings[$randNumber];
 				?>
 				
-            	<strong><?php echo $user_login ?></strong>
+            	<strong><?php echo $current_user->user_firstname; ?></strong>
             
             </li>
             <li><a class="dashboard" href="<?php echo get_option('home'); ?>/wp-admin/">Admin Dashboard</a></li>
