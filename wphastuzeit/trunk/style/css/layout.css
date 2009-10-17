@@ -124,6 +124,29 @@ div {
 	float: left;
 	margin-right: 10px;
 	min-width: 100px;
+	background: url(../images/hastuzeit-master.png) no-repeat;
+}
+
+#navigation li#texte {
+	background-position: -165px -224px;
+}
+
+#navigation li.page-item-699 {
+	background-position: -165px -186px;
+}
+
+#navigation li.page-item-85 {
+	background-position: -305px -187px;
+	padding-left: 10px;
+}
+
+#navigation li.page-item-374 {
+	background-position: -308px -224px;
+	padding-left: 10px;
+}
+
+#navigation li:hover, #navigation .current_page_item, #navigation .current-cat {
+	background-color: #e0e2e5;
 }
 
 #navigation li ul {
@@ -136,9 +159,15 @@ div {
 	background: url(../images/featured-shadow-top.png) repeat-x left top;
 }
 
-#navigation li ul a {
+#navigation li ul li {
+	background-image: none;
+}
+
+#navigation ul a {
 	padding-top: 3px;
 	padding-bottom: 3px;
+	height: 25px;
+	line-height: 2.2em;
 }
 
 #navigation li#texte:hover > ul,
@@ -159,47 +188,11 @@ div {
 #navigation a:hover, #navigation .current_page_item a,
 #navigation .current_page_item ul li a:hover {
 	color: #000;
-	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat 50px -85px;
+	background: url(../images/hastuzeit-master.png) no-repeat 50px -85px;
 }
 
 #navigation .current_page_item ul li a {
 	color: #ff6600;
-	background-color: #f7f7f7;
-}
-
-#navigation li#texte.current_page_item {
-	background-image: url(../images/hastuzeit-master.png);
-	background-repeat: no-repeat;
-	background-position: -168px -224px;
-	background-color: #e0e2e5;
-}
-
-#navigation li#texte.current_page_item a {
-	background-color: transparent;
-}
-
-#navigation li#texte.current_page_item ul li a {
-	background-image: none;
-}
-
-#navigation #texte.current_page_item ul li ul li a {
-	background: none;
-}
-
-#navigation .current_page_item .current-cat a,
-#navigation li#texte.current_page_item .current-cat a,
-#navigation li:hover {
-	background-color: #e0e2e5;
-}
-
-#navigation li#texte:hover {
-	background-image: url(../images/hastuzeit-master.png);
-	background-repeat: no-repeat;
-	background-position: -168px -224px;
-	background-color: #e0e2e5;
-}
-
-#navigation li#texte:hover a {
 	background-color: transparent;
 }
 
@@ -209,15 +202,6 @@ div {
 
 .category-heftarchiv #texte ul {
 	display: none;
-}
-
-#navigation ul a {
-	height: 25px;
-	line-height: 2.2em;
-}
-
-#navigation ul a:hover {
-	background-image: none;
 }
 
 .feed a {
