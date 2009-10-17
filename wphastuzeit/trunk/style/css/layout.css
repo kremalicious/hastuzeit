@@ -47,12 +47,9 @@ div {
 }
 
 #header {
-	margin-bottom: 10px;
 	background-color: #CC3399;
-}
-
-#header:hover {
-	background-color: #d452a9;
+	z-index: 90;
+	margin-bottom: 10px;
 }
 
 #content {
@@ -85,6 +82,7 @@ div {
 
 #header h1 {
 	border: none;
+	z-index: 90;
 }
 
 #header h1 a {
@@ -92,21 +90,17 @@ div {
 	background: url(../images/hastuzeit-master.png) no-repeat 20px 35px;
 	min-height: 85px;
 	padding-top: 20px;
-	padding-bottom: 20px;
 	width: 477px;
+	z-index: 90;
 }
 
-#header:hover h1 a {
-	width: 100%;
+#header h1 a:hover {
+	width: 510px;
 }
 
-#header h1, #header p {
+#header h1, #header #description {
 	text-indent: -99999999px;
 	margin: 0;
-}
-
-#header p {
-	position: absolute;
 }
 
 /* @end */
@@ -140,8 +134,16 @@ div {
 	padding-left: 10px;
 }
 
+#navigation li.page-item-85 a {
+	padding-left: 10px;
+}
+
 #navigation li.page-item-374 {
 	background-position: -308px -224px;
+	padding-left: 10px;
+}
+
+#navigation li.page-item-374 a {
 	padding-left: 10px;
 }
 
@@ -538,11 +540,6 @@ div {
 
 /* @group Heftarchiv */
 
-.page-template-page-heftarchiv-php #main {
-	
-	
-}
-
 .page-template-page-heftarchiv-php #main .post {
 	width: 43%;
 	margin: 8px;
@@ -835,6 +832,178 @@ img.aligncenter, .wp-caption.aligncenter {
 	margin: 10px }
 
 /* @end */
+
+/* @group Front Login */
+
+#front-admin {
+	position: absolute;
+	right: 6px;
+	bottom: -100px;
+	width: 216px;
+	padding: 5px 15px;
+	z-index: 100;
+	font-size: 0.8em;
+	text-shadow: #fff 0 1px 0;
+	height: 130px;
+}
+
+a#login-link {
+	float: right;
+	padding: 4px 10px;
+	margin-bottom: 5px;
+	color: #173148;
+	text-shadow: #ccc 0 1px 0;
+	margin-right: -15px;
+}
+
+a#login-link:active, a#login-link:focus {
+	background-color: transparent;
+}
+
+#front-admin form, #admin-box {
+	display: none;
+	clear: both;
+	float: left;
+	border: 1px solid #ccc;
+	background: #f2f2f2 url(../images/featured-grad.png) repeat-x left bottom;
+	padding: 10px;
+	-webkit-box-shadow: 0px 5px 5px #333;
+	-moz-box-shadow: 0px 5px 5px #333;
+}
+
+#front-admin p {
+	float: left;
+	width: 212px;
+	margin-left: 3px;
+	position: relative;
+	margin-bottom: 0;
+}
+
+#front-admin input {
+	width: 200px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#front-admin label {
+	width: 90px;
+	float: left;
+}
+
+#front-admin label[for=rememberme] {
+	width: 80px;
+	line-height: 1.2em;
+}
+
+#front-admin input[type=checkbox] {
+	float: left;
+	width: 20px;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+
+#front-admin input[type=submit] {
+	width: 70px;
+	float: right;
+	clear: none;
+}
+
+.letter {
+	background: #fff;
+	position: absolute;
+	color: #444;
+	padding: 3px;
+	border: 1px solid #ccc;
+	width: 20px;
+	text-align: center;
+	z-index: 1000;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+/* @end */
+
+/* @group Admin-Menu */
+
+#admin-box {
+	position: relative;
+	font-size: 1.1em;
+	display: block;
+	right: -3px;
+}
+
+#admin-box a {
+	display: block;
+	padding-left: 25px;
+	background: url(../images/Admin-Icons.png) no-repeat;
+}
+
+#admin-box a:hover {
+	background-color: #e0e2e5;
+}
+
+#admin-box li {
+	margin: 3px 0;
+	width: 212px;
+}
+
+#admin-box li#hello {
+	font-size: 1.2em;
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	line-height: 1.2em;
+	padding-bottom: 5px;
+}
+
+#admin-box li#hello img {
+	top: -3px;
+	left: -3px;
+	position: relative;
+	border: 1px solid #787878;
+	float: left;
+	margin-right: 5px;
+}
+
+#admin-box li:nth-child(2) {
+	border-top: 1px solid #fff;
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+#admin-box a.dashboard {
+	background-position: -4px -5px;
+}
+
+#admin-box a.profile {
+	background-position: -4px -268px;
+}
+
+#admin-box a.new-post {
+	background-position: -4px -41px;
+}
+
+#admin-box a.new-page {
+	background-position: -4px -78px;
+}
+
+#admin-box a.new-file {
+	background-position: -4px -146px;
+}
+
+#admin-box a.new-user {
+	background-position: -4px -115px;
+}
+
+#admin-box a.sidebar-widgets {
+	background-position: -4px -180px;
+}
+
+#admin-box a.logout {
+	background-position: -4px -208px;
+}
+
+/* @end */
+
 br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
 .clear {

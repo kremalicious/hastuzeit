@@ -41,7 +41,7 @@ body {
 	font-weight: bold;
 }
 
-h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments, #notizen .date {
+h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments, #notizen .date, #front-admin {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -101,11 +101,13 @@ a {
 a:hover, a:focus {
 	color: #000;
 	background-color: #e0e2e5;
+	-moz-outline-style: none;
 }
 
 a:active {
 	background-color: #122D45;
 	color: #fff;
+	outline: none;
 }
 
 a img,img {

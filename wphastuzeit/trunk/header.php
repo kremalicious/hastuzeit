@@ -91,8 +91,8 @@
 			<div id="header">
 			
 				<h1><a title="Zur Startseite" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-				<p><?php bloginfo('description'); ?></p>
-				
+				<p id="description"><?php bloginfo('description'); ?></p>
+				<?php include('admin-menu.php'); ?>
 			</div><!-- end #header -->
 			
 			<ul id="navigation">

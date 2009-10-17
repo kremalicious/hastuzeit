@@ -19,7 +19,6 @@ $(function () { //DOMdiDOM
     	placeholder : '/wp-content/themes/wphastuzeit/style/images/lazyload-grey.png',
     	effect 		: 'fadeIn' 
 	});
-
     
     //The Featured Slider, omnomnom
     if ( $("#featured").length > 0 ) {
@@ -131,6 +130,80 @@ $(function () { //DOMdiDOM
 			}
 		});
 	}
+	
+	//Front-End login and admin
+	var $panel = $('#front-admin > *:not(#login-link)')
+	$('#login-link').click(function(){
+		if ($panel.is(":hidden")) {
+			$panel.slideDown('normal');
+			$.cookie('panelState', 'expanded');
+		return false;
+	} else {
+		$panel.slideUp('normal');
+		$.cookie('panelState', 'collapsed');
+	return false;
+	}
+	});
+    var panelCookie = $.cookie('panelState');
+    if (panelCookie == 'collapsed') {
+ 		$panel.hide();
+ 	}
+ 	
+ 	//Password input, a bit iPhone style
+	$('input[type=password]').each(function(i,v) {
+		var input = $(v);
+		var last = input.val();
+		var pop = {
+			timer:null,
+			letter:null,
+			clear:function() {
+				if (pop.timer) { window.clearTimeout(pop.timer); }
+				if (pop.letter) { pop.letter.remove(); }
+			},
+			show:function(letter, position) {
+				pop.clear();
+				pop.letter = $('<div/>').addClass("letter")
+					.css("marginTop", -10)
+					.animate({marginTop:-30})
+					.insertBefore(input);				
+				pop.letter.css(
+					"marginLeft", 
+					Math.min(
+					(input.width() - pop.letter.width()), 
+					(position * 4)) + 
+					"px"
+					);	
+				if (letter == " ") {
+					pop.letter.html("&nbsp;");
+				}
+				else {
+					pop.letter.text(letter);
+				}
+				pop.timer = window.setTimeout(function() { pop.letter.fadeOut(); }, 500);
+			}};
+
+		input.keyup(function(e) {
+			var current = input.val();
+			if (current.length < last.length) {
+				last = input.val();
+				return;
+			}
+			for (var i = 0; i < Math.min(last.length, current.length); i++) {
+				if (current[i] != last[i]) {
+					//this must be the new character
+					pop.show(current.charAt(i), i);
+					last = input.val();
+					return;
+				}
+			
+			}
+			if (current.length > last.length) {
+				var end = current.length - 1;
+				pop.show(current.charAt(end), end);
+			}
+			last = input.val();
+		});
+	});
 	
 	//Thickbox on linked images
 	$('.#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif]').addClass('thickbox');
