@@ -1,0 +1,1299 @@
+/* LAYOUT
+=================================================
+Document		: Layout CSS Document hastuzeit.de
+Version			: 1.0.0
+Client			: hastuzeit
+Author			: Matthias Kretschmann
+Author Contact	: krema@jpberlin.de
+Author WebSite	: matthiaskretschmann.com
+*/
+
+html, body {
+	background: #122d45 url(../images/back.png) repeat left top;
+	width: 100%;
+	height: 100%;
+}
+
+div {
+	position: relative;
+}
+
+#beta {
+	width: 76px;
+	height: 80px;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	background: url(../images/hastuzeit-master.png) no-repeat -49px -213px;
+	z-index: 99;
+}
+
+#wrapper, #footer {
+	width: 920px;
+	margin: 20px auto 0;
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #fff;
+}
+
+#wrapper {
+	box-shadow: 0 5px 20px #000;
+	-webkit-box-shadow: 0 5px 20px #000;
+	-moz-box-shadow: 0 5px 20px #000;
+	padding-bottom: 50px;
+	background-image: url(../images/featured-grad.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+#header {
+	background-color: #CC3399;
+	z-index: 90;
+	margin-bottom: 10px;
+}
+
+#content {
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+
+#main {
+	width: 590px;
+	float: left;
+	clear: both;
+	margin-top: 10px;
+}
+
+#sidebar {
+	width: 290px;
+	float: right;
+	margin-top: 10px;
+}
+
+#footer, #copyright {
+	clear: both;
+	background: none;
+	border: none;
+	margin-bottom: 20px;
+}
+
+/* @group Header */
+
+#header h1 {
+	border: none;
+	z-index: 90;
+}
+
+#header h1 a {
+	display: block;
+	background: url(../images/hastuzeit-master.png) no-repeat 20px 35px;
+	min-height: 85px;
+	padding-top: 20px;
+	width: 477px;
+	z-index: 90;
+}
+
+#header h1 a:hover {
+	width: 510px;
+}
+
+#header h1, #header #description {
+	text-indent: -99999999px;
+	margin: 0;
+}
+
+/* @end */
+
+/* @group Navigation */
+
+#navigation {
+	border-top: 4px double #ff6600;
+	border-bottom: 1px solid #ff6600;
+	width: 100%;
+	float: left;
+}
+
+#navigation li {
+	float: left;
+	margin-right: 10px;
+	min-width: 100px;
+	background: url(../images/hastuzeit-master.png) no-repeat;
+}
+
+#navigation li#texte {
+	background-position: -165px -224px;
+}
+
+#navigation li.page-item-699 {
+	background-position: -165px -186px;
+}
+
+#navigation li.page-item-85 {
+	background-position: -305px -187px;
+	padding-left: 10px;
+}
+
+#navigation li.page-item-85 a {
+	padding-left: 10px;
+}
+
+#navigation li.page-item-374 {
+	background-position: -308px -224px;
+	padding-left: 10px;
+}
+
+#navigation li.page-item-374 a {
+	padding-left: 10px;
+}
+
+#navigation li:hover, #navigation .current_page_item, #navigation .current-cat {
+	background-color: #e0e2e5;
+}
+
+#navigation li ul {
+	position: absolute;
+	display: none;
+	width: 920px;
+	float: left;
+	margin-top: 1px;
+	border-bottom: 1px solid #ff6600;
+	background: url(../images/featured-shadow-top.png) repeat-x left top;
+}
+
+#navigation li ul li {
+	background-image: none;
+}
+
+#navigation ul a {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	height: 25px;
+	line-height: 2.2em;
+}
+
+#navigation li#texte:hover > ul,
+#navigation li#texte > ul:hover,
+#navigation .current_page_item > ul  {
+	display: block;
+}
+
+#navigation a {
+	min-width: 100px;
+	padding: 0 10px;
+	height: 40px;
+	display: block;
+	line-height: 2.4em;
+	text-align: center;
+}
+
+#navigation a:hover, #navigation .current_page_item a,
+#navigation .current-cat a {
+	color: #000;
+	background: url(../images/hastuzeit-master.png) no-repeat 50px -85px;
+}
+
+#navigation .current-cat a {
+	background-position: 50px -92px;
+}
+
+#navigation .current_page_item ul li a {
+	color: #ff6600;
+	background-color: transparent;
+}
+
+.category-heftarchiv #texte.current_page_item a {
+	background: none;
+}
+
+.category-heftarchiv #texte ul {
+	display: none;
+}
+
+.feed a {
+	background: url(../images/hastuzeit-master.png) no-repeat -437px -177px;
+	padding-left: 28px;
+}
+
+#navigation li.feed {
+	float: right;
+	margin-right: 0;
+	min-width: 70px;
+}
+
+#navigation li.feed a {
+	margin: 0;
+	padding-left: 28px;
+	padding-right: 5px;
+	max-width: 45px;
+	min-width: 25px;
+	background-position: -432px -166px;
+}
+
+#navigation .feed a:hover {
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat -432px -166px;
+	max-width: 40px;
+}
+
+/* @end */
+
+/* @group Featured */
+
+#featured {
+	min-height: 260px;
+	width: 635px;
+	border: 3px solid #dadada;
+	clear: both;
+	float: left;
+	box-shadow: 0px 5px 5px #7f7f7f;
+	-webkit-box-shadow: 0px 5px 5px #7f7f7f;
+	-moz-box-shadow: 0px 5px 5px #7f7f7f;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=5, offY=5, positive=true);
+	margin: 10px 0 10px -52px;
+	z-index: 3;
+	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom;
+}
+
+#featured_head {
+	padding-bottom: 23px;
+}
+
+#featured .post {
+	clear: none;
+	padding: 23px 20px 20px;
+}
+
+.featured_media, .featured_text {
+	float: left;
+	overflow: auto;
+}
+
+.featured_media {
+	width: 170px;
+}
+
+.featured_text {
+	width: 420px;
+	min-height: 180px;
+}
+
+.scroll {
+  	height: 210px;
+  	overflow: hidden;
+  	position: relative;
+  	clear: left;
+  	background: url(../images/featured-shadow.png) repeat-x left bottom;
+	margin-top: -30px;
+}
+
+.scrollContainer div.panel {
+	width: 600px; 
+}
+
+#shade {
+	overflow: hidden;
+	padding: 5px 5px 10px 20px;
+}
+
+.featured_nav .thumb {
+	float: left;
+}
+
+.featured_nav a {
+	width: 60px;
+	height: 61px;
+	display: block;
+	float: left;
+	padding-top: 1px;
+	margin-right: 7px;
+}
+
+.featured_nav a:hover, .featured_nav a:active {
+	background-color: transparent;
+}
+
+.featured_nav a.selected {
+	background: url(../images/hastuzeit-master.png) no-repeat 20px -119px;
+}
+
+.featured_nav a.selected img,
+.featured_nav a:hover img {
+	border-color: #ff6600;
+	-moz-box-shadow: 0 1px 4px #5e5e5e;
+	-webkit-box-shadow: 0 1px 4px #5e5e5e;
+	box-shadow: 0 1px 4px #5e5e5e;
+}
+
+.scrollButtons {
+  position: absolute;
+  display: block;
+  top: 180px;
+  cursor: pointer;
+  border: none;
+  z-index: 99;
+  background: transparent url(../images/hastuzeit-master.png) no-repeat -135px -262px;
+  width: 34px;
+  height: 34px;
+}
+
+.scrollButtons.left {
+  left: -20px;
+}
+
+.scrollButtons.right {
+  right: -20px;
+  background-position: -134px -231px;
+}
+
+#zipfel {
+	background: url(../images/hastuzeit-master.png) no-repeat -2px -264px;
+	width: 31px;
+	height: 22px;
+	position: absolute;
+	left: -3px;
+	bottom: -25px;
+	z-index: 2;
+}
+
+#ausgabe {
+	float: left;
+	width: 290px;
+	margin-left: 40px;
+	margin-top: 0;
+}
+
+#ausgabe .post {
+	margin: 0;
+	width: 100%;
+}
+
+#ausgabe img {
+	margin: 0;
+}
+
+#ausgabe h3 {
+	margin-top: 23px;
+	display: block;
+	margin-bottom: 28px;
+}
+
+#ausgabe h4 {
+	float: right;
+	width: 60%;
+	margin-top: 5px;
+}
+
+/* @end */
+
+#notizen, #notizen ul {
+	clear: both;
+	width: 100%;
+	min-height: 135px;
+	float: left;
+}
+
+#notizen {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 20px;
+}
+
+#notizen ul {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 1px;
+}
+
+#notizen li {
+	float: left;
+	width: 164px;
+	border-right: 1px solid #a8aeb6;
+	border-left: 1px solid #fff;
+	padding-right: 10px;
+	padding-left: 10px;
+	min-height: 120px;
+}
+
+#notizen li:first-child {
+	margin-left: -10px;
+	border-left: none;
+}
+
+#notizen li:last-child {
+	border-right: none;
+}
+
+#notizen h4 {
+	border-bottom: 1px solid #ff6600;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#notizen img {
+	margin-right: 10px;
+	float: left;
+}
+
+#notizen h4 .more-link {
+	background-position: right -275px;
+	float: right;
+	padding: 0 20px 0 10px;
+	border: 1px solid #ccc;
+	margin-top: -5px;
+}
+
+/* @group Article Styling */
+
+.post, .hentry {
+	margin: 0 0 40px;
+	clear: both;
+	float: left;
+}
+
+#main .post, #main .hentry {
+	width: 100%;
+}
+
+.meta {
+	border-bottom: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	padding: 2px 0;
+	overflow: auto;
+	clear: both;
+}
+
+#more-content {
+	overflow: auto;
+	clear: both;
+	margin-bottom: 30px;
+}
+
+#more-content img {
+	margin: 0 10px 0 0;
+}
+
+#more-content .column {
+	width: 48%;
+	float: left;
+	margin-left: 20px;
+}
+
+#more-content .column:first-child {
+	margin-left: 0;
+}
+
+#more-content li {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#more-content li a {
+	display: block;
+	height: 33px;
+	background: #e0e2e5 url(../images/button-overlay.png) repeat-x;
+	border: 1px solid #ccc;
+	text-shadow: #fff 0 1px 0;
+	color: #122d45;
+}
+
+.next-links, .wp-pagenavi {
+	clear: both;
+	margin: 10px 0;
+	overflow: auto;
+	border-top: 4px double #ff6600;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.next-links {
+	padding-top: 30px;
+}
+
+.wp-pagenavi {
+	clear: both;
+	margin: 10px 0;
+	overflow: auto;
+	border-top: 4px double #ff6600;
+	padding-top: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.home #tabnav {
+	display: none;
+}
+
+.home.paged #tabnav {
+	display: block;
+}
+
+#tabnav .wp-pagenavi {
+	position: absolute;
+	left: -63px;
+	width: 45px;
+	border: none;
+	overflow: hidden;
+	top: -30px;
+}
+
+.next-links .alignleft, .next-links .alignright {
+	max-width: 49%;
+}
+
+.next-links a, .wp-pagenavi a, .wp-pagenavi .current {
+	display: block;
+	color: #122D45 !important;
+	padding: 5px 10px !important;
+	border: 1px solid #ccc !important;
+	text-shadow: #fff 0 1px 0;
+}
+
+.wp-pagenavi a, .wp-pagenavi .current {
+	display: inline-block !important;
+	min-width: 20px !important;
+	height: 20px !important;
+	background: #e0e2e5 url(../images/button-overlay.png) repeat-x  !important;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.wp-pagenavi .extend {
+	width: 10px !important;
+	height: 20px !important;
+	padding: 5px !important;
+	background: none !important;
+	border: none !important;
+}
+
+#tabnav .wp-pagenavi .last {
+	padding-left: 2px !important;
+}
+
+#tabnav .wp-pagenavi a {
+	display: block;
+	clear: both;
+	background-color: rgba(224,226,229,0.5) !important;
+	border-color: rgba(255,255,255,0.4) !important;
+	text-shadow: #99afc1 0 1px 0;
+}
+
+.next-links .alignleft a {
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat -433px -224px;
+	padding-left: 25px !important;
+}
+
+.next-links .alignright a {
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat right -272px;
+	padding-right: 20px !important;
+}
+
+.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover, #ausgabe h4 a:hover, .wp-pagenavi a:hover, .wp-pagenavi .current, #tabnav .wp-pagenavi a:hover, #notizen h4 .more-link:hover {
+	color: #fff !important;
+	background-color: #ff6600 !important;
+	text-shadow: #666 0 1px 0 !important;
+}
+
+/* @end */
+
+/* @group Heftarchiv */
+
+.page-template-page-heftarchiv-php #main .post {
+	width: 43%;
+	margin: 8px;
+	float: left;
+	clear: none;
+	color: #122D45;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: url(../images/featured-grad.png) repeat-x left bottom;
+}
+
+.page-template-page-heftarchiv-php #main .post:hover {
+	background-color: #f2f2f2;
+}
+
+.page-template-page-heftarchiv-php #main .post img {
+	margin-bottom: 0;
+	margin-right: 5px;
+	margin-top: 0;
+}
+
+.page-template-page-heftarchiv-php #main .post h3 {
+	margin-top: 0;
+}
+
+.page-template-page-heftarchiv-php .post h4 {
+	margin: 0 0 10px;
+}
+
+.page-template-page-heftarchiv-php .post h4 a,
+#ausgabe h4 a {
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat -166px -128px;
+	border: 1px solid #ccc;
+	padding: 4px 5px 4px 25px;
+	width: 110px;
+	display: inline-block;
+}
+
+#ausgabe h4 a {
+	width: 145px;
+	padding: 7px 5px 7px 22px;
+}
+
+.page-template-page-heftarchiv-php .post h4 a.read,
+#ausgabe h4 a.read {
+	background: #e0e2e5 url(../images/hastuzeit-master.png) -433px -128px;
+}
+
+#ausgabe h4 a.read {
+	background-position: -435px -125px;
+}
+
+.accordionContent {
+	overflow: auto;
+	clear: both;
+	width: 100%;
+	margin: 0 0 20px;
+}
+
+.accordionButton {
+	padding: 5px;
+}
+
+/* @end */
+
+/* @group Sidebar */
+
+#sidebar .column {
+	width: 46%;
+}
+
+#sidebar-left {
+	float: left;
+}
+
+#sidebar-right {
+	float: right;
+}
+
+#sidebar li.widget {
+	margin: 0 0 15px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+#sidebartop .widgettitle {
+	border-bottom: 1px solid #ff6600;
+}
+
+#sidebar form {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#sidebar input[type=text] {
+	width: 194px;
+	margin-right: 5px;
+	border: 1px solid #dadada;
+}
+
+#sidebar label {
+	display: none;
+}
+
+#sidebar #sidebartop .widget {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	overflow: auto;
+}
+
+/* @end */
+
+/* @group Form Styles */
+
+input, textarea {
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+textarea {
+	max-width: 580px;
+}
+
+input[type=submit] {
+	background: #122d45 url(../images/button-overlay.png) repeat-x;
+	padding: 5px 10px 6px;
+	cursor: pointer;
+	color: #fff;
+	-moz-box-shadow: 0 1px 3px #5e5e5e;
+	-webkit-box-shadow: 0 1px 3px #5e5e5e;
+	box-shadow: 0 1px 3px #5e5e5e;
+	text-shadow: 0 -1px 1px #222;
+	border-bottom: 1px solid #222;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	top: -1px;
+}
+
+/* @end */
+
+/* @group Search */
+
+.search-results .hentry .image {
+	width: 20%;
+	margin-right: 10px;
+}
+
+.search-results .hentry .text {
+	width: 78%;
+}
+
+.search-results #main #s, .error404 #main #s {
+	width: 500px;
+	margin-bottom: 30px;
+}
+
+#live-search {
+	width: 100%;
+	background: #f9f9f9 url(../images/featured-grad.png) repeat-x left bottom;
+	box-shadow: 0px 5px 5px #7f7f7f;
+	-webkit-box-shadow: 0px 5px 5px #7f7f7f;
+	-moz-box-shadow: 0px 5px 5px #7f7f7f;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=5, offY=5, positive=true);
+	overflow: auto;
+}
+
+/* @end */
+
+/* @group Comments */
+
+#respond {
+	clear: both;
+	margin-top: 15px;
+}
+
+#respond, #respond form {
+	overflow: auto;
+	padding: 10px 2px 20px;
+}
+
+#respond form p {
+	float: right;
+	clear: right;
+}
+
+#respond form textarea {
+	float: left;
+	width: 360px;
+	margin-top: -85px;
+}
+
+#respond input[type=submit] {
+	margin-top: 1em;
+	clear: both;
+	float: left;
+	margin-left: 2px;
+}
+
+#respond form p.subscribe-to-comments {
+	clear: none !important;
+	float: left;
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 210px;
+}
+
+#respond form p.subscribe-to-comments input {
+	float: left;
+	width: 25px !important;
+	height: 25px;
+}
+
+#respond form p.subscribe-to-comments label {
+	margin-left: 2px;
+	width: 180px;
+	float: left;
+}
+
+/* @end */
+
+/* @group Footer */
+
+#footer {
+	padding: 5px;
+}
+
+#footer ul {
+	margin-left: 240px;
+	overflow: auto;
+}
+
+#footer li {
+	float: left;
+	margin: 0 10px;
+}
+
+#copyright {
+	margin-top: 30px;
+}
+
+/* @end */
+
+/* @group WordPress Styles */
+
+.aligncenter { 
+	display:block; 
+	margin:0 auto 
+}
+
+.alignleft { float:left }
+
+img.alignleft, .wp-caption.alignleft, .featured_nav img { 
+	margin: 5px 20px 20px 0;
+}
+
+img.alignright, .wp-caption.alignright { 
+	margin: 5px 0 20px 20px;
+}
+
+img.aligncenter, .wp-caption.aligncenter {
+	margin: 20px auto;
+}
+.alignright { float:right }
+
+.wp-caption { 
+	border: 1px solid #ccc;
+	background: #e0e2e5;
+	padding: 10px; 
+	margin: 10px }
+
+/* @end */
+
+/* @group Front Login */
+
+#front-admin {
+	position: absolute;
+	right: 6px;
+	top: 87px;
+	width: 216px;
+	padding: 5px 15px;
+	z-index: 100;
+	font-size: 0.8em;
+	text-shadow: #fff 0 1px 0;
+	min-height: 130px;
+}
+
+a#login-link {
+	float: right;
+	padding: 4px 10px;
+	margin-bottom: 5px;
+	color: #f7f7f7;
+	text-shadow: none;
+	margin-right: -15px;
+}
+
+a#login-link:active, a#login-link:focus {
+	background-color: transparent;
+}
+
+#front-admin form, #admin-box {
+	display: none;
+	clear: both;
+	float: left;
+	border: 1px solid #ccc;
+	background: #f2f2f2 url(../images/featured-grad.png) repeat-x left bottom;
+	padding: 10px;
+	-webkit-box-shadow: 0px 5px 5px #333;
+	-moz-box-shadow: 0px 5px 5px #333;
+}
+
+#front-admin p {
+	float: left;
+	width: 212px;
+	margin-left: 3px;
+	position: relative;
+	margin-bottom: 0;
+}
+
+#front-admin input {
+	width: 200px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#front-admin label {
+	width: 90px;
+	float: left;
+}
+
+#front-admin label[for=rememberme] {
+	width: 80px;
+	line-height: 1.2em;
+}
+
+#front-admin input[type=checkbox] {
+	float: left;
+	width: 20px;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+
+#front-admin input[type=submit] {
+	width: 70px;
+	float: right;
+	clear: none;
+}
+
+.letter {
+	background: #fff;
+	position: absolute;
+	color: #444;
+	padding: 3px;
+	border: 1px solid #ccc;
+	width: 20px;
+	text-align: center;
+	z-index: 1000;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+/* @end */
+
+/* @group Admin-Menu */
+
+#admin-box {
+	position: relative;
+	font-size: 1.1em;
+	display: block;
+	right: -3px;
+}
+
+#admin-box a {
+	display: block;
+	padding-left: 25px;
+	background: url(../images/Admin-Icons.png) no-repeat;
+}
+
+#admin-box a:hover {
+	background-color: #e0e2e5;
+}
+
+#admin-box li {
+	margin: 3px 0;
+	width: 212px;
+}
+
+#admin-box li#hello {
+	font-size: 1.2em;
+	border-bottom: 1px solid #ff6600;
+	margin: 0;
+	line-height: 1.2em;
+	padding-bottom: 5px;
+}
+
+#admin-box li#hello img {
+	top: -3px;
+	left: 0;
+	position: relative;
+	border: 1px solid #787878;
+	float: left;
+	margin-right: 5px;
+}
+
+#admin-box #hello-dave {
+	font-size: 1em;
+	color: #b1b7c1;
+	line-height: 1.3em;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
+	padding: 7px 0 5px;
+	margin: 0;
+}
+
+#admin-box li:nth-child(3) {
+	border-top: 1px solid #fff;
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+#admin-box a.dashboard {
+	background-position: -4px -5px;
+}
+
+#admin-box a.profile {
+	background-position: -4px -268px;
+}
+
+#admin-box a.new-post {
+	background-position: -4px -41px;
+}
+
+#admin-box a.new-page {
+	background-position: -4px -78px;
+}
+
+#admin-box a.articles {
+	background-position: -4px -302px;
+}
+
+#admin-box a.new-file {
+	background-position: -4px -146px;
+}
+
+#admin-box a.new-user {
+	background-position: -4px -115px;
+}
+
+#admin-box a.sidebar-widgets {
+	background-position: -4px -180px;
+}
+
+#admin-box a.logout {
+	background-position: -4px -208px;
+}
+
+a.post-edit-link {
+	padding-right: 10px;
+	padding-left: 25px;
+	color: #fff;
+	text-shadow: none;
+	border-color: #009705;
+	background: #00cf00 url(../images/Admin-Icons.png) no-repeat 0 -238px;
+}
+
+/* @end */
+
+br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
+
+.clear {
+	clear: both;
+}
+
+.qtip-wrapper {
+	box-shadow: 0px 3px 5px #7f7f7f;
+	-webkit-box-shadow: 0px 3px 5px #7f7f7f;
+	-moz-box-shadow: 0px 3px 5px #7f7f7f;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=3, offY=5, positive=true);
+	background: #fff url(../images/tip.png) repeat-x left bottom;
+	
+}
+
+#more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #notizen h4 .more-link, .page-template-page-heftarchiv-php .post h4 a,
+#ausgabe h4 a, #TB_secondLine a, .category-link a, #header {
+	-webkit-transition: background-color linear 0.2s;
+}
+
+/* @group Thickbox */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#TB_window {
+	color: #333333;
+}
+
+#TB_secondLine {
+	color: #666666;
+}
+
+#TB_secondLine span {
+	
+}
+
+#TB_secondLine a {
+	width: 100px;
+	font-size: 1em;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	background-color: #e6e6e6;
+	color: #444;
+	padding: 2px 5px;
+}
+
+#TB_secondLine #TB_prev {
+	margin-left: 20px;
+}
+
+#TB_window a:link {
+	color: #666666;
+}
+
+#TB_window a:visited {
+	color: #666666;
+}
+
+#TB_window a:hover {
+	color: #000;
+}
+
+#TB_window a:active {
+	color: #666666;
+}
+
+#TB_window a:focus {
+	color: #666666;
+}
+
+#TB_overlay {
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.TB_overlayBG, .TB_overlayMacFFBGHack {
+	background-color: #fff;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+* html #TB_overlay {
+
+
+/* ie6 hack */
+     position: absolute;
+	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_window {
+	position: fixed;
+	border: 1px solid #ccc;
+	background: #f6f6f6 url(../images/featured-grad.png) repeat-x left bottom;
+	z-index: 102;
+	color: #000000;
+	display: none;
+	text-align: left;
+	top: 50%;
+	left: 50%;
+	box-shadow: #ccc 0px 2px 5px;
+	-webkit-box-shadow: #ccc 0px 2px 5px;
+	-moz-box-shadow: #ccc 0px 2px 5px;
+	-khtml-box-shadow: #ccc 0px 2px 5px;
+	text-shadow: #fff 0 1px 0;
+}
+
+* html #TB_window {
+
+
+/* ie6 hack */
+position: absolute;
+	margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_window img#TB_Image {
+	display: block;
+	margin: 15px 0 0 15px;
+}
+
+#TB_caption {
+	padding: 7px 30px 10px 15px;
+	float: left;
+}
+
+#TB_closeWindow {
+	height: 25px;
+	padding: 11px 15px 10px 0;
+	float: right;
+	margin-top: 5px;
+}
+
+#TB_closeAjaxWindow {
+	padding: 7px 10px 5px 0;
+	margin-bottom: 1px;
+	text-align: right;
+	float: right;
+}
+
+#TB_ajaxWindowTitle {
+	float: left;
+	padding: 7px 0 5px 10px;
+	margin-bottom: 1px;
+}
+
+#TB_title {
+	background-color: #e8e8e8;
+	height: 27px;
+}
+
+#TB_ajaxContent {
+	clear: both;
+	padding: 2px 15px 15px 15px;
+	overflow: auto;
+	text-align: left;
+	line-height: 1.4em;
+}
+
+#TB_ajaxContent.TB_modal {
+	padding: 15px;
+}
+
+#TB_ajaxContent p {
+	padding: 5px 0px 5px 0px;
+}
+
+#TB_load {
+	position: fixed;
+	display: none;
+	height: 13px;
+	width: 208px;
+	z-index: 103;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -10
+
+4px;
+/* -height/2 0 0 -width/2 */
+}
+
+* html #TB_load {
+
+
+/* ie6 hack */
+position: absolute;
+	margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_HideSelect {
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	border: none;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+}
+
+* html #TB_HideSelect {
+
+
+/* ie6 hack */
+     position: absolute;
+	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_iframeContent {
+	clear: both;
+	border: none;
+	margin-bottom: -1px;
+	margin-top: 1px;
+	_margin-bottom: 1px;
+}
+
+/* @end */
