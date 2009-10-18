@@ -602,6 +602,10 @@ div {
 	padding: 5px;
 }
 
+.page-template-page-heftarchiv-php .accordionButton.open {
+	background-image: url(../images/triangle-open.png) !important;
+}
+
 /* @end */
 
 /* @group Sidebar */

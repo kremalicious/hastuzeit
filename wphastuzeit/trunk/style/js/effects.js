@@ -226,7 +226,12 @@ $(function () { //DOMdiDOM
 	
 	$content.hide();
 	$contentFirst.show();
-	$trigger.css('cursor', 'pointer');
+	$contentFirst.prev('h2').addClass('open');
+	$trigger.css({
+		cursor: 'pointer',
+		background: 'url(/wp-content/themes/wphastuzeit/style/images/triangle-closed.png) no-repeat 5px center',
+		paddingLeft: '25px',
+		});
 	
 	$trigger.hover(function() {
   		$(this).css('backgroundColor','#e0e2e5');
@@ -240,10 +245,11 @@ $(function () { //DOMdiDOM
  
     	if ($visibleSiblings.length ) {
       		$visibleSiblings.slideUp('normal', function() {
-        	$nextDiv.slideToggle('normal');
+      		$visibleSiblings.prev('h2').toggleClass('open')
+        	$nextDiv.slideToggle('normal').prev('h2').toggleClass('open');
       		});
     	} else {
-       		$nextDiv.slideToggle('normal');
+       		$nextDiv.slideToggle('normal').prev('h2').toggleClass('open');
     	}
   	});
 	
