@@ -177,4 +177,12 @@ if ( !function_exists('remove_more_anchor') ) {
 	add_filter('the_content', 'remove_more_anchor');
 }
 
+//Custom default gravatar
+function wphastuzeit_addgravatar( $avatar_defaults ) {
+	$myavatar = get_stylesheet_directory_uri() . '/style/images/hastuzeit-gravatar.png';
+	$avatar_defaults[$myavatar] = 'WP Hastuzeit Gravatar';
+	return $avatar_defaults;
+}
+add_filter( 'avatar_defaults', 'wphastuzeit_addgravatar' );
+
 ?>

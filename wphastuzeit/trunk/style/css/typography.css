@@ -41,7 +41,7 @@ body {
 	font-weight: bold;
 }
 
-h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments, #notizen .date, #front-admin {
+h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments, #notizen .date, #front-admin, .comment-author, .reply {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -430,6 +430,16 @@ strong.hls {
 #respond form p.subscribe-to-comments {
 	font-size: 0.9em;
 	line-height: 1.2em;
+}
+
+.comment-author, .comment-meta, .comment-meta a, .reply {
+	font-size: 0.9em;
+	line-height: 1.2em;
+	color: #b1b7c1;
+}
+
+.depth-2 {
+	font-size: 0.9em;
 }
 
 /* @group Footer */

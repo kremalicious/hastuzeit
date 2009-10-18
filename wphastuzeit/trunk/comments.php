@@ -23,7 +23,14 @@
 	<?php previous_comments_link() ?> | <?php next_comments_link() ?>
 
 	<ol class="commentlist">
-	<?php wp_list_comments(); ?>
+		
+		<?php 
+			$args = array(
+				'avatar_size' => 47,
+				'type' => 'comment'
+			);
+			wp_list_comments($args); ?>
+
 	</ol>
 
 	<?php previous_comments_link() ?> | <?php next_comments_link() ?>

@@ -782,6 +782,60 @@ input[type=submit] {
 	float: left;
 }
 
+.commentlist {
+	border-top: 1px solid #b1b7c1;
+	width: 100%;
+	margin: 10px 0;
+	overflow: auto;
+}
+
+.comment {
+	clear: both;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #b1b7c1;
+	border-top: 1px solid #fff;
+}
+
+.comment-body {
+	width: 100%;
+	height: 100%;
+	display: block;
+	float: left;
+	margin: 15px 0;
+}
+
+.comment-author {
+	float: left;
+	width: 100px;
+	margin-right: 10px;
+}
+
+.comment-author img {
+	margin-bottom: 5px;
+}
+
+.comment-meta {
+	margin-bottom: 5px;
+}
+
+.reply {
+	float: right;
+	bottom: -12px;
+	margin-right: 0;
+}
+
+.commentlist .children {
+	border-top: 1px solid #dfdfdf;
+	clear: both;
+	overflow: auto;
+	margin-left: 40px;
+}
+
+.commentlist .children li:last-child {
+	border-bottom: none;
+}
+
 /* @end */
 
 /* @group Footer */

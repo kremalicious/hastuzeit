@@ -29,7 +29,8 @@
 		<ul id="admin-box">
             <li id="hello">
             	<?php 
-				 	echo get_avatar( $user_email, $size = '20' ); ?>
+			 		echo get_avatar( $user_email, $size = '20' );
+				 ?>
 				<?php
 					$greetings = array(
 				    'Hallo',
