@@ -901,7 +901,6 @@ img.aligncenter, .wp-caption.aligncenter {
 	z-index: 100;
 	font-size: 0.8em;
 	text-shadow: #fff 0 1px 0;
-	min-height: 130px;
 }
 
 a#login-link {
