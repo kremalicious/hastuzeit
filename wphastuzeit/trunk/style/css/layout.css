@@ -697,7 +697,6 @@ input[type=submit] {
 	border-left: none;
 	border-right: none;
 	position: relative;
-	cursor: pointer;
 	display: inline-block;
 	top: -1px;
 }
@@ -905,7 +904,7 @@ img.aligncenter, .wp-caption.aligncenter {
 
 a#login-link {
 	float: right;
-	padding: 4px 10px;
+	padding: 2px 10px;
 	margin-bottom: 5px;
 	color: #f7f7f7;
 	text-shadow: none;
@@ -1072,13 +1071,21 @@ a#login-link:active, a#login-link:focus {
 	background-position: -4px -208px;
 }
 
-a.post-edit-link {
+a.post-edit-link, 
+a#login-link.loggedin {
 	padding-right: 10px;
 	padding-left: 25px;
 	color: #fff;
 	text-shadow: none;
-	border-color: #009705;
+	border-color: #005f03;
 	background: #00cf00 url(../images/Admin-Icons.png) no-repeat 0 -238px;
+}
+
+a#login-link.loggedin {
+	padding-left: 10px;
+	background-image: url(../images/button-overlay.png);
+	background-repeat:  repeat-x;
+	background-position: left top;
 }
 
 /* @end */

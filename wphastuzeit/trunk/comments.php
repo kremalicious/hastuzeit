@@ -74,7 +74,7 @@
 		<p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
 		<label for="email"><small>Mail (bleibt geheim) <?php if ($req) echo "(ben&ouml;tigt)"; ?></small></label></p>
 
-		<p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
+		<p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" onblur="if(this.value=='http://')this.value='';" onfocus="if(this.value=='Website')this.value='http://';" size="22" tabindex="3" />
 		<label for="url"><small>Website</small></label></p>
 
 		<?php endif; ?>

@@ -131,7 +131,7 @@ $(function () { //DOMdiDOM
 		});
 	}
 	
-	//Front-End login and admin
+	//Front-End login and admin, with cookie magic
 	var $panel = $('#front-admin > *:not(#login-link)')
 	$('#login-link').click(function(){
 		if ($panel.is(":hidden")) {
@@ -190,7 +190,6 @@ $(function () { //DOMdiDOM
 			}
 			for (var i = 0; i < Math.min(last.length, current.length); i++) {
 				if (current[i] != last[i]) {
-					//this must be the new character
 					pop.show(current.charAt(i), i);
 					last = input.val();
 					return;
