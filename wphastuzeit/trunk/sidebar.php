@@ -13,11 +13,11 @@
 		<ul id="sidebartop">
 			<li class="widget" id="notizen">
 				
-				<h4 class="widgettitle">Notizen</h4>
+				<h4 class="widgettitle">Pinnwand</h4>
 				
 				<ul>
 					<?php
-						$notizen = get_posts('showposts=5&cat=-3&category_name=Notizen');
+						$notizen = get_posts('showposts=5&cat=-3&category_name=Pinnwand');
 						foreach ($notizen as $post) : 
 						setup_postdata($post);
 					?>
@@ -30,7 +30,7 @@
 				
 				<?php endforeach; ?>
 					
-					<li class="more"><h5><a class="more-link" href="/notizen" title="Alle Notizen ansehen">Alle Notizen</a></h5></li>
+					<li class="more"><h5><a class="more-link" href="/pinnwand" title="Pinnwand ansehen">Die ganze Pinnwand</a></h5></li>
 				
 				</ul>		
 			
