@@ -205,7 +205,7 @@ $(function () { //DOMdiDOM
 	});
 	
 	//Thickbox on linked images
-	$('.#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif]').addClass('thickbox');
+	$('#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif]').addClass('thickbox');
     
     //Search term highlighting init
 	if(typeof(hls_query) != 'undefined'){
