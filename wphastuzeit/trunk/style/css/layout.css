@@ -887,6 +887,11 @@ img.aligncenter, .wp-caption.aligncenter {
 	padding: 10px; 
 	margin: 10px }
 
+.wp-smiley {
+	display: inline;
+	border: none;
+}
+
 /* @end */
 
 /* @group Front Login */
