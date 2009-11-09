@@ -637,12 +637,6 @@ div {
 	border-bottom: 1px solid #ccc;
 }
 
-#sidebar input[type=text] {
-	width: 194px;
-	margin-right: 5px;
-	border: 1px solid #dadada;
-}
-
 #sidebar label {
 	display: none;
 }
@@ -704,6 +698,17 @@ input[type=submit] {
 /* @end */
 
 /* @group Search */
+
+#sidebar input[type=text] {
+	width: 164px;
+	margin-right: 5px;
+	border: 1px solid #dadada;
+}
+
+#searchform div {
+	background: url(../images/hastuzeit-master.png) no-repeat -169px -269px;
+	padding-left: 30px;
+}
 
 .search-results .hentry .image {
 	width: 20%;
