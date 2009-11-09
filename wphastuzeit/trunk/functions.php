@@ -146,8 +146,9 @@ function header_style() {
 	</style>
 	<?php
 }
+/*
 
-function admin_header_style() {
+//function admin_header_style() {
 	?>
 	<style type="text/css">
 	#header {
@@ -160,6 +161,7 @@ function admin_header_style() {
 if ( function_exists('add_custom_image_header') ) {
 	add_custom_image_header('header_style', 'admin_header_style');
 }
+*/
 
 //disable loading of some plugin styles
 function my_deregister_styles() {
