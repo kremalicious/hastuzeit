@@ -570,7 +570,7 @@ div {
 
 .page-template-page-heftarchiv-php .post h4 a,
 #ausgabe h4 a {
-	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat -166px -128px;
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat -164px -130px;
 	border: 1px solid #ccc;
 	padding: 4px 5px 4px 25px;
 	width: 110px;
@@ -580,6 +580,7 @@ div {
 #ausgabe h4 a {
 	width: 145px;
 	padding: 7px 5px 7px 22px;
+	background-position: -164px -128px;
 }
 
 .page-template-page-heftarchiv-php .post h4 a.read,
