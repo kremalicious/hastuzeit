@@ -71,7 +71,7 @@ get_header();
 			<div class="alignright"><?php next_post_link('%link', '%title', FALSE, '3') ?></div>
 		</div>
 
-	<?php comments_template(); ?>
+	<?php comments_template('',true); ?>
 
 	<?php endwhile; else: ?>
 

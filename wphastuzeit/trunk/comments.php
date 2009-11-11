@@ -15,25 +15,51 @@
 	}
 ?>
 
-<!-- You can start editing here. -->
-
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
-	<?php previous_comments_link() ?> | <?php next_comments_link() ?>
+	<!-- Normal comments -->
+	<?php if ( !empty($comments_by_type['comment']) ) : ?>
+	
+		<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
-	<ol class="commentlist">
+		<?php previous_comments_link() ?> | <?php next_comments_link() ?>
+
+		<ol class="commentlist">
 		
-		<?php 
-			$args = array(
-				'avatar_size' => 47,
-				'type' => 'comment'
-			);
-			wp_list_comments($args); ?>
+			<?php 
+				$args = array(
+					'avatar_size' => 47,
+					'type' => 'comment'
+				);
+				wp_list_comments($args); ?>
+	
+		</ol>
 
-	</ol>
+		<?php previous_comments_link() ?> | <?php next_comments_link() ?>
+	
+	<?php endif; ?>
+	
+	<!-- Tweetbacks -->
+	<?php if ( ! empty($comments_by_type['tweetback']) ) : ?>
+	  
+		  <h3 id="tweets">Tweetbacks</h3>
+		  
+		  <ol class="commentlist">
+		  	<?php wp_list_comments('type=tweetback'); ?>
+		  </ol>
+	  
+	<?php endif; ?>
+	
+	<!-- Pings and trackbacks -->
+	<?php if ( ! empty($comments_by_type['pings']) ) : ?>
+	  
+	  <h3 id="pings">Trackbacks/Pingbacks</h3>
+	  
+	  <ol class="commentlist">
+	  	<?php wp_list_comments('type=pings'); ?>
+	  </ol>
 
-	<?php previous_comments_link() ?> | <?php next_comments_link() ?>
+	<?php endif; ?>
 
 <?php else : // this is displayed if there are no comments so far ?>
 
