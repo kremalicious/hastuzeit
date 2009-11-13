@@ -37,6 +37,13 @@ if( !is_admin()){
 //remove the Wordpress version from the code
 remove_action('wp_head', 'wp_generator');
 
+//Ping separation
+function list_pings($comment, $args, $depth) {
+       $GLOBALS['comment'] = $comment; ?>
+       <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>"><?php comment_author_link() ?></li>
+<?php
+}
+
 // No self-pings
 if ( !function_exists('noself_ping') ) {
 	function noself_ping(&$links) {
@@ -46,6 +53,18 @@ if ( !function_exists('noself_ping') ) {
 				unset($links[$l]);
 	}
 	add_action( 'pre_ping', 'noself_ping' );
+}
+
+//Exclude Pings from comment count
+add_filter('get_comments_number', 'comment_count', 0);
+function comment_count( $count ) {
+        if ( ! is_admin() ) {
+                global $id;
+                $comments_by_type = &separate_comments(get_comments('status=approve&post_id=' . $id));
+                return count($comments_by_type['comment']);
+        } else {
+                return $count;
+        }
 }
 
 //special the_category so we can exclude some categories

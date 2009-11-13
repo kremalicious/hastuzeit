@@ -31,7 +31,6 @@ div {
 #wrapper, #footer {
 	width: 920px;
 	margin: 20px auto 0;
-	background-color: #f7f7f7;
 	padding: 20px;
 	border: 1px solid #fff;
 }
@@ -535,6 +534,11 @@ div {
 	text-shadow: #666 0 1px 0 !important;
 }
 
+#tags {
+	clear: both;
+	margin: 20px 0;
+}
+
 /* @end */
 
 /* @group Heftarchiv */
@@ -850,7 +854,7 @@ input[type=submit] {
 }
 
 #footer ul {
-	margin-left: 240px;
+	margin-left: 220px;
 	overflow: auto;
 }
 
@@ -1120,6 +1124,34 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 #ausgabe h4 a, #TB_secondLine a, .category-link a, #header {
 	-webkit-transition: background-color linear 0.2s;
 }
+
+/* @group EventCalendar3 */
+
+.ec3_list {
+	color: #122D45 !important;
+	padding-bottom: 0 !important;
+}
+
+.ec3_list ul li {
+	border: none !important;
+	padding-bottom: 0 !important;
+}
+
+.ec3_widget_cal {
+	margin-top: 0 !important;
+	margin-bottom: 30px !important;
+}
+
+#wp-calendar .nav {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+
+#wp-calendar table td {
+	
+}
+
+/* @end */
 
 /* @group Thickbox */
 

@@ -12,6 +12,8 @@ Template Name: Heftarchiv
 				
 				<h1 class="pagetitle"><?php the_title(); ?></h1>
 				
+				<?php edit_post_link('Bearbeiten', '<p>', '</p>'); ?>
+				
 				<?php the_content(); ?>
 					  
 				<?php endwhile; endif; ?>

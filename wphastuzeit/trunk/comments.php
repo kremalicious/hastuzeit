@@ -39,24 +39,13 @@
 	
 	<?php endif; ?>
 	
-	<!-- Tweetbacks -->
-	<?php if ( ! empty($comments_by_type['tweetback']) ) : ?>
-	  
-		  <h3 id="tweets">Tweetbacks</h3>
-		  
-		  <ol class="commentlist">
-		  	<?php wp_list_comments('type=tweetback'); ?>
-		  </ol>
-	  
-	<?php endif; ?>
-	
 	<!-- Pings and trackbacks -->
 	<?php if ( ! empty($comments_by_type['pings']) ) : ?>
 	  
 	  <h3 id="pings">Trackbacks/Pingbacks</h3>
 	  
 	  <ol class="commentlist">
-	  	<?php wp_list_comments('type=pings'); ?>
+	  	<?php wp_list_comments('type=pings&callback=list_pings'); ?>
 	  </ol>
 
 	<?php endif; ?>
