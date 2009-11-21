@@ -131,6 +131,38 @@ $(function () { //DOMdiDOM
 		});
 	}
 	
+	//qTip Rest
+	$('a.infopopup').qtip({
+		show: {
+      		delay: 10,
+      		effect: {
+      			type: 'fade', 
+      			length: 100 } 
+      	},
+		position: {
+      		corner: { 
+      			target: 'bottomMiddle', 
+      			tooltip: 'topLeft'
+      		}
+      	},
+      	style: {
+      		color: '#122d45',
+      		lineHeight: '1.2em',
+      		fontFamily: '"Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif',
+      		maxWidth: 200,
+      		background: 'transparent',
+		    tip: { 
+	        	corner: 'topLeft',
+	        	color: '#ccc'
+	        },
+		    border: {
+	        	width: 1,
+	        	color: '#ccc'
+	      	},
+	      
+		}
+	});
+	
 	//Front-End login and admin, with cookie magic
 	var $panel = $('#front-admin > *:not(#login-link)')
 	$('#login-link').click(function(){

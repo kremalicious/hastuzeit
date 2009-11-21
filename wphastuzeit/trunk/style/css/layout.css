@@ -224,14 +224,18 @@ div {
 	margin: 0;
 	padding-left: 28px;
 	padding-right: 5px;
-	max-width: 45px;
-	min-width: 25px;
+	max-width: 90px;
+	min-width: 45px;
 	background-position: -432px -166px;
 }
 
 #navigation .feed a:hover {
 	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat -432px -166px;
-	max-width: 40px;
+	max-width: 90px;
+}
+
+#navigation li.feed.facebook a {
+	background-position: 3px -145px;
 }
 
 /* @end */
@@ -539,6 +543,48 @@ div {
 	margin: 20px 0;
 }
 
+#authorinfo {
+	clear: both;
+	width: 96.5%;
+	float: left;
+	margin-bottom: 30px;
+	color: #122D45;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: url(../images/featured-grad.png) repeat-x left bottom;
+	font-size: 0.9em;
+}
+
+.author h1.pagetitle {
+	margin-bottom: 20px !important;
+}
+
+#authorinfo li {
+	float: right;
+	width: 500px;
+	line-height: 1.4em;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+#authorinfo li.avatar {
+	float: left;
+	width: 55px;
+}
+
+#authorinfo li.description {
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #ccc;
+}
+
+#authorinfo span {
+	color: #aea7a7;
+	width: 85px;
+	display: inline-block;
+}
+
 /* @end */
 
 /* @group Heftarchiv */
@@ -589,7 +635,7 @@ div {
 
 .page-template-page-heftarchiv-php .post h4 a.read,
 #ausgabe h4 a.read {
-	background: #e0e2e5 url(../images/hastuzeit-master.png) -433px -128px;
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat -433px -128px;
 }
 
 #ausgabe h4 a.read {
@@ -633,7 +679,7 @@ div {
 	padding-bottom: 15px;
 }
 
-#sidebartop .widgettitle {
+#sidebar .widgettitle {
 	border-bottom: 1px solid #ff6600;
 }
 
@@ -652,6 +698,10 @@ div {
 	padding-bottom: 1em;
 }
 
+#sidebartop li ul li ul li {
+	border: none;
+}
+
 #sidebar #sidebartop .widget {
 	border-bottom: 0;
 	padding-bottom: 0;
@@ -667,6 +717,11 @@ div {
 
 #sidebartop .more .more-link {
 	background-position: right -273px;
+}
+
+#sidebartop .more-link.ical {
+	margin-top: 5px !important;
+	background: url(../images/hastuzeit-master.png) no-repeat 270px -221px;
 }
 
 /* @end */
@@ -1147,8 +1202,169 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 	margin-bottom: 5px;
 }
 
+#wp-calendar table thead {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
 #wp-calendar table td {
+	padding: 0 !important;
+}
+
+#wp-calendar table.nav {
+	border-top: 1px solid #ccc;
+}
+
+#wp-calendar table td#today {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-color: #122d45;
 	
+}
+
+#wp-calendar tbody td.ec3_eventday,
+#wp-calendar tbody a {
+	color: #122d45 !important;
+	background-color: #e0e2e5 !important;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+#wp-calendar tbody a {
+	display: block;
+	color: #ff6600 !important;
+	height: 100%;
+	line-height: 3em;
+}
+
+#wp-calendar tbody a:hover {
+	background-color: #ff6600 !important;
+	color: #fff !important;
+}
+
+#wp-calendar table td:hover {
+	border: none !important;
+	background-color: #f2f2f2;
+}
+
+#wp-calendar tbody td.ec3_eventday:hover {
+	color: #fff !important;
+	background-color: #ff6600 !important;
+}
+
+#wp-calendar table.nav tbody a {
+	color: #ff6600 !important;
+	background-color: transparent !important;
+	display: inline;
+}
+
+table.ec3_schedule {
+	position: absolute;
+	top: 26px;
+	left: -152px;
+	width: 120px;
+	border-color: #fff !important;
+	background: #f7f7f7 !important;
+	border-top-color: #ff6600 !important;
+	display: block;
+	padding: 5px;
+}
+
+table.ec3_schedule td {
+	color: #122d45 !important;
+	font-size: 1.6em;
+	line-height: 1.1em;
+	text-align: right;
+	padding-bottom: 5px !important;
+}
+
+table.ec3_schedule td.ec3_start,
+table.ec3_schedule td.ec3_to,
+table.ec3_schedule td.ec3_end {
+	font-size: 0.8em;
+	color: #ababab !important;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	border-top: 1px solid #ccc;
+}
+
+#ec3_popup table {
+	background: #e0e2e5 url(../images/button-overlay.png) repeat-x left top !important;
+	border: 1px solid #ccc !important;
+	text-shadow: #fff 0 1px 0;
+	color: #122d45 !important;
+	font-weight: bold;
+}
+
+#ec3_popup table td {
+	font-size: 1.4em !important;
+	padding: 5px !important;
+	line-height: 1.3em;
+}
+
+.category-termine #wp-calendar {
+	margin-top: -40px;
+	margin-bottom: 40px;
+	width: 100%;
+	clear: both;
+	float: left;
+	font-size: 0.9em;
+}
+
+.category-termine #wp-calendar table {
+	height: 220px;
+}
+
+.category-termine #wp-calendar table.nav {
+	height: 25px;
+}
+
+.category-termine #wp-calendar table.nav tbody a#ec3_publish {
+	position: absolute;
+	top: 0;
+	left: -152px;
+	width: 120px;
+	height: 100px;
+	background: #f7f7f7 url(../images/ical-big.png) no-repeat center 10px !important;
+	display: block;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-khtml-border-radius: 0;
+	-o-border-radius: 0;
+	padding: 5px;
+	border: 1px solid #fff !important;
+	border-top-color: #ff6600 !important;
+}
+
+.category-termine #wp-calendar table.nav tbody a#ec3_publish:hover {
+	background-color: #ff6600 !important;
+	color: #fff !important;
+	border: 1px solid #fff !important;
+}
+
+.category-termine #wp-calendar table.nav tbody a#ec3_publish:after {
+	content: 'Termine als Kalender abonnieren';
+	top: 72px;
+	line-height: 1.2em;
+	position: relative;
+	font-size: 0.9em;
+}
+
+.category-termine #ec3_publish img {
+	display: none;
+}
+
+.category-termine p.author-link,
+.category-termine span.date {
+	display: none;
 }
 
 /* @end */

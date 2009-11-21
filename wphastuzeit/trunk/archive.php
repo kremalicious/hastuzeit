@@ -33,12 +33,43 @@ get_header();
 	
 		<?php
 			if(isset($_GET['author_name'])) :
-			$curauth = get_userdatabylogin($author_name);
+			$thisauthor = get_userdatabylogin($author_name);
 			else :
-			$curauth = get_userdata(intval($author));
+			$thisauthor = get_userdata(intval($author));
 			endif;
 		?>
-	<h1 class="pagetitle">Texte von <?php echo $curauth->display_name; ?></h1>
+		
+		<h1 class="pagetitle"><?php echo $thisauthor->display_name; ?></h1>
+			
+			<ul id="authorinfo">
+				<li class="avatar">
+					<?php if(function_exists('get_avatar')) {
+						echo get_avatar($thisauthor->user_email, 47, "" );
+					} ?>
+				</li>
+				
+				<?php if ($thisauthor->description) { ?>
+					<li class="description"><?php echo $thisauthor->description; ?></li>
+				<?php } ?>
+				
+				<?php if ($thisauthor->user_url) { ?>
+					<li><span>Website:</span> <a class="url" href="<?php echo $thisauthor->user_url; ?>" title="Website von <?php echo $thisauthor->display_name; ?>"><?php echo $thisauthor->user_url; ?></a></li>
+				<?php } ?>
+				
+				<?php if ($thisauthor->jabber) { ?>
+					<li><span>Jabber/GTalk:</span> <a href="xmpp:<?php echo $thisauthor->jabber; ?>"><?php echo $thisauthor->jabber; ?></a></li>
+				<?php } ?>
+				
+				<?php if ($thisauthor->aim) { ?>
+					<li><span>AIM:</span> <a href="aim:<?php echo $thisauthor->aim; ?>"><?php echo $thisauthor->aim; ?></a></li>
+				<?php } ?>
+				
+				<?php if ($thisauthor->yim) { ?>
+					<li><span>Yahoo IM:</span> <a href="ymsgr:<?php echo $thisauthor->yim; ?>"><?php echo $thisauthor->yim; ?></a></li>
+				<?php } ?>
+			</ul>
+			
+			<h2 class="pagetitle">Alle Texte von <?php echo $thisauthor->display_name; ?></h2>
 	
 	<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 	<h1 class="pagetitle">Blog Archives</h1>
@@ -58,6 +89,14 @@ get_header();
 		<?php while (have_posts()) : the_post(); ?>
 		
 		<?php if ( in_category('3') && !is_single() ) continue; ?>
+		
+		<?php if ( is_category('Termine') ) { ?>
+		
+			<?php if (function_exists('ec3_get_calendar')) {
+				ec3_get_calendar();
+			} ?>
+		
+		<?php } ?>
 			
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		

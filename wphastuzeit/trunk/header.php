@@ -98,11 +98,12 @@
 			<ul id="navigation">
 				<li id="texte" <?php if ( is_home() || is_single() || is_archive() ) echo 'class="current_page_item"' ?>><a href="<?php echo get_option('home'); ?>/" title="Texte">Texte</a>
 					<ul>
-						<?php wp_list_categories('child_of=6&title_li=&hide_empty=0'); ?> <?php wp_list_categories('include=38&title_li=&hide_empty=0'); ?>
+						<?php wp_list_categories('child_of=6&title_li=&hide_empty=0'); ?> <?php wp_list_categories('include=38,60&title_li=&hide_empty=0'); ?>
 					</ul>
 				</li>
 				<?php wp_list_pages('title_li=&exclude=83,110'); ?>
-				<li class="feed"><a href="<?php bloginfo('rss2_url'); ?>" title="hastuzeit Texte &uuml;ber RSS abonnieren">RSS</a></li>
+				<li class="feed facebook"><a rel="me" href="http://www.facebook.com/pages/hastuzeit/176710040046" title="Werde Fan der hastuzeit auf Facebook" class="infopopup">Facebook</a></li>
+				<li class="feed"><a href="<?php bloginfo('rss2_url'); ?>" title="Alle hastuzeit Texte &uuml;ber RSS abonnieren" class="infopopup">RSS</a></li>
 			</ul>
 			
 			<div id="content">
