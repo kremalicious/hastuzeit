@@ -675,7 +675,6 @@ div {
 
 #sidebar li.widget {
 	margin: 0 0 15px;
-	border-bottom: 1px solid #ccc;
 	padding-bottom: 15px;
 }
 
@@ -713,6 +712,40 @@ div {
 #sidebartop img {
 	margin-right: 10px;
 	float: left;
+}
+
+#notizen .more-link {
+	display: none;
+	clear: both;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	bottom: 0;
+	position: absolute;
+	right: 0;
+}
+
+#notizen h5 a {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#notizen h5 a:hover {
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat right -276px;
+}
+
+#notizen li:hover .more-link {
+	display: block;
+}
+
+#notizen .more .more-link {
+	position: relative;
+	margin-top: 0;
+}
+
+#notizen li {
+	overflow: hidden;
+	position: relative;
 }
 
 #sidebartop .more .more-link {

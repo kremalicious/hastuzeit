@@ -342,12 +342,6 @@ blockquote {
 	font-size: 1.1em;
 }
 
-#sidebar #sidebartop .more-link {
-	display: inline-block;
-	margin: 0;
-	background-color: transparent;
-}
-
 #sidebar #sidebartop .more .more-link {
 	display: block;
 	background-color: #e0e2e5;
