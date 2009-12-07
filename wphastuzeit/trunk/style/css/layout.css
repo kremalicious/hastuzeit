@@ -1129,6 +1129,11 @@ a#login-link:active, a#login-link:focus {
 	background-color: #e0e2e5;
 }
 
+#admin-box a:active {
+	background-color: #122d45;
+	text-shadow: none;
+}
+
 #admin-box li {
 	margin: 0;
 	width: 212px;
@@ -1152,7 +1157,7 @@ a#login-link:active, a#login-link:focus {
 }
 
 #admin-box #hello-dave {
-	font-size: 1em;
+	font-size: 0.95em;
 	color: #b1b7c1;
 	line-height: 1.3em;
 	border-top: 1px solid #fff;
