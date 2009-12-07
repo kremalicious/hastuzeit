@@ -1120,6 +1120,9 @@ a#login-link:active, a#login-link:focus {
 	display: block;
 	padding-left: 25px;
 	background: url(../images/Admin-Icons.png) no-repeat;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 #admin-box a:hover {
@@ -1127,7 +1130,7 @@ a#login-link:active, a#login-link:focus {
 }
 
 #admin-box li {
-	margin: 3px 0;
+	margin: 0;
 	width: 212px;
 }
 
@@ -1161,43 +1164,42 @@ a#login-link:active, a#login-link:focus {
 #admin-box li:nth-child(3) {
 	border-top: 1px solid #fff;
 	margin-top: 0;
-	padding-top: 5px;
 }
 
 #admin-box a.dashboard {
-	background-position: -4px -5px;
+	background-position: -4px -2px;
 }
 
 #admin-box a.profile {
-	background-position: -4px -268px;
+	background-position: -4px -265px;
 }
 
 #admin-box a.new-post {
-	background-position: -4px -41px;
+	background-position: -4px -38px;
 }
 
 #admin-box a.new-page {
-	background-position: -4px -78px;
+	background-position: -4px -75px;
 }
 
 #admin-box a.articles {
-	background-position: -4px -302px;
+	background-position: -4px -299px;
 }
 
 #admin-box a.new-file {
-	background-position: -4px -146px;
+	background-position: -4px -143px;
 }
 
 #admin-box a.new-user {
-	background-position: -4px -115px;
+	background-position: -4px -112px;
 }
 
 #admin-box a.sidebar-widgets {
-	background-position: -4px -180px;
+	background-position: -4px -177px;
 }
 
 #admin-box a.logout {
-	background-position: -4px -208px;
+	background-position: -4px -205px;
 }
 
 a.post-edit-link, 
