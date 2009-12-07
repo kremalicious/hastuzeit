@@ -793,14 +793,32 @@ input[type=submit] {
 /* @group Search */
 
 #sidebar input[type=text] {
-	width: 164px;
-	margin-right: 5px;
+	width: 280px;
+	display: block;
 	border: 1px solid #dadada;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-#searchform div {
-	background: url(../images/hastuzeit-master.png) no-repeat -169px -269px;
-	padding-left: 30px;
+#sidebar input[type=submit] {
+	background: transparent url(../images/hastuzeit-master.png) no-repeat -169px -269px;
+	position: absolute;
+	right: 3px;
+	text-indent: -999999px;
+	width: 33px;
+	height: 33px;
+	border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	top: 2px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 3px solid #fff;
+}
+
+#sidebar input[type=submit]:hover {
+	border: 3px solid #ff6600;
 }
 
 .search-results .hentry .image {
