@@ -199,9 +199,18 @@ blockquote {
 	font-style: italic;
 }
 
-.meta, .meta a, .meta .category-link a {
+.meta, 
+.meta a, 
+.meta .category-link a {
 	color: #a8aeb6;
 	text-shadow: #fff 0 1px 0;
+	-webkit-transition: color 0.2s linear;
+}
+
+.meta:hover, 
+.meta:hover a, 
+.meta:hover .category-link a {
+	color: #122d45;
 }
 
 .meta {
@@ -226,13 +235,15 @@ blockquote {
 	margin: 0;
 }
 
-.category-link a, .post-edit-link {
+.category-link a, .post-edit-link,
+.meta:hover .category-link a {
 	color: #122D45;
 	background-color: #e0e2e5;
 	padding: 1px 5px;
 	text-shadow: #fff 0 1px 0;
 	border: 1px solid #ccc;
 	margin-right: 20px;
+	-webkit-transition: background 0.2s linear;
 }
 
 .category-link a:hover, input[type=submit]:hover, .comment-link a:hover, .next-links a:hover, #more-content a:hover,
