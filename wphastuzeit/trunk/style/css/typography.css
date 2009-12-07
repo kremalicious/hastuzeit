@@ -199,8 +199,8 @@ blockquote {
 	font-style: italic;
 }
 
-.meta a {
-	color: #858585;
+.meta, .meta a, .meta .category-link a {
+	color: #a8aeb6;
 	text-shadow: #fff 0 1px 0;
 }
 
@@ -235,15 +235,22 @@ blockquote {
 	margin-right: 20px;
 }
 
-.category-link a:hover, input[type=submit]:hover, .comment-link a:hover, .next-links a:hover, #more-content a:hover {
+.category-link a:hover, input[type=submit]:hover, .comment-link a:hover, .next-links a:hover, #more-content a:hover,
+.meta .category-link a:hover {
 	color: #fff;
 	background-color: #ff6600;
 	text-shadow: #666 0 1px 0;
 }
 
-.category-link a:active, input[type=submit]:active, .comment-link a:active, .next-links a:active {
+.category-link a:active, input[type=submit]:active, .comment-link a:active, .next-links a:active,
+.meta .category-link a:active {
 	background-color: #000;
 	color: #fff;
+}
+
+.meta .category-link a {
+	background-color: rgba(224,226,229,0.3);
+	border-color: rgba(204,204,204,0.5);
 }
 
 .more-link {
@@ -358,6 +365,10 @@ blockquote {
 
 #notizen {
 	color: #a8aeb6;
+}
+
+#notizen, #notizen li {
+	-webkit-transition: color 0.2s linear;
 }
 
 #notizen li:hover,

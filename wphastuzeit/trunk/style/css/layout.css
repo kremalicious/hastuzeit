@@ -715,7 +715,10 @@ div {
 }
 
 #notizen .more-link {
-	display: none;
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
 	clear: both;
 	padding-top: 2px;
 	padding-bottom: 2px;
@@ -723,6 +726,7 @@ div {
 	bottom: 0;
 	position: absolute;
 	right: 0;
+	-webkit-transition: opacity 0.2s linear;
 }
 
 #notizen h5 a {
@@ -734,8 +738,12 @@ div {
 	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat right -276px;
 }
 
-#notizen li:hover .more-link {
-	display: block;
+#notizen li:hover .more-link,
+#notizen .more .more-link {
+	filter: alpha(opacity=100);
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
 }
 
 #notizen .more .more-link {
