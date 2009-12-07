@@ -357,6 +357,15 @@ blockquote {
 	margin: 0;
 }
 
+#notizen {
+	color: #a8aeb6;
+}
+
+#notizen li:hover,
+#notizen h4 {
+	color: #122d45;
+}
+
 /* @end */
 
 /* Form Styles */
