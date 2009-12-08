@@ -90,6 +90,13 @@ h4.description {
 	min-height: 22px;
 }
 
+.post h1, .post h2 a {
+	display: block;
+	border-bottom: 2px solid #ff6600;
+	margin-bottom: 20px;
+	margin-top: -5px;
+}
+
 /* @end */
 
 /* @group Links */
@@ -367,6 +374,10 @@ blockquote {
 
 #sidebar #sidebartop li {
 	line-height: 1.4em;
+}
+
+#sidebar input[type=text] {
+	font-size: 1.1em;
 }
 
 #notizen .date {

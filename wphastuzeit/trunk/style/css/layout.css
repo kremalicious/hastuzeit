@@ -400,11 +400,15 @@ div {
 }
 
 .meta {
-	border-bottom: 1px solid #ff6600;
-	border-top: 1px solid #ff6600;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
 	padding: 2px 0;
 	overflow: auto;
 	clear: both;
+}
+
+.meta:hover {
+	border-color: #ff6600;
 }
 
 #more-content {
@@ -803,7 +807,7 @@ input[type=submit] {
 #sidebar input[type=text] {
 	width: 280px;
 	display: block;
-	border: 1px solid #dadada;
+	border: 1px solid #ccc;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -820,8 +824,8 @@ input[type=submit] {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	top: 2px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
 	border: 3px solid #fff;
 }
 
