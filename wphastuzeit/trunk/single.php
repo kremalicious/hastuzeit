@@ -28,11 +28,6 @@ get_header();
 							    coauthors_posts_links(", ", " und ");
 							else
 							    the_author_posts_link(); ?></p>
-						
-			<!-- Nutze exzerpt, wenn angegeben, ansonsten the_content -->
-			<?php if (!empty($post->post_excerpt)) : ?>
-				<?php the_excerpt(); ?>
-			<?php endif; ?>
 			
 			<?php the_content(); ?>
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
