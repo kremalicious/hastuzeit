@@ -90,11 +90,14 @@ h4.description {
 	min-height: 22px;
 }
 
-.post h1, .post h2 a {
+.post h1, .post h2 a, #featured h4 a {
 	display: block;
-	border-bottom: 2px solid #ff6600;
 	margin-bottom: 20px;
 	margin-top: -5px;
+	background-image: url(../images/heading-line.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding-top: 3px;
 }
 
 /* @end */
