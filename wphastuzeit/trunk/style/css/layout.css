@@ -26,6 +26,7 @@ div {
 	right: -20px;
 	background: url(../images/hastuzeit-master.png) no-repeat -49px -213px;
 	z-index: 99;
+	display: none;
 }
 
 #wrapper, #footer {
@@ -100,6 +101,23 @@ div {
 #header h1, #header #description {
 	text-indent: -99999999px;
 	margin: 0;
+}
+
+#secondnav {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#secondnav li {
+	float: left;
+}
+
+#secondnav a {
+	color: #fff;
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* @end */

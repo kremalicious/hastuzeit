@@ -103,6 +103,10 @@
 				<h1><a title="Zur Startseite" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 				<p id="description"><?php bloginfo('description'); ?></p>
 				<?php include('admin-menu.php'); ?>
+				<ul id="secondnav">
+					<li><a href="/kontakt" title="hastuzeit kontaktieren">Kontakt</a></li>
+					<li><a href="/impressum" title="Impressum der hastuzeit">Impressum</a></li>
+				</ul>
 			</div><!-- end #header -->
 			
 			<ul id="navigation">

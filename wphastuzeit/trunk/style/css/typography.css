@@ -42,7 +42,7 @@ body {
 	font-weight: bold;
 }
 
-h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments, #notizen .date, #front-admin, .comment-author, .reply, table.ec3_schedule {
+h1,h2,h3,h4,h5,h6, .next-links, p.subscribe-to-comments, #notizen .date, #front-admin, .comment-author, .reply, table.ec3_schedule, #secondnav {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -191,6 +191,16 @@ blockquote {
 	text-align: left;
 	font-size: 0.9em;
 	line-height: 2.8em;
+}
+
+#secondnav {
+	text-shadow: none;
+	font-size: 0.9em;
+}
+
+#secondnav a:hover, 
+#front-admin a:hover {
+	color: #122d45;
 }
 
 /* @end */
