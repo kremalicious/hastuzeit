@@ -23,10 +23,9 @@ div {
 	height: 80px;
 	position: absolute;
 	top: -20px;
-	right: -20px;
+	right: -35px;
 	background: url(../images/hastuzeit-master.png) no-repeat -49px -213px;
 	z-index: 99;
-	display: none;
 }
 
 #wrapper, #footer {
