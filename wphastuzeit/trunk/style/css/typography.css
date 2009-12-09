@@ -423,6 +423,7 @@ input, textarea, label, .label {
 
 label, .label {
 	font-size: 1em;
+	color: #a8aeb6;
 }
 
 input.inactive,
