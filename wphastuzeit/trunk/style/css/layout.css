@@ -972,7 +972,7 @@ input[type=submit] {
 }
 
 #footer ul {
-	margin-left: 220px;
+	margin-left: 190px;
 	overflow: auto;
 }
 
@@ -1248,6 +1248,47 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 #more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebartop h5 .more-link, .page-template-page-heftarchiv-php .post h4 a,
 #ausgabe h4 a, #TB_secondLine a, .category-link a, #header {
 	-webkit-transition: background-color linear 0.2s;
+}
+
+a.facebook, a.hastuzeit, a.mail {
+	padding-left: 25px;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+a.facebook {
+	background-image: url(../images/hastuzeit-master.png);
+	background-position: 0 -154px;
+}
+
+a.hastuzeit {
+	background-image: url(/favicon.png);
+	background-position: 2px center;
+}
+
+a.mail {
+	background-image: url(/teaser/style/images/SpriteMaster.png);
+	background-position: -631px -109px;
+}
+
+.page-id-1935 .wpcf7 {
+	clear: both;
+}
+
+.page-id-1935 .alignleft {
+	margin-bottom: 30px;
+}
+
+.page-id-1935 ul.alignleft {
+	margin-top: 22px;
+}
+
+.page-id-1935 .wpcf7 input[type=text] {
+	width: 98%;
+}
+
+.page-id-1935 .wpcf7 textarea {
+	width: 100%;
 }
 
 /* @group EventCalendar3 */

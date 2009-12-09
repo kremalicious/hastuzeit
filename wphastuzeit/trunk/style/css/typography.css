@@ -411,7 +411,8 @@ input, textarea {
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
-input.inactive {
+input.inactive,
+textarea.inactive {
 	color: #bebebe;
 }
 
