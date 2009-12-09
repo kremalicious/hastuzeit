@@ -57,6 +57,7 @@ h1, h2 {
 
 .pagetitle {
 	font-size: 1.8em;
+	border-bottom: 2px solid #ff6600;
 	padding-bottom: 0;
 	margin-bottom: 30px;
 }
@@ -89,7 +90,7 @@ h4.description {
 	min-height: 22px;
 }
 
-.post h1, .post h2 a, #featured h4 a, .pagetitle {
+.post h1, .post h2 a, #featured h4 a {
 	display: block;
 	margin-bottom: 20px;
 	margin-top: -5px;
@@ -97,6 +98,16 @@ h4.description {
 	background-repeat: repeat-x;
 	background-position: left bottom;
 	padding-top: 3px;
+}
+
+#secondnav {
+	font-size: 0.9em;
+	text-shadow: none;
+}
+
+#secondnav a:hover,
+#front-admin a:hover {
+	color: #122d45;
 }
 
 /* @end */
@@ -190,16 +201,6 @@ blockquote {
 	text-align: left;
 	font-size: 0.9em;
 	line-height: 2.8em;
-}
-
-#secondnav {
-	text-shadow: none;
-	font-size: 0.9em;
-}
-
-#secondnav a:hover, 
-#front-admin a:hover {
-	color: #122d45;
 }
 
 /* @end */
@@ -414,10 +415,14 @@ blockquote {
 
 /* Form Styles */
 
-input, textarea {
+input, textarea, label, .label {
 	font-weight: bold;
 	font-size: 1.1em;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+label, .label {
+	font-size: 1em;
 }
 
 input.inactive,
