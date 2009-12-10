@@ -99,13 +99,24 @@ h4.description {
 }
 
 #secondnav {
-	font-size: 0.9em;
+	font-size: 0.8em;
 	text-shadow: none;
 }
 
 #secondnav a:hover,
 #front-admin a:hover {
 	color: #122d45;
+}
+
+#secondnav a:active,
+#front-admin a:active {
+	color: #fff;
+}
+
+#secondnav .current_page_item a {
+	color: #122d45;
+	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat 50px -103px;
+	border-bottom: 1px solid #ff6600;
 }
 
 /* @end */
