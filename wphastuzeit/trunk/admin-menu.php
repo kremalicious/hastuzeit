@@ -53,20 +53,29 @@
 				?>
             	<strong><?php echo $current_user->user_firstname; ?></strong>
             </li>
+
             <li id="hello-dave">Just what do you think you're doing?</li>
             
-            <li><a class="dashboard" href="<?php echo get_option('home'); ?>/wp-admin/">Admin Dashboard</a></li>
+            <!-- For all logged in users -->
+            <li><a class="dashboard" href="<?php echo get_option('home'); ?>/wp-admin/">Dashboard</a></li>
             <li><a class="profile" href="<?php echo get_option('home'); ?>/wp-admin/profile.php">Dein Profil</a></li>
             
+            <!-- Just for Authors and above -->
             <?php if ( current_user_can('level_2') ) : ?>
             	
             	<li><a class="new-post" href="<?php echo get_option('home'); ?>/wp-admin/post-new.php">Neuer Artikel</a></li>
+            	<li><a class="articles" href="<?php echo get_option('home'); ?>/wp-admin/edit.php?author=<?php echo $current_user->ID; ?>">Deine Artikel</a></li>
+            	             
+            <?php endif ?>
+            
+            <!-- Just for Editors and above -->
+            <?php if ( current_user_can('level_5') ) : ?>
+            
             	<li><a class="articles" href="<?php echo get_option('home'); ?>/wp-admin/edit.php">Artikel &Uuml;bersicht</a></li>
-            	 
-            	<li><a class="new-file" href="<?php echo get_option('home'); ?>/wp-admin/media-new.php">Dateien hochladen</a></li>
             
             <?php endif ?>
             
+            <!-- Just for Admins -->
             <?php if (current_user_can('level_10')) : ?>
             
             	<li><a class="sidebar-widgets" href="<?php echo get_option('home'); ?>/wp-admin/widgets.php">Sidebar Widgets</a></li>
