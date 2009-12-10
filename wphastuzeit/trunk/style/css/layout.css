@@ -885,25 +885,32 @@ input[type=submit] {
 
 #respond, #respond form {
 	overflow: auto;
-	padding: 10px 2px 20px;
+	padding: 10px 0 20px;
+}
+
+#respond form {
+	margin-left: -10px;
 }
 
 #respond form p {
-	float: right;
-	clear: right;
+	float: left;
+	margin-left: 10px;
 }
 
 #respond form textarea {
 	float: left;
-	width: 360px;
-	margin-top: -85px;
+	width: 96.1%;
+	clear: both;
+	margin-left: 10px;
 }
 
 #respond input[type=submit] {
 	margin-top: 1em;
 	clear: both;
 	float: left;
-	margin-left: 2px;
+	margin-left: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #respond form p.subscribe-to-comments {
