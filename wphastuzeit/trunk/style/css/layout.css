@@ -904,6 +904,10 @@ input[type=submit] {
 	margin-left: 10px;
 }
 
+#respond form input[type=text] {
+	width: 178px;
+}
+
 #respond input[type=submit] {
 	margin-top: 1em;
 	clear: both;
