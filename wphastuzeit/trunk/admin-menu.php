@@ -57,33 +57,33 @@
             <li id="hello-dave">Just what do you think you're doing?</li>
             
             <!-- For all logged in users -->
-            <li><a class="dashboard" href="<?php echo get_option('home'); ?>/wp-admin/">Dashboard</a></li>
-            <li><a class="profile" href="<?php echo get_option('home'); ?>/wp-admin/profile.php">Dein Profil</a></li>
+            <li class="dashboard"><a href="<?php echo get_option('home'); ?>/wp-admin/">Dashboard</a></li>
+            <li class="profile"><a href="<?php echo get_option('home'); ?>/wp-admin/profile.php">Dein Profil</a></li>
             
-            <!-- Just for Authors and above -->
-            <?php if ( current_user_can('level_2') ) : ?>
+            <!-- Just for Contributors and above -->
+            <?php if ( current_user_can('level_1') ) : ?>
             	
-            	<li><a class="new-post" href="<?php echo get_option('home'); ?>/wp-admin/post-new.php">Neuer Artikel</a></li>
-            	<li><a class="articles" href="<?php echo get_option('home'); ?>/wp-admin/edit.php?author=<?php echo $current_user->ID; ?>">Deine Artikel</a></li>
+            	<li class="new-post"><a href="<?php echo get_option('home'); ?>/wp-admin/post-new.php">Neuer Artikel</a></li>
+            	<li class="articles"><a href="<?php echo get_option('home'); ?>/wp-admin/edit.php?author=<?php echo $current_user->ID; ?>">Deine Artikel</a></li>
             	             
             <?php endif ?>
             
             <!-- Just for Editors and above -->
             <?php if ( current_user_can('level_5') ) : ?>
             
-            	<li><a class="articles" href="<?php echo get_option('home'); ?>/wp-admin/edit.php">Artikel &Uuml;bersicht</a></li>
+            	<li class="articles"><a href="<?php echo get_option('home'); ?>/wp-admin/edit.php">Artikel &Uuml;bersicht</a></li>
             
             <?php endif ?>
             
             <!-- Just for Admins -->
             <?php if (current_user_can('level_10')) : ?>
             
-            	<li><a class="sidebar-widgets" href="<?php echo get_option('home'); ?>/wp-admin/widgets.php">Sidebar Widgets</a></li>
-            	<li><a class="new-user" href="<?php echo get_option('home'); ?>/wp-admin/user-new.php">Neuer Benutzer</a></li>
+            	<li class="sidebar-widgets"><a href="<?php echo get_option('home'); ?>/wp-admin/widgets.php">Sidebar Widgets</a></li>
+            	<li class="new-user"><a href="<?php echo get_option('home'); ?>/wp-admin/user-new.php">Neuer Benutzer</a></li>
             
             <?php endif	?>
             
-            <li><a class="logout" href="<?php echo wp_logout_url( $_SERVER['REQUEST_URI'] ); ?>">Logout</a></li>
+            <li class="logout"><a href="<?php echo wp_logout_url( $_SERVER['REQUEST_URI'] ); ?>">Logout</a></li>
         </ul>
 	
 	<?php }	?>

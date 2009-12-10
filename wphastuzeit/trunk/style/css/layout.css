@@ -1154,7 +1154,7 @@ a#login-link:active, a#login-link:focus {
 	background: url(../images/Admin-Icons.png) no-repeat;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
 }
 
 #admin-box a:hover {
@@ -1192,50 +1192,48 @@ a#login-link:active, a#login-link:focus {
 	font-size: 0.95em;
 	color: #b1b7c1;
 	line-height: 1.3em;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
 	padding: 7px 0 5px;
 	margin: 0;
 }
 
 #admin-box li:nth-child(3) {
-	border-top: 1px solid #fff;
+	border-top: 1px solid #e5e5e5;
 	margin-top: 0;
 }
 
-#admin-box a.dashboard {
+#admin-box .dashboard a {
 	background-position: -4px -2px;
+	border-top: none;
 }
 
-#admin-box a.profile {
+#admin-box .profile a {
 	background-position: -4px -265px;
+	border-bottom: 1px solid #fff;
 }
 
-#admin-box a.new-post {
+#admin-box .new-post a {
 	background-position: -4px -38px;
 }
 
-#admin-box a.new-page {
+#admin-box .new-page a {
 	background-position: -4px -75px;
 }
 
-#admin-box a.articles {
+#admin-box .articles a {
 	background-position: -4px -299px;
+	border-bottom: 1px solid #fff;
 }
 
-#admin-box a.new-file {
-	background-position: -4px -143px;
-}
-
-#admin-box a.new-user {
+#admin-box .new-user a {
 	background-position: -4px -112px;
 }
 
-#admin-box a.sidebar-widgets {
+#admin-box .sidebar-widgets a {
 	background-position: -4px -177px;
 }
 
-#admin-box a.logout {
+#admin-box .logout a {
 	background-position: -4px -205px;
 }
 
