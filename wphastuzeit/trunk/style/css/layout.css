@@ -1173,7 +1173,7 @@ a#login-link:active, a#login-link:focus {
 
 #admin-box li#hello {
 	font-size: 1.2em;
-	border-bottom: 1px solid #ff6600;
+	border-bottom: 3px double #ff6600;
 	margin: 0;
 	line-height: 1.2em;
 	padding-bottom: 5px;
@@ -1197,19 +1197,14 @@ a#login-link:active, a#login-link:focus {
 	margin: 0;
 }
 
-#admin-box li:nth-child(3) {
-	border-top: 1px solid #e5e5e5;
-	margin-top: 0;
-}
-
 #admin-box .dashboard a {
 	background-position: -4px -2px;
-	border-top: none;
 }
 
 #admin-box .profile a {
 	background-position: -4px -265px;
 	border-bottom: 1px solid #fff;
+	border-top: none;
 }
 
 #admin-box .new-post a {
@@ -1223,10 +1218,17 @@ a#login-link:active, a#login-link:focus {
 #admin-box .articles a {
 	background-position: -4px -299px;
 	border-bottom: 1px solid #fff;
+	border-top: none;
+}
+
+#admin-box .articles.overview a {
+	border-top: 1px solid #e5e5e5;
 }
 
 #admin-box .new-user a {
 	background-position: -4px -112px;
+	border-top: none;
+	border-bottom: 1px solid #fff;
 }
 
 #admin-box .sidebar-widgets a {
@@ -1235,6 +1237,7 @@ a#login-link:active, a#login-link:focus {
 
 #admin-box .logout a {
 	background-position: -4px -205px;
+	border-top: 1px solid #ff6600;
 }
 
 a.post-edit-link, 
@@ -1276,6 +1279,8 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 	-webkit-transition: background-color linear 0.2s;
 }
 
+/* @group Contact Page */
+
 a.facebook, a.hastuzeit, a.mail {
 	padding-left: 25px;
 	display: block;
@@ -1316,6 +1321,8 @@ a.mail {
 .page-id-1935 .wpcf7 textarea {
 	width: 100%;
 }
+
+/* @end */
 
 /* @group EventCalendar3 */
 

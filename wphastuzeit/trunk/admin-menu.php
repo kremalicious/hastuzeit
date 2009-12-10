@@ -71,7 +71,7 @@
             <!-- Just for Editors and above -->
             <?php if ( current_user_can('level_5') ) : ?>
             
-            	<li class="articles"><a href="<?php echo get_option('home'); ?>/wp-admin/edit.php">Artikel &Uuml;bersicht</a></li>
+            	<li class="articles overview"><a href="<?php echo get_option('home'); ?>/wp-admin/edit.php">Artikel &Uuml;bersicht</a></li>
             
             <?php endif ?>
             
