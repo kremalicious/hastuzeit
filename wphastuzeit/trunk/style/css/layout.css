@@ -1040,7 +1040,7 @@ img.aligncenter, .wp-caption.aligncenter {
 .wp-caption { 
 	border: 1px solid #ccc;
 	background: #e0e2e5;
-	padding: 10px; 
+	padding: 5px; 
 	margin: 10px }
 
 .wp-smiley {
@@ -1288,6 +1288,10 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 #more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebartop h5 .more-link, .page-template-page-heftarchiv-php .post h4 a,
 #ausgabe h4 a, #TB_secondLine a, .category-link a, #header {
 	-webkit-transition: background-color linear 0.2s;
+}
+
+div.sexy-bookmarks {
+	margin-top: 40px !important;
 }
 
 /* @group Contact Page */
