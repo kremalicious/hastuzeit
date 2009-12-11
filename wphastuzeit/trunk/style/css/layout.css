@@ -1250,6 +1250,17 @@ a#login-link.loggedin {
 	background: #00cf00 url(../images/Admin-Icons.png) no-repeat 0 -238px;
 }
 
+#notizen a.post-edit-link {
+	text-indent: -99999px;
+	width: 20px;
+	height: 16px;
+	padding: 0;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	background-position: -2px -238px;
+}
+
 a#login-link.loggedin {
 	padding-left: 10px;
 	background-image: url(../images/button-overlay.png);

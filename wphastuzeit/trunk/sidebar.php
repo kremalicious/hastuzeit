@@ -26,6 +26,7 @@
 						<span class="date"><?php the_time('d.m. Y') ?></span>
 						<a href="<?php the_permalink(); ?>"><?php images('1', '30', '30', 'alignleft', false); ?></a><?php trim_excerpt('10'); ?>
 						<a class="more-link" href="<?php the_permalink(); ?>">Mehr</a>
+						<?php edit_post_link('Bearbeiten', '', ''); ?>
 					</li>
 				
 				<?php endforeach; ?>
