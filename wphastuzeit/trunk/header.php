@@ -3,9 +3,6 @@
  * @package WordPress
  * @subpackage hastuzeit
  */
- 
-ini_set('zlib.output_compression', 'On');
-ini_set('zlib.output_compression_level', '1');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -69,7 +66,8 @@ ini_set('zlib.output_compression_level', '1');
 		<?php } ?>
 		
 		<!-- This brings in the delicious styles -->
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style/css/typography.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style/css/layout.css" type="text/css" media="screen" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		
 		<!-- Favicon and Apple Touch icon -->
