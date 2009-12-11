@@ -3,6 +3,9 @@
  * @package WordPress
  * @subpackage hastuzeit
  */
+ 
+ini_set('zlib.output_compression', 'On');
+ini_set('zlib.output_compression_level', '1');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
