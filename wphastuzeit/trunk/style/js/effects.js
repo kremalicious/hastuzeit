@@ -19,6 +19,10 @@ $(function () { //DOMdiDOM
     	placeholder : '/wp-content/themes/wphastuzeit/style/images/lazyload-grey.png',
     	effect 		: 'fadeIn' 
 	});
+	
+	//Thickbox on linked images
+	$('#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif],[href$=.PNG],[href$=.JPG],[href$=.GIF]').addClass('thickbox');
+	$('#ausgabe a.thickbox, .page-template-page-heftarchiv-php a.thickbox').append('<span class="zoom"></span>')
     
     //The Featured Slider, omnomnom
     if ( $("#featured").length > 0 ) {
@@ -235,9 +239,6 @@ $(function () { //DOMdiDOM
 			last = input.val();
 		});
 	});
-	
-	//Thickbox on linked images
-	$('#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif]').addClass('thickbox');
     
     //Search term highlighting init
 	if(typeof(hls_query) != 'undefined'){

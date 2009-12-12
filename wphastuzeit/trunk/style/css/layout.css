@@ -1530,9 +1530,18 @@ table.ec3_schedule td.ec3_end {
 
 /* @group Thickbox */
 
-* {
-	padding: 0;
-	margin: 0;
+a.thickbox {
+	position: relative;
+}
+
+span.zoom {
+	background: url(../images/hastuzeit-master.png) no-repeat -38px -192px;
+	width: 13px;
+	height: 13px;
+	bottom: 8px;
+	left: 8px;
+	display: block;
+	position: absolute;
 }
 
 #TB_window {
@@ -1541,10 +1550,6 @@ table.ec3_schedule td.ec3_end {
 
 #TB_secondLine {
 	color: #666666;
-}
-
-#TB_secondLine span {
-	
 }
 
 #TB_secondLine a {
