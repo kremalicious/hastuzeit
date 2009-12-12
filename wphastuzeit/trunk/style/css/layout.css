@@ -937,11 +937,16 @@ input[type=submit] {
 	float: left;
 }
 
+h3#comments {
+	margin-bottom: 0;
+}
+
 .commentlist {
-	border-top: 1px solid #b1b7c1;
+	border-top: 1px solid #fff;
 	width: 100%;
-	margin: 10px 0;
+	margin: 0 0 10px;
 	overflow: auto;
+	padding-top: 10px;
 }
 
 .comment {
@@ -951,6 +956,10 @@ input[type=submit] {
 	border-bottom: 1px solid #b1b7c1;
 	border-top: 1px solid #fff;
 	position: relative;
+}
+
+.comment:first-child {
+	border-top: 0;
 }
 
 .comment span.says {
