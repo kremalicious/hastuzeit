@@ -1335,6 +1335,7 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
 div.sexy-bookmarks {
 	margin-bottom: 40px !important;
+	margin-top: 0 !important;
 }
 
 .noborder {
@@ -1376,6 +1377,11 @@ a.facebook {
 a.hastuzeit {
 	background-image: url(/favicon.png);
 	background-position: 2px center;
+}
+
+.sexy-bookmarks a.external {
+	background-image: none;
+	padding: 0;
 }
 
 /* @group Contact Page */

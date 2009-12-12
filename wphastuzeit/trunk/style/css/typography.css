@@ -144,7 +144,7 @@ a:active {
 	outline: none;
 }
 
-a img,img {
+body a img, body img {
 	display: block;
 	border: 3px solid #dadada;
 	-webkit-transition: border-color linear 0.2s;
