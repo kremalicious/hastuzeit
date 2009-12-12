@@ -250,8 +250,8 @@ $(function () { //DOMdiDOM
       $('#content').highlight(hls_query, 1, 'hls');
     }
     
-    //Open pdf links and external links in new window
-    $('a[href*=.pdf], a.external').click(function(){
+    //Open pdf links in new window
+    $('a[href*=.pdf]').click(function(){
 		window.open(this.href);
 	return false;
 	});
