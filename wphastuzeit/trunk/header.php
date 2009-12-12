@@ -105,6 +105,7 @@
 				<p id="description"><?php bloginfo('description'); ?></p>
 				<?php include('admin-menu.php'); ?>
 				<ul id="secondnav">
+					<li <?php if (is_page('mediadaten')) echo 'class="current_page_item"' ?>><a href="/mediadaten" title="hastuzeit Mediadaten">Mediadaten</a></li>
 					<li <?php if (is_page('kontakt')) echo 'class="current_page_item"' ?>><a href="/kontakt" title="hastuzeit kontaktieren">Kontakt/Impressum</a></li>
 				</ul>
 			</div><!-- end #header -->

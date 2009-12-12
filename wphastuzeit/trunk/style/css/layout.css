@@ -1334,14 +1334,37 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 }
 
 div.sexy-bookmarks {
-	margin-top: 40px !important;
+	margin-bottom: 40px !important;
 }
 
-/* @group Contact Page */
+.noborder {
+	border: none;
+	padding: 0;
+}
+
+p#tags {
+	background: url(../images/hastuzeit-master.png) no-repeat -443px -291px;
+	padding-left: 20px;
+	border-top: 1px solid #ff6600;
+	padding-top: 15px;
+}
+
+a.external {
+	background-image: url(../images/hastuzeit-master.png);
+	background-repeat: no-repeat;
+	background-position: 1px -352px;
+	padding-left: 14px;
+}
+
+a[href^='mailto:'] {
+	background-image: url(../images/hastuzeit-master.png);
+	background-position: -165px -96px;
+	background-repeat: no-repeat;
+	padding-left: 23px;
+}
 
 a.facebook, a.hastuzeit, a.mail {
 	padding-left: 25px;
-	display: block;
 	background-repeat: no-repeat;
 }
 
@@ -1355,10 +1378,7 @@ a.hastuzeit {
 	background-position: 2px center;
 }
 
-a.mail {
-	background-image: url(/teaser/style/images/SpriteMaster.png);
-	background-position: -631px -109px;
-}
+/* @group Contact Page */
 
 .page-id-1935 .wpcf7 {
 	clear: both;

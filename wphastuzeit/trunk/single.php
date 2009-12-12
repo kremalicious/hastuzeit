@@ -32,11 +32,11 @@ get_header();
 			<?php the_content(); ?>
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 			
-			<?php the_tags( '<p id="tags">Tags: ', ', ', '</p>'); ?>
-			
-			<?php if(function_exists('selfserv_sexy')) { selfserv_sexy(); } ?>
+			<?php the_tags( '<p id="tags">', ', ', '</p>'); ?>
 			
 		</div>
+		
+		<?php if(function_exists('selfserv_sexy')) { selfserv_sexy(); } ?>
 		
 		<div id="more-content">				
 			<?php global $post;

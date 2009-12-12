@@ -22,7 +22,12 @@ $(function () { //DOMdiDOM
 	
 	//Thickbox on linked images
 	$('#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif],[href$=.PNG],[href$=.JPG],[href$=.GIF]').addClass('thickbox');
-	$('#ausgabe a.thickbox, .page-template-page-heftarchiv-php a.thickbox, .wp-caption a.thickbox').append('<span class="zoom"></span>')
+	$('#ausgabe a.thickbox, .page-template-page-heftarchiv-php a.thickbox, .wp-caption a.thickbox').append('<span class="zoom"></span>');
+	
+	//Style external links
+	$('#main .post a').not(":has(img)").filter(function() {
+    	return this.hostname && this.hostname !== location.hostname;
+  	}).addClass('external');
     
     //The Featured Slider, omnomnom
     if ( $("#featured").length > 0 ) {
