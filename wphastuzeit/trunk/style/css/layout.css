@@ -950,6 +950,11 @@ input[type=submit] {
 	float: left;
 	border-bottom: 1px solid #b1b7c1;
 	border-top: 1px solid #fff;
+	position: relative;
+}
+
+.comment span.says {
+	display: none;
 }
 
 .comment-body {
@@ -960,14 +965,24 @@ input[type=submit] {
 	margin: 15px 0;
 }
 
+.comment-body p, .comment-meta {
+	margin-left: 120px;
+}
+
 .comment-author {
 	float: left;
 	width: 100px;
 	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
 }
 
 .comment-author img {
 	margin-bottom: 5px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .comment-meta {
@@ -989,6 +1004,25 @@ input[type=submit] {
 
 .commentlist .children li:last-child {
 	border-bottom: none;
+}
+
+.comment.bypostauthor {
+	background: url(../images/heading-line.png) repeat-x left top;
+	position: relative;
+}
+
+.comment.bypostauthor .comment-author{
+	top: 23px;
+}
+
+.comment.bypostauthor:before {
+	content: "Artikel Autor";
+	position: absolute;
+	left: 0;
+	top: 10px;
+	color: #b1b7c1;
+	font-size: 1.2em;
+	display: block;
 }
 
 /* @end */
