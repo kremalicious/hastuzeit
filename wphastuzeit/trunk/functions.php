@@ -206,4 +206,21 @@ function wphastuzeit_addgravatar( $avatar_defaults ) {
 }
 add_filter( 'avatar_defaults', 'wphastuzeit_addgravatar' );
 
+//Autor Info Shortcode
+function authinfo() {
+	
+	$author_gravatar = get_avatar( get_the_author_meta('email'), 60);
+	$author_info = get_the_author_description();
+	$author_name = get_the_author_meta('display_name');
+	$author_url = get_the_author_meta('user_url');
+	
+	return '<h3>&Uuml;ber '.$author_name.'</h3>
+			<ul id="authorinfo" class="grey-box">
+				<li class="avatar">'.$author_gravatar.'</li>
+				<li class="description">'.$author_info.'</li>
+				<li><span>Website:</span> <a class="url" href="'.$author_url.'">'.$author_url.'</a></li>
+			</ul>';
+}
+add_shortcode('autorinfo', 'authinfo');
+
 ?>
