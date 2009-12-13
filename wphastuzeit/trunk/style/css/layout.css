@@ -675,8 +675,16 @@ div {
 	padding: 5px;
 }
 
-.page-template-page-heftarchiv-php .accordionButton.open {
+.accordionButton.open {
 	background-image: url(../images/triangle-open.png) !important;
+}
+
+.page-template-page-status-php .accordionContent {
+	margin-left: 25px;
+}
+
+.page-template-page-status-php h4 {
+	margin-bottom: 0;
 }
 
 /* @end */
