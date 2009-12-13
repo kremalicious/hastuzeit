@@ -564,7 +564,7 @@ div {
 	margin: 20px 0;
 }
 
-#authorinfo {
+#authorinfo, p.status {
 	clear: both;
 	width: 96.5%;
 	float: left;
@@ -1044,7 +1044,7 @@ h3#comments {
 }
 
 #footer ul {
-	margin-left: 190px;
+	margin-left: 150px;
 	overflow: auto;
 }
 
@@ -1383,6 +1383,68 @@ a.hastuzeit {
 .sexy-bookmarks a.external {
 	background-image: none;
 	padding: 0;
+}
+
+p.status span {
+	float: left;
+	margin-right: 15px;
+	margin-top: 5px;
+	width: 25px;
+	height: 25px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	border: 2px solid #b4b4b4;
+	-webkit-box-shadow: 0px 2px 3px #888;
+	-moz-box-shadow: 0px 2px 3px #888;
+	box-shadow: 0px 2px 3px #888;
+	background-image: url(../images/button-overlay.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+p.status .green {
+	background-color: #0f0;
+}
+
+.infobox {
+	border-bottom: 1px solid #ccc;
+	padding-bottom:15px;
+	border-top: 1px solid #ccc;
+	padding-top:15px;
+	overflow: hidden;
+}
+
+.statuslamp {
+	margin-left: 3px;
+}
+
+.statuslamp.green a {
+	background-image: url(../images/lamp-ok.png);
+	background-repeat: no-repeat;
+	background-position: 2px 5px;
+	padding-left: 14px !important;
+}
+
+#main #contentform {
+	font-size: 0.8em;
+}
+
+#main #contentform p {
+	float: left;
+}
+
+#main #contentform input {
+	display: block;
+}
+
+#main #contentform input#log {
+	margin-right: 20px;
+}
+
+#main #contentform input.submit {
+	width: 120px;
+	margin-left: 20px;
 }
 
 /* @group Contact Page */
