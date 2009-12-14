@@ -12,13 +12,15 @@ Template Name: Status
 				
 				<h1 class="pagetitle"><?php the_title(); ?></h1>
 				
+				<img class="alignleft noborder" style="margin-top:-10px;margin-right:0;margin-left:-10px" src="http://hastuzeit.de/uploads/2009/12/hastuzeit-status.png" width="150" height="150" alt="hastuzeit-status icon &copy; 2009 Matthias Kretschmann" />
 				<p>Status und Neuerungen auf der hastuzeit-Website. Der Status ist für alle sichtbar, die Neuerungen k&ouml;nnen nur von angemeldeten Benutzern eingesehen werden.</p>
 
 				<h3>Aktueller Status</h3>
 
 				<p class="status"><span class="green"></span>Prinzipiell alles toll. Featured-Slider auf der Startseite macht im Firefox unter Windows ein paar Probleme.</p>
 				
-				<p><a href="/kontakt" title="hastuzeit kontaktieren">Fehler gefunden? Dann schreib uns und wir werden uns so schnell wie m&ouml;glich darum k&uuml;mmern.</a></p>
+				<p><a href="/kontakt" class="mail" title="hastuzeit kontaktieren">Fehler gefunden? Dann schreib uns!</a></p>
+				<p><a href="http://twitter.com/hastuzeit" class="twitter" title="hastuzeit auf Twitter">Folge uns auf Twitter</a></p>
 								
 				<h3>Neues tolles Zeugs</h3>
 				

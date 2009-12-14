@@ -255,6 +255,10 @@ div {
 	background-position: 3px -145px;
 }
 
+#navigation li.feed.twitter a {
+	background-position: 3px -287px;
+}
+
 /* @end */
 
 /* @group Featured */
@@ -1065,17 +1069,31 @@ h3#comments {
 	padding: 5px;
 }
 
-#footer ul {
-	margin-left: 150px;
-	overflow: auto;
-}
-
 #footer li {
 	float: left;
 	margin: 0 10px;
 }
 
+#footer ul#footernav {
+	margin-left: 150px;
+	overflow: auto;
+}
+
+#footer ul#elsewhere {
+	margin: 0 auto;
+	width: 390px;
+	overflow: hidden;
+}
+
+#footer ul#elsewhere a {
+	padding-left: 25px;
+}
+
 #copyright {
+	margin-top: 20px;
+}
+
+#copyright p.clear {
 	margin-top: 30px;
 }
 
@@ -1380,21 +1398,26 @@ a.external {
 	padding-left: 14px;
 }
 
-a[href^='mailto:'] {
+a[href^='mailto:'], a.mail {
 	background-image: url(../images/hastuzeit-master.png);
 	background-position: -165px -96px;
 	background-repeat: no-repeat;
 	padding-left: 23px;
 }
 
-a.facebook, a.hastuzeit, a.mail {
+a.facebook, a.hastuzeit, a.mail, a.twitter, a.rss {
 	padding-left: 25px;
 	background-repeat: no-repeat;
 }
 
 a.facebook {
 	background-image: url(../images/hastuzeit-master.png);
-	background-position: 0 -154px;
+	background-position: 0 -155px;
+}
+
+a.twitter {
+	background-image: url(../images/hastuzeit-master.png);
+	background-position: 0 -297px;
 }
 
 a.hastuzeit {
@@ -1402,10 +1425,48 @@ a.hastuzeit {
 	background-position: 2px center;
 }
 
+a.rss {
+	background-image: url(../images/hastuzeit-master.png);
+	background-position: -436px -176px;
+}
+
 .sexy-bookmarks a.external {
 	background-image: none;
 	padding: 0;
 }
+
+.infobox {
+	border-bottom: 1px solid #ccc;
+	padding-bottom:15px;
+	border-top: 1px solid #ccc;
+	padding-top:15px;
+	overflow: hidden;
+}
+
+/* @group Contact Page */
+
+.page-id-1935 .wpcf7 {
+	clear: both;
+}
+
+.page-id-1935 .alignleft {
+	margin-bottom: 30px;
+}
+
+.page-id-1935 ul.alignleft {
+}
+
+.page-id-1935 .wpcf7 input[type=text] {
+	width: 98%;
+}
+
+.page-id-1935 .wpcf7 textarea {
+	width: 100%;
+}
+
+/* @end */
+
+/* @group Status Page */
 
 p.status span {
 	float: left;
@@ -1427,14 +1488,6 @@ p.status span {
 
 p.status .green {
 	background-color: #0f0;
-}
-
-.infobox {
-	border-bottom: 1px solid #ccc;
-	padding-bottom:15px;
-	border-top: 1px solid #ccc;
-	padding-top:15px;
-	overflow: hidden;
 }
 
 .statuslamp {
@@ -1467,28 +1520,6 @@ p.status .green {
 #main #contentform input.submit {
 	width: 120px;
 	margin-left: 20px;
-}
-
-/* @group Contact Page */
-
-.page-id-1935 .wpcf7 {
-	clear: both;
-}
-
-.page-id-1935 .alignleft {
-	margin-bottom: 30px;
-}
-
-.page-id-1935 ul.alignleft {
-	margin-top: 22px;
-}
-
-.page-id-1935 .wpcf7 input[type=text] {
-	width: 98%;
-}
-
-.page-id-1935 .wpcf7 textarea {
-	width: 100%;
 }
 
 /* @end */
