@@ -128,12 +128,6 @@ function hls_set_query() {
 } 
 add_action('wp_print_scripts', 'hls_set_query');
 
-//custom login screen with js too
-function custom_login() { 
-	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/style/css/login.css" />';
-}
-add_action('login_head', 'custom_login');
-
 //Exclude categories from the main rss feed
 function feed_exclude($query) {
 	if ($query->is_feed) {
@@ -142,7 +136,6 @@ function feed_exclude($query) {
 
 return $query;
 }
-
 add_filter('pre_get_posts','feed_exclude');
 
 //custom excerpt
@@ -153,34 +146,6 @@ function trim_excerpt($num) {
 	$excerpt = implode(" ",$excerpt)."...";
 	echo $excerpt;
 }
-
-//header color
-define('HEADER_TEXTCOLOR', 'CC3399');
-function header_style() {
-	?>
-	<style type="text/css">
-	#header{
-		background-color: #<?php header_textcolor();?>;
-	}
-	</style>
-	<?php
-}
-/*
-
-//function admin_header_style() {
-	?>
-	<style type="text/css">
-	#header {
-		background-color: #<?php header_textcolor();?>;
-	}
-	</style>
-	<?php
-}
-
-if ( function_exists('add_custom_image_header') ) {
-	add_custom_image_header('header_style', 'admin_header_style');
-}
-*/
 
 //disable loading of some plugin styles
 function my_deregister_styles() {
@@ -222,5 +187,56 @@ function authinfo() {
 			</ul>';
 }
 add_shortcode('autorinfo', 'authinfo');
+
+
+////////////////////////////////////////////////////////////////////
+//// ADMIN AREA STUFF //////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+//Custom Login Screen CSS
+function custom_login() { 
+	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/style/css/login.css" />';
+}
+add_action('login_head', 'custom_login');
+
+//Custom Admin Area CSS
+function hastuzeit_admin() {
+   echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/style/css/admin.css" />';
+}
+add_action('admin_head', 'hastuzeit_admin');
+
+//change admin footer text
+function footer_text() {
+  return '<a href="http://hastuzeit.de">hastuzeit.de</a> basiert auf <a href="http://wordpress.org">WordPress</a> und den Voodoo-F&auml;higkeiten von <a href="http://matthiaskretschmann.com">Matthias</a> | <a href="mailto:redaktion@hastuzeit.de">Mail an Redaktion</a> | hastuzeit auf <a href="https://twitter.com/hastuzeit" title="hastuzeit auf twitter">Twitter</a>, <a href="http://www.facebook.com/hastuzeit" title="Werde Fan auf Facebook">Facebook</a>';
+}
+add_filter('admin_footer_text', 'footer_text');
+
+/*
+//header color
+define('HEADER_TEXTCOLOR', 'CC3399');
+function header_style() {
+	?>
+	<style type="text/css">
+	#header{
+		background-color: #<?php header_textcolor();?>;
+	}
+	</style>
+	<?php
+}
+
+function admin_header_style() {
+	?>
+	<style type="text/css">
+	#header {
+		background-color: #<?php header_textcolor();?>;
+	}
+	</style>
+	<?php
+}
+
+if ( function_exists('add_custom_image_header') ) {
+	add_custom_image_header('header_style', 'admin_header_style');
+}
+*/
 
 ?>

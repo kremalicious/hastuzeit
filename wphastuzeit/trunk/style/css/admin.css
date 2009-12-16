@@ -1,0 +1,57 @@
+/*
+hastuzeit Custom Admin Area
+Author: Matthias Kretschmann
+Author URI: http://kremalicious.com
+*/
+
+a {
+	color: #ec5325 !important;
+	text-decoration: none !important
+}
+
+a:hover, a:focus {
+	color: #000 !important;
+	background-color: #e0e2e5;
+	text-decoration: none !important
+}
+
+#header-logo {
+	background-image: url(../images/hastuzeit32px.png) !important;
+}
+
+#wphead, #footer, #footer-upgrade {
+	background: #122d45 url(../images/back.png) repeat left top !important;
+}
+
+#wphead {
+	border-bottom: 1px solid #fff
+}
+
+#footer {
+	border-top: 1px solid #fff;
+}
+
+#wphead a, #footer a {
+	color: #fff !important
+}
+
+#wphead a:hover, #footer a:hover {
+	color: #000 !important
+}
+
+#adminmenu a:hover {
+	background-color: transparent
+}
+
+#favorite-inside {
+	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom !important;
+	text-shadow: 0 1px 0 #fff
+}
+
+#favorite-inside a {
+	color: #ec5325 !important;
+}
+
+#wpcontent {
+	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom !important;
+}
