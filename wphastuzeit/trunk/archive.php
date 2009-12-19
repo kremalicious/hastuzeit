@@ -31,16 +31,10 @@ get_header();
 	
 	<?php /* If this is an author archive */ } elseif (is_author()) { ?>
 	
-		<?php
-			if(get_query_var('author_name')) :
-			    $thisauthor = get_userdatabylogin(get_query_var('author_name'));
-			else :
-			    $thisauthor = get_userdata(get_query_var('author'));
-			endif;
-		?>
+		<?php $thisauthor = get_userdata(get_query_var('author')); ?>
 		
 		<h1 class="pagetitle"><?php echo $thisauthor->display_name; ?></h1>
-			
+					
 			<div id="authorinfo">
 				<div id="avatar">
 						<?php if(function_exists('get_avatar')) {
@@ -82,6 +76,10 @@ get_header();
 				
 				<?php if ($thisauthor->icq) { ?>
 					<div><span>ICQ:</span> <a href="ymsgr:<?php echo $thisauthor->icq; ?>"><?php echo $thisauthor->icq; ?></a></div>
+				<?php }
+				
+				if ( is_user_logged_in() ) { ?>
+					<a id="profile-edit-link" href="http://hastuzeit.de/wp-admin/profile.php">F&uuml;lle dein eigenes Profil aus</a>
 				<?php } ?>
 			</div>
 			

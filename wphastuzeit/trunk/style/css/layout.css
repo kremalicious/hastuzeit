@@ -432,6 +432,10 @@ div {
 	border-color: #ff6600;
 }
 
+.meta:hover a.post-edit-link {
+	color: #fff;
+}
+
 #more-content {
 	overflow: auto;
 	clear: both;
@@ -575,6 +579,149 @@ div {
 
 /* @end */
 
+/* @group Admin-Menu */
+
+a.post-edit-link, 
+a#login-link.loggedin,
+a#profile-edit-link {
+	padding-right: 10px;
+	padding-left: 25px;
+	color: #fff;
+	text-shadow: none;
+	background: #00cf00 url(../images/Admin-Icons.png) no-repeat 0 -238px;
+	border: 1px solid #005f03;
+}
+
+a.post-edit-link:hover, 
+a#login-link.loggedin:hover,
+a#profile-edit-link:hover {
+	background-color: #ff6600;
+	color: #122d45;
+}
+
+#admin-box {
+	position: relative;
+	font-size: 1.1em;
+	display: block;
+	right: -3px;
+}
+
+#admin-box a {
+	display: block;
+	padding-left: 25px;
+	background: url(../images/Admin-Icons.png) no-repeat;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-top: 1px solid #e5e5e5;
+}
+
+#admin-box a:hover {
+	background-color: #e0e2e5;
+}
+
+#admin-box a:active,
+a.post-edit-link:active, 
+a#login-link.loggedin:active,
+a#profile-edit-link:active {
+	background-color: #122d45;
+	color: #fff;
+	text-shadow: none;
+}
+
+#admin-box li {
+	margin: 0;
+	width: 212px;
+}
+
+#admin-box li#hello {
+	font-size: 1.2em;
+	border-bottom: 3px double #ff6600;
+	margin: 0;
+	line-height: 1.2em;
+	padding-bottom: 5px;
+}
+
+#admin-box li#hello img {
+	top: -3px;
+	left: 0;
+	position: relative;
+	border: 1px solid #787878;
+	float: left;
+	margin-right: 5px;
+}
+
+#admin-box #hello-dave {
+	font-size: 0.95em;
+	color: #b1b7c1;
+	line-height: 1.3em;
+	border-bottom: 1px solid #fff;
+	padding: 7px 0 5px;
+	margin: 0;
+}
+
+#admin-box .dashboard a {
+	background-position: -4px -2px;
+}
+
+#admin-box .profile a {
+	background-position: -4px -265px;
+	border-bottom: 1px solid #fff;
+	border-top: none;
+}
+
+#admin-box .new-post a {
+	background-position: -4px -38px;
+}
+
+#admin-box .new-page a {
+	background-position: -4px -75px;
+}
+
+#admin-box .articles a {
+	background-position: -4px -299px;
+	border-bottom: 1px solid #fff;
+	border-top: none;
+}
+
+#admin-box .articles.overview a {
+	border-top: 1px solid #e5e5e5;
+}
+
+#admin-box .new-user a {
+	background-position: -4px -112px;
+	border-top: none;
+	border-bottom: 1px solid #fff;
+}
+
+#admin-box .sidebar-widgets a {
+	background-position: -4px -177px;
+}
+
+#admin-box .logout a {
+	background-position: -4px -205px;
+	border-top: 1px solid #ff6600;
+}
+
+#notizen a.post-edit-link {
+	text-indent: -99999px;
+	width: 20px;
+	height: 16px;
+	padding: 0;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	background-position: -2px -238px;
+}
+
+a#login-link.loggedin {
+	padding-left: 10px;
+	background-image: url(../images/button-overlay.png);
+	background-repeat:  repeat-x;
+	background-position: left top;
+}
+
+/* @end */
+
 /* @group Author Info */
 
 #authorinfo, p.status {
@@ -622,6 +769,14 @@ div {
 	color: #aea7a7;
 	width: 85px;
 	display: inline-block;
+}
+
+a#profile-edit-link {
+	position: absolute;
+	left: 10px;
+	bottom: -27px;
+	cursor: pointer;
+	background-position: 1px -267px;
 }
 
 /* @end */
@@ -1233,137 +1388,6 @@ a#login-link:active, a#login-link:focus {
 	z-index: 1000;
 	font-weight: bold;
 	font-size: 1.3em;
-}
-
-/* @end */
-
-/* @group Admin-Menu */
-
-#admin-box {
-	position: relative;
-	font-size: 1.1em;
-	display: block;
-	right: -3px;
-}
-
-#admin-box a {
-	display: block;
-	padding-left: 25px;
-	background: url(../images/Admin-Icons.png) no-repeat;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	border-top: 1px solid #e5e5e5;
-}
-
-#admin-box a:hover {
-	background-color: #e0e2e5;
-}
-
-#admin-box a:active {
-	background-color: #122d45;
-	text-shadow: none;
-}
-
-#admin-box li {
-	margin: 0;
-	width: 212px;
-}
-
-#admin-box li#hello {
-	font-size: 1.2em;
-	border-bottom: 3px double #ff6600;
-	margin: 0;
-	line-height: 1.2em;
-	padding-bottom: 5px;
-}
-
-#admin-box li#hello img {
-	top: -3px;
-	left: 0;
-	position: relative;
-	border: 1px solid #787878;
-	float: left;
-	margin-right: 5px;
-}
-
-#admin-box #hello-dave {
-	font-size: 0.95em;
-	color: #b1b7c1;
-	line-height: 1.3em;
-	border-bottom: 1px solid #fff;
-	padding: 7px 0 5px;
-	margin: 0;
-}
-
-#admin-box .dashboard a {
-	background-position: -4px -2px;
-}
-
-#admin-box .profile a {
-	background-position: -4px -265px;
-	border-bottom: 1px solid #fff;
-	border-top: none;
-}
-
-#admin-box .new-post a {
-	background-position: -4px -38px;
-}
-
-#admin-box .new-page a {
-	background-position: -4px -75px;
-}
-
-#admin-box .articles a {
-	background-position: -4px -299px;
-	border-bottom: 1px solid #fff;
-	border-top: none;
-}
-
-#admin-box .articles.overview a {
-	border-top: 1px solid #e5e5e5;
-}
-
-#admin-box .new-user a {
-	background-position: -4px -112px;
-	border-top: none;
-	border-bottom: 1px solid #fff;
-}
-
-#admin-box .sidebar-widgets a {
-	background-position: -4px -177px;
-}
-
-#admin-box .logout a {
-	background-position: -4px -205px;
-	border-top: 1px solid #ff6600;
-}
-
-a.post-edit-link, 
-a#login-link.loggedin {
-	padding-right: 10px;
-	padding-left: 25px;
-	color: #fff;
-	text-shadow: none;
-	border-color: #005f03;
-	background: #00cf00 url(../images/Admin-Icons.png) no-repeat 0 -238px;
-}
-
-#notizen a.post-edit-link {
-	text-indent: -99999px;
-	width: 20px;
-	height: 16px;
-	padding: 0;
-	position: absolute;
-	right: -20px;
-	top: 0;
-	background-position: -2px -238px;
-}
-
-a#login-link.loggedin {
-	padding-left: 10px;
-	background-image: url(../images/button-overlay.png);
-	background-repeat:  repeat-x;
-	background-position: left top;
 }
 
 /* @end */

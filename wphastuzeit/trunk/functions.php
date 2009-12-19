@@ -178,6 +178,7 @@ add_filter( 'avatar_defaults', 'wphastuzeit_addgravatar' );
 function autorbox() {
 	?>
 		<h3>&Uuml;ber <?php the_author_meta('display_name'); ?></h3>
+			
 			<div id="authorinfo">
 				
 				<div id="avatar"><?php echo get_avatar( get_the_author_meta('email'), 70); ?></div>
@@ -214,8 +215,11 @@ function autorbox() {
 				
 				<?php if ( get_the_author_meta( 'icq' ) ) { ?>
 					<div><span>ICQ:</span> <a class="url" href="<?php the_author_meta('icq'); ?>"><?php the_author_meta('icq'); ?></a></div>
-				<?php } ?>
+				<?php } 
 				
+				if ( is_user_logged_in() ) { ?>
+					<a id="profile-edit-link" href="http://hastuzeit.de/wp-admin/profile.php">F&uuml;lle dein eigenes Profil aus</a>
+				<?php } ?>
 			</div>
 <?php
 }
