@@ -33,7 +33,15 @@ get_header(); ?>
 						
 							<div class="featured_media">
 						
-								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php images('1', '150', '150', '', false); ?></a>
+								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+								
+								<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+									the_post_thumbnail(array( '150×150' ), array( 'class' => 'alignleft' ));
+								} else {
+									images('1', '150', '150', '', false);
+								} ?>
+								
+								</a>
 							
 							</div>
 							

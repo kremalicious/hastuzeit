@@ -32,42 +32,58 @@ get_header();
 	<?php /* If this is an author archive */ } elseif (is_author()) { ?>
 	
 		<?php
-			if(isset($_GET['author_name'])) :
-			$thisauthor = get_userdatabylogin($author_name);
+			if(get_query_var('author_name')) :
+			    $thisauthor = get_userdatabylogin(get_query_var('author_name'));
 			else :
-			$thisauthor = get_userdata(intval($author));
+			    $thisauthor = get_userdata(get_query_var('author'));
 			endif;
 		?>
 		
 		<h1 class="pagetitle"><?php echo $thisauthor->display_name; ?></h1>
 			
-			<ul id="authorinfo">
-				<li class="avatar">
-					<?php if(function_exists('get_avatar')) {
-						echo get_avatar($thisauthor->user_email, 47, "" );
-					} ?>
-				</li>
+			<div id="authorinfo">
+				<div id="avatar">
+						<?php if(function_exists('get_avatar')) {
+							echo get_avatar($thisauthor->user_email, 70, "" );
+						} ?>
+				</div>
 				
 				<?php if ($thisauthor->description) { ?>
-					<li class="description"><?php echo $thisauthor->description; ?></li>
+					<div id="description"><?php echo $thisauthor->description; ?></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->user_url) { ?>
-					<li><span>Website:</span> <a class="url" href="<?php echo $thisauthor->user_url; ?>" title="Website von <?php echo $thisauthor->display_name; ?>"><?php echo $thisauthor->user_url; ?></a></li>
+					<div><span>Website:</span> <a class="url" href="<?php echo $thisauthor->user_url; ?>" title="Website von <?php echo $thisauthor->display_name; ?>"><?php echo $thisauthor->user_url; ?></a></div>
+				<?php } ?>
+				
+				<?php if ($thisauthor->twitter) { ?>
+					<div><span>Twitter:</span> <a class="url" href="<?php echo $thisauthor->twitter; ?>" title="<?php echo $thisauthor->display_name; ?> auf Twitter"><?php echo $thisauthor->twitter; ?></a></div>
+				<?php } ?>
+				
+				<?php if ($thisauthor->facebook) { ?>
+					<div><span>Facebook:</span> <a class="url" href="<?php echo $thisauthor->facebook; ?>" title="<?php echo $thisauthor->display_name; ?> auf Facebook"><?php echo $thisauthor->facebook; ?></a></div>
+				<?php } ?>
+				
+				<?php if ($thisauthor->studivz) { ?>
+					<div><span>StudiVZ:</span> <a class="url" href="<?php echo $thisauthor->studivz; ?>" title="<?php echo $thisauthor->display_name; ?> auf Facebook"><?php echo $thisauthor->stduivz; ?></a></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->jabber) { ?>
-					<li><span>Jabber/GTalk:</span> <a href="xmpp:<?php echo $thisauthor->jabber; ?>"><?php echo $thisauthor->jabber; ?></a></li>
+					<div><span>Jabber/GTalk:</span> <a href="xmpp:<?php echo $thisauthor->jabber; ?>"><?php echo $thisauthor->jabber; ?></a></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->aim) { ?>
-					<li><span>AIM:</span> <a href="aim:<?php echo $thisauthor->aim; ?>"><?php echo $thisauthor->aim; ?></a></li>
+					<div><span>AIM:</span> <a href="aim:<?php echo $thisauthor->aim; ?>"><?php echo $thisauthor->aim; ?></a></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->yim) { ?>
-					<li><span>Yahoo IM:</span> <a href="ymsgr:<?php echo $thisauthor->yim; ?>"><?php echo $thisauthor->yim; ?></a></li>
+					<div><span>Yahoo IM:</span> <a href="ymsgr:<?php echo $thisauthor->yim; ?>"><?php echo $thisauthor->yim; ?></a></div>
 				<?php } ?>
-			</ul>
+				
+				<?php if ($thisauthor->icq) { ?>
+					<div><span>ICQ:</span> <a href="ymsgr:<?php echo $thisauthor->icq; ?>"><?php echo $thisauthor->icq; ?></a></div>
+				<?php } ?>
+			</div>
 			
 			<h2 class="pagetitle">Alle Texte von <?php echo $thisauthor->display_name; ?></h2>
 	

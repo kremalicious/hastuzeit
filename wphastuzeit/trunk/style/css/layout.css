@@ -452,9 +452,14 @@ div {
 	margin-left: 0;
 }
 
+#more-content ul {
+	margin-left: 0;
+}
+
 #more-content li {
 	width: 100%;
 	margin-bottom: 10px;
+	list-style: none;
 }
 
 #more-content li a {
@@ -568,6 +573,10 @@ div {
 	margin: 20px 0;
 }
 
+/* @end */
+
+/* @group Author Info */
+
 #authorinfo, p.status {
 	clear: both;
 	width: 96.5%;
@@ -579,27 +588,31 @@ div {
 	background: url(../images/featured-grad.png) repeat-x left bottom;
 	font-size: 0.9em;
 	margin-left: 0;
+	text-shadow: #fff 0 1px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .author h1.pagetitle {
 	margin-bottom: 20px !important;
 }
 
-#authorinfo li {
+#authorinfo div {
 	float: right;
-	width: 500px;
+	width: 480px;
 	line-height: 1.4em;
 	list-style: none;
 	padding-left: 0;
 	margin-top: 0;
 }
 
-#authorinfo li.avatar {
+#authorinfo div#avatar {
 	float: left;
-	width: 55px;
+	width: 75px;
 }
 
-#authorinfo li.description {
+#authorinfo #description {
 	margin-bottom: 8px;
 	padding-bottom: 8px;
 	border-bottom: 1px solid #ccc;
@@ -688,7 +701,8 @@ div {
 }
 
 .page-template-page-status-php h4 {
-	margin-bottom: 0;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #dfe0e0;
 }
 
 /* @end */
@@ -1436,9 +1450,9 @@ a.rss {
 }
 
 .infobox {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #b1b7c1;
 	padding-bottom:15px;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #b1b7c1;
 	padding-top:15px;
 	overflow: hidden;
 }

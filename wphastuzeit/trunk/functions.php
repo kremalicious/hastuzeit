@@ -6,6 +6,9 @@
 
 automatic_feed_links();
 
+//2.9 Post Thumbnails
+add_theme_support('post-thumbnails');
+
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array('name'=>'sidebartop',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
@@ -171,23 +174,52 @@ function wphastuzeit_addgravatar( $avatar_defaults ) {
 }
 add_filter( 'avatar_defaults', 'wphastuzeit_addgravatar' );
 
-//Autor Info Shortcode
-function authinfo() {
-	
-	$author_gravatar = get_avatar( get_the_author_meta('email'), 60);
-	$author_info = get_the_author_description();
-	$author_name = get_the_author_meta('display_name');
-	$author_url = get_the_author_meta('user_url');
-	
-	return '<h3>&Uuml;ber '.$author_name.'</h3>
-			<ul id="authorinfo" class="grey-box">
-				<li class="avatar">'.$author_gravatar.'</li>
-				<li class="description">'.$author_info.'</li>
-				<li><span>Website:</span> <a class="url" href="'.$author_url.'">'.$author_url.'</a></li>
-			</ul>';
+//Autor Info Box with Shortcode
+function autorbox() {
+	?>
+		<h3>&Uuml;ber <?php the_author_meta('display_name'); ?></h3>
+			<div id="authorinfo">
+				
+				<div id="avatar"><?php echo get_avatar( get_the_author_meta('email'), 70); ?></div>
+				
+				<div id="description"><?php the_author_meta( 'description' ); ?></div>
+				
+				<?php if ( get_the_author_meta( 'user_url' ) ) { ?>
+					<div><span>Website:</span> <a class="url" href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('user_url'); ?></a></div>
+				<?php } ?>
+				
+				<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
+					<div><span>Twitter:</span> <a class="url" href="<?php the_author_meta('twitter'); ?>"><?php the_author_meta('twitter'); ?></a></div>
+				<?php } ?>
+				
+				<?php if ( get_the_author_meta( 'facebook' ) ) { ?>
+					<div><span>Facebook:</span> <a class="url" href="<?php the_author_meta('facebook'); ?>"><?php the_author_meta('facebook'); ?></a></div>
+				<?php } ?>
+				
+				<?php if ( get_the_author_meta( 'studivz' ) ) { ?>
+					<div><span>StudiVZ:</span> <a class="url" href="<?php the_author_meta('studivz'); ?>"><?php the_author_meta('studivz'); ?></a></div>
+				<?php } ?>
+				
+				<?php if ( get_the_author_meta( 'jabber' ) ) { ?>
+					<div><span>Jabber/GTalk:</span> <a class="url" href="<?php the_author_meta('jabber'); ?>"><?php the_author_meta('jabber'); ?></a></div>
+				<?php } ?>
+				
+				<?php if ( get_the_author_meta( 'aim' ) ) { ?>
+					<div><span>AIM:</span> <a class="url" href="<?php the_author_meta('aim'); ?>"><?php the_author_meta('aim'); ?></a></div>
+				<?php } ?>
+				
+				<?php if ( get_the_author_meta( 'yim' ) ) { ?>
+					<div><span>Yahoo IM:</span> <a class="url" href="<?php the_author_meta('yim'); ?>"><?php the_author_meta('yim'); ?></a></div>
+				<?php } ?>
+				
+				<?php if ( get_the_author_meta( 'icq' ) ) { ?>
+					<div><span>ICQ:</span> <a class="url" href="<?php the_author_meta('icq'); ?>"><?php the_author_meta('icq'); ?></a></div>
+				<?php } ?>
+				
+			</div>
+<?php
 }
-add_shortcode('autorinfo', 'authinfo');
-
+add_shortcode('autorinfo', 'autorbox');
 
 ////////////////////////////////////////////////////////////////////
 //// ADMIN AREA STUFF //////////////////////////////////////////////
@@ -210,6 +242,17 @@ function footer_text() {
   return '<a href="http://hastuzeit.de">hastuzeit.de</a> basiert auf <a href="http://wordpress.org">WordPress</a> und den Voodoo-F&auml;higkeiten von <a href="http://matthiaskretschmann.com">Matthias</a> | <a href="mailto:redaktion@hastuzeit.de">Mail an Redaktion</a> | hastuzeit auf <a href="https://twitter.com/hastuzeit" title="hastuzeit auf twitter">Twitter</a>, <a href="http://www.facebook.com/hastuzeit" title="Werde Fan auf Facebook">Facebook</a>';
 }
 add_filter('admin_footer_text', 'footer_text');
+
+//More Contact Methods
+function my_new_contactmethods( $contactmethods ) {
+  $contactmethods['twitter'] = 'Twitter';
+  $contactmethods['facebook'] = 'Facebook';
+  $contactmethods['studivz'] = 'StudiVZ';
+  $contactmethods['icq'] = 'ICQ';
+  
+  return $contactmethods;
+}
+add_filter('user_contactmethods','my_new_contactmethods',10,1);
 
 /*
 //header color
