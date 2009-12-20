@@ -518,11 +518,15 @@ strong.hls {
 	line-height: 1.2em;
 }
 
-.comment-author, .comment-meta, .comment-meta a, .reply,
-#commentluv a {
+.comment-author, .comment-meta, .comment-meta a, .reply {
 	font-size: 0.9em;
 	line-height: 1.2em;
 	color: #b1b7c1;
+}
+
+#commentluv a {
+	color: #a8aeb6;
+	margin-left: 1px;
 }
 
 .depth-2 {
