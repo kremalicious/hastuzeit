@@ -7,6 +7,7 @@
 automatic_feed_links();
 
 //2.9 Post Thumbnails
+if ( function_exists( 'add_theme_support' ) )
 add_theme_support('post-thumbnails');
 
 if ( function_exists('register_sidebar') ) {
@@ -59,7 +60,6 @@ if ( !function_exists('noself_ping') ) {
 }
 
 //Exclude Pings from comment count
-add_filter('get_comments_number', 'comment_count', 0);
 function comment_count( $count ) {
         if ( ! is_admin() ) {
                 global $id;
@@ -69,6 +69,7 @@ function comment_count( $count ) {
                 return $count;
         }
 }
+add_filter('get_comments_number', 'comment_count', 0);
 
 //special the_category so we can exclude some categories
 function the_category_exclude($separator=', ',$exclude='') {

@@ -1097,17 +1097,15 @@ input[type=submit] {
 	margin-left: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
+	margin-bottom: 10px;
 }
 
 #respond form p.subscribe-to-comments {
-	clear: none !important;
-	float: left;
-	margin-top: 10px;
 	margin-left: 15px;
-	width: 210px;
 }
 
-#respond form p.subscribe-to-comments input {
+#respond form p.subscribe-to-comments input,
+#commentluv input {
 	float: left;
 	width: 25px !important;
 	height: 25px;
@@ -1115,8 +1113,8 @@ input[type=submit] {
 
 #respond form p.subscribe-to-comments label {
 	margin-left: 2px;
-	width: 180px;
 	float: left;
+	margin-top: 5px;
 }
 
 h3#comments {
@@ -1228,6 +1226,35 @@ h3#comments {
 	color: #b1b7c1;
 	font-size: 1.2em;
 	display: block;
+}
+
+#commentluv {
+	margin-left: 15px;
+	float: left;
+	clear: none !important;
+	display: inline;
+	font-size: 0.9em;
+}
+
+#commentluv span {
+	margin-top: 1px;
+	float: left;
+	clear: none !important;
+}
+
+#lastposts {
+	margin-left: 15px;
+}
+
+span.cluv {
+	padding: 0;
+	margin-top: 15px;
+	font-size: 0.9em !important;
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+	clear: both;
+	color: #a8aeb6;
+	line-height: 1.3em;
 }
 
 /* @end */

@@ -36,7 +36,7 @@ get_header(); ?>
 								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 								
 								<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
-									the_post_thumbnail(array( '150×150' ), array( 'class' => 'alignleft' ));
+									the_post_thumbnail(array( 150,150 ), array( 'class' => 'alignleft', 'alt' => 'alttext', 'title' => 'titletext'));
 								} else {
 									images('1', '150', '150', '', false);
 								} ?>
