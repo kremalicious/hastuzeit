@@ -518,7 +518,8 @@ strong.hls {
 	line-height: 1.2em;
 }
 
-.comment-author, .comment-meta, .comment-meta a, .reply {
+.comment-author, .comment-meta, .comment-meta a, .reply,
+#commentluv a {
 	font-size: 0.9em;
 	line-height: 1.2em;
 	color: #b1b7c1;
