@@ -32,7 +32,7 @@ get_header();
 			<?php the_content(); ?>
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 			
-			<?php autorbox(); ?>
+			<?php if ( !in_category('Termine') ) autorbox(); ?>
 			
 			<?php the_tags( '<p id="tags">', ', ', '</p>'); ?>
 			
