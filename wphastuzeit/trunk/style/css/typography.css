@@ -437,9 +437,13 @@ blockquote {
 	-webkit-transition: color 0.2s linear;
 }
 
-#notizen li:hover,
+#notizen:hover li,
 #notizen h4 {
 	color: #122d45;
+}
+
+#notizen:hover li .date {
+	color: #a8aeb6;
 }
 
 /* @end */
