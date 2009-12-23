@@ -519,7 +519,7 @@ div {
 	max-width: 49%;
 }
 
-.next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebartop h5 .more-link {
+.next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebarbottom h5 .more-link {
 	display: block;
 	color: #122D45 !important;
 	padding: 5px 10px !important;
@@ -566,7 +566,7 @@ div {
 	padding-right: 20px !important;
 }
 
-.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover, #ausgabe h4 a:hover, .wp-pagenavi a:hover, .wp-pagenavi .current, #tabnav .wp-pagenavi a:hover, #sidebartop .more-link:hover {
+.next-links a:hover, .page-template-page-heftarchiv-php .post h4 a:hover, #ausgabe h4 a:hover, .wp-pagenavi a:hover, .wp-pagenavi .current, #tabnav .wp-pagenavi a:hover, #sidebarbottom .more-link:hover {
 	color: #fff !important;
 	background-color: #ff6600 !important;
 	text-shadow: #666 0 1px 0 !important;
@@ -702,7 +702,7 @@ a#profile-edit-link:active {
 	border-top: 1px solid #ff6600;
 }
 
-#notizen a.post-edit-link {
+#pinnwand a.post-edit-link {
 	text-indent: -99999px;
 	width: 20px;
 	height: 16px;
@@ -878,15 +878,17 @@ img#readiculum:hover {
 /* @group Sidebar */
 
 #sidebar .column {
-	width: 46%;
+	width: 47%;
 }
 
 #sidebar-left {
 	float: left;
+	margin-top: 20px;
 }
 
 #sidebar-right {
 	float: right;
+	margin-top: 20px;
 }
 
 #sidebar li.widget {
@@ -896,6 +898,8 @@ img#readiculum:hover {
 
 #sidebar .widgettitle {
 	border-bottom: 1px solid #ff6600;
+	border-top: 3px double #ff6600;
+	padding: 5px 0;
 }
 
 #sidebar form {
@@ -907,17 +911,44 @@ img#readiculum:hover {
 	display: none;
 }
 
-#sidebartop li ul li {
-	margin-bottom: 1em;
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 1em;
+#latestposts li,
+#popular-posts li {
+	margin: 0;
 }
 
-#sidebartop li ul li ul li {
-	border: none;
+#latestposts li a,
+#popular-posts li a {
+	border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #fff;
+	padding: 5px 2px;
 }
 
-#sidebar #sidebartop .widget {
+#recentcomments li {
+	border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #fff;
+	margin: 0;
+	padding: 5px 0;
+}
+
+#latestposts li:first-child a,
+#recentcomments li:first-child,
+#popular-posts li:first-child a {
+	border-top: none;
+}
+
+#latestposts:after,
+#recentcomments:after,
+#popular-posts:after {
+	content: "";
+	border-top: 1px solid #fff;
+	display: block;
+}
+
+#sidebarbottom {
+	clear: both;
+}
+
+#sidebar #sidebarbottom .widget {
 	border-bottom: 0;
 	padding-bottom: 0;
 	margin-bottom: 15px;
@@ -925,12 +956,12 @@ img#readiculum:hover {
 	overflow: auto;
 }
 
-#sidebartop img {
+#sidebarbottom img {
 	margin-right: 10px;
 	float: left;
 }
 
-#notizen .more-link {
+#pinnwand .more-link {
 	filter: alpha(opacity=0);
 	-webkit-opacity: 0;
 	-moz-opacity: 0;
@@ -945,38 +976,51 @@ img#readiculum:hover {
 	-webkit-transition: opacity 0.2s linear;
 }
 
-#notizen h5 a {
+#pinnwand h5 a {
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
-#notizen h5 a:hover {
+#pinnwand h5 a:hover {
 	background: #e0e2e5 url(../images/hastuzeit-master.png) no-repeat right -276px;
 }
 
-#notizen li:hover .more-link,
-#notizen .more .more-link {
+#pinnwand li:hover .more-link,
+#pinnwand .more .more-link {
 	filter: alpha(opacity=100);
 	-webkit-opacity: 1;
 	-moz-opacity: 1;
 	opacity: 1;
 }
 
-#notizen .more .more-link {
+#pinnwand .more .more-link {
 	position: relative;
 	margin-top: 0;
 }
 
-#notizen li {
+#pinnwand li {
 	overflow: hidden;
 	position: relative;
+	border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #fff;
+	margin: 0;
+	padding: 10px 0 15px;
 }
 
-#sidebartop .more .more-link {
+#pinnwand li:first-child {
+	padding-top: 5px;
+	border-top: 0;
+}
+
+#pinnwand:hover li {
+	border-bottom: 1px solid #d4d4d4;
+}
+
+#sidebarbottom .more .more-link {
 	background-position: right -273px;
 }
 
-#sidebartop .more-link.ical {
+#sidebarbottom .more-link.ical {
 	margin-top: 5px !important;
 	background: url(../images/hastuzeit-master.png) no-repeat 270px -221px;
 }
@@ -1447,7 +1491,7 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 	
 }
 
-#more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebartop h5 .more-link, .page-template-page-heftarchiv-php .post h4 a,
+#more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebarbottom h5 .more-link, .page-template-page-heftarchiv-php .post h4 a,
 #ausgabe h4 a, #TB_secondLine a, .category-link a, #header {
 	-webkit-transition: background-color linear 0.2s;
 }

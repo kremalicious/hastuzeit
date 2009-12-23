@@ -44,7 +44,7 @@ body {
 
 h1,h2,h3,h4,h5,h6, 
 .next-links, 
-p.subscribe-to-comments, #notizen .date, 
+p.subscribe-to-comments, #pinnwand .date, 
 #front-admin, 
 .comment-author, 
 .reply, 
@@ -74,7 +74,7 @@ h1, h2 {
 	margin-bottom: 30px;
 }
 
-h2 a, #featured h4 a, #sidebartop h5 a {
+h2 a, #featured h4 a, #sidebarbottom h5 a {
 	color: #122D45;
 }
 
@@ -390,6 +390,7 @@ blockquote {
 
 #sidebar {
 	font-size: 0.9em;
+	text-shadow: #fff 0 1px 0;
 }
 
 #sidebar li {
@@ -406,17 +407,17 @@ blockquote {
 	margin-top: 0;
 }
 
-#sidebartop h5 {
+#sidebarbottom h5 {
 	margin-bottom: 0;
 	font-size: 1.1em;
 }
 
-#sidebar #sidebartop .more .more-link {
+#sidebar #sidebarbottom .more .more-link {
 	display: block;
 	background-color: #e0e2e5;
 }
 
-#sidebar #sidebartop li {
+#sidebar #sidebarbottom li {
 	line-height: 1.4em;
 }
 
@@ -424,26 +425,26 @@ blockquote {
 	font-size: 1.1em;
 }
 
-#notizen .date {
+#pinnwand .date {
 	font-size: 0.8em;
 	margin: 0;
 	display: block;
 }
 
-#notizen {
+#pinnwand {
 	color: #a8aeb6;
 }
 
-#notizen, #notizen li {
+#pinnwand, #pinnwand li {
 	-webkit-transition: color 0.2s linear;
 }
 
-#notizen:hover li,
-#notizen h4 {
+#pinnwand:hover li,
+#pinnwand h4 {
 	color: #122d45;
 }
 
-#notizen:hover li .date {
+#pinnwand:hover li .date {
 	color: #a8aeb6;
 }
 

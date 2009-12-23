@@ -11,19 +11,25 @@ if ( function_exists( 'add_theme_support' ) )
 add_theme_support('post-thumbnails');
 
 if ( function_exists('register_sidebar') ) {
-	register_sidebar(array('name'=>'sidebartop',
+	register_sidebar(array(
+		'name'=>'sidebarleft',
+		'description' => 'Obere linke Spalte der Sidebar. Zuerst wird immer das Letzte Artikel widget angezeigt, welches hier nicht aufgef&uuml;hrt und auch nicht ver&auml;nderbar ist.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-	register_sidebar(array('name'=>'sidebarleft',
+	register_sidebar(array(
+		'name'=>'sidebarright',
+		'description' => 'Obere rechte Spalte der Sidebar. Hier sollte immer oben das Popular Posts widget mit dem Titel &quot;beliebt&quot; eingestellt werden.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-	register_sidebar(array('name'=>'sidebarright',
+	register_sidebar(array(
+		'name'=>'sidebarbottom',
+		'description' => 'Unterer zweispaltiger Abschnitt der Sidebar. Zuerst wird immer die Pinnwand angezeigt, die hier nicht aufgef&uuml;hrt und auch nicht ver&auml;nderbar ist.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',

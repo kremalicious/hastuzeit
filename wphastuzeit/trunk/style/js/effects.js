@@ -289,6 +289,13 @@ $(function () { //DOMdiDOM
        		$nextDiv.slideToggle('normal').prev('h2,h4').toggleClass('open');
     	}
   	});
+  	
+  	//Hover link animation
+  	$('#latestposts a').hover(function () {
+    	$(this).stop().animate({ paddingLeft: '5px' }, 200);  
+    	}, function() { 
+        $(this).stop().animate({ paddingLeft: '2px' }, 200);
+    });
 	
 
 }); //don't delete me or the DOM will collaps

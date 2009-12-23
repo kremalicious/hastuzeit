@@ -97,7 +97,6 @@
 	<body <?php body_class(); ?>>
 		
 		<div id="wrapper">
-			<div id="beta"></div>
 		
 			<div id="header">
 			
@@ -117,7 +116,9 @@
 						<?php wp_list_categories('child_of=6&title_li=&hide_empty=0'); ?> <?php wp_list_categories('include=38,60&title_li=&hide_empty=0'); ?>
 					</ul>
 				</li>
+				
 				<?php wp_list_pages('title_li=&exclude=83,110,1935,2086'); ?>
+				
 				<li class="feed facebook"><a rel="me" href="http://www.facebook.com/pages/hastuzeit/176710040046" title="Werde Fan der hastuzeit auf Facebook" class="infopopup">Facebook</a></li>
 				<li class="feed twitter"><a rel="me" href="http://twitter.com/hastuzeit" title="Folge hastuzeit auf Twitter" class="infopopup">Twitter</a></li>
 				<li class="feed"><a href="<?php bloginfo('rss2_url'); ?>" title="Alle hastuzeit Texte &uuml;ber RSS abonnieren" class="infopopup">RSS</a></li>
