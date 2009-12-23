@@ -119,6 +119,10 @@ function images($num = 1, $width = null, $height = null, $class = '', $displayLi
 			echo $link.$theImage.$linkend;
 		}
 	}
+	if(empty($theImage)){ //Defines a default image
+		$theImage = '<img src="/uploads/2009/10/hastuzeit-Icon-Dimmed.png" '.$size.' />';
+		echo $link.$theImage.$linkend;
+	}
 	$more = 0;
 }
 

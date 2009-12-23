@@ -24,7 +24,7 @@
 					<li>
 						<h5><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
 						<span class="date"><?php the_time('d.m. Y') ?></span>
-						<a href="<?php the_permalink(); ?>"><?php images('1', '30', '30', 'alignleft', false); ?></a><?php trim_excerpt('10'); ?>
+						<?php trim_excerpt('10'); ?>
 						<a class="more-link" href="<?php the_permalink(); ?>">Mehr</a>
 						<?php edit_post_link('Bearbeiten', '', ''); ?>
 					</li>

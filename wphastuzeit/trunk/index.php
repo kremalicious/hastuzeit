@@ -36,7 +36,7 @@ get_header(); ?>
 								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 								
 								<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
-									the_post_thumbnail(array( 150,150 ), array( 'class' => 'alignleft', 'alt' => 'alttext', 'title' => 'titletext'));
+									the_post_thumbnail(array( 150,150 ), array( 'class' => 'alignleft'));
 								} else {
 									images('1', '150', '150', '', false);
 								} ?>
@@ -85,7 +85,13 @@ get_header(); ?>
 							 ?>
 							
 							<li class="thumb">
-								<a href="#post-<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>"><?php images('1', '50', '50', '', false); ?></a>
+								<a href="#post-<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>">
+									<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+										the_post_thumbnail(array( 50,50 ), array( 'class' => 'alignleft'));
+									} else {
+										images('1', '50', '50', '', false);
+									} ?>
+								</a>
 							</li>
 							
 							<?php endforeach; ?>
@@ -188,7 +194,11 @@ get_header(); ?>
 								
 						<!-- Nutze exzerpt, wenn angegeben, ansonsten the_content -->
 						<?php if (!empty($post->post_excerpt)) : ?>
-							<?php if (function_exists('images')) images('1', '150', '150', '', false); ?>
+							<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+								the_post_thumbnail(array( 150,150 ), array( 'class' => 'alignleft' ));
+							} else {
+								images('1', '150', '150', '', false);
+							} ?>
 							<?php the_excerpt(); ?>
 							<p><a class="more-link" href="<?php the_permalink(); ?>" rel="bookmark" title="Link zu <?php the_title(); ?>">Mehr, mehr, mehr</a></p>
 						<?php else : ?>

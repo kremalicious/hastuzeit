@@ -132,8 +132,13 @@ get_header();
 						
 			<!-- Nutze exzerpt, wenn angegeben, ansonsten the_content -->
 			<?php if (!empty($post->post_excerpt)) : ?>
+				<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+					the_post_thumbnail(array( 150,150 ), array( 'class' => 'alignleft' ));
+				} else {
+					images('1', '150', '150', '', false);
+				} ?>
 				<?php the_excerpt(); ?>
-				<p><a class="more-link" href="<?php the_permalink(); ?>" rel="bookmark" title="Link zu <?php the_title(); ?>">Read the rest of this entry &raquo;</a></p>
+				<p><a class="more-link" href="<?php the_permalink(); ?>" rel="bookmark" title="Link zu <?php the_title(); ?>">Mehr, mehr, mehr</a></p>
 			<?php else : ?>
 				<?php the_content('Mehr, mehr, mehr'); ?>
 			<?php endif; ?>
