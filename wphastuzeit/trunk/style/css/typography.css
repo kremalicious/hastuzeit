@@ -427,6 +427,7 @@ blockquote {
 #notizen .date {
 	font-size: 0.8em;
 	margin: 0;
+	display: block;
 }
 
 #notizen {

@@ -860,6 +860,19 @@ a#profile-edit-link {
 	border-bottom: 1px solid #dfe0e0;
 }
 
+img#readiculum {
+	-khtml-opacity: 0.4;
+	-moz-opacity: 0.4;
+	opacity: 0.4;
+	-webkit-transition: opacity 0.2s linear;
+}
+
+img#readiculum:hover {
+	-khtml-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
 /* @end */
 
 /* @group Sidebar */
