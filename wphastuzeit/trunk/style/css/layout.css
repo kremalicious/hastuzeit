@@ -892,7 +892,7 @@ img#readiculum:hover {
 }
 
 #sidebar li.widget {
-	margin: 0 0 15px;
+	margin: 0 0 20px;
 	padding-bottom: 15px;
 }
 
@@ -912,15 +912,25 @@ img#readiculum:hover {
 }
 
 #latestposts li,
-#popular-posts li {
+#popular-posts li,
+#sidebar .widget_rss li {
 	margin: 0;
 }
 
 #latestposts li a,
-#popular-posts li a {
+#popular-posts li a,
+.widget_rss li a {
 	border-bottom: 1px solid #eaeaea;
 	border-top: 1px solid #fff;
 	padding: 5px 2px;
+}
+
+#latestposts a:hover,
+#recentcomments a:hover,
+#popular-posts a:hover,
+.widget_links a:hover,
+.widget_rss li a:hover {
+	-webkit-transform: rotate(2deg) scale(1.05);
 }
 
 #recentcomments li {
@@ -932,13 +942,15 @@ img#readiculum:hover {
 
 #latestposts li:first-child a,
 #recentcomments li:first-child,
-#popular-posts li:first-child a {
+#popular-posts li:first-child a,
+.widget_rss li:first-child a {
 	border-top: none;
 }
 
 #latestposts:after,
 #recentcomments:after,
-#popular-posts:after {
+#popular-posts:after,
+.widget_rss:after {
 	content: "";
 	border-top: 1px solid #fff;
 	display: block;
@@ -950,7 +962,6 @@ img#readiculum:hover {
 
 #sidebar #sidebarbottom .widget {
 	border-bottom: 0;
-	padding-bottom: 0;
 	margin-bottom: 15px;
 	margin-top: 15px;
 	overflow: auto;
@@ -1023,6 +1034,10 @@ img#readiculum:hover {
 #sidebarbottom .more-link.ical {
 	margin-top: 5px !important;
 	background: url(../images/hastuzeit-master.png) no-repeat 270px -221px;
+}
+
+#termine .more {
+	margin-top: 30px;
 }
 
 /* @end */

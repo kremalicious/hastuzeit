@@ -291,7 +291,8 @@ $(function () { //DOMdiDOM
   	});
   	
   	//Hover link animation
-  	$('#latestposts a').hover(function () {
+  	var $animatedlinks = ('#latestposts a, #popular-posts a, .widget_rss a, .widget_links a');
+  	$($animatedlinks).hover(function () {
     	$(this).stop().animate({ paddingLeft: '5px' }, 200);  
     	}, function() { 
         $(this).stop().animate({ paddingLeft: '2px' }, 200);

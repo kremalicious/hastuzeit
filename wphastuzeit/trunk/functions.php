@@ -13,7 +13,7 @@ add_theme_support('post-thumbnails');
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
 		'name'=>'sidebarleft',
-		'description' => 'Obere linke Spalte der Sidebar. Zuerst wird immer das Letzte Artikel widget angezeigt, welches hier nicht aufgef&uuml;hrt und auch nicht ver&auml;nderbar ist.',
+		'description' => 'Obere linke Spalte der Sidebar. Zuerst sollte hier immer zuerst das Popular Posts Widget mit dem Titel &quot;beliebte beitr&auml;ge&quot; eingestellt werden.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -21,7 +21,7 @@ if ( function_exists('register_sidebar') ) {
 	));
 	register_sidebar(array(
 		'name'=>'sidebarright',
-		'description' => 'Obere rechte Spalte der Sidebar. Hier sollte immer oben das Popular Posts widget mit dem Titel &quot;beliebt&quot; eingestellt werden.',
+		'description' => 'Obere rechte Spalte der Sidebar. Hier sollte immer zuerst das Letzte Kommentare Widget mit dem Titel &quot;frisch angemerkt&quot; eingestellt werden.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -29,7 +29,7 @@ if ( function_exists('register_sidebar') ) {
 	));
 	register_sidebar(array(
 		'name'=>'sidebarbottom',
-		'description' => 'Unterer zweispaltiger Abschnitt der Sidebar. Zuerst wird immer die Pinnwand angezeigt, die hier nicht aufgef&uuml;hrt und auch nicht ver&auml;nderbar ist.',
+		'description' => 'Unterer zweispaltiger Abschnitt der Sidebar. Zuerst wird immer die Pinnwand und die N&auml;chsten Termine angezeigt, die hier nicht aufgef&uuml;hrt und auch nicht ver&auml;nderbar sind.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',
