@@ -90,6 +90,15 @@ function the_category_exclude($separator=', ',$exclude='') {
 	return implode($separator,$newlist);
 }
 
+//custom excerpt
+function trim_excerpt($num) {
+	$limit = $num+1;
+	$excerpt = explode(' ', get_the_excerpt(), $limit);
+	array_pop($excerpt);
+	$excerpt = implode(" ",$excerpt)."...";
+	echo $excerpt;
+}
+
 //Use first images of posts as thumbnails
 function images($num = 1, $width = null, $height = null, $class = '', $displayLink = true) {
 	global $more;
@@ -142,6 +151,10 @@ function hls_set_query() {
 } 
 add_action('wp_print_scripts', 'hls_set_query');
 
+////////////////////////////////////////////////////////////////////
+//// FEED STUFF ////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
 //Exclude categories from the main rss feed
 function feed_exclude($query) {
 	if ($query->is_feed) {
@@ -152,14 +165,23 @@ return $query;
 }
 add_filter('pre_get_posts','feed_exclude');
 
-//custom excerpt
-function trim_excerpt($num) {
-	$limit = $num+1;
-	$excerpt = explode(' ', get_the_excerpt(), $limit);
-	array_pop($excerpt);
-	$excerpt = implode(" ",$excerpt)."...";
-	echo $excerpt;
+//Include some custom fields in the feed
+function feed_custom_field( $content ) {
+
+    global $post, $id;
+ 
+    if ( !is_feed() )
+        return $content;
+ 
+    $unterueber = get_post_meta( $post->ID, 'Unterüberschrift', $single = true );
+ 
+    // Print custom fields and Content
+    if ( $unterueber != '' )
+        return  '<strong>' . $unterueber . '</strong><br />' . $content;
 }
+ 
+add_filter( 'the_content', 'feed_custom_field' );
+
 
 //disable loading of some plugin styles
 function my_deregister_styles() {
