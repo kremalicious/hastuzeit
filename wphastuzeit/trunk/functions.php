@@ -176,8 +176,12 @@ function feed_custom_field( $content ) {
     $unterueber = get_post_meta( $post->ID, 'Unterüberschrift', $single = true );
  
     // Print custom fields and Content
-    if ( $unterueber != '' )
-        return  '<strong>' . $unterueber . '</strong><br />' . $content;
+    if ( $unterueber != '' ) {
+    	return  '<strong>' . $unterueber . '</strong><br />' . $content;
+    } else {
+    	return $content;
+    }
+        
 }
  
 add_filter( 'the_content', 'feed_custom_field' );
