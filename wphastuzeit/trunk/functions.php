@@ -227,15 +227,15 @@ function autorbox() {
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
-					<div><span>Twitter:</span> <a class="url" href="<?php the_author_meta('twitter'); ?>"><?php the_author_meta('twitter'); ?></a></div>
+					<div><span>Twitter:</span> <a class="url" href="https://twitter.com/<?php the_author_meta('twitter'); ?>"><?php the_author_meta('twitter'); ?></a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'facebook' ) ) { ?>
-					<div><span>Facebook:</span> <a class="url" href="<?php the_author_meta('facebook'); ?>"><?php the_author_meta('facebook'); ?></a></div>
+					<div><span>Facebook:</span> <a class="url" href="<?php the_author_meta('facebook'); ?>"><?php the_author_meta('display_name'); ?>'s Profil</a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'studivz' ) ) { ?>
-					<div><span>StudiVZ:</span> <a class="url" href="<?php the_author_meta('studivz'); ?>"><?php the_author_meta('studivz'); ?></a></div>
+					<div><span>StudiVZ:</span> <a class="url" href="<?php the_author_meta('studivz'); ?>"><?php the_author_meta('display_name'); ?>'s Profil</a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'jabber' ) ) { ?>
@@ -243,11 +243,11 @@ function autorbox() {
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'aim' ) ) { ?>
-					<div><span>AIM:</span> <a class="url" href="<?php the_author_meta('aim'); ?>"><?php the_author_meta('aim'); ?></a></div>
+					<div><span>AIM:</span> <a class="url" href="aim:addbuddy?screenname=<?php the_author_meta('aim'); ?>"><?php the_author_meta('aim'); ?></a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'yim' ) ) { ?>
-					<div><span>Yahoo IM:</span> <a class="url" href="<?php the_author_meta('yim'); ?>"><?php the_author_meta('yim'); ?></a></div>
+					<div><span>Yahoo IM:</span> <a class="url" href="ymsgr:addfriend?<?php the_author_meta('yim'); ?>"><?php the_author_meta('yim'); ?></a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'icq' ) ) { ?>
@@ -286,9 +286,9 @@ add_filter('admin_footer_text', 'footer_text');
 
 //More Contact Methods
 function my_new_contactmethods( $contactmethods ) {
-  $contactmethods['twitter'] = 'Twitter';
-  $contactmethods['facebook'] = 'Facebook';
-  $contactmethods['studivz'] = 'StudiVZ';
+  $contactmethods['twitter'] = 'Twitter Username';
+  $contactmethods['facebook'] = 'Facebook Profil<br /><small style="color:#666666;font-style:italic">gesamte URL inklusive http://</small>';
+  $contactmethods['studivz'] = 'StudiVZ Profil<br /><small style="color:#666666;font-style:italic">gesamte URL inklusive http://</small>';
   $contactmethods['icq'] = 'ICQ';
   
   return $contactmethods;
