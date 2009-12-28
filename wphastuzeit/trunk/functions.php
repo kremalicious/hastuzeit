@@ -285,7 +285,7 @@ function footer_text() {
 add_filter('admin_footer_text', 'footer_text');
 
 //More Contact Methods
-function my_new_contactmethods( $contactmethods ) {
+function hastuzeit_new_contactmethods( $contactmethods ) {
   $contactmethods['twitter'] = 'Twitter Username';
   $contactmethods['facebook'] = 'Facebook Profil<br /><small style="color:#666666;font-style:italic">gesamte URL inklusive http://</small>';
   $contactmethods['studivz'] = 'StudiVZ Profil<br /><small style="color:#666666;font-style:italic">gesamte URL inklusive http://</small>';
@@ -293,7 +293,28 @@ function my_new_contactmethods( $contactmethods ) {
   
   return $contactmethods;
 }
-add_filter('user_contactmethods','my_new_contactmethods',10,1);
+add_filter('user_contactmethods','hastuzeit_new_contactmethods',10,1);
+
+//remove some dashboard widgets
+function remove_dashboard_widgets() {
+ 	global $wp_meta_boxes;
+
+	// Remove the incoming links widget
+	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+	//Remove the News stuff
+	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+
+}
+
+// Hoook into the 'wp_dashboard_setup' action to register our function
+add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
+
+//Disable upgrade notice
+if ( !current_user_can( 'edit_users' ) ) {
+  add_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
+  add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
+}
 
 /*
 //header color

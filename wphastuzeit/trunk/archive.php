@@ -51,15 +51,15 @@ get_header();
 				<?php } ?>
 				
 				<?php if ($thisauthor->twitter) { ?>
-					<div><span>Twitter:</span> <a class="url" href="<?php echo $thisauthor->twitter; ?>" title="<?php echo $thisauthor->display_name; ?> auf Twitter"><?php echo $thisauthor->twitter; ?></a></div>
+					<div><span>Twitter:</span> <a class="url" href="https://twitter.com/<?php echo $thisauthor->twitter; ?>" title="<?php echo $thisauthor->display_name; ?> auf Twitter"><?php echo $thisauthor->twitter; ?></a></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->facebook) { ?>
-					<div><span>Facebook:</span> <a class="url" href="<?php echo $thisauthor->facebook; ?>" title="<?php echo $thisauthor->display_name; ?> auf Facebook"><?php echo $thisauthor->facebook; ?></a></div>
+					<div><span>Facebook:</span> <a class="url" href="<?php echo $thisauthor->facebook; ?>" title="<?php echo $thisauthor->display_name; ?> auf Facebook"><?php echo $thisauthor->display_name; ?>'s Profil</a></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->studivz) { ?>
-					<div><span>StudiVZ:</span> <a class="url" href="<?php echo $thisauthor->studivz; ?>" title="<?php echo $thisauthor->display_name; ?> auf Facebook"><?php echo $thisauthor->stduivz; ?></a></div>
+					<div><span>StudiVZ:</span> <a class="url" href="<?php echo $thisauthor->studivz; ?>" title="<?php echo $thisauthor->display_name; ?> auf StudiVZ"><?php echo $thisauthor->display_name; ?>'s Profil</a></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->jabber) { ?>
@@ -67,15 +67,15 @@ get_header();
 				<?php } ?>
 				
 				<?php if ($thisauthor->aim) { ?>
-					<div><span>AIM:</span> <a href="aim:<?php echo $thisauthor->aim; ?>"><?php echo $thisauthor->aim; ?></a></div>
+					<div><span>AIM:</span> <a href="aim:addbuddy?screenname=<?php echo $thisauthor->aim; ?>"><?php echo $thisauthor->aim; ?></a></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->yim) { ?>
-					<div><span>Yahoo IM:</span> <a href="ymsgr:<?php echo $thisauthor->yim; ?>"><?php echo $thisauthor->yim; ?></a></div>
+					<div><span>Yahoo IM:</span> <a href="ymsgr:addfriend?<?php echo $thisauthor->yim; ?>"><?php echo $thisauthor->yim; ?></a></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->icq) { ?>
-					<div><span>ICQ:</span> <a href="ymsgr:<?php echo $thisauthor->icq; ?>"><?php echo $thisauthor->icq; ?></a></div>
+					<div><span>ICQ:</span> <a href="<?php echo $thisauthor->icq; ?>"><?php echo $thisauthor->icq; ?></a></div>
 				<?php }
 				
 				if ( is_user_logged_in() ) { ?>

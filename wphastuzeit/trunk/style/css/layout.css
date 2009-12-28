@@ -77,6 +77,44 @@ div {
 	margin-bottom: 20px;
 }
 
+/* @group Form Styles */
+
+input, textarea {
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+	outline: 3px double #000;
+	box-shadow: 0 0 5px #7f7f7f;
+	-webkit-box-shadow: 0 0 10px #7f7f7f;
+	-moz-box-shadow: 0 0 10px #7f7f7f;
+}
+
+textarea {
+	max-width: 580px;
+}
+
+input[type=submit] {
+	background: #122d45 url(../images/button-overlay.png) repeat-x;
+	padding: 5px 10px 6px;
+	cursor: pointer;
+	color: #fff;
+	-moz-box-shadow: 0 1px 3px #5e5e5e;
+	-webkit-box-shadow: 0 1px 3px #5e5e5e;
+	box-shadow: 0 1px 3px #5e5e5e;
+	text-shadow: 0 -1px 1px #222;
+	border-bottom: 1px solid #222;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	position: relative;
+	display: inline-block;
+	top: -1px;
+}
+
+/* @end */
+
 /* @group Header */
 
 #header h1 {
@@ -913,13 +951,15 @@ img#readiculum:hover {
 
 #latestposts li,
 #popular-posts li,
-#sidebar .widget_rss li {
+#sidebar .widget_rss li,
+#sidebar .widget_links li {
 	margin: 0;
 }
 
 #latestposts li a,
 #popular-posts li a,
-.widget_rss li a {
+.widget_rss li a,
+.widget_links li a {
 	border-bottom: 1px solid #eaeaea;
 	border-top: 1px solid #fff;
 	padding: 5px 2px;
@@ -929,7 +969,8 @@ img#readiculum:hover {
 #recentcomments a:hover,
 #popular-posts a:hover,
 .widget_links a:hover,
-.widget_rss li a:hover {
+.widget_rss li a:hover,
+.widget_links li a:hover {
 	-webkit-transform: rotate(2deg) scale(1.05);
 }
 
@@ -943,14 +984,16 @@ img#readiculum:hover {
 #latestposts li:first-child a,
 #recentcomments li:first-child,
 #popular-posts li:first-child a,
-.widget_rss li:first-child a {
+.widget_rss li:first-child a,
+.widget_links li:first-child a {
 	border-top: none;
 }
 
 #latestposts:after,
 #recentcomments:after,
 #popular-posts:after,
-.widget_rss:after {
+.widget_rss:after,
+.widget_links:after {
 	content: "";
 	border-top: 1px solid #fff;
 	display: block;
@@ -1042,45 +1085,15 @@ img#readiculum:hover {
 
 /* @end */
 
-/* @group Form Styles */
-
-input, textarea {
-	padding: 5px;
-	border: 1px solid #ccc;
-}
-
-textarea {
-	max-width: 580px;
-}
-
-input[type=submit] {
-	background: #122d45 url(../images/button-overlay.png) repeat-x;
-	padding: 5px 10px 6px;
-	cursor: pointer;
-	color: #fff;
-	-moz-box-shadow: 0 1px 3px #5e5e5e;
-	-webkit-box-shadow: 0 1px 3px #5e5e5e;
-	box-shadow: 0 1px 3px #5e5e5e;
-	text-shadow: 0 -1px 1px #222;
-	border-bottom: 1px solid #222;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	position: relative;
-	display: inline-block;
-	top: -1px;
-}
-
-/* @end */
-
 /* @group Search */
 
 #sidebar input[type=text] {
-	width: 280px;
+	width: 245px;
 	display: block;
 	border: 1px solid #ccc;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-right: 40px;
 }
 
 #sidebar input[type=submit] {
@@ -1119,13 +1132,16 @@ input[type=submit] {
 }
 
 #live-search {
-	width: 100%;
+	width: 288px;
 	background: #f9f9f9 url(../images/featured-grad.png) repeat-x left bottom;
 	box-shadow: 0px 5px 5px #7f7f7f;
 	-webkit-box-shadow: 0px 5px 5px #7f7f7f;
 	-moz-box-shadow: 0px 5px 5px #7f7f7f;
 	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=5, offY=5, positive=true);
 	overflow: auto;
+	border: 3px double #000;
+	border-top: none;
+	left: -1px;
 }
 
 /* @end */
