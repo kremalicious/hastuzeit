@@ -11,6 +11,9 @@ $(function () { //DOMdiDOM
 	//initiate the label replacement
 	label2value();
 	
+	//Heft Category Badge
+	$("#main .category-link a:contains('Nr')").addClass('heftbadge');
+	
 	//AJAX Live Search
     $('#s').liveSearch({url: '/index.php?ajax=1&s='});
     
