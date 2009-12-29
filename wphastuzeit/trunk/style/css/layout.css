@@ -613,6 +613,10 @@ input[type=submit] {
 #tags {
 	clear: both;
 	margin: 20px 0;
+	background: url(../images/hastuzeit-master.png) no-repeat -443px -306px;
+	padding-left: 20px;
+	border-top: 1px solid #ff6600;
+	padding-top: 15px;
 }
 
 .heftbadge {
@@ -1551,13 +1555,6 @@ div.sexy-bookmarks {
 .noborder {
 	border: none;
 	padding: 0;
-}
-
-p#tags {
-	background: url(../images/hastuzeit-master.png) no-repeat -443px -291px;
-	padding-left: 20px;
-	border-top: 1px solid #ff6600;
-	padding-top: 15px;
 }
 
 a.external {
