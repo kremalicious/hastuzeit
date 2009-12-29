@@ -332,6 +332,25 @@ blockquote {
 	line-height: 1.3em;
 }
 
+.heftbadge {
+	line-height: 1em;
+	color: #fff !important;
+	text-shadow: #444 0 1px 0 !important;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-webkit-opacity: 0.8;
+}
+
+.heftbadge:hover {
+	color: #ff6600 !important;
+}
+
+.meta:hover .heftbadge  {
+	opacity: 1;
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+}
+
 /* @end */
 
 /* @group Featured */
