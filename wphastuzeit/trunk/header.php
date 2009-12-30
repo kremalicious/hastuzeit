@@ -100,7 +100,7 @@
 		
 			<div id="header">
 			
-				<h1><a title="Zur Startseite" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+				<h1><a class="infopopup" title="Zur Startseite" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 				<p id="description"><?php bloginfo('description'); ?></p>
 				<?php include('admin-menu.php'); ?>
 				<ul id="secondnav">
