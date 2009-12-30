@@ -255,9 +255,9 @@ blockquote {
 	-webkit-transition: color 0.2s linear;
 }
 
-.meta:hover, 
-.meta:hover a, 
-.meta:hover .category-link a {
+.post:hover .meta, 
+.post:hover .meta a, 
+.post:hover .meta .category-link a {
 	color: #122d45;
 }
 
@@ -285,7 +285,7 @@ blockquote {
 }
 
 .category-link a, .post-edit-link,
-.meta:hover .category-link a {
+.post:hover .meta .category-link a {
 	color: #122D45;
 	background-color: #e0e2e5;
 	padding: 1px 5px;
@@ -298,9 +298,9 @@ blockquote {
 .category-link a:hover, input[type=submit]:hover, .comment-link a:hover, .next-links a:hover, #more-content a:hover,
 .meta .category-link a:hover,
 .similar-posts li a:hover {
-	color: #fff;
-	background-color: #ff6600;
-	text-shadow: #666 0 1px 0;
+	color: #fff !important;
+	background-color: #ff6600 !important;
+	text-shadow: #666 0 1px 0 !important;
 }
 
 .category-link a:active, input[type=submit]:active, .comment-link a:active, .next-links a:active,
@@ -348,7 +348,7 @@ blockquote {
 	color: #ff6600 !important;
 }
 
-.meta:hover .heftbadge  {
+.post:hover .meta .heftbadge  {
 	opacity: 1;
 	-moz-opacity: 1;
 	-webkit-opacity: 1;

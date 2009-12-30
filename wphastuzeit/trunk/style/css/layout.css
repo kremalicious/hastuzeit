@@ -467,11 +467,11 @@ input[type=submit] {
 	clear: both;
 }
 
-.meta:hover {
+.post:hover .meta {
 	border-color: #ff6600;
 }
 
-.meta:hover a.post-edit-link {
+a.post-edit-link {
 	color: #fff;
 }
 
