@@ -279,7 +279,8 @@ blockquote {
 	line-height: 1.3em;
 }
 
-#more-content li h4 {
+#more-content li h4,
+.similar-posts li h4 {
 	font-size: 1em;
 	margin: 0;
 }
