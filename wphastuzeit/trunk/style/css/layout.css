@@ -484,7 +484,8 @@ input[type=submit] {
 	margin: 0 10px 0 0;
 }
 
-#more-content .column {
+#more-content .column,
+.similar-posts li {
 	width: 48%;
 	float: left;
 	margin-left: 20px;
@@ -504,13 +505,43 @@ input[type=submit] {
 	list-style: none;
 }
 
-#more-content li a {
+#more-content li a,
+.similar-posts li a {
 	display: block;
 	height: 33px;
 	background-color: #e0e2e5;
 	border: 1px solid #ccc;
 	text-shadow: #fff 0 1px 0;
 	color: #122d45;
+}
+
+h3#similar {
+	margin-top: 30px;
+	clear: both;
+}
+
+ul.similar-posts {
+	float: left;
+	width: 100%;
+	margin: 0 0 10px -5px;
+}
+
+.similar-posts img,
+.similar-posts img.alignleft,
+.similar-posts img.alignright {
+	float: left;
+	margin: 0 10px 0 -7px;
+}
+
+.similar-posts li {
+	list-style: none !important;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+.similar-posts li a {
+	height: 35px;
 }
 
 .next-links, .wp-pagenavi {
@@ -1543,7 +1574,7 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 }
 
 #more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebarbottom h5 .more-link, .page-template-page-heftarchiv-php .post h4 a,
-#ausgabe h4 a, #TB_secondLine a, .category-link a, #header {
+#ausgabe h4 a, #TB_secondLine a, .category-link a, #header, .similar-posts li a {
 	-webkit-transition: background-color linear 0.2s;
 }
 

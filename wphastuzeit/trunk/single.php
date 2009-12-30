@@ -38,7 +38,15 @@ get_header();
 			
 		</div>
 		
-		<?php if(function_exists('selfserv_sexy')) { selfserv_sexy(); } ?>
+		<?php 
+			if(function_exists('selfserv_sexy')) { 
+				selfserv_sexy(); 
+			} 
+			if (function_exists('similar_posts')) {
+			  similar_posts();
+			}	
+		?>
+		
 		
 		<div id="more-content">				
 			<?php global $post;
@@ -47,14 +55,15 @@ get_header();
 			?>
 		
 			<div class="column">
-				<h3>Mehr aus <?php echo $category->cat_name; ?></h3>
+				<h3>frisches aus <?php echo '<a href="' . get_category_link( $category->cat_ID ) . '">' . $category->cat_name . '</a>' ?></h3>
 				
 				<ul>
 					<?php
-						$posts = get_posts('numberposts=5&category=-3,'. $category->term_id);
+						$posts = get_posts('numberposts=4&category=-3,'. $category->term_id);
 						foreach($posts as $post) :
+						$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
 					?>
-					<li><h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4></li>
+					<li><h4><a class="infopopup" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4></li>
 					
 					<?php endforeach; ?>
 					
