@@ -342,6 +342,9 @@ blockquote {
 	opacity: 0.8;
 	-moz-opacity: 0.8;
 	-webkit-opacity: 0.8;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
 }
 
 .heftbadge:hover {
