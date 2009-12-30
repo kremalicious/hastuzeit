@@ -44,7 +44,7 @@ get_header();
 			} 
 			if (function_exists('similar_posts')) {
 			  similar_posts();
-			}	
+			}
 		?>
 		
 		
@@ -63,7 +63,7 @@ get_header();
 						foreach($posts as $post) :
 						$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
 					?>
-					<li><h4><a class="infopopup" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4></li>
+					<li><h4><a class="infopopup" rel="bookmark" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4></li>
 					
 					<?php endforeach; ?>
 					

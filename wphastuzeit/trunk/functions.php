@@ -151,41 +151,6 @@ function hls_set_query() {
 } 
 add_action('wp_print_scripts', 'hls_set_query');
 
-////////////////////////////////////////////////////////////////////
-//// FEED STUFF ////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////
-
-//Exclude categories from the main rss feed
-function feed_exclude($query) {
-	if ($query->is_feed) {
-		$query->set('cat','-3');
-	}
-
-return $query;
-}
-add_filter('pre_get_posts','feed_exclude');
-
-//Include some custom fields in the feed
-function feed_custom_field( $content ) {
-
-    global $post, $id;
- 
-    if ( !is_feed() )
-        return $content;
- 
-    $unterueber = get_post_meta( $post->ID, 'Unterüberschrift', $single = true );
- 
-    // Print custom fields and Content
-    if ( $unterueber != '' ) {
-    	return  '<strong>' . $unterueber . '</strong><br />' . $content;
-    } else {
-    	return $content;
-    }
-        
-}
- 
-add_filter( 'the_content', 'feed_custom_field' );
-
 
 //disable loading of some plugin styles
 function my_deregister_styles() {
@@ -223,19 +188,19 @@ function autorbox() {
 				<div id="description"><?php the_author_meta( 'description' ); ?></div>
 				
 				<?php if ( get_the_author_meta( 'user_url' ) ) { ?>
-					<div><span>Website:</span> <a class="url" href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('user_url'); ?></a></div>
+					<div><span>Website:</span> <a class="url" rel="author" href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('user_url'); ?></a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
-					<div><span>Twitter:</span> <a class="url" href="https://twitter.com/<?php the_author_meta('twitter'); ?>"><?php the_author_meta('twitter'); ?></a></div>
+					<div><span>Twitter:</span> <a class="url" rel="author" href="https://twitter.com/<?php the_author_meta('twitter'); ?>"><?php the_author_meta('twitter'); ?></a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'facebook' ) ) { ?>
-					<div><span>Facebook:</span> <a class="url" href="<?php the_author_meta('facebook'); ?>"><?php the_author_meta('display_name'); ?>'s Profil</a></div>
+					<div><span>Facebook:</span> <a class="url" rel="author" href="<?php the_author_meta('facebook'); ?>"><?php the_author_meta('display_name'); ?>'s Profil</a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'studivz' ) ) { ?>
-					<div><span>StudiVZ:</span> <a class="url" href="<?php the_author_meta('studivz'); ?>"><?php the_author_meta('display_name'); ?>'s Profil</a></div>
+					<div><span>StudiVZ:</span> <a class="url" rel="author" href="<?php the_author_meta('studivz'); ?>"><?php the_author_meta('display_name'); ?>'s Profil</a></div>
 				<?php } ?>
 				
 				<?php if ( get_the_author_meta( 'jabber' ) ) { ?>
@@ -261,6 +226,43 @@ function autorbox() {
 <?php
 }
 add_shortcode('autorinfo', 'autorbox');
+
+
+////////////////////////////////////////////////////////////////////
+//// FEED STUFF ////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+//Exclude categories from the main rss feed
+function feed_exclude($query) {
+	if ($query->is_feed) {
+		$query->set('cat','-3');
+	}
+
+return $query;
+}
+add_filter('pre_get_posts','feed_exclude');
+
+//Include some custom fields in the feed
+function feed_custom_field( $content ) {
+
+    global $post, $id;
+ 
+    if ( !is_feed() )
+        return $content;
+ 
+    $unterueber = get_post_meta( $post->ID, 'Unterüberschrift', $single = true );
+ 
+    // Print custom fields and Content
+    if ( $unterueber != '' ) {
+    	return  '<strong>' . $unterueber . '</strong><br />' . $content;
+    } else {
+    	return $content;
+    }
+        
+}
+ 
+add_filter( 'the_content', 'feed_custom_field' );
+
 
 ////////////////////////////////////////////////////////////////////
 //// ADMIN AREA STUFF //////////////////////////////////////////////

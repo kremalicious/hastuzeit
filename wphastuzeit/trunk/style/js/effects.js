@@ -30,7 +30,7 @@ $(function () { //DOMdiDOM
 	//Style external links
 	$('#main .post a').not(":has(img)").filter(function() {
     	return this.hostname && this.hostname !== location.hostname;
-  	}).addClass('external');
+  	}).addClass('external').attr({rel:'external'});
     
     //The Featured Slider, omnomnom
     if ( $("#featured").length > 0 ) {
