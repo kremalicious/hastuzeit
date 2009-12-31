@@ -517,6 +517,11 @@ textarea.inactive {
 	font-size: 0.9em;
 }
 
+.search-results .hentry a.post-edit-link {
+	font-size: 0.65em;
+	clear: both;
+}
+
 #live-search {
 	text-align: left;
 }

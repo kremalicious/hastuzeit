@@ -4,9 +4,25 @@
  * http://matthiaskretschmann.com
  * http://kremalicious.com
  */
+
+//Equal height trick to get equal height for the two boxes, must be initiated later
+//Example: equalHeight(jQuery("#wrapper .box"));
+function equalHeight(group) {
+	var tallest = 0;
+	group.each(function() {
+		var thisHeight = jQuery(this).height();
+		if(thisHeight > tallest) {
+			tallest = thisHeight;
+		}
+	});
+	group.height(tallest);
+}
 	
 //On with the real fun
 $(function () { //DOMdiDOM
+	
+	//initiate our equal height magic
+	equalHeight($("body.search-results #main .hentry"));
 	
 	//initiate the label replacement
 	label2value();
@@ -250,7 +266,7 @@ $(function () { //DOMdiDOM
     
     //Search term highlighting init
 	if(typeof(hls_query) != 'undefined'){
-      $('#content').highlight(hls_query, 1, 'hls');
+      $('#main').highlight(hls_query, 1, 'hls');
     }
     
     //Open pdf links in new window

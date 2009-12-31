@@ -1031,7 +1031,8 @@ img#readiculum:hover {
 	float: left;
 	clear: none;
 	margin-right: 30px;
-	min-height: 150px;
+	min-height: 180px;
+	margin-bottom: 20px;
 }
 
 .search-results .hentry img {
@@ -1042,6 +1043,14 @@ img#readiculum:hover {
 	width: 75%;
 	float: left;
 	clear: none;
+}
+
+.search-results .hentry .meta .date {
+	margin-left: 30px;
+}
+
+.search-results .hentry .meta .heftbadge {
+	left: -15px;
 }
 
 .search-results #main #s, .error404 #main #s {

@@ -16,8 +16,8 @@
 	        <?php while (have_posts()) : the_post(); ?>  
 	  			<?php if ( in_category('3') ) continue; ?>
 	            <div class="live-results">  
-	                <h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>  
-	            </div>  
+	                <h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+	            </div>
 	  
 	        <?php endwhile; ?>  
 	  		
@@ -58,7 +58,7 @@
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 						
-					<p class="meta"><span class="date"><?php the_time('M Y') ?></span> <span class="category-link"><?php the_category(' ') ?></span> <?php edit_post_link('Bearbeiten', '', ''); ?> <span class="alignright comment-link"><?php comments_popup_link('0', '1', '%'); ?></span></p>
+					<p class="meta"><span class="date"><?php the_time('M Y') ?></span><span class="category-link"><?php the_category(' ') ?></span> <span class="alignright comment-link"><?php comments_popup_link('0', '1', '%'); ?></span></p>
 		
 						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 						
@@ -82,7 +82,7 @@
 			      				echo '</h2>';
 			      			}
 						?>
-													
+						<?php edit_post_link('Bearbeiten', '', ''); ?>						
 				</div>
 
 		<?php endwhile; ?>
