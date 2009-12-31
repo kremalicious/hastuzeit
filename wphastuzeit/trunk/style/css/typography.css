@@ -497,11 +497,24 @@ textarea.inactive {
 /* @group Search */
 
 .search-results .hentry {
-	font-size: 0.9em;
+}
+
+.search-results .hentry .meta {
+	font-size: 0.7em;
+}
+
+.search-results .hentry .meta span {
+	margin-right: 5px;
 }
 
 .search-results .hentry h2 {
 	margin-top: 2px;
+	margin-bottom: 0;
+	font-size: 1.3em;
+}
+
+.search-results .hentry h2.unterueber {
+	font-size: 0.9em;
 }
 
 #live-search {

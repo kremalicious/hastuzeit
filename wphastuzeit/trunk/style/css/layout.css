@@ -1026,13 +1026,22 @@ img#readiculum:hover {
 	border: 3px solid #ff6600;
 }
 
-.search-results .hentry .image {
-	width: 20%;
-	margin-right: 10px;
+.search-results #main .hentry {
+	width: 45%;
+	float: left;
+	clear: none;
+	margin-right: 30px;
+	min-height: 150px;
 }
 
-.search-results .hentry .text {
-	width: 78%;
+.search-results .hentry img {
+	margin: 0 10px 0 0;
+}
+
+.search-results .hentry .unterueber {
+	width: 75%;
+	float: left;
+	clear: none;
 }
 
 .search-results #main #s, .error404 #main #s {

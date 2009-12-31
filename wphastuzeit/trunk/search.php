@@ -59,29 +59,30 @@
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 						
 					<p class="meta"><span class="date"><?php the_time('M Y') ?></span> <span class="category-link"><?php the_category(' ') ?></span> <?php edit_post_link('Bearbeiten', '', ''); ?> <span class="alignright comment-link"><?php comments_popup_link('0', '1', '%'); ?></span></p>
-					
-					<div class="alignleft image">
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php if (function_exists('images')) images('1', '100', '100', '', false); ?></a>
-					</div>
-					
-					<div class="alignleft text">
 		
 						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 						
-						<!-- Wenn custom field unterueberschrift vorhanden, dann anzeigen -->
+						<a class="alignleft" href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>">
+							<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+								the_post_thumbnail(array( 50,50 ), array( 'class' => 'alignleft' ));
+							} else {
+								images('1', '50', '50', '', false);
+							} ?>
+						</a>
+						
+						<!-- Wenn custom field unterueberschrift vorhanden, dann anzeigen und kein exzerpt -->
 						<?php 
 							$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
-			      			if ($unterueber != "")
-			          			echo "<h2 class=\"unterueber\">$unterueber</h2>";
+			      			if ($unterueber != "") {
+			      				echo "<h2 class=\"unterueber\">$unterueber</h2>";
+			      			}
+			      			else {
+			      				echo '<h2 class="unterueber">';
+			      				trim_excerpt(10);
+			      				echo '</h2>';
+			      			}
 						?>
-						
-						<p class="author-link">von <?php if(function_exists('coauthors_posts_links'))
-								    coauthors_posts_links(", ", " und ");
-								else
-								    the_author_posts_link(); ?>
-						</p>
-					</div>
-							
+													
 				</div>
 
 		<?php endwhile; ?>
