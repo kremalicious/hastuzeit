@@ -1169,6 +1169,7 @@ h3#comments {
 	display: block;
 	float: left;
 	margin: 15px 0;
+	min-height: 70px;
 }
 
 .comment-body p, .comment-meta {

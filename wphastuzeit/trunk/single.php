@@ -22,14 +22,20 @@ get_header();
 				$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
       			if ($unterueber != "")
           			echo "<h2 class=\"unterueber\">$unterueber</h2>";
+			
+			if ( !in_category('Termine') ) {
 			?>
 			
 			<p class="author-link">von <?php if(function_exists('coauthors_posts_links'))
 							    coauthors_posts_links(", ", " und ");
 							else
 							    the_author_posts_link(); ?></p>
+			<?php }
+						
+			the_content(); 
 			
-			<?php the_content(); ?>
+			?>
+			
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 			
 			<?php if ( !in_category('Termine') ) autorbox(); ?>
