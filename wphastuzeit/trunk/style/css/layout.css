@@ -340,6 +340,11 @@ input[type=submit] {
 	min-height: 180px;
 }
 
+#featured img {
+	float: left !important;
+	margin-left: 0 !important;
+}
+
 .scroll {
   	height: 210px;
   	overflow: hidden;
@@ -394,9 +399,9 @@ input[type=submit] {
   cursor: pointer;
   border: none;
   z-index: 99;
-  background: transparent url(../images/hastuzeit-master.png) no-repeat -135px -262px;
+  background: transparent url(../images/hastuzeit-master.png) no-repeat -135px -264px;
   width: 34px;
-  height: 34px;
+  height: 30px;
 }
 
 .scrollButtons.left {
@@ -405,7 +410,7 @@ input[type=submit] {
 
 .scrollButtons.right {
   right: -20px;
-  background-position: -134px -231px;
+  background-position: -134px -233px;
 }
 
 #zipfel {
