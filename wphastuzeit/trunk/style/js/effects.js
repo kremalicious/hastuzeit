@@ -315,13 +315,13 @@ $(function () { //DOMdiDOM
     	$(this).stop().animate({ paddingLeft: '5px' }, 200);  
     	}, function() { 
         $(this).stop().animate({ paddingLeft: '2px' }, 200);
-    });	
-
+    });
+    
 }); //don't delete me or the DOM will collaps
 
 //Finally load all this after the content has loaded
 //$(window).load(function() {
-
+	
 	//scrolltotop.init();
 	
 //});
