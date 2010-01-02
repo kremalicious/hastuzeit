@@ -17,7 +17,7 @@ Template Name: Status
 
 				<h3>Aktueller Status</h3>
 
-				<p class="status"><span class="green"></span>Prinzipiell alles toll. Featured-Slider auf der Startseite macht im Firefox unter Windows ein paar Probleme.</p>
+				<p class="status"><span class="green"></span>Alles toll.</p>
 				
 				<p><a href="/kontakt" class="mail" title="hastuzeit kontaktieren">Fehler gefunden? Dann schreib uns!</a></p>
 				<p><a href="http://twitter.com/hastuzeit" class="twitter" title="hastuzeit auf Twitter">Folge uns auf Twitter</a></p>

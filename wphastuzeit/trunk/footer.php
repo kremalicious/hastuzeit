@@ -41,6 +41,9 @@
 		<!-- All the funky scripts -->
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/plugins.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/effects.js"></script>
+		<!--[if !IE]>
+			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/snowflakes.js"></script>
+		<![endif]-->
 
 		<?php wp_footer(); ?>
 
