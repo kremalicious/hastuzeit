@@ -1609,6 +1609,7 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 div.sexy-bookmarks {
 	margin-bottom: 40px !important;
 	margin-top: 0 !important;
+	clear: both;
 }
 
 .noborder {
