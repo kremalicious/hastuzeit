@@ -205,6 +205,33 @@ blockquote {
 	border-left: 4px double #72808d;
 }
 
+cite {
+	font-style: italic;
+	position: relative;
+}
+
+cite.big {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	width: 120px;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	text-indent: 20px;
+	color: #72808d;
+}
+
+cite.big:before  {
+	font-size: 3em;
+	position: absolute;
+}
+
+cite.big:before {
+	content: "“";
+	top: 5px;
+	left: -30px;
+}
+
 /* @end */
 
 /* @group Navigation */
