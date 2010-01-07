@@ -10,25 +10,46 @@
 
 		<?php get_search_form(); ?>
 		
-		<ul id="sidebar-left" class="column">
+		<div id="tabs" class="widget">
+					
+			<ul class="tabNavigation widgettitle">
+				<li><a class="current" rel="frisch" href="#">frisch</a></li>
+				<li><a href="#" rel="beliebt">beliebt</a></li>
+				<li><a id="linkComments" rel="latestcomments" href="#">kommentiert</a></li>
+			</ul>
 			
-			<li class="widget" id="latestposts">
+			<div id="list-wrap">
 			
-				<h4 class="widgettitle">frisch getippt</h4>
-				
+			<div id="frisch" class="current">
 				<ul>
 					<?php
-						$postslist = query_posts('showposts=13&cat=-3&caller_get_posts=1');
+						$postslist = query_posts('showposts=10&cat=-3&caller_get_posts=1');
+						
 						foreach ($postslist as $post) : 
 						setup_postdata($post);
+						$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
 					?>
-					<li><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+					<li><a class="infopopup" href="<?php the_permalink(); ?>" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>"><?php the_title(); ?></a></li>
 				
 				<?php endforeach; ?>
 				
-				</ul>		
+				</ul>
+			</div>
 			
-			</li>
+			<div id="beliebt" class="popular-posts">
+				<?php if (function_exists('get_mostpopular')) get_mostpopular(); ?>
+			</div>
+			
+			<div id="latestcomments">
+				<?php the_widget('WP_Widget_Recent_Comments', 'title=&number=7'); ?> 
+			</div>
+		
+		</div>
+		
+		</div>
+		
+		
+		<ul id="sidebar-left" class="column">
 				 
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebarleft') ) : ?>
 							

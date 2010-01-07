@@ -39,7 +39,7 @@
 
 		
 		<!-- All the funky scripts -->
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/plugins.min.js"></script>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/plugins.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/effects.js"></script>
 <!--
 		<script type="text/javascript">

@@ -860,22 +860,64 @@ img#readiculum:hover {
 
 #sidebar form {
 	padding-bottom: 10px;
-	border-bottom: 1px solid #ccc;
 }
 
 #sidebar label {
 	display: none;
 }
 
-#latestposts li,
-#popular-posts li,
-#sidebar .widget_rss li,
-#sidebar .widget_links li {
-	margin: 0;
+/* @group Tabs */
+
+#tabs {
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
-#latestposts li a,
-#popular-posts li a,
+#tabs > div {
+	clear: both;
+}
+
+#tabs div.current {
+	display: block;
+}
+
+.tabNavigation.widgettitle {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	padding: 0 !important;
+}
+
+.tabNavigation li {
+	float: left;
+	text-align: center;
+	margin: 0 !important;
+}
+
+.tabNavigation a {
+	padding: 10px 15px;
+	color: rgba(18,45,69,0.4);
+	font-size: 1.1em;
+}
+
+.tabNavigation a.current {
+	color: #122d45;
+	background: url(../images/hastuzeit-master.png) no-repeat 30px -88px;
+}
+
+.tabNavigation a#linkComments.current {
+	background-position: 50px -88px;
+}
+
+#frisch li,
+.popular-posts li,
+#sidebar .widget_rss li,
+#sidebar .widget_links li {
+	margin: 0 !important;
+}
+
+#frisch li a,
+.popular-posts li a,
 .widget_rss li a,
 .widget_links li a {
 	border-bottom: 1px solid #eaeaea;
@@ -883,13 +925,13 @@ img#readiculum:hover {
 	padding: 5px 2px;
 }
 
-#latestposts a:hover,
-#recentcomments a:hover,
-#popular-posts a:hover,
-.widget_links a:hover,
-.widget_rss li a:hover,
-.widget_links li a:hover {
-	-webkit-transform: rotate(2deg) scale(1.05);
+#recentcomments a {
+	display: inline !important;
+}
+
+#beliebt h2.widgettitle,
+#latestcomments h2.widgettitle {
+	display: none;
 }
 
 #recentcomments li {
@@ -899,23 +941,29 @@ img#readiculum:hover {
 	padding: 5px 0;
 }
 
-#latestposts li:first-child a,
+#frisch li:first-child a,
 #recentcomments li:first-child,
-#popular-posts li:first-child a,
+.popular-posts li:first-child a,
 .widget_rss li:first-child a,
 .widget_links li:first-child a {
 	border-top: none;
 }
 
-#latestposts:after,
+#frisch:after,
 #recentcomments:after,
-#popular-posts:after,
+.popular-posts:after,
 .widget_rss:after,
 .widget_links:after {
 	content: "";
 	border-top: 1px solid #fff;
 	display: block;
 }
+
+#beliebt, #latestcomments {
+	display: none;
+}
+
+/* @end */
 
 #sidebarbottom {
 	clear: both;

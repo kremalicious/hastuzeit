@@ -58,7 +58,8 @@ a.post-edit-link,
 a#login-link.loggedin,
 a#profile-edit-link,
 #commentluv,
-.similar-posts a {
+.similar-posts a,
+.tabNavigation {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;

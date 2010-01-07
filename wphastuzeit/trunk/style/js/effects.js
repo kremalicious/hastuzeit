@@ -21,9 +21,6 @@ function equalHeight(group) {
 //On with the real fun
 $(function () { //DOMdiDOM
 	
-	//initiate our equal height magic
-	equalHeight($("body.search-results #main .hentry"));
-	
 	//initiate the label replacement
 	label2value();
 	
@@ -33,12 +30,45 @@ $(function () { //DOMdiDOM
 	//AJAX Live Search
     $('#s').liveSearch({url: '/index.php?ajax=1&s='});
     
+    //initiate our equal height magic
+	equalHeight($("body.search-results #main .hentry"));
+    
     //Laaacyyyy content images
     $('#main img').lazyload({ 
     	placeholder : '/wp-content/themes/wphastuzeit/style/images/lazyload-grey.png',
     	effect 		: 'fadeIn' 
 	});
 	
+	//Tab interface
+	$("#tabs .tabNavigation li a").click(function() {
+    
+        var curList = $("#tabs .tabNavigation li a.current").attr("rel");
+        var curListHeight = $("#list-wrap").height();
+        
+        $("#list-wrap").height(curListHeight);
+    
+        $("#tabs .tabNavigation li a").removeClass("current");
+        $(this).addClass("current");
+        
+        var listID = $(this).attr("rel");
+        
+        if (listID != curList) {
+            $("#"+curList).fadeOut(200, function() {
+    
+                $("#"+listID).fadeIn(200);
+                
+                var newHeight = $("#"+listID).height();
+                
+                $("#list-wrap").animate({
+                    height: newHeight
+                });
+            
+            });
+        }        
+        
+        return false;
+    });
+		
 	//Thickbox on linked images
 	$('#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif],[href$=.PNG],[href$=.JPG],[href$=.GIF]').addClass('thickbox');
 	$('#ausgabe a.thickbox, .page-template-page-heftarchiv-php a.thickbox, .wp-caption a.thickbox').append('<span class="zoom"></span>');
@@ -169,7 +199,7 @@ $(function () { //DOMdiDOM
       	},
 		position: {
       		corner: { 
-      			target: 'bottomMiddle', 
+      			target: 'bottomLeft', 
       			tooltip: 'topLeft'
       		}
       	},
