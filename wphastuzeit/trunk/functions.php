@@ -227,10 +227,10 @@ function autorbox() {
 }
 add_shortcode('autorinfo', 'autorbox');
 
-//Quotes handling
+//Quotes handling, yummy french quotes
 function frenchquotes( $text ) {
-	$char_codes = array("‘", "’", "“", "”", '„', '“');
-	$replacements = array('&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;');
+	$char_codes = array("‘", "’", "“", "”", '„', '“', '&#8216;', '&#8217;', '&#8220;', '&#8221;', '&#8242;', '&#8243;');
+	$replacements = array('&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;');
 	return str_replace($char_codes, $replacements, $text);
 }
 
