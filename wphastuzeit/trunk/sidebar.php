@@ -20,49 +20,33 @@
 			
 			<div id="list-wrap">
 			
-			<div id="frisch" class="current">
-				<ul>
-					<?php
-						$postslist = query_posts('showposts=10&cat=-3&caller_get_posts=1');
-						
-						foreach ($postslist as $post) : 
-						setup_postdata($post);
-						$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
-					?>
-					<li><a class="infopopup" href="<?php the_permalink(); ?>" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>"><?php the_title(); ?></a></li>
-				
-				<?php endforeach; ?>
-				
-				</ul>
-			</div>
-			
-			<div id="beliebt" class="popular-posts">
-				<?php if (function_exists('get_mostpopular')) get_mostpopular(); ?>
-			</div>
-			
-			<div id="latestcomments">
-				<?php the_widget('WP_Widget_Recent_Comments', 'title=&number=7'); ?> 
-			</div>
-		
-		</div>
-		
-		</div>
-		
-		
-		<ul id="sidebar-left" class="column">
-				 
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebarleft') ) : ?>
+				<div id="frisch" class="current">
+					<ul>
+						<?php
+							$postslist = query_posts('showposts=10&cat=-3&caller_get_posts=1');
 							
-			<?php endif; ?>
-			
-		</ul>
+							foreach ($postslist as $post) : 
+							setup_postdata($post);
+							$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
+						?>
+						<li><a class="infopopup" href="<?php the_permalink(); ?>" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>"><?php the_title(); ?></a></li>
+					
+					<?php endforeach; ?>
+					
+					</ul>
+				</div>
 				
-		<ul id="sidebar-right" class="column">		
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebarright') ) : ?>
+				<div id="beliebt" class="popular-posts">
+					<?php if (function_exists('get_mostpopular')) get_mostpopular(); ?>
+				</div>
+				
+				<div id="latestcomments">
+					<?php the_widget('WP_Widget_Recent_Comments', 'title=&number=7'); ?> 
+				</div>
 			
-			<?php endif; ?>
-			
-		</ul>
+			</div>
+		
+		</div>
 		
 		<ul id="sidebarbottom">
 			<li class="widget" id="pinnwand">
@@ -114,13 +98,28 @@
 					</li>
 				</ul>
 			</li>
+			</ul>
 			
+			<ul id="sidebar-left" class="column">
+				 
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebarleft') ) : ?>
+								
+				<?php endif; ?>
+				
+			</ul>
+					
+			<ul id="sidebar-right" class="column">		
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebarright') ) : ?>
+				
+				<?php endif; ?>
+				
+			</ul>
+			
+			<ul class="twoColumn">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebarbottom') ) : ?>
 							
 			<?php endif; ?>
-			
-
-		</ul>
+			</ul>
 
 	</div><!-- end #sidebar -->
 	

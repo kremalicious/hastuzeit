@@ -340,7 +340,7 @@ $(function () { //DOMdiDOM
   	});
   	
   	//Hover link animation
-  	var $animatedlinks = ('#latestposts a, #popular-posts a, .widget_rss a, .widget_links a');
+  	var $animatedlinks = ('#frisch a, #beliebt a, .widget_rss a, .widget_links a');
   	$($animatedlinks).hover(function () {
     	$(this).stop().animate({ paddingLeft: '5px' }, 200);  
     	}, function() { 

@@ -1051,6 +1051,16 @@ img#readiculum:hover {
 	margin-top: 30px;
 }
 
+#sidebar .widget_rss h4 a {
+	display: inline;
+	float: left;
+	margin-right: 10px;
+}
+
+#sidebar .widget_rss h4 {
+	overflow: hidden;
+}
+
 /* @end */
 
 /* @group Search */
