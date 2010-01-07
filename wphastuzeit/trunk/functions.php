@@ -227,6 +227,20 @@ function autorbox() {
 }
 add_shortcode('autorinfo', 'autorbox');
 
+//Quotes handling
+function frenchquotes( $text ) {
+	$char_codes = array("‘", "’", "“", "”", '„', '“');
+	$replacements = array('&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;');
+	return str_replace($char_codes, $replacements, $text);
+}
+
+add_filter('comment_text', 'frenchquotes', 11);
+add_filter('single_post_title', 'frenchquotes', 11);
+add_filter('the_title', 'frenchquotes', 11);
+add_filter('the_content', 'frenchquotes', 11);
+add_filter('the_excerpt', 'frenchquotes', 11);
+add_filter('widget_text', 'frenchquotes', 11);
+
 
 ////////////////////////////////////////////////////////////////////
 //// FEED STUFF ////////////////////////////////////////////////////
