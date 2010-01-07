@@ -77,6 +77,13 @@ h1, h2 {
 	margin-bottom: 30px;
 }
 
+.hentry h2 a, 
+.hentry h2 a:hover,
+.hentry .comment-link a,
+.hentry .comment-link a:hover {
+	border: none;
+}
+
 h2 a, #featured h4 a, #sidebarbottom h5 a {
 	color: #122D45;
 }
@@ -187,9 +194,14 @@ a img:hover {
 	background-color: #e0e2e5;
 }
 
+.hentry a:active {
+	background-color: #122D45;
+}
+
 a.thickbox {
 	padding-left: 0;
 	padding-right: 0;
+	border: none;
 }
 
 /* @end */
@@ -382,9 +394,11 @@ cite.fn {
 	border-color: rgba(204,204,204,0.5);
 }
 
-.more-link {
+.hentry a.more-link {
 	margin-top: 1em;
-	background: url(../images/hastuzeit-master.png) no-repeat right -276px;
+	background-image: url(../images/hastuzeit-master.png);
+	background-repeat: no-repeat;
+	background-position: right -276px;
 	padding-right: 22px;
 }
 
