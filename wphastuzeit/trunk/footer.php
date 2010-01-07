@@ -41,15 +41,17 @@
 		<!-- All the funky scripts -->
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/plugins.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/effects.js"></script>
+<!--
 		<script type="text/javascript">
 	
 			$.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase()); if ($.browser.chrome) { 
-			document.write('<script type="text/javascript" src="http://hastuzeit.de/wp-content/themes/wphastuzeit/style/js/snowflakes.js"></script>'); }
+			document.write('src="http://hastuzeit.de/wp-content/themes/wphastuzeit/style/js/snowflakes.js">'); }
 	
 			$.browser.safari = /safari/.test(navigator.userAgent.toLowerCase()); if ($.browser.safari) { 
 			document.write('<script type="text/javascript" src="http://hastuzeit.de/wp-content/themes/wphastuzeit/style/js/snowflakes.js"></script>'); }
 	
 		</script>
+-->
 
 		<?php wp_footer(); ?>
 

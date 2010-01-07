@@ -216,9 +216,10 @@ cite.big {
 	width: 120px;
 	float: right;
 	margin-left: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	text-indent: 20px;
 	color: #72808d;
+	margin-top: 20px;
 }
 
 cite.big:before  {
@@ -230,6 +231,11 @@ cite.big:before {
 	content: "“";
 	top: 5px;
 	left: -30px;
+}
+
+cite.fn {
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* @end */
