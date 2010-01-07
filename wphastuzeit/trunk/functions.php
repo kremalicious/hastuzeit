@@ -229,7 +229,7 @@ add_shortcode('autorinfo', 'autorbox');
 
 //Quotes handling, yummy french quotes
 function frenchquotes( $text ) {
-	$char_codes = array("‘", "’", "“", "”", '„', '“', '&#8216;', '&#8217;', '&#8220;', '&#8221;', '&#8242;', '&#8243;');
+	$char_codes = array("‘", "’", '„', '“', '&#147;', '&#148;', '&lsquo;', '&rsquo;', '&#8220;', '&#8221;', '“', '”');
 	$replacements = array('&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;');
 	return str_replace($char_codes, $replacements, $text);
 }
