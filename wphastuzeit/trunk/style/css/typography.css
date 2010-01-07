@@ -159,6 +159,7 @@ a:active {
 	background-color: #122D45;
 	color: #fff;
 	outline: none;
+	text-shadow: none;
 }
 
 body a img, body img {
@@ -169,6 +170,26 @@ body a img, body img {
 
 a img:hover {
 	border: 3px solid #ff6600;
+}
+
+.hentry a {
+	border-bottom: 1px dashed #ff6600;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #ecedee;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.hentry a:hover {
+	border-bottom-style: solid;
+	background-color: #e0e2e5;
+}
+
+a.thickbox {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /* @end */
@@ -203,7 +224,18 @@ blockquote {
 	color: #72808d;
 	margin-left: 30px;
 	padding-left: 10px;
-	border-left: 4px double #72808d;
+	position: relative;
+}
+
+blockquote:before  {
+	font-size: 4em;
+	position: absolute;
+}
+
+blockquote:before {
+	content: "“";
+	top: 10px;
+	left: -15px;
 }
 
 cite {

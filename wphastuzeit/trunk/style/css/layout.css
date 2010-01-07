@@ -1390,15 +1390,15 @@ span.cluv {
 .alignleft { float:left }
 
 img.alignleft, .wp-caption.alignleft, .featured_nav img { 
-	margin: 5px 20px 20px 0;
+	margin: 5px 20px 15px 0;
 }
 
 img.alignright, .wp-caption.alignright { 
-	margin: 5px 0 20px 20px;
+	margin: 5px 0 15px 20px;
 }
 
 img.aligncenter, .wp-caption.aligncenter {
-	margin: 20px auto;
+	margin: 20px auto 15px;
 }
 .alignright { float:right }
 
