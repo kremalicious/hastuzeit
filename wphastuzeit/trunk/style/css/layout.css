@@ -965,11 +965,13 @@ img#readiculum:hover {
 
 /* @end */
 
-#sidebarbottom {
+#sidebarbottom,
+.twoColumn {
 	clear: both;
 }
 
-#sidebar #sidebarbottom .widget {
+#sidebar #sidebarbottom .widget,
+#sidebar .twoColumn .widget {
 	border-bottom: 0;
 	margin-bottom: 15px;
 	margin-top: 15px;
