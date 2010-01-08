@@ -252,7 +252,6 @@ input[type=submit] {
 }
 
 #navigation .current_page_item ul li a {
-	color: #ff6600;
 	background-color: transparent;
 }
 
@@ -915,16 +914,18 @@ img#readiculum:hover {
 	display: inline !important;
 }
 
-#beliebt h2.widgettitle,
-#latestcomments h2.widgettitle {
+#beliebt h2,
+#latestcomments h2 {
 	display: none;
 }
 
-#recentcomments li {
+#recentcomments li,
+#sidebar .ec3_list {
 	border-bottom: 1px solid #eaeaea;
 	border-top: 1px solid #fff;
-	margin: 0;
-	padding: 5px 0;
+	margin: 0 !important;
+	padding-top: 8px;
+	padding-bottom: 8px !important;
 }
 
 #frisch li:first-child a,

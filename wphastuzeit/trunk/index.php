@@ -11,7 +11,7 @@ get_header(); ?>
 				<div id="featured">
 					
 					<div id="featured_head">
-						<h3>Wichtig</h3>
+						<h4>Wichtig</h4>
 					</div>
 					
 					<div class="scroll">
@@ -47,13 +47,13 @@ get_header(); ?>
 							
 							<div class="featured_text">
 								
-								<h4><a rel="bookmark" href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+								<h2><a rel="bookmark" href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 								<?php edit_post_link('Bearbeiten', '', ''); ?>
 								<!-- Wenn custom field unterueberschrift vorhanden, dann anzeigen -->
 								<?php 
 									$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
 					      			if ($unterueber != "")
-					          			echo "<h5 class=\"unterueber\">$unterueber</h5>";
+					          			echo "<h3 class=\"unterueber\">$unterueber</h3>";
 								?>
 								
 								
@@ -184,7 +184,7 @@ get_header(); ?>
 						<?php 
 							$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
 			      			if ($unterueber != "")
-			          			echo "<h2 class=\"unterueber\">$unterueber</h2>";
+			          			echo "<h3 class=\"unterueber\">$unterueber</h3>";
 						?>
 						
 						<p class="author-link">von <?php if(function_exists('coauthors_posts_links'))

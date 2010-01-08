@@ -347,6 +347,14 @@ $(function () { //DOMdiDOM
         $(this).stop().animate({ paddingLeft: '5px' }, 400);
     });
     
+    $('#sidebar .widget').css({opacity: '0.6'});
+    $('#sidebar .widget').hover(function () {
+    	$(this).stop().animate({ opacity: '1' }, 400);  
+    	}, function() { 
+        $(this).stop().animate({ opacity: '0.6' }, 400);
+    return false;
+    });
+    
 }); //don't delete me or the DOM will collaps
 
 //Finally load all this after the content has loaded

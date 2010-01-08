@@ -60,7 +60,7 @@ a#profile-edit-link,
 #commentluv,
 .similar-posts a,
 .tabNavigation,
-#beliebt a {
+#beliebt a, #sidebar a {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -325,10 +325,6 @@ cite.fn {
 	color: #9fa9b3;
 }
 
-#navigation .cat-item a {
-	color: #ff6600;
-}
-
 #navigation .current-cat a {
 	color: #000;
 	background: #e0e2e5;
@@ -473,20 +469,21 @@ a.more-link {
 
 /* @group Featured */
 
-#featured h3 {
-	margin: 10px 20px 0;
-	padding: 0;
-}
-
-#featured h4 {
+#featured h2 {
 	font-size: 1.7em;
 	clear: none;
 	margin-top: 5px;
 	line-height: 1.1em;
 }
 
-#featured h5 {
+#featured h3 {
 	font-size: 1.1em;
+}
+
+#featured h4 {
+	margin: 10px 20px 0;
+	padding: 0;
+	border-bottom: 1px solid #ff6600;
 }
 
 #ausgabe h4  {
@@ -554,10 +551,6 @@ a.more-link {
 	background-color: #e0e2e5;
 }
 
-#sidebar #sidebarbottom li {
-	line-height: 1.4em;
-}
-
 #sidebar input[type=text] {
 	font-size: 1.1em;
 }
@@ -587,29 +580,30 @@ a.more-link {
 	font-size: 0.9em;
 }
 
+#recentcomments .url {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#recentcomments a {
+	border-bottom: none;
+}
+
 /* @end */
 
 #pinnwand .date {
 	font-size: 0.8em;
 	margin: 0;
 	display: block;
-}
-
-#pinnwand {
 	color: #a8aeb6;
 }
 
-#pinnwand, #pinnwand li {
-	-webkit-transition: color 0.2s linear;
-}
-
-#pinnwand:hover li,
-#pinnwand h4 {
-	color: #122d45;
-}
-
-#pinnwand:hover li .date {
-	color: #a8aeb6;
+.widget_rss a,
+.widget_links a,
+.ec3_events a {
+	font-size: 0.9em;
+	border-bottom: none;
 }
 
 /* @end */
