@@ -342,9 +342,9 @@ $(function () { //DOMdiDOM
   	//Hover link animation
   	var $animatedlinks = ('#frisch a, #beliebt a, .widget_rss a, .widget_links a');
   	$($animatedlinks).hover(function () {
-    	$(this).stop().animate({ paddingLeft: '5px' }, 200);  
+    	$(this).stop().animate({ paddingLeft: '15px' }, 400);  
     	}, function() { 
-        $(this).stop().animate({ paddingLeft: '2px' }, 200);
+        $(this).stop().animate({ paddingLeft: '5px' }, 400);
     });
     
 }); //don't delete me or the DOM will collaps

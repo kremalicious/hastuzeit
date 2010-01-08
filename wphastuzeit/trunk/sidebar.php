@@ -29,7 +29,18 @@
 							setup_postdata($post);
 							$unterueber = get_post_meta($post->ID, "Unterüberschrift", true);
 						?>
-						<li><a class="infopopup" href="<?php the_permalink(); ?>" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>"><?php the_title(); ?></a></li>
+						<li>
+							<h4>
+								<a class="infopopup" href="<?php the_permalink(); ?>" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>">	
+									<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+										the_post_thumbnail(array( 20,20 ), array( 'class' => 'alignleft'));
+									} else {
+										images('1', '20', '20', '', false);
+									} ?>
+									<?php the_title(); ?>
+								</a>
+							</h4>
+						</li>
 					
 					<?php endforeach; ?>
 					

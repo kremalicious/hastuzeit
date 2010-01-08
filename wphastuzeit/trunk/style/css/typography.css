@@ -59,7 +59,8 @@ a#login-link.loggedin,
 a#profile-edit-link,
 #commentluv,
 .similar-posts a,
-.tabNavigation {
+.tabNavigation,
+#beliebt a {
 	font-weight: bold;
 	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -75,13 +76,6 @@ h1, h2 {
 .pagetitle {
 	font-size: 1.8em;
 	margin-bottom: 30px;
-}
-
-.hentry h2 a, 
-.hentry h2 a:hover,
-.hentry .comment-link a,
-.hentry .comment-link a:hover {
-	border: none;
 }
 
 h2 a, #featured h4 a, #sidebarbottom h5 a {
@@ -152,12 +146,20 @@ h4.description {
 /* @group Links */
 
 a {
-	color: #ff6600;
+	color: #122D45;
+	border-bottom: 1px dashed #ff6600;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #ecedee;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
 	color: #000;
+	border-bottom-style: solid;
 	background-color: #e0e2e5;
 	-moz-outline-style: none;
 }
@@ -180,28 +182,51 @@ a img:hover {
 }
 
 .hentry a {
-	border-bottom: 1px dashed #ff6600;
-	padding-left: 4px;
-	padding-right: 4px;
-	background-color: #ecedee;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+	
 }
 
-.hentry a:hover {
-	border-bottom-style: solid;
-	background-color: #e0e2e5;
-}
-
-.hentry a:active {
-	background-color: #122D45;
-}
-
-a.thickbox {
+a.thickbox,
+#featured a,
+#header a {
 	padding-left: 0;
 	padding-right: 0;
 	border: none;
+}
+
+.hentry h2 a, 
+.hentry h2 a:hover,
+.hentry .comment-link a,
+.hentry .comment-link a:hover,
+.tabNavigation a,
+#navigation a,
+#pinnwand a,
+#footernav a {
+	border: none;
+}
+
+#header a,
+.tabNavigation a,
+#navigation a,
+#footer a,
+h2 a {
+	background-color: transparent;
+}
+
+#featured a.more-link {
+	border-bottom: 1px dashed #ff6600;
+	padding-right: 20px;
+}
+
+#featured a.more-link:hover {
+	border-bottom-style: solid;
+}
+
+#footer a {
+	color: #ff6600;
+}
+
+#footer a:hover {
+	background-color: #e0e2e5;
 }
 
 /* @end */
@@ -293,6 +318,11 @@ cite.fn {
 
 #navigation li ul {
 	font-size: 0.8em;
+}
+
+#navigation,
+#navigation a {
+	color: #9fa9b3;
 }
 
 #navigation .cat-item a {
@@ -394,7 +424,7 @@ cite.fn {
 	border-color: rgba(204,204,204,0.5);
 }
 
-.hentry a.more-link {
+a.more-link {
 	margin-top: 1em;
 	background-image: url(../images/hastuzeit-master.png);
 	background-repeat: no-repeat;
@@ -501,7 +531,7 @@ cite.fn {
 }
 
 #sidebar li {
-	line-height: 1.3em;
+	line-height: 1.4em;
 	margin: 5px 0;
 }
 
@@ -531,6 +561,33 @@ cite.fn {
 #sidebar input[type=text] {
 	font-size: 1.1em;
 }
+
+/* @group Tabs */
+
+.tabNavigation a {
+	padding: 10px 15px;
+	color: #9fa9b3;
+	font-size: 1.1em;
+}
+
+.tabNavigation a:hover {
+	color: #888f99;
+}
+
+.tabNavigation a.current {
+	color: #122d45;
+	background: url(../images/hastuzeit-master.png) no-repeat 30px -86px;
+}
+
+.tabNavigation a#linkComments.current {
+	background-position: 50px -86px;
+}
+
+#tabs h4 {
+	font-size: 0.9em;
+}
+
+/* @end */
 
 #pinnwand .date {
 	font-size: 0.8em;
