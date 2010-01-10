@@ -880,6 +880,10 @@ img#readiculum:hover {
 	display: block;
 }
 
+#tabs li {
+	position: relative;
+}
+
 .tabNavigation.widgettitle {
 	width: 100%;
 	float: left;
@@ -1417,7 +1421,8 @@ img.aligncenter, .wp-caption.aligncenter {
 
 a.post-edit-link, 
 a#login-link.loggedin,
-a#profile-edit-link {
+a#profile-edit-link,
+#featured .post a.post-edit-link {
 	padding-right: 10px;
 	padding-left: 25px;
 	color: #fff;
@@ -1536,15 +1541,28 @@ a#profile-edit-link:active {
 	border-top: 1px solid #ff6600;
 }
 
-#pinnwand a.post-edit-link {
+#pinnwand a.post-edit-link,
+#tabs a.post-edit-link {
 	text-indent: -99999px;
 	width: 20px;
 	height: 16px;
 	padding: 0;
 	position: absolute;
 	right: -20px;
-	top: 0;
+	top: 30px;
 	background-position: -2px -238px;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+}
+
+#tabs a.post-edit-link {
+	top: 5px;
+	right: -30px;
+}
+
+#pinnwand:hover a.post-edit-link,
+#tabs:hover a.post-edit-link {
+	opacity: 1;
 }
 
 a#login-link.loggedin {

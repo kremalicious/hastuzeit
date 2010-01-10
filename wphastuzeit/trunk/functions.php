@@ -13,7 +13,7 @@ add_theme_support('post-thumbnails');
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
 		'name'=>'sidebarleft',
-		'description' => 'Obere linke Spalte der Sidebar. Zuerst sollte hier immer zuerst das Popular Posts Widget mit dem Titel &quot;beliebte beitr&auml;ge&quot; eingestellt werden.',
+		'description' => 'Linke Spalte der Sidebar. Hier sollten zuerst die Links aus der Kategorie Freunde rein.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -21,7 +21,7 @@ if ( function_exists('register_sidebar') ) {
 	));
 	register_sidebar(array(
 		'name'=>'sidebarright',
-		'description' => 'Obere rechte Spalte der Sidebar. Hier sollte immer zuerst das Letzte Kommentare Widget mit dem Titel &quot;frisch angemerkt&quot; eingestellt werden.',
+		'description' => 'Rechte Spalte der Sidebar. Hier sollten zuerst die Links aus der Kategorie Favoriten rein.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -29,7 +29,7 @@ if ( function_exists('register_sidebar') ) {
 	));
 	register_sidebar(array(
 		'name'=>'sidebarbottom',
-		'description' => 'Unterer zweispaltiger Abschnitt der Sidebar. Zuerst wird immer die Pinnwand und die N&auml;chsten Termine angezeigt, die hier nicht aufgef&uuml;hrt und auch nicht ver&auml;nderbar sind.',
+		'description' => 'Zweispaltiger Abschnitt der Sidebar. Hier sollten externe News &uuml;ber RSS rein.',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4 class="widgettitle">',

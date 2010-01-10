@@ -555,6 +555,15 @@ a.more-link {
 	font-size: 1.1em;
 }
 
+#sidebar #sidebarbottom .more .more-link.new-post {
+	padding-right: 10px;
+	padding-left: 25px;
+	color: #fff !important;
+	text-shadow: none;
+	background: #00cf00 url(../images/Admin-Icons.png) no-repeat 265px -38px;
+	border: 1px solid #005f03;
+}
+
 /* @group Tabs */
 
 .tabNavigation a {
