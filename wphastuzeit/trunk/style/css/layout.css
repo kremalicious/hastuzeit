@@ -1846,6 +1846,13 @@ a.rss {
 	line-height: 1.3em;
 }
 
+.tweet .loading {
+	padding-left: 30px;
+	background: url(../images/ajax-loader.gif) no-repeat left center;
+	min-height: 24px;
+	font-weight: bold;
+}
+
 /* @end */
 
 /* @group Thickbox */
