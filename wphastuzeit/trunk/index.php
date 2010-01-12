@@ -140,6 +140,14 @@ get_header(); ?>
 					  <?php endforeach; ?>
 
 				</div>
+				<div class="tweet">
+					<h3>Gezwitscher</h3>
+					<div class="follow">
+						<p>Einfach <em>hastuzeit</em> im Tweet verwenden, um hier zu erscheinen</p>
+						<a href="http://twitter.com/hastuzeit">Folge uns auf Twitter</a>
+					
+					</div>
+				</div>
 			<?php } ?>
 			
 			<div id="main">

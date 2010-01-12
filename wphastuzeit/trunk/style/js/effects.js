@@ -221,6 +221,20 @@ $(function () { //DOMdiDOM
 		}
 	});
 	
+	//Twitter integration
+	$("#content .tweet").tweet({
+        query: "hastuzeit",
+        join_text: "auto",
+        avatar_size: 20,
+        count: 4,
+        auto_join_text_default: "", 
+        auto_join_text_ed: "we",
+        auto_join_text_ing: "we were",
+        auto_join_text_reply: "we replied to",
+        auto_join_text_url: "we were checking out",
+        loading_text: "loading tweets..."
+    });
+	
 	//Front-End login and admin, with cookie magic
 	var $panel = $('#front-admin > *:not(#login-link)')
 	$('#login-link').click(function(){

@@ -40,7 +40,9 @@ div {
 	-webkit-box-shadow: 0 5px 20px #000;
 	-moz-box-shadow: 0 5px 20px #000;
 	padding-bottom: 50px;
-	/*background-image: url(../images/featured-grad.png);
+/
+
+*background-image: url(../images/featured-grad.png);
 	background-repeat: repeat-x;
 	background-position: left bottom;*/
 }
@@ -228,7 +230,7 @@ input[type=submit] {
 
 #navigation li#texte:hover > ul,
 #navigation li#texte > ul:hover,
-#navigation .current_page_item > ul  {
+#navigation .current_page_item > ul {
 	display: block;
 }
 
@@ -347,16 +349,16 @@ input[type=submit] {
 }
 
 .scroll {
-  	height: 210px;
-  	overflow: hidden;
-  	position: relative;
-  	clear: left;
-  	background: url(../images/featured-shadow.png) repeat-x left bottom;
+	height: 210px;
+	overflow: hidden;
+	position: relative;
+	clear: left;
+	background: url(../images/featured-shadow.png) repeat-x left bottom;
 	margin-top: -30px;
 }
 
 .scrollContainer div.panel {
-	width: 600px; 
+	width: 600px;
 }
 
 #shade {
@@ -394,24 +396,24 @@ input[type=submit] {
 }
 
 .scrollButtons {
-  position: absolute;
-  display: block;
-  top: 180px;
-  cursor: pointer;
-  border: none;
-  z-index: 99;
-  background: transparent url(../images/hastuzeit-master.png) no-repeat -135px -264px;
-  width: 34px;
-  height: 30px;
+	position: absolute;
+	display: block;
+	top: 180px;
+	cursor: pointer;
+	border: none;
+	z-index: 99;
+	background: transparent url(../images/hastuzeit-master.png) no-repeat -135px -264px;
+	width: 34px;
+	height: 30px;
 }
 
 .scrollButtons.left {
-  left: -20px;
+	left: -20px;
 }
 
 .scrollButtons.right {
-  right: -20px;
-  background-position: -134px -233px;
+	right: -20px;
+	background-position: -134px -233px;
 }
 
 #zipfel {
@@ -800,6 +802,9 @@ a#profile-edit-link {
 
 .accordionButton {
 	padding: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius: 5px 5px 0 0;
 }
 
 .accordionButton.open {
@@ -1384,31 +1389,37 @@ span.cluv {
 
 /* @group WordPress Styles */
 
-.aligncenter { 
-	display:block; 
-	margin:0 auto 
+.aligncenter {
+	display: block;
+	margin: 0 auto
 }
 
-.alignleft { float:left }
+.alignleft {
+	float: left
+}
 
-img.alignleft, .wp-caption.alignleft, .featured_nav img { 
+img.alignleft, .wp-caption.alignleft, .featured_nav img {
 	margin: 5px 20px 15px 0;
 }
 
-img.alignright, .wp-caption.alignright { 
+img.alignright, .wp-caption.alignright {
 	margin: 5px 0 15px 20px;
 }
 
 img.aligncenter, .wp-caption.aligncenter {
 	margin: 20px auto 15px;
 }
-.alignright { float:right }
 
-.wp-caption { 
+.alignright {
+	float: right
+}
+
+.wp-caption {
 	border: 1px solid #ccc;
 	background: #e0e2e5;
-	padding: 5px; 
-	margin: 10px }
+	padding: 5px;
+	margin: 10px
+}
 
 .wp-smiley {
 	display: inline;
@@ -1568,7 +1579,7 @@ a#profile-edit-link:active {
 a#login-link.loggedin {
 	padding-left: 10px;
 	background-image: url(../images/button-overlay.png);
-	background-repeat:  repeat-x;
+	background-repeat: repeat-x;
 	background-position: left top;
 }
 
@@ -1663,7 +1674,12 @@ a#login-link:active, a#login-link:focus {
 
 /* @end */
 
-br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
+br.dirtyLittleTrick {
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: -1px 0 0 0
+}
 
 .clear {
 	clear: both;
@@ -1675,7 +1691,6 @@ br.dirtyLittleTrick { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 	-moz-box-shadow: 0px 3px 5px #7f7f7f;
 	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#7f7f7f, offX=3, offY=5, positive=true);
 	background: #fff url(../images/tip.png) repeat-x left bottom;
-	
 }
 
 #more-content li a, .next-links a, .wp-pagenavi a, .wp-pagenavi .current, #sidebarbottom h5 .more-link, .page-template-page-heftarchiv-php .post h4 a,
@@ -1740,11 +1755,98 @@ a.rss {
 
 .infobox {
 	border-bottom: 1px solid #b1b7c1;
-	padding-bottom:15px;
+	padding-bottom: 15px;
 	border-top: 1px solid #b1b7c1;
-	padding-top:15px;
+	padding-top: 15px;
 	overflow: hidden;
 }
+
+/* @group Tweets */
+
+.tweet {
+	clear: both;
+	font-size: 0.9em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+	min-height: 140px;
+}
+
+.tweet h3 {
+	margin-bottom: 20px;
+}
+
+.tweet .tweet_list {
+	overflow: hidden;
+	padding-bottom: 15px;
+	margin-left: 2px;
+}
+
+.tweet .tweet_list li {
+	width: 190px;
+	height: 130px;
+	float: left;
+	margin-right: 20px;
+}
+
+.tweet_text {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.tweetdate {
+	color: #9fa9b3;
+	border-bottom: none;
+}
+
+.tweetdate:hover {
+	border-bottom: 1px solid #ff6600;
+}
+
+.tweet .tweet_list li a {
+}
+
+.tweet .tweet_list .tweet_even {
+}
+
+.tweet .tweet_list .tweet_avatar {
+	margin-right: .5em;
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.tweet .tweet_list .tweet_avatar:hover {
+	border-bottom: 1px solid #ff6600;
+}
+
+.tweet .tweet_list .tweet_avatar img {
+	vertical-align: middle;
+	border: none;
+}
+
+.tweet .follow {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 80px;
+	border-left: 1px dashed #ccc;
+	padding-left: 10px;
+}
+
+.tweet .follow a {
+	display: block;
+}
+
+.tweet .follow p {
+	color: #9fa9b3;
+	font-size: 0.9em;
+	padding-left: 2px;
+	line-height: 1.3em;
+}
+
+/* @end */
 
 /* @group Thickbox */
 
@@ -1825,9 +1927,7 @@ span.zoom {
 }
 
 * html #TB_overlay {
-
-
- ie6 hack 
+	ie6 hack 
      position: absolute;
 	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
 }
@@ -1850,9 +1950,7 @@ span.zoom {
 }
 
 * html #TB_window {
-
-
- ie6 hack 
+	ie6 hack 
 position: absolute;
 	margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
 }
@@ -1919,13 +2017,11 @@ position: absolute;
 	margin: -6px 0 0 -10
 
 4px;
- -height/2 0 0 -width/2 
+-height/2 0 0 -width/2
 }
 
 * html #TB_load {
-
-
- ie6 hack 
+	ie6 hack 
 position: absolute;
 	margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
 }
@@ -1945,9 +2041,7 @@ position: absolute;
 }
 
 * html #TB_HideSelect {
-
-
- ie6 hack 
+	ie6 hack 
      position: absolute;
 	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
 }
@@ -1973,6 +2067,7 @@ position: absolute;
 }
 
 .page-id-1935 ul.alignleft {
+	
 }
 
 .page-id-1935 .wpcf7 input[type=text] {
@@ -1993,9 +2088,9 @@ p.status span {
 	margin-top: 5px;
 	width: 25px;
 	height: 25px;
-	-webkit-border-radius:20px;
-	-moz-border-radius:20px;
-	border-radius:20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 	border: 2px solid #b4b4b4;
 	-webkit-box-shadow: 0px 2px 3px #888;
 	-moz-box-shadow: 0px 2px 3px #888;
@@ -2085,7 +2180,6 @@ p.status .green {
 	-khtml-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-color: #122d45;
-	
 }
 
 #wp-calendar tbody td.ec3_eventday,

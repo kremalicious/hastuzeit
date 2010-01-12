@@ -39,7 +39,12 @@
 
 		
 		<!-- All the funky scripts -->
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/plugins.js"></script>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/plugins.min.js"></script>
+		
+		<?php if ( is_home() ) { ?>
+			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/jquery.tweet.min.js"></script>
+		<?php } ?>
+		
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/style/js/effects.js"></script>
 <!--
 		<script type="text/javascript">
