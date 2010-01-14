@@ -223,17 +223,12 @@ $(function () { //DOMdiDOM
 	
 	//Twitter integration
 	//http://tweet.seaofclouds.com/
-	$("#content .tweet").tweet({
+	$("#tweet").tweet({
 		username: "hastuzeit",
         query: "hastuzeit",
-        join_text: "auto",
+        join_text: "",
         avatar_size: 20,
         count: 4,
-        auto_join_text_default: "", 
-        auto_join_text_ed: "",
-        auto_join_text_ing: "",
-        auto_join_text_reply: "",
-        auto_join_text_url: "",
         loading_text: "tweets werden geladen..."
     });
 	
@@ -363,6 +358,7 @@ $(function () { //DOMdiDOM
         $(this).stop().animate({ paddingLeft: '5px' }, 400);
     });
     
+    //sidebar fading
     $('#sidebar .widget').css({opacity: '0.6'});
     $('#sidebar .widget').hover(function () {
     	$(this).stop().animate({ opacity: '1' }, 400);  
@@ -370,6 +366,18 @@ $(function () { //DOMdiDOM
         $(this).stop().animate({ opacity: '0.6' }, 400);
     return false;
     });
+    
+    //the warning toggle for IE 7 and below users	
+    $('#warning-toggle').click(function() {
+    	$('#iewarning').slideUp(500);
+    	$('#warning-toggle').fadeOut('normal')
+    	$.cookie('panelState', 'collapsed');
+    	return false;
+    });
+    var panelCookie = $.cookie('panelState');
+    if (panelCookie == 'collapsed') {
+ 		$('#iewarning,#warning-toggle').hide();
+ 	}
     
 }); //don't delete me or the DOM will collaps
 

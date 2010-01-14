@@ -28,7 +28,7 @@ div {
 	z-index: 99;
 }
 
-#wrapper, #footer {
+#wrapper, #footer, #iewarning {
 	width: 920px;
 	margin: 20px auto 0;
 	padding: 20px;
@@ -1761,31 +1761,69 @@ a.rss {
 	overflow: hidden;
 }
 
+#iewarning {
+	
+	background-color: #edefef;
+	text-align: left;
+	margin-top: 10px;
+}
+
+#iewarning a {
+	font-weight: bold;
+}
+
+#warning-toggle {
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+}
+
 /* @group Tweets */
 
-.tweet {
+#tweet {
 	clear: both;
 	font-size: 0.9em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
-	min-height: 140px;
+	min-height: 180px;
 }
 
-.tweet h3 {
+#tweet h3 {
 	margin-bottom: 20px;
 }
 
-.tweet .tweet_list {
+#tweet .tweet_list {
 	overflow: hidden;
 	padding-bottom: 15px;
 	margin-left: 2px;
 }
 
-.tweet .tweet_list li {
-	width: 190px;
-	height: 130px;
+#tweet .tweet_list li {
+	width: 188px;
+	height: 140px;
 	float: left;
-	margin-right: 20px;
+	padding: 5px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-right: 1px dashed #ccc;
+	border-top: 1px dashed transparent;
+	border-bottom: 1px dashed transparent;
+	border-left: 1px dashed transparent;
+}
+
+#tweet .tweet_list li.tweet_first {
+	padding-left: 0;
+}
+
+#tweet .tweet_list li:hover {
+	background-color: #edefef;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+}
+
+#tweet .tweet_list li.tweet_first:hover {
+	border-left: 1px dashed #ccc;
 }
 
 .tweet_text {
@@ -1796,19 +1834,22 @@ a.rss {
 .tweetdate {
 	color: #9fa9b3;
 	border-bottom: none;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+	font-size: 0.9em;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .tweetdate:hover {
 	border-bottom: 1px solid #ff6600;
 }
 
-.tweet .tweet_list li a {
+#tweet .tweet_list li:hover .tweetdate {
+	opacity: 1;
 }
 
-.tweet .tweet_list .tweet_even {
-}
-
-.tweet .tweet_list .tweet_avatar {
+#tweet .tweet_list .tweet_avatar {
 	margin-right: .5em;
 	float: left;
 	padding-left: 0;
@@ -1817,36 +1858,40 @@ a.rss {
 	background-color: transparent;
 }
 
-.tweet .tweet_list .tweet_avatar:hover {
+#tweet .tweet_list .tweet_avatar:hover {
 	border-bottom: 1px solid #ff6600;
 }
 
-.tweet .tweet_list .tweet_avatar img {
+#tweet .tweet_list .tweet_avatar img {
 	vertical-align: middle;
 	border: none;
 }
 
-.tweet .follow {
+#tweet .follow {
 	position: absolute;
 	top: 30px;
 	right: 0;
 	width: 80px;
-	border-left: 1px dashed #ccc;
 	padding-left: 10px;
-}
-
-.tweet .follow a {
-	display: block;
-}
-
-.tweet .follow p {
-	color: #9fa9b3;
-	font-size: 0.9em;
-	padding-left: 2px;
+	padding-top: 15px;
+	font-size: 0.9em;	
 	line-height: 1.3em;
 }
 
-.tweet .loading {
+#tweet .follow a {
+	display: block;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#tweet .follow p {
+	color: #9fa9b3;
+	padding-left: 2px;
+	margin-bottom: 10px;
+}
+
+#tweet .loading {
 	padding-left: 30px;
 	background: url(../images/ajax-loader.gif) no-repeat left center;
 	min-height: 24px;

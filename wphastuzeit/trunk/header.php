@@ -96,6 +96,19 @@
 	
 	<body <?php body_class(); ?>>
 		
+		<!-- warning for Internet Explorer 7 and below users in order to convert them to Firefox-users ;-) -->
+		
+		<!--[if lt IE 8]>
+			<div id="iewarning">
+				
+				<p>Du benutzt einen sehr alten und unsicheren Web Browser, der nicht in der Lage ist, g&auml;ngige Web Standards korrekt und sicher zu interpretieren. Bitte aktualisiere auf die <a href="http://www.microsoft.com/germany/windows/internet-explorer/" title="Internet Explorer 8">neueste Internet Explorer Version</a> oder benutze einen sicheren und standardkonformen Browser wie <a href="http://www.mozilla.com/firefox/" title="Mozilla Firefox">Firefox</a>, <a href="http://www.apple.com/safari/download/" title="Apple Safari">Safari</a>, <a href="http://www.google.com/chrome" title="Google Chrome">Chrome</a> oder <a href="http://www.opera.com/download/" title="Opera">Opera</a>, um das volle Potential dieser Seite erleben zu k&ouml;nnen.</p>
+								
+			</div>
+			<a id="warning-toggle" href="#">^ Ist mir egal ^</a>
+		<![endif]-->
+		
+		<!-- end Warning for Internet Explorer 7 and below users -->
+		
 		<div id="wrapper">
 		
 			<div id="header">
