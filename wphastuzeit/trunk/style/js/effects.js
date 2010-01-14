@@ -222,17 +222,19 @@ $(function () { //DOMdiDOM
 	});
 	
 	//Twitter integration
+	//http://tweet.seaofclouds.com/
 	$("#content .tweet").tweet({
+		username: "hastuzeit",
         query: "hastuzeit",
         join_text: "auto",
         avatar_size: 20,
         count: 4,
         auto_join_text_default: "", 
-        auto_join_text_ed: "we",
-        auto_join_text_ing: "we were",
-        auto_join_text_reply: "we replied to",
-        auto_join_text_url: "we were checking out",
-        loading_text: "loading tweets..."
+        auto_join_text_ed: "",
+        auto_join_text_ing: "",
+        auto_join_text_reply: "",
+        auto_join_text_url: "",
+        loading_text: "tweets werden geladen..."
     });
 	
 	//Front-End login and admin, with cookie magic
