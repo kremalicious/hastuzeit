@@ -138,6 +138,8 @@ get_header(); ?>
 						</div>
 					  
 					  <?php endforeach; ?>
+					  
+					  <p id="nextausgabe" class="clear">Die neue Ausgabe Nr. 31 erscheint am 25.01. 2010. Passend zum Jahresbeginn lautet das Schwerpunktthema diesmal &raquo;Frohe Zukunft&laquo;. Einzelne Texte werden vorab an dieser Stelle ver&ouml;ffentlicht.</p>
 
 				</div>
 				<div id="tweet">

@@ -486,8 +486,23 @@ a.more-link {
 	border-bottom: 1px solid #ff6600;
 }
 
+#ausgabe h3 {
+	font-size: 1.2em;
+}
+
 #ausgabe h4  {
 	font-size: 0.9em;
+}
+
+#nextausgabe {
+	color: #9fa9b3;
+	font-size: 0.9em;
+	line-height: 1.4em;
+	-webkit-transition: color 0.2s linear;
+}
+
+#nextausgabe:hover {
+	color: #122d45;
 }
 
 /* @end */
