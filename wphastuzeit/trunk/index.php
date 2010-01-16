@@ -139,13 +139,13 @@ get_header(); ?>
 					  
 					  <?php endforeach; ?>
 					  
-					  <p id="nextausgabe" class="clear">Die neue Ausgabe Nr. 31 erscheint am 25.01. 2010. Passend zum Jahresbeginn lautet das Schwerpunktthema diesmal &raquo;Frohe Zukunft&laquo;. Einzelne Texte werden vorab an dieser Stelle ver&ouml;ffentlicht.</p>
+					  <p id="nextausgabe" class="clear textfade">Die neue Ausgabe Nr. 31 erscheint am 25.01. 2010. Passend zum Jahresbeginn lautet das Schwerpunktthema diesmal &raquo;Frohe Zukunft&laquo;. Einzelne Texte werden vorab an dieser Stelle ver&ouml;ffentlicht.</p>
 
 				</div>
 				<div id="tweet">
 					<h3>Gezwitscher</h3>
 					<div class="follow">
-						<p><em>&raquo;hastuzeit&laquo;</em> im Tweet verwenden, um hier zu erscheinen</p>
+						<p class="textfade"><em>&raquo;hastuzeit&laquo;</em> im Tweet verwenden, um hier zu erscheinen</p>
 						<a href="http://twitter.com/hastuzeit">Folge uns</a>
 						<a href="http://twitter.com/home?status=Tolle Seite: hastuzeit | Die hallesche Studierendenschaftszeitschrift http://hastuzeit.de" title="Tweet This">Twittere uns</a>
 					

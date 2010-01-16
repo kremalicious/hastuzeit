@@ -227,7 +227,7 @@ $(function () { //DOMdiDOM
 		username: "hastuzeit",
         query: "hastuzeit",
         join_text: "",
-        avatar_size: 20,
+        avatar_size: 25,
         count: 4,
         loading_text: "tweets werden geladen..."
     });

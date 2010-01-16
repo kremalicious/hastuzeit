@@ -495,10 +495,8 @@ a.more-link {
 }
 
 #nextausgabe {
-	color: #9fa9b3;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	line-height: 1.4em;
-	-webkit-transition: color 0.2s linear;
 }
 
 #nextausgabe:hover {
@@ -737,6 +735,17 @@ strong.hls {
 
 .depth-2 {
 	font-size: 0.9em;
+}
+
+.textfade {
+	color: #9fa9b3;
+	-webkit-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+}
+
+.textfade:hover {
+	color: #122d45;
 }
 
 /* @group Footer */
