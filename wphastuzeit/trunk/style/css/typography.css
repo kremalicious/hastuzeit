@@ -283,13 +283,19 @@ cite {
 cite.big {
 	font-size: 1.3em;
 	line-height: 1.3em;
-	width: 120px;
+	width: 190px;
 	float: right;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	text-indent: 20px;
 	color: #72808d;
 	margin-top: 20px;
+}
+
+cite.big.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 20px;
 }
 
 cite.big:before  {

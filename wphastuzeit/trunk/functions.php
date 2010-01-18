@@ -227,7 +227,7 @@ function autorbox() {
 }
 add_shortcode('autorinfo', 'autorbox');
 
-//Quotes handling, yummy french quotes
+//Quotes handling, yummy danish quotes
 function frenchquotes( $text ) {
 	$char_codes = array("‘", "’", '„', '“', '&#147;', '&#148;', '&lsquo;', '&rsquo;', '&#8220;', '&#8221;', '“', '”');
 	$replacements = array('&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;');
@@ -268,7 +268,7 @@ function feed_custom_field( $content ) {
  
     // Print custom fields and Content
     if ( $unterueber != '' ) {
-    	return  '<strong>' . $unterueber . '</strong><br />' . $content;
+    	return  '<strong>' . $unterueber . '</strong> <br />' . $content;
     } else {
     	return $content;
     }
