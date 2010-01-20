@@ -33,9 +33,9 @@
 							<h4>
 								<a class="infopopup" href="<?php the_permalink(); ?>" title="<?php if ($unterueber != "") echo $unterueber ?> || <?php the_time('j. F Y'); ?>">	
 									<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
-										the_post_thumbnail(array( 20,20 ), array( 'class' => 'alignleft'));
+										the_post_thumbnail(array( 25,25 ), array( 'class' => 'alignleft'));
 									} else {
-										images('1', '20', '20', '', false);
+										images('1', '25', '25', '', false);
 									} ?>
 									<?php the_title(); ?>
 								</a>
