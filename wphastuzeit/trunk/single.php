@@ -40,7 +40,13 @@ get_header();
 			
 			<?php if ( !in_category('Termine') ) autorbox(); ?>
 			
-			<?php the_tags( '<p id="tags">', ', ', '</p>'); ?>
+			<div id="bottommeta">
+				
+				<?php the_tags( '<p id="tags">', ', ', '</p>'); ?>
+				<p id="time">Erstellt: <?php the_time('d.m. Y'); ?> | Bearbeitet: <?php the_modified_time('d.m. Y'); ?> <?php the_modified_time('H:i'); ?></p>
+				
+			</div>
+			
 			
 		</div>
 		
