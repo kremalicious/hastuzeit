@@ -697,6 +697,8 @@ textarea.inactive {
 	display: block;
 	padding: 5px 10px;
 	color: #5e5e5e;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
 }
 
 .live-results a:hover {
