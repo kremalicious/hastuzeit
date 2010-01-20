@@ -1823,6 +1823,7 @@ a.rss {
 	border-top: 1px dashed transparent;
 	border-bottom: 1px dashed transparent;
 	border-left: 1px dashed transparent;
+	position: relative;
 }
 
 #tweet .tweet_list li.tweet_first {
@@ -1844,17 +1845,29 @@ a.rss {
 	margin-bottom: 5px;
 }
 
-.tweetdate {
+.tweetdate, .tweetdate a {
 	color: #9fa9b3;
-	border-bottom: none;
+}
+
+.tweetdate {
+	font-size: 0.9em;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	
 	opacity: 0;
 	-webkit-transition: opacity 0.2s linear;
-	font-size: 0.9em;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.tweetdate a {
+	border-bottom: none;
 	padding-right: 0;
 	padding-left: 0;
 }
 
-.tweetdate:hover {
+.tweetdate a:hover {
 	border-bottom: 1px solid #ff6600;
 }
 
