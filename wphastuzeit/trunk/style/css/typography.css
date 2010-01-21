@@ -234,7 +234,7 @@ h2 a {
 /* @group Paragraph Styles */
 
 p {
-	margin-bottom: 1em;
+	margin-bottom: 1.4em;
 }
 
 em {
@@ -276,7 +276,6 @@ blockquote:before {
 }
 
 cite {
-	font-style: italic;
 	position: relative;
 }
 
