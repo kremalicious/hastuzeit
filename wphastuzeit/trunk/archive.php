@@ -43,7 +43,7 @@ get_header();
 				</div>
 				
 				<?php if ($thisauthor->description) { ?>
-					<div id="description"><?php echo $thisauthor->description; ?></div>
+					<div id="author-description"><?php echo $thisauthor->description; ?></div>
 				<?php } ?>
 				
 				<?php if ($thisauthor->user_url) { ?>

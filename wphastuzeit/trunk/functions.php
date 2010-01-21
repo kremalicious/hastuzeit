@@ -135,7 +135,7 @@ function images($num = 1, $width = null, $height = null, $class = '', $displayLi
 		}
 	}
 	if(empty($theImage)){ //Defines a default image
-		$theImage = '<img src="/uploads/2009/10/hastuzeit-Icon-Dimmed.png" '.$size.' />';
+		$theImage = '<img alt="hastuzeit icon" src="/uploads/2009/10/hastuzeit-Icon-Dimmed.png" '.$size.' />';
 		echo $link.$theImage.$linkend;
 	}
 	$more = 0;
@@ -185,7 +185,7 @@ function autorbox() {
 				
 				<div id="avatar"><?php echo get_avatar( get_the_author_meta('email'), 70); ?></div>
 				
-				<div id="description"><?php the_author_meta( 'description' ); ?></div>
+				<div id="author-description"><?php the_author_meta( 'description' ); ?></div>
 				
 				<?php if ( get_the_author_meta( 'user_url' ) ) { ?>
 					<div><span>Website:</span> <a class="url" rel="author" href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('user_url'); ?></a></div>
@@ -228,18 +228,18 @@ function autorbox() {
 add_shortcode('autorinfo', 'autorbox');
 
 //Quotes handling, yummy danish quotes
-function frenchquotes( $text ) {
+function danishquotes( $text ) {
 	$char_codes = array("‘", "’", '„', '“', '&#147;', '&#148;', '&lsquo;', '&rsquo;', '&#8220;', '&#8221;', '“', '”');
 	$replacements = array('&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;', '&#187;', '&#171;');
 	return str_replace($char_codes, $replacements, $text);
 }
 
-add_filter('comment_text', 'frenchquotes', 11);
-add_filter('single_post_title', 'frenchquotes', 11);
-add_filter('the_title', 'frenchquotes', 11);
-add_filter('the_content', 'frenchquotes', 11);
-add_filter('the_excerpt', 'frenchquotes', 11);
-add_filter('widget_text', 'frenchquotes', 11);
+add_filter('comment_text', 'danishquotes', 11);
+add_filter('single_post_title', 'danishquotes', 11);
+add_filter('the_title', 'danishquotes', 11);
+add_filter('the_content', 'danishquotes', 11);
+add_filter('the_excerpt', 'danishquotes', 11);
+add_filter('widget_text', 'danishquotes', 11);
 
 
 ////////////////////////////////////////////////////////////////////

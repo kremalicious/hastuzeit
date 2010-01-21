@@ -33,11 +33,13 @@ $(function () { //DOMdiDOM
     //initiate our equal height magic
 	equalHeight($("body.search-results #main .hentry"));
     
-    //Laaacyyyy content images
+    /*
+	//Laaacyyyy content images
     $('#main img').lazyload({ 
     	placeholder : '/wp-content/themes/wphastuzeit/style/images/lazyload-grey.png',
     	effect 		: 'fadeIn' 
 	});
+	*/
 	
 	//Tab interface
 	$("#tabs .tabNavigation li a").click(function() {
