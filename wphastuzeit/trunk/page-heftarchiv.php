@@ -227,7 +227,7 @@ Template Name: Heftarchiv
 				
 				<p><a href="http://hastuzeit.de/readiculum/" title="READiculum"><img class="aligncenter" id="readiculum-bild" src="http://hastuzeit.de/uploads/2009/12/readiculum-banner.png" alt="readiculum-banner" width="570" height="58"/></a></p>
 				
-				<p>Die <a href="http://hastuzeit.de/readiculum/" title="READiculum">READiculum</a> war von 2002 bis Januar 2005 die erste hallische Studierendenzeitung und wurde 2005 von der <a href="http://hastuzeit.de/" title="hastuzeit">hastuzeit</a> abgel&ouml;st.</p>
+				<p>Die <a href="http://hastuzeit.de/readiculum/" title="READiculum">READiculum</a> war von 2002 bis Januar 2005 die erste hallische Studierendenschaftszeitung und wurde 2005 von der <a href="http://hastuzeit.de/" title="hastuzeit">hastuzeit</a> abgel&ouml;st.</p>
 				
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
