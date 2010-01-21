@@ -44,6 +44,7 @@ get_header();
 				
 				<?php the_tags( '<p id="tags">', ', ', '</p>'); ?>
 				<p id="time">Erstellt: <?php the_time('d.m. Y'); ?> | Bearbeitet: <?php the_modified_time('d.m. Y'); ?> <?php the_modified_time('H:i'); ?></p>
+				<p id="shortlink"><?php if (function_exists("twitter_link")) { echo 'Kurz-URL: <a href="' . twitter_link() . '">'.twitter_link().'</a>'; } ?></p>
 				
 			</div>
 			
