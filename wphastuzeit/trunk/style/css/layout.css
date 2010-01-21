@@ -40,11 +40,6 @@ div {
 	-webkit-box-shadow: 0 5px 20px #000;
 	-moz-box-shadow: 0 5px 20px #000;
 	padding-bottom: 50px;
-/
-
-*background-image: url(../images/featured-grad.png);
-	background-repeat: repeat-x;
-	background-position: left bottom;*/
 }
 
 #header {
@@ -1812,6 +1807,33 @@ a.rss {
 	width: 120px;
 	display: block;
 	margin: 0 auto;
+}
+
+.schnipsel {
+	background: url(../images/paper-top.png) no-repeat left top;
+	width: 572px;
+	margin-left: -62px;
+	padding-left: 70px;
+	padding-top: 10px;
+	padding-right: 20px;
+	margin-bottom: 90px;
+	margin-top: 20px;
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+}
+
+.post .schnipsel:nth-child(even) {
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+}
+
+.schnipsel_bottom {
+	background: url(../images/paper-bottom.png) no-repeat left bottom;
+	width: 662px;
+	min-height: 60px;
+	position: absolute;
+	left: 0;
+	bottom: -60px;
 }
 
 /* @group Tweets */

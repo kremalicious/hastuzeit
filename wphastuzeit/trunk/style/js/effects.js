@@ -344,6 +344,9 @@ $(function () { //DOMdiDOM
     	}
   	});
   	
+  	//Schnipsel stuff
+  	$('#main .schnipsel').append('<div class="schnipsel_bottom"></div>')
+  	
   	//Hover link animation
   	/*
 var $animatedlinks = ('#frisch a, #beliebt a, .widget_rss a, .widget_links a');
