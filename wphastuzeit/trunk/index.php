@@ -131,9 +131,16 @@ get_header(); ?>
 								foreach((get_the_category()) as $childcat) {
 									if (cat_is_ancestor_of(31, $childcat)) { ?>
 										<h4><a class="read" href="<?php echo get_category_link($childcat->term_id);?>">Texte lesen (<?php echo $childcat->category_count;?>)</a></h4>
-								<?php } } ?>
-							
-							<h4><a href="<?php $values = get_post_custom_values("Download"); echo $values[0]; ?>">Download (pdf)</a></h4>
+								<?php } } 
+								
+								$pdf = 'Download';
+								$themeta = get_post_meta($post->ID, $pdf, TRUE);
+								
+								if($themeta != '') {
+									echo '<h4><a href="'. $themeta .'">Download (pdf)</a></h4>';
+								}
+								
+								?>
 							
 						</div>
 					  

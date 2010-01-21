@@ -48,7 +48,7 @@ div {
 }
 
 #header {
-	background-color: #a90014;
+	background-color: #313131;
 	z-index: 90;
 	margin-bottom: 10px;
 }
@@ -154,6 +154,10 @@ input[type=submit] {
 	display: block;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+#secondnav a:hover {
+	background-color: #e0e2e5;
 }
 
 /* @end */
@@ -479,7 +483,8 @@ input[type=submit] {
 	border-color: #ff6600;
 }
 
-a.post-edit-link {
+a.post-edit-link,
+.post:hover a.post-edit-link {
 	color: #fff;
 }
 
