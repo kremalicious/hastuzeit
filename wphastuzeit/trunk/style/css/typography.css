@@ -38,8 +38,9 @@ body {
 /* @group Headings */
 
 @font-face {
-	font-family: "Aller Bold";
-	src: local("Aller Bold"), url(../fonts/Aller_Bd.ttf);
+	font-family: 'AllerBold';
+	src: url('../fonts/Aller_Bd.eot');
+	src: url('../fonts/Aller_Bd.woff') format('woff'), url('../fonts/Aller_Bd.ttf') format('truetype'), url('../fonts/Aller_Bd.svg#Aller-Bold') format('svg');
 	font-weight: bold;
 }
 
@@ -62,7 +63,7 @@ a#profile-edit-link,
 .tabNavigation,
 #beliebt a, #sidebar a {
 	font-weight: bold;
-	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-family: "AllerBold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
 }
 
@@ -640,7 +641,7 @@ a.more-link {
 input, textarea, label, .label {
 	font-weight: bold;
 	font-size: 1.1em;
-	font-family: "Aller Bold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-family: "AllerBold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 label, .label {
