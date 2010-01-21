@@ -1143,11 +1143,12 @@ img#readiculum-bild:hover {
 
 .search-results .hentry img {
 	margin: 0 10px 0 0;
+	float: left;
 }
 
 .search-results .hentry .unterueber {
-	width: 75%;
-	float: left;
+	width: 70%;
+	float: right;
 	clear: none;
 }
 
