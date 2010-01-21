@@ -32,14 +32,6 @@ $(function () { //DOMdiDOM
     
     //initiate our equal height magic
 	equalHeight($("body.search-results #main .hentry"));
-    
-    /*
-	//Laaacyyyy content images
-    $('#main img').lazyload({ 
-    	placeholder : '/wp-content/themes/wphastuzeit/style/images/lazyload-grey.png',
-    	effect 		: 'fadeIn' 
-	});
-	*/
 	
 	//Tab interface
 	$("#tabs .tabNavigation li a").click(function() {
@@ -353,21 +345,14 @@ $(function () { //DOMdiDOM
   	});
   	
   	//Hover link animation
-  	var $animatedlinks = ('#frisch a, #beliebt a, .widget_rss a, .widget_links a');
+  	/*
+var $animatedlinks = ('#frisch a, #beliebt a, .widget_rss a, .widget_links a');
   	$($animatedlinks).hover(function () {
     	$(this).stop().animate({ paddingLeft: '15px' }, 400);  
     	}, function() { 
         $(this).stop().animate({ paddingLeft: '5px' }, 400);
     });
-    
-    //sidebar fading
-    $('#sidebar .widget').css({opacity: '0.6'});
-    $('#sidebar .widget').hover(function () {
-    	$(this).stop().animate({ opacity: '1' }, 400);  
-    	}, function() { 
-        $(this).stop().animate({ opacity: '0.6' }, 400);
-    return false;
-    });
+*/
     
     //the warning toggle for IE 7 and below users	
     $('#warning-toggle').click(function() {

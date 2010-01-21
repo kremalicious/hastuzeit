@@ -874,9 +874,16 @@ img#readiculum-bild:hover {
 	margin-top: 20px;
 }
 
-#sidebar li.widget {
+#sidebar .widget {
 	margin: 0 0 20px;
 	padding-bottom: 15px;
+	opacity: 0.6;
+	-webkit-transition: opacity 0.2s linear;
+}
+
+#sidebar .widget:hover,
+#sidebar .widget:hover .widget {
+	opacity: 1;
 }
 
 #sidebar .widgettitle {
