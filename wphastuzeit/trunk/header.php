@@ -68,6 +68,8 @@
 		<!-- This brings in the delicious styles -->
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style/css/typography.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style/css/layout.css" type="text/css" media="screen" />
+		
+		
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		
 		<!-- Favicon and Apple Touch icon -->
