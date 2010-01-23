@@ -49,7 +49,7 @@
 				</div>
 				
 				<div id="beliebt" class="popular-posts">
-					<?php if (function_exists('get_mostpopular')) get_mostpopular(); ?>
+					<?php if (function_exists('get_mostpopular')) get_mostpopular('range=all&order_by=views&limit=10&stats_comments=0&stats_views=0&pages=0'); ?>
 				</div>
 				
 				<div id="latestcomments">

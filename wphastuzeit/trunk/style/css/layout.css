@@ -1822,6 +1822,7 @@ a.rss {
 	margin-top: 20px;
 	-webkit-transform: rotate(-1deg);
 	-moz-transform: rotate(-1deg);
+	min-height: 130px;
 }
 
 .post .schnipsel:nth-child(even) {
