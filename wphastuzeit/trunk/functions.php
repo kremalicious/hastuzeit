@@ -247,12 +247,12 @@ function style_ampersands($text) {
     return preg_replace($amp_finder, '\\1<span class="amp">&amp;</span>\\3', $text);
 }
 
-add_filter('comment_text', 'style_ampersands', 11);
-add_filter('single_post_title', 'style_ampersands', 11);
-add_filter('the_title', 'style_ampersands', 11);
-add_filter('the_content', 'style_ampersands', 11);
-add_filter('the_excerpt', 'style_ampersands', 11);
-add_filter('widget_text', 'style_ampersands', 11);
+add_filter('comment_text', 'style_ampersands', 1);
+add_filter('single_post_title', 'style_ampersands', 1);
+add_filter('the_title', 'style_ampersands', 1);
+add_filter('the_content', 'style_ampersands', 1);
+add_filter('the_excerpt', 'style_ampersands', 1);
+add_filter('widget_text', 'style_ampersands', 1);
 
 
 ////////////////////////////////////////////////////////////////////

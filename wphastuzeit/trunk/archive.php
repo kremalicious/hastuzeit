@@ -128,7 +128,7 @@ get_header();
 			?>
 			
 			<p class="author-link">von <?php if(function_exists('coauthors_posts_links'))
-							    coauthors_posts_links(", ", " und ");
+							    coauthors_posts_links(", ", " <span class=\"amp\">&amp;</span> ");
 							else
 							    the_author_posts_link(); ?></p>
 							    

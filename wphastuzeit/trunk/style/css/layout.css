@@ -89,6 +89,21 @@ input:focus, textarea:focus {
 	padding: 3px;
 }
 
+@-webkit-keyframes orangePulse {
+	from {
+		background-color: #ff6600;
+		-webkit-box-shadow: 0 0 9px #ff6600;
+	}
+	50% {
+		background-color: #ff914a;
+		-webkit-box-shadow: 0 0 18px #ff914a;
+	}
+	to {
+		background-color: #ff6600;
+		-webkit-box-shadow: 0 0 9px #ff6600;
+	}
+}
+
 input[type=submit] {
 	background: #122d45 url(../images/button-overlay.png) repeat-x;
 	padding: 5px 10px 6px;
@@ -105,6 +120,12 @@ input[type=submit] {
 	position: relative;
 	display: inline-block;
 	top: -1px;
+}
+
+input[type=submit]:hover {
+	-webkit-animation-name: orangePulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
 }
 
 /* @end */
@@ -320,7 +341,7 @@ input[type=submit] {
 
 #featured .post {
 	clear: none;
-	padding: 23px 20px 20px;
+	padding: 20px;
 }
 
 .featured_media, .featured_text {
@@ -337,6 +358,7 @@ input[type=submit] {
 	width: 420px;
 	min-height: 180px;
 	overflow: hidden;
+	margin-top: -5px;
 }
 
 #featured img {
@@ -652,10 +674,12 @@ ul.similar-posts {
 }
 
 #bottommeta {
-	margin: 20px 0;
+	margin: 40px 0 0;
 	border-top: 1px solid #ff6600;
 	padding-top: 15px;
 	clear: both;
+	width: 100%;
+	float: left;
 }
 
 #tags, #time, #shortlink {

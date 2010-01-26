@@ -109,7 +109,7 @@
 			            <?php if ( current_user_can('level_1') ) : ?>
 			            	<h5><a class="more-link new-post" href="<?php echo get_option('home'); ?>/wp-admin/post-new.php">Neuen Termin anlegen</a></h5>     
 			            <?php endif ?>
-						<h5><a class="more-link" href="/termine/" title="Termine einsehen">Alle Termine und Kalender</a></h5>
+						<h5><a class="more-link" href="/termine/" title="Termine einsehen">Alle Termine <span class="amp">&amp;</span> Kalender</a></h5>
 						<h5><a class="more-link ical infopopup" href="webcal://hastuzeit.de/?ec3_ical" title="Alle Termine als Webcal-Kalender abonnieren (f&uuml;r Import in iCal, Sunbird, Google Calendar etc.) Neue Termine erscheinen dann bequem und automagisch in eurem Kalender">Termine abonnieren</a></h5>
 					</li>
 				</ul>

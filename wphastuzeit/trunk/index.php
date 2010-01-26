@@ -33,7 +33,7 @@ get_header(); ?>
 						
 							<div class="featured_media">
 						
-								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+								<a href="<?php the_permalink(); ?>" rel="bookmark">
 								
 								<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
 									the_post_thumbnail(array( 150,150 ), array( 'class' => 'alignleft'));
@@ -206,7 +206,7 @@ get_header(); ?>
 						?>
 						
 						<p class="author-link">von <?php if(function_exists('coauthors_posts_links'))
-						    coauthors_posts_links(", ", " und ");
+						    coauthors_posts_links(", ", " <span class=\"amp\">&amp;</span> ");
 						else
 						    the_author_posts_link(); ?></p>
 								

@@ -303,7 +303,8 @@ a#profile-edit-link,
 #commentluv,
 .similar-posts a,
 .tabNavigation,
-#beliebt a, #sidebar a {
+#beliebt a, #sidebar a,
+.page-link strong {
 	font-weight: bold;
 	font-family: "AllerBold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -641,6 +642,29 @@ a.more-link {
 	opacity: 1;
 	-moz-opacity: 1;
 	-webkit-opacity: 1;
+}
+
+.page-link {
+	border-top: 3px double #ff6600;
+	border-bottom: 1px solid #ff6600;
+	padding-top: 15px;
+	padding-bottom: 0;
+	margin-bottom: 40px;
+	clear: both;
+}
+
+.page-link a {
+	padding: 10px 20px;
+	margin: 0 5px;
+}
+
+.page-link strong {
+	margin-right: 20px;
+}
+
+#tags a:before {
+	content: '#';
+	color: #a8aebb;
 }
 
 /* @end */

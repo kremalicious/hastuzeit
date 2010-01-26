@@ -27,7 +27,7 @@ get_header();
 			?>
 			
 			<p class="author-link">von <?php if(function_exists('coauthors_posts_links'))
-							    coauthors_posts_links(", ", " und ");
+							    coauthors_posts_links(", ", " <span class=\"amp\">&amp;</span> ");
 							else
 							    the_author_posts_link(); ?></p>
 			<?php }
@@ -36,7 +36,7 @@ get_header();
 			
 			?>
 			
-			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+			<?php wp_link_pages(array('before' => '<div class="page-link"><p><strong>Seiten:</strong> ', 'after' => '</p></div>', 'next_or_number' => 'number')); ?>
 			
 			<?php if ( !in_category('Termine') ) autorbox(); ?>
 			
