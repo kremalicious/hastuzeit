@@ -60,7 +60,7 @@
 						
 					<p class="meta"><span class="date"><?php the_time('M Y') ?></span><span class="category-link"><?php the_category(' ') ?></span> <span class="alignright comment-link"><?php comments_popup_link('0', '1', '%'); ?></span></p>
 		
-						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+						<h2 class="posttitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 						
 						<a class="alignleft" href="<?php the_permalink() ?>" rel="bookmark" title="Link zu <?php the_title_attribute(); ?>">
 							<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {

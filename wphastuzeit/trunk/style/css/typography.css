@@ -35,6 +35,248 @@ body {
 	text-align: left;
 }
 
+/* @group HTML Standard Elements */
+
+img {
+	border: none;
+	-ms-interpolation-mode: bicubic;
+}
+
+code, pre {
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+	display: block;
+	font-family: Consolas,"Bitstream Vera Sans Mono","Courier New",monospace;
+	font-size: 1em;
+	line-height: 1.6em;
+	margin: 1.5em 10px;
+	padding: .5em 10px;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+abbr {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+	white-space: nowrap;
+}
+
+address {
+	font-style: italic;
+}
+
+p {
+	margin-bottom: 1.4em;
+}
+
+em {
+	font-style: italic;
+}
+
+acronym {
+	border-bottom: 1px dotted #a6b3be;
+	cursor: help;
+}
+
+blockquote {
+	color: #72808d;
+	margin-left: 30px;
+	padding-left: 10px;
+	position: relative;
+}
+
+blockquote:before  {
+	font-size: 4em;
+	position: absolute;
+}
+
+blockquote:before {
+	content: "“";
+	top: 10px;
+	left: -15px;
+}
+
+blockquote p {
+	
+}
+
+cite {
+	position: relative;
+	display: inline;
+}
+
+cite.big {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	width: 190px;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	text-indent: 20px;
+	color: #72808d;
+	margin-top: 20px;
+}
+
+cite.big.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+cite.big:before  {
+	font-size: 3em;
+	position: absolute;
+}
+
+cite.big:before {
+	content: "“";
+	top: 5px;
+	left: -30px;
+}
+
+cite.fn {
+	font-weight: normal;
+	font-style: normal;
+}
+
+dl {
+	margin: 0px 0px 24px 0px;
+}
+
+dt {
+	font-weight: bold;
+	color: #000;
+}
+
+dd {
+	margin-bottom: 24px;
+}
+
+hr {
+	background-color: #ccc;
+	border-width: 0;
+	color: #ccc;
+	height: 1px;
+	line-height: 0;
+	page-break-after: always;
+	text-align: center;
+	width: 90%;
+	margin: 3em 10px;
+	clear: both;
+}
+
+hr.line {
+	border: none;
+	height: 1px;
+	width: 100%;
+	display: block;
+	background-color: #e4e4e4;
+	clear: both;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+small {
+	font-size: 0.8em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+sub {
+	bottom: -0.25em;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 0.33em;
+	position: relative;
+	vertical-align: baseline;
+}
+
+.hentry ul, .hentry ol {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+.hentry ul ul, .hentry ol ol {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.hentry ul li, .hentry ol li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+}
+
+.hentry ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+.hentry ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+
+.multicol {
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	column-count: 2;
+	column-gap: 20px;
+}
+
+span.amp {
+	font: italic 120% Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+}
+
+/* @group Tables */
+
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: inherit;
+	margin: 1.5em 10px;
+}
+
+thead {
+	background: #ccc;
+	font-weight: bold;
+}
+
+th {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #eee;
+	padding: .25em 10px;
+}
+
+tbody tr:hover {
+	background: #eee;
+}
+
+tbody tr:nth-child(even) {
+	background: #f9f9f9;
+}
+
+td {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #eee;
+	padding: .25em 10px;
+}
+
+
+/* @end */
+
+/* @end */
+
 /* @group Headings */
 
 @font-face {
@@ -83,11 +325,21 @@ h2 a, #featured h4 a, #sidebarbottom h5 a {
 	color: #122D45;
 }
 
-h3 {
+h2, h3 {
 	font-size: 1.4em;
 	margin-top: 25px;
 	margin-bottom: 15px;
 	border-bottom: 1px solid #ff6600;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h2.posttitle {
+	border-bottom: none;
+	font-size: 2em;
+	margin: 10px 0;
 }
 
 h4 {
@@ -233,86 +485,6 @@ h2 a {
 /* @end */
 
 /* @group Paragraph Styles */
-
-p {
-	margin-bottom: 1.4em;
-}
-
-em {
-	font-style: italic;
-}
-
-acronym {
-	border-bottom: 1px dotted #a6b3be;
-	cursor: help;
-}
-
-.hentry ul {
-	margin-left: 30px;
-	margin-bottom: 1em;
-}
-
-.hentry ul li {
-	list-style-position: outside;
-	list-style-type: disc;
-	margin-bottom: 10px;
-}
-
-blockquote {
-	color: #72808d;
-	margin-left: 30px;
-	padding-left: 10px;
-	position: relative;
-}
-
-blockquote:before  {
-	font-size: 4em;
-	position: absolute;
-}
-
-blockquote:before {
-	content: "“";
-	top: 10px;
-	left: -15px;
-}
-
-cite {
-	position: relative;
-}
-
-cite.big {
-	font-size: 1.3em;
-	line-height: 1.3em;
-	width: 190px;
-	float: right;
-	margin-left: 20px;
-	margin-bottom: 20px;
-	text-indent: 20px;
-	color: #72808d;
-	margin-top: 20px;
-}
-
-cite.big.left {
-	float: left;
-	margin-left: 0;
-	margin-right: 20px;
-}
-
-cite.big:before  {
-	font-size: 3em;
-	position: absolute;
-}
-
-cite.big:before {
-	content: "“";
-	top: 5px;
-	left: -30px;
-}
-
-cite.fn {
-	font-weight: normal;
-	font-style: normal;
-}
 
 /* @end */
 

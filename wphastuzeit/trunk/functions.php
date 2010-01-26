@@ -241,6 +241,19 @@ add_filter('the_content', 'danishquotes', 11);
 add_filter('the_excerpt', 'danishquotes', 11);
 add_filter('widget_text', 'danishquotes', 11);
 
+//Wrap ampersands with a special class
+function style_ampersands($text) {
+	$amp_finder = "/(\s|&nbsp;)(&|&amp;|&\#38;|&#038;)(\s|&nbsp;)/";
+    return preg_replace($amp_finder, '\\1<span class="amp">&amp;</span>\\3', $text);
+}
+
+add_filter('comment_text', 'style_ampersands', 11);
+add_filter('single_post_title', 'style_ampersands', 11);
+add_filter('the_title', 'style_ampersands', 11);
+add_filter('the_content', 'style_ampersands', 11);
+add_filter('the_excerpt', 'style_ampersands', 11);
+add_filter('widget_text', 'style_ampersands', 11);
+
 
 ////////////////////////////////////////////////////////////////////
 //// FEED STUFF ////////////////////////////////////////////////////
