@@ -199,6 +199,10 @@ function autorbox() {
 					<div><span>Facebook:</span> <a class="url" rel="author" href="<?php the_author_meta('facebook'); ?>"><?php the_author_meta('display_name'); ?>'s Profil</a></div>
 				<?php } ?>
 				
+				<?php if ( get_the_author_meta( 'flickr' ) ) { ?>
+					<div><span>Flickr:</span> <a class="url" rel="author" href="<?php the_author_meta('flickr'); ?>"><?php the_author_meta('display_name'); ?>'s Photostream</a></div>
+				<?php } ?>
+				
 				<?php if ( get_the_author_meta( 'studivz' ) ) { ?>
 					<div><span>StudiVZ:</span> <a class="url" rel="author" href="<?php the_author_meta('studivz'); ?>"><?php the_author_meta('display_name'); ?>'s Profil</a></div>
 				<?php } ?>
@@ -318,6 +322,7 @@ function hastuzeit_new_contactmethods( $contactmethods ) {
   $contactmethods['twitter'] = 'Twitter Username';
   $contactmethods['facebook'] = 'Facebook Profil<br /><small style="color:#666666;font-style:italic">gesamte URL inklusive http://</small>';
   $contactmethods['studivz'] = 'StudiVZ Profil<br /><small style="color:#666666;font-style:italic">gesamte URL inklusive http://</small>';
+  $contactmethods['flickr'] = 'Flickr Photostream<br /><small style="color:#666666;font-style:italic">gesamte URL inklusive http://</small>';
   $contactmethods['icq'] = 'ICQ';
   
   return $contactmethods;
