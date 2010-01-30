@@ -33,6 +33,51 @@ $(function () { //DOMdiDOM
     //initiate our equal height magic
 	equalHeight($("body.search-results #main .hentry"));
 	
+	//Thickbox on linked images
+	$('#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif],[href$=.PNG],[href$=.JPG],[href$=.GIF]').addClass('thickbox');
+	$('#ausgabe a.thickbox, .page-template-page-heftarchiv-php a.thickbox, .wp-caption a.thickbox').append('<span class="zoom"></span>');
+	
+	//Style external links
+	$('#main .post a').not(":has(img)").filter(function() {
+    	return this.hostname && this.hostname !== location.hostname;
+  	}).addClass('external').attr({rel:'external'});
+    
+    //Open pdf links in new window
+    $('a[href*=.pdf]').click(function(){
+		window.open(this.href);
+	return false;
+	});
+	
+	//Schnipsel stuff
+  	$('#main .schnipsel').append('<div class="schnipsel_bottom"></div>');
+  	
+  	//Search term highlighting init
+	if(typeof(hls_query) != 'undefined'){
+      $('#main').highlight(hls_query, 1, 'hls');
+    }
+    
+    	//TipTip
+	//http://code.drewwilson.com/entry/tiptip-jquery-plugin
+	var tipTriggers = $('#featured .featured_nav a[title], a.infopopup');
+	
+	tipTriggers.tipTip({
+			maxWidth: "290px", 
+			edgeOffset: 5,
+			delay: 200
+	});
+	
+	
+	//Twitter integration
+	//http://tweet.seaofclouds.com/
+	$("#tweet").tweet({
+		username: "hastuzeit",
+        query: "hastuzeit",
+        join_text: "",
+        avatar_size: 25,
+        count: 4,
+        loading_text: "tweets werden geladen..."
+    });
+	
 	//Tab interface
 	$("#tabs .tabNavigation li a").click(function() {
     
@@ -62,15 +107,6 @@ $(function () { //DOMdiDOM
         
         return false;
     });
-		
-	//Thickbox on linked images
-	$('#main .hentry a,#ausgabe a').filter('[href$=.png],[href$=.jpg],[href$=.gif],[href$=.PNG],[href$=.JPG],[href$=.GIF]').addClass('thickbox');
-	$('#ausgabe a.thickbox, .page-template-page-heftarchiv-php a.thickbox, .wp-caption a.thickbox').append('<span class="zoom"></span>');
-	
-	//Style external links
-	$('#main .post a').not(":has(img)").filter(function() {
-    	return this.hostname && this.hostname !== location.hostname;
-  	}).addClass('external').attr({rel:'external'});
     
     //The Featured Slider, omnomnom
     if ( $("#featured").length > 0 ) {
@@ -149,82 +185,7 @@ $(function () { //DOMdiDOM
 		   clearInterval(cycleTimer);
 		}
 		$stopTriggers.bind('click.cycle', stopCycle);
-		
-		//qTip Featured
-		$('#featured .featured_nav a[title]').qtip({
-			show: {
-	      		delay: 10,
-	      		effect: {
-	      			type: 'fade', 
-	      			length: 100 } 
-	      	},
-			position: {
-	      		corner: { 
-	      			target: 'rightTop', 
-	      			tooltip: 'topLeft'
-	      		}
-	      	},
-	      	style: {
-	      		color: '#122d45',
-	      		lineHeight: '1.2em',
-	      		fontFamily: '"Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif',
-	      		maxWidth: 200,
-	      		background: 'transparent',
-			    tip: { 
-		        	corner: 'leftMiddle',
-		        	color: '#ccc'
-		        },
-			    border: {
-		        	width: 1,
-		        	color: '#ccc'
-		      	},
-		      
-			}
-		});
 	}
-	
-	//qTip Rest
-	$('a.infopopup').qtip({
-		show: {
-      		delay: 10,
-      		effect: {
-      			type: 'fade', 
-      			length: 100 } 
-      	},
-		position: {
-      		corner: { 
-      			target: 'bottomLeft', 
-      			tooltip: 'topLeft'
-      		}
-      	},
-      	style: {
-      		color: '#122d45',
-      		lineHeight: '1.2em',
-      		fontFamily: '"Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif',
-      		maxWidth: 200,
-      		background: 'transparent',
-		    tip: { 
-	        	corner: 'topLeft',
-	        	color: '#ccc'
-	        },
-		    border: {
-	        	width: 1,
-	        	color: '#ccc'
-	      	},
-	      
-		}
-	});
-	
-	//Twitter integration
-	//http://tweet.seaofclouds.com/
-	$("#tweet").tweet({
-		username: "hastuzeit",
-        query: "hastuzeit",
-        join_text: "",
-        avatar_size: 25,
-        count: 4,
-        loading_text: "tweets werden geladen..."
-    });
 	
 	//Front-End login and admin, with cookie magic
 	var $panel = $('#front-admin > *:not(#login-link)')
@@ -298,17 +259,6 @@ $(function () { //DOMdiDOM
 			last = input.val();
 		});
 	});
-    
-    //Search term highlighting init
-	if(typeof(hls_query) != 'undefined'){
-      $('#main').highlight(hls_query, 1, 'hls');
-    }
-    
-    //Open pdf links in new window
-    $('a[href*=.pdf]').click(function(){
-		window.open(this.href);
-	return false;
-	});
 	
 	//Basic content accordion
 	var $content = $('.accordionContent');
@@ -343,19 +293,6 @@ $(function () { //DOMdiDOM
        		$nextDiv.slideToggle('normal').prev('h2,h4').toggleClass('open');
     	}
   	});
-  	
-  	//Schnipsel stuff
-  	$('#main .schnipsel').append('<div class="schnipsel_bottom"></div>')
-  	
-  	//Hover link animation
-  	/*
-var $animatedlinks = ('#frisch a, #beliebt a, .widget_rss a, .widget_links a');
-  	$($animatedlinks).hover(function () {
-    	$(this).stop().animate({ paddingLeft: '15px' }, 400);  
-    	}, function() { 
-        $(this).stop().animate({ paddingLeft: '5px' }, 400);
-    });
-*/
     
     //the warning toggle for IE 7 and below users	
     $('#warning-toggle').click(function() {

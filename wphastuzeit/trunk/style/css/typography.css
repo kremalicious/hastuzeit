@@ -304,7 +304,8 @@ a#profile-edit-link,
 .similar-posts a,
 .tabNavigation,
 #beliebt a, #sidebar a,
-.page-link strong {
+.page-link strong,
+#tiptip_holder {
 	font-weight: bold;
 	font-family: "AllerBold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: #fff 0 1px 0;
@@ -952,8 +953,10 @@ strong.hls {
 	color: #122d45;
 }
 
-.qtip {
+#tiptip_holder {
 	font-size: 0.9em;
+	text-align: left;
+	line-height: 1.3em;
 }
 
 /* @group Footer */
