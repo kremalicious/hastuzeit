@@ -146,7 +146,18 @@ get_header(); ?>
 					  
 					  <?php endforeach; ?>
 					  
-					  <p id="nextausgabe" class="clear textfade">Die neue Ausgabe Nr. 31 erscheint am 25.01. 2010. Passend zum Jahresbeginn lautet das Schwerpunktthema diesmal &raquo;Frohe Zukunft&laquo;. Einzelne Texte werden vorab an dieser Stelle ver&ouml;ffentlicht.</p>
+					  <!-- The Next Notice Loop -->
+					  <?php
+					  $next = query_posts('pagename=next');
+					  foreach ($next as $post) : 
+					     setup_postdata($post);
+					  ?>
+					  
+					  <div id="nextausgabe" class="clear textfade">
+					  	<?php the_content(); ?>
+					  </div>
+					  
+					  <?php endforeach; ?>
 
 				</div>
 				<div id="tweet">
