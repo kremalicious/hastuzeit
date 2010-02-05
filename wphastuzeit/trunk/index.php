@@ -155,6 +155,7 @@ get_header(); ?>
 					  
 					  <div id="nextausgabe" class="clear textfade">
 					  	<?php the_content(); ?>
+					  	<?php edit_post_link('Notiz Bearbeiten', '', ''); ?>
 					  </div>
 					  
 					  <?php endforeach; ?>
