@@ -148,17 +148,18 @@ get_header(); ?>
 					  
 					  <!-- The Next Notice Loop -->
 					  <?php
-					  $next = query_posts('pagename=next');
-					  foreach ($next as $post) : 
-					     setup_postdata($post);
+					   	$nextnotice = new WP_Query();
+    					$nextnotice->query('pagename=next');
+					 
 					  ?>
+					  <?php while ($nextnotice->have_posts()) : $nextnotice->the_post(); ?>
 					  
 					  <div id="nextausgabe" class="clear textfade">
 					  	<?php the_content(); ?>
 					  	<?php edit_post_link('Notiz Bearbeiten', '', ''); ?>
 					  </div>
 					  
-					  <?php endforeach; ?>
+					  <?php endwhile; ?>
 
 				</div>
 				<div id="tweet">
