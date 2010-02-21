@@ -122,6 +122,7 @@
 					<li <?php if (is_page('mediadaten')) echo 'class="current_page_item"' ?>><a href="/mediadaten" title="hastuzeit Mediadaten">Mediadaten</a></li>
 					<li <?php if (is_page('kontakt')) echo 'class="current_page_item"' ?>><a href="/kontakt" title="hastuzeit kontaktieren">Kontakt/Impressum</a></li>
 					<li class="statuslamp green <?php if (is_page('status')) echo 'current_page_item' ?>"><a href="/status" title="hastuzeit Status und Neuerungen">Status</a></li>
+					<li><a href="http://blogs.urz.uni-halle.de/hastuzeitintern/">Intern</a></li>
 				</ul>
 			</div><!-- end #header -->
 			
