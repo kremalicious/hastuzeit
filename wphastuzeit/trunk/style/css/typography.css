@@ -111,11 +111,11 @@ cite.big {
 	line-height: 1.3em;
 	width: 190px;
 	float: right;
-	margin-left: 20px;
+	margin-left: 30px;
 	margin-bottom: 20px;
-	text-indent: 20px;
 	color: #72808d;
 	margin-top: 20px;
+	font-style: italic;
 }
 
 cite.big.left {
