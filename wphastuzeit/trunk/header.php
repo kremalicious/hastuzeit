@@ -83,7 +83,7 @@
 		?>
 		
 		<!-- Load Contact Form 7 stuff just on the contact page -->
-		<?php if (is_page('kontakt'))
+		<?php if ( is_page('kontakt') || is_page('abo') )
 			wpcf7_enqueue_scripts();
 			wpcf7_enqueue_styles();
 		?>

@@ -189,8 +189,6 @@ input[type=submit]:hover {
 
 #navigation li {
 	float: left;
-	margin-right: 10px;
-	min-width: 100px;
 	background: url(../images/hastuzeit-master.png) no-repeat;
 }
 
@@ -217,6 +215,15 @@ input[type=submit]:hover {
 }
 
 #navigation li.page-item-374 a {
+	padding-left: 10px;
+}
+
+#navigation li.page-item-3272 {
+	background-position: -229px -400px;
+	padding-left: 10px;
+}
+
+#navigation li.page-item-3272 a {
 	padding-left: 10px;
 }
 
@@ -252,8 +259,8 @@ input[type=submit]:hover {
 }
 
 #navigation a {
-	min-width: 100px;
-	padding: 0 10px;
+	min-width: 90px;
+	padding: 0 15px;
 	height: 40px;
 	display: block;
 	line-height: 2.4em;
@@ -1952,6 +1959,37 @@ a.rss {
 	position: absolute;
 	left: 0;
 	bottom: -60px;
+}
+
+#wpcf7-f2-p3272-o1 .label {
+	display: block;
+	clear: both;
+}
+
+#wpcf7-f2-p3272-o1 input {
+	display: block;
+	width: 98%;
+}
+
+#wpcf7-f2-p3272-o1 input#your-place {
+	width: 458px;
+}
+
+#wpcf7-f2-p3272-o1 #address .label {
+	width: 120px;
+}
+
+#wpcf7-f2-p3272-o1 #address p {
+	float: left;
+}
+
+#wpcf7-f2-p3272-o1 .your-plz input {
+	width: 70px;
+}
+
+#wpcf7-f2-p3272-o1 textarea {
+	width: 98%;
+	height: 20px;
 }
 
 /* @group Tweets */
