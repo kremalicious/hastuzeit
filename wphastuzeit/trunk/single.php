@@ -36,6 +36,8 @@ get_header();
 			
 			?>
 			
+			<iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink($post->ID)); ?>&amp;layout=standard&amp;show-faces=true&amp;width=500&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:580px; height:40px"></iframe>
+			
 			<?php wp_link_pages(array('before' => '<div class="page-link"><p><strong>Seiten:</strong> ', 'after' => '</p></div>', 'next_or_number' => 'number')); ?>
 			
 			<?php if ( !in_category('Termine') ) autorbox(); ?>
@@ -47,6 +49,7 @@ get_header();
 				<p id="shortlink"><?php if (function_exists("twitter_link")) { echo 'Kurz-URL: <a href="' . twitter_link() . '">'.twitter_link().'</a>'; } ?></p>
 				
 			</div>
+			
 			
 			
 		</div>
