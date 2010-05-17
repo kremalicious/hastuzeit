@@ -1025,14 +1025,16 @@ strong.hls {
 .postid-3722 #sidebar,
 .postid-3725 #sidebar,
 .postid-3727 #sidebar,
-.postid-3729 #sidebar {
+.postid-3729 #sidebar,
+.postid-3846 #sidebar {
 	display: none;
 }
 
 .postid-3722 #main,
 .postid-3725 #main,
 .postid-3727 #main,
-.postid-3729 #main {
+.postid-3729 #main,
+.postid-3846 #main {
 	width: 100%;
 }
 
@@ -1047,7 +1049,8 @@ strong.hls {
 	color: #b1b7c1;
 }
 
-.tag-hochschulwahl-2010.tag-kandidaten img.alignleft {
+.tag-hochschulwahl-2010.tag-kandidaten img.alignleft,
+.post-3846 img.alignleft {
 	-webkit-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
 	transform: rotate(-2deg);
