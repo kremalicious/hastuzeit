@@ -162,7 +162,7 @@ hr {
 	line-height: 0;
 	page-break-after: always;
 	text-align: center;
-	width: 90%;
+	width: 98.5%;
 	margin: 3em 10px;
 	clear: both;
 }
@@ -1015,3 +1015,41 @@ strong.hls {
 }
 
 /* @end */
+
+.facebooklike {
+	margin-top: 20px;	
+}
+
+/*Hochschulwahl 2010 Artikel*/
+
+.postid-3722 #sidebar,
+.postid-3725 #sidebar,
+.postid-3727 #sidebar,
+.postid-3729 #sidebar {
+	display: none;
+}
+
+.postid-3722 #main,
+.postid-3725 #main,
+.postid-3727 #main,
+.postid-3729 #main {
+	width: 100%;
+}
+
+.tag-hochschulwahl-2010.tag-kandidaten .accordionContent span,
+.post-3729 span {
+	width: 140px;
+	display: block;
+	float: left;
+	font-weight: bold;
+	font-family: "AllerBold", "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-size: 0.9em;
+	color: #b1b7c1;
+}
+
+.tag-hochschulwahl-2010.tag-kandidaten img.alignleft {
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	margin-left: -50px;
+}

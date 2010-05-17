@@ -267,7 +267,7 @@ $(function () { //DOMdiDOM
 	
 	$content.hide();
 	$contentFirst.show();
-	$contentFirst.prev('h2,h4').addClass('open');
+	$contentFirst.prev('h2,h3,h4').addClass('open');
 	$trigger.css({
 		cursor: 'pointer',
 		background: 'url(/wp-content/themes/wphastuzeit/style/images/triangle-closed.png) no-repeat 5px center',
@@ -286,11 +286,11 @@ $(function () { //DOMdiDOM
  
     	if ($visibleSiblings.length ) {
       		$visibleSiblings.slideUp('normal', function() {
-      		$visibleSiblings.prev('h2,h4').toggleClass('open')
-        	$nextDiv.slideToggle('normal').prev('h2,h4').toggleClass('open');
+      		$visibleSiblings.prev('h2,h3,h4').toggleClass('open')
+        	$nextDiv.slideToggle('normal').prev('h2,h3,h4').toggleClass('open');
       		});
     	} else {
-       		$nextDiv.slideToggle('normal').prev('h2,h4').toggleClass('open');
+       		$nextDiv.slideToggle('normal').prev('h2,h3,h4').toggleClass('open');
     	}
   	});
     

@@ -848,7 +848,7 @@ a#profile-edit-link {
 }
 
 .accordionContent {
-	overflow: auto;
+	overflow: visible;
 	clear: both;
 	width: 100%;
 	margin: 0 0 20px;
@@ -863,6 +863,7 @@ a#profile-edit-link {
 
 .accordionButton.open {
 	background-image: url(../images/triangle-open.png) !important;
+	background-repeat: no-repeat;
 }
 
 .page-template-page-status-php .accordionContent {

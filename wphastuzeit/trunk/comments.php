@@ -78,7 +78,7 @@
 		<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
 
 		<?php else : ?>
-
+		
 		<p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 		<label for="author"><small>Name <?php if ($req) echo "(ben&ouml;tigt)"; ?></small></label></p>
 
@@ -87,7 +87,13 @@
 
 		<p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" onblur="if(this.value=='http://')this.value='';" onfocus="if(this.value=='Website')this.value='http://';" size="22" tabindex="3" />
 		<label for="url"><small>Website</small></label></p>
-
+		
+		<!-- Facebook Connect Login
+		<div id="comment-user-details">
+			<?php do_action('alt_comment_login'); ?>
+		</div>
+		-->
+		
 		<?php endif; ?>
 
 		<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
