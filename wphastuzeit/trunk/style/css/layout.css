@@ -1414,6 +1414,15 @@ span.cluv {
 	line-height: 1.3em;
 }
 
+.comment-body ol {
+	margin-left: 130px;
+}
+
+.comment-body ol li {
+	list-style: decimal;
+	margin-bottom: 5px;
+}
+
 /* @end */
 
 /* @group Footer */

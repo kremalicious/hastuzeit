@@ -87,15 +87,20 @@ blockquote {
 	clear: both;
 }
 
+.comment blockquote {
+	margin-top: 1em;
+}
+
 blockquote:before  {
 	font-size: 4em;
 	position: absolute;
-}
-
-blockquote:before {
 	content: "“";
 	top: 10px;
 	left: -15px;
+}
+
+.comment blockquote:before {
+	left: 110px;
 }
 
 blockquote p {
@@ -940,7 +945,7 @@ strong.hls {
 }
 
 .depth-2 {
-	font-size: 0.9em;
+	font-size: 0.95em;
 }
 
 .textfade {
