@@ -11,7 +11,7 @@ get_header(); ?>
 				<div id="featured">
 					
 					<div id="featured_head">
-						<h4>Hochschulwahl 2010</h4>
+						<h4>Wichtig</h4>
 					</div>
 					
 					<div class="scroll">
