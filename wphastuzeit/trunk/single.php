@@ -36,7 +36,7 @@ get_header();
 			
 			?>
 			
-			<iframe class="facebooklike" src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink($post->ID)); ?>&amp;layout=standard&amp;show-faces=true&amp;width=580&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:580px; height:90px"></iframe>
+			<iframe class="facebooklike" src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink($post->ID)); ?>&amp;layout=standard&amp;show-faces=true&amp;width=580&amp;action=recommend&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:580px; height:90px"></iframe>
 			
 			<?php wp_link_pages(array('before' => '<div class="page-link"><p><strong>Seiten:</strong> ', 'after' => '</p></div>', 'next_or_number' => 'number')); ?>
 			
