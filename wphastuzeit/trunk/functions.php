@@ -10,6 +10,9 @@ automatic_feed_links();
 if ( function_exists( 'add_theme_support' ) )
 add_theme_support('post-thumbnails');
 
+// 3.0 Custom Background
+//add_custom_background();
+
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
 		'name'=>'sidebarleft',
