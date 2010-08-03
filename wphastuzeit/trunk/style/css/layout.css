@@ -44,6 +44,8 @@ div {
 
 #header {
 	background-color: #EF6D30;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
+	background-image: -moz-linear-gradient(19% 75% 90deg,rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.2));
 	z-index: 90;
 	margin-bottom: 10px;
 }
