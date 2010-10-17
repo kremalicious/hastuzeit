@@ -375,6 +375,10 @@ input[type=submit]:hover {
 	margin-left: 0 !important;
 }
 
+#featured .thumb img {
+	margin-top: 5px !important;
+}
+
 .scroll {
 	height: 210px;
 	overflow: hidden;
