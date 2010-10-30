@@ -99,7 +99,7 @@ function trim_excerpt($num) {
 	$excerpt = explode(' ', get_the_excerpt(), $limit);
 	array_pop($excerpt);
 	$excerpt = implode(" ",$excerpt)."...";
-	echo $excerpt;
+	echo '<p>'$excerpt'</p>';
 }
 
 //Use first images of posts as thumbnails
