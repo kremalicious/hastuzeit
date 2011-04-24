@@ -1,0 +1,6 @@
+Farben: 
+HKS 12 N (rot)
+HKS 38 N (blau)
+
+Schriften: 
+Akzidenz Grotesk und Arno Pro
