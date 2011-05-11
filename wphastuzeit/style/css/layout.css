@@ -43,9 +43,13 @@ div {
 }
 
 #header {
-	background-color: #9c7ea8;
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-	background-image: -moz-linear-gradient(19% 75% 90deg,rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.2));
+	background-color: #91bbcc;
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.2)), color-stop(100%,rgba(0, 0, 0, 0.2)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%);
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%);
+	background-image: linear-gradient(top, rgba(255, 255, 255, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%);
 	z-index: 90;
 	margin-bottom: 10px;
 }
