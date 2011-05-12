@@ -1025,13 +1025,14 @@ strong.hls {
 	margin-top: 20px;	
 }
 
-/*Hochschulwahl 2010 Artikel*/
+/*Hochschulwahl 2010/2011 Artikel*/
 
 .postid-3722 #sidebar,
 .postid-3725 #sidebar,
 .postid-3727 #sidebar,
 .postid-3729 #sidebar,
-.postid-3846 #sidebar {
+.postid-3846 #sidebar,
+.postid-6660 #sidebar {
 	display: none;
 }
 
@@ -1039,12 +1040,15 @@ strong.hls {
 .postid-3725 #main,
 .postid-3727 #main,
 .postid-3729 #main,
-.postid-3846 #main {
+.postid-3846 #main,
+.postid-6660 #main {
 	width: 100%;
 }
 
 .tag-hochschulwahl-2010.tag-kandidaten .accordionContent span,
-.post-3729 span {
+.post-3729 span,
+.tag-hochschulwahl-2011.tag-kandidaten .accordionContent span,
+.post-6660 span {
 	width: 140px;
 	display: block;
 	float: left;
@@ -1055,7 +1059,9 @@ strong.hls {
 }
 
 .tag-hochschulwahl-2010.tag-kandidaten img.alignleft,
-.post-3846 img.alignleft {
+.post-3846 img.alignleft,
+.tag-hochschulwahl-2011.tag-kandidaten img.alignleft,
+.post-6660 img.alignleft {
 	-webkit-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
 	transform: rotate(-2deg);
