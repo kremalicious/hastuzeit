@@ -1032,7 +1032,8 @@ strong.hls {
 .postid-3727 #sidebar,
 .postid-3729 #sidebar,
 .postid-3846 #sidebar,
-.postid-6660 #sidebar {
+.postid-6660 #sidebar,
+.postid-6665 #sidebar {
 	display: none;
 }
 
@@ -1041,14 +1042,17 @@ strong.hls {
 .postid-3727 #main,
 .postid-3729 #main,
 .postid-3846 #main,
-.postid-6660 #main {
+.postid-6660 #main,
+.postid-6665 #main {
 	width: 100%;
 }
 
 .tag-hochschulwahl-2010.tag-kandidaten .accordionContent span,
 .post-3729 span,
 .tag-hochschulwahl-2011.tag-kandidaten .accordionContent span,
-.post-6660 span {
+.post-6660 span,
+.tag-hochschulwahl-2011.tag-kandidaten .accordionContent span,
+.post-6665 span {
 	width: 140px;
 	display: block;
 	float: left;
@@ -1061,7 +1065,9 @@ strong.hls {
 .tag-hochschulwahl-2010.tag-kandidaten img.alignleft,
 .post-3846 img.alignleft,
 .tag-hochschulwahl-2011.tag-kandidaten img.alignleft,
-.post-6660 img.alignleft {
+.post-6660 img.alignleft,
+.tag-hochschulwahl-2011.tag-kandidaten img.alignleft,
+.post-6665 img.alignleft {
 	-webkit-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
 	transform: rotate(-2deg);
