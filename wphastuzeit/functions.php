@@ -4,6 +4,7 @@
  * @subpackage hastuzeit
  */
 
+require_once('functions/javascripts.php');
 require_once('functions/clean-wphead.php');
 require_once('functions/htaccess.php');
 require_once('functions/robots.php');
@@ -44,13 +45,6 @@ if ( function_exists('register_sidebar') ) {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-}
-
-//replace default jQuery script
-if( !is_admin()){
-   wp_deregister_script('jquery'); 
-   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"), false, '1.4'); 
-   wp_enqueue_script('jquery');
 }
 
 //Ping separation
