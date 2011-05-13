@@ -4,6 +4,7 @@
  * @subpackage hastuzeit
  */
 
+require_once('functions/clean-wphead.php');
 require_once('functions/htaccess.php');
 
 
@@ -50,9 +51,6 @@ if( !is_admin()){
    wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"), false, '1.4'); 
    wp_enqueue_script('jquery');
 }
-
-//remove the Wordpress version from the code
-remove_action('wp_head', 'wp_generator');
 
 //Ping separation
 function list_pings($comment, $args, $depth) {
