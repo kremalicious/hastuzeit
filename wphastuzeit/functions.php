@@ -4,7 +4,11 @@
  * @subpackage hastuzeit
  */
 
-automatic_feed_links();
+require_once('functions/htaccess.php');
+
+
+// Let there be syndication!
+add_theme_support( 'automatic-feed-links' );
 
 //2.9 Post Thumbnails
 if ( function_exists( 'add_theme_support' ) )
