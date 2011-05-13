@@ -1,5 +1,9 @@
 <?php 
-
+/**
+ * @package WordPress
+ * @subpackage hastuzeit
+ */
+ 
 // cleanup wp_head
 function hastuzeit_head_cleanup() {
 	// http://wpengineer.com/1438/wordpress-header/

@@ -1,5 +1,9 @@
-<?php  
-
+<?php 
+/**
+ * @package WordPress
+ * @subpackage hastuzeit
+ */
+ 
 function hastuzeit_get_home_path() {
 	$home = get_option( 'home' );
 	$siteurl = get_option( 'siteurl' );

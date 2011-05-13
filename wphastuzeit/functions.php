@@ -6,6 +6,7 @@
 
 require_once('functions/clean-wphead.php');
 require_once('functions/htaccess.php');
+require_once('functions/robots.php');
 
 
 // Let there be syndication!
