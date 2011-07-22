@@ -43,7 +43,7 @@ div {
 }
 
 #header {
-	background-color: #91bbcc;
+	background-color: #165E6C;
 	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.2)), color-stop(100%,rgba(0, 0, 0, 0.2)));
 	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%);
