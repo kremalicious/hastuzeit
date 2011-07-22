@@ -1,57 +1,90 @@
 /*
-hastuzeit Custom Admin Area
+hastuzeit Custom Admin Area WP3.2+
 Author: Matthias Kretschmann
 Author URI: http://kremalicious.com
 */
 
+#wpwrap {
+	color: #444;
+	background: #fbfbfb;
+}
+
 a {
 	color: #ec5325 !important;
-	text-decoration: none !important
 }
 
 a:hover, a:focus {
 	color: #000 !important;
 	background-color: #e0e2e5;
-	text-decoration: none !important
+}
+
+#adminmenu a {
+	color: #f6f6f6 !important;
+}
+
+#adminmenu a:hover,
+#adminmenu a.menu-top:hover {
+	color: #000 !important;
+	text-shadow: 0 1px 0 #fff;
 }
 
 #header-logo {
-	background-image: url(../images/hastuzeit32px.png) !important;
+	background-image: url(../images/favicon.png) !important;
 }
 
-#wphead, #footer, #footer-upgrade {
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu li.current a.menu-top, .folded #adminmenu li.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, #adminmenu .wp-menu-arrow, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+	background: #ec5325;
+	background: -moz-linear-gradient(top, #ea7352 0%, #ec5325 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ea7352), color-stop(100%,#ec5325));
+	background: -webkit-linear-gradient(top, #ea7352 0%,#ec5325 100%);
+	background: -o-linear-gradient(top, #ea7352 0%,#ec5325 100%);
+	background: -ms-linear-gradient(top, #ea7352 0%,#ec5325 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea7352', endColorstr='#ec5325',GradientType=0 );
+	background: linear-gradient(top, #ea7352 0%,#ec5325 100%);
+	color: #fff !important;
+}
+
+#adminmenuback, #adminmenuwrap {
+	height: 100%;
+}
+
+#adminmenuwrap {
+	position: fixed;
 	background: #122d45 url(../images/back.png) repeat left top !important;
+	-webkit-box-shadow: inset #000 -3px 0 5px;
+	-moz-box-shadow: inset #000 -3px 0 5px;
+	box-shadow: inset #000 -3px 0 5px;
 }
 
-#wphead {
-	border-bottom: 1px solid #fff
+#adminmenu {
+	background-color: rgba(255,255,255,.1);
 }
 
-#footer {
-	border-top: 1px solid #fff;
+#adminmenu a.menu-top, .folded #adminmenu li.menu-top, #adminmenu .wp-submenu .wp-submenu-head {
+	border-top-color: rgba(255,255,255,.1);
+	border-bottom-color: rgba(0,0,0,.8);
 }
 
-#wphead a, #footer a {
-	color: #fff !important
+#adminmenu a.menu-top {
+	text-shadow: 0 -1px 0 #000;
 }
 
-#wphead a:hover, #footer a:hover {
-	color: #000 !important
+#adminmenu .wp-submenu ul {
+	background-color: rgba(255,255,255,.2);
+	-webkit-box-shadow: inset 0 0 4px #000;
+	
 }
 
-#adminmenu a:hover {
-	background-color: transparent
+#adminmenu li.wp-menu-open {
+	border: none;
 }
 
-#favorite-inside {
-	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom !important;
-	text-shadow: 0 1px 0 #fff
+#adminmenu li.wp-menu-separator,
+#adminmenu div.separator {
+	border: none;
+	background: rgba(255,255,255,.2);
 }
 
-#favorite-inside a, #favorite-first a {
-	color: #ec5325 !important;
-}
-
-#wpcontent {
-	background: #f7f7f7 url(../images/featured-grad.png) repeat-x left bottom !important;
+.postbox {
+	background: #fff;
 }
